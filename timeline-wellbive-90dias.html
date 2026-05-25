@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timeline Wellbive 90 dias</title>
+  <style>
+    :root {
+      --bg: #f7f8f5;
+      --panel: #ffffff;
+      --ink: #17211f;
+      --muted: #64706b;
+      --line: #dce3df;
+      --green: #2f6f4e;
+      --teal: #0f766e;
+      --blue: #315f8c;
+      --gold: #a87923;
+      --coral: #b7553b;
+      --rose: #9d4563;
+      --soft-green: #e8f4ec;
+      --soft-teal: #e6f4f1;
+      --soft-blue: #e8f0f8;
+      --soft-gold: #f7f1df;
+      --soft-coral: #f8ece7;
+      --soft-rose: #f6e9ef;
+      --shadow: 0 18px 42px rgba(23, 33, 31, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    header {
+      padding: 34px 24px 20px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(120deg, var(--soft-green), var(--soft-gold));
+    }
+
+    .wrap {
+      width: min(1320px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 8px 0 8px;
+      font-size: clamp(31px, 5vw, 58px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(24px, 3vw, 36px);
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    p { margin: 0 0 10px; line-height: 1.5; }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.72);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border: 1px solid rgba(47,111,78,0.24);
+    }
+
+    .lead {
+      max-width: 880px;
+      color: #34413d;
+      font-size: 18px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247,248,245,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav .wrap {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    nav button {
+      flex: 0 0 auto;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    nav button.active {
+      background: var(--green);
+      border-color: var(--green);
+      color: white;
+    }
+
+    main { padding: 24px 0 60px; }
+
+    section { margin-bottom: 28px; }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .stat b {
+      color: var(--green);
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .muted { color: var(--muted); }
+
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #eef3f0;
+      color: #2f3d39;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .view { display: none; }
+    .view.active { display: block; }
+
+    .timeline-shell {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .timeline {
+      min-width: 1480px;
+    }
+
+    .week-header,
+    .lane {
+      display: grid;
+      grid-template-columns: 170px repeat(13, 1fr);
+    }
+
+    .week-header {
+      position: sticky;
+      top: 45px;
+      z-index: 3;
+      background: #eef3f0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .week-label {
+      padding: 10px;
+      border-right: 1px solid var(--line);
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .week-cell {
+      padding: 10px 8px;
+      border-right: 1px solid var(--line);
+      font-size: 12px;
+      min-height: 52px;
+    }
+
+    .week-cell strong {
+      display: block;
+      color: var(--ink);
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+
+    .lane {
+      border-bottom: 1px solid var(--line);
+      min-height: 92px;
+    }
+
+    .lane:last-child { border-bottom: 0; }
+
+    .lane-name {
+      padding: 14px 12px;
+      border-right: 1px solid var(--line);
+      background: #fbfcfa;
+      font-weight: 800;
+      color: var(--ink);
+      position: sticky;
+      left: 0;
+      z-index: 2;
+    }
+
+    .slot {
+      padding: 8px;
+      border-right: 1px solid #edf1ee;
+    }
+
+    .mini-card {
+      height: 100%;
+      min-height: 74px;
+      border-radius: 8px;
+      padding: 9px;
+      border: 1px solid rgba(23,33,31,0.08);
+      font-size: 12px;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .mini-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(23,33,31,0.1);
+    }
+
+    .mini-card b {
+      display: block;
+      font-size: 13px;
+      line-height: 1.25;
+      margin-bottom: 5px;
+    }
+
+    .youtube { background: var(--soft-blue); color: #183a58; }
+    .jueves { background: var(--soft-gold); color: #4a3511; }
+    .producto { background: var(--soft-green); color: #1d4631; }
+    .curso { background: var(--soft-coral); color: #552a1d; }
+    .seguimiento { background: var(--soft-teal); color: #154944; }
+    .metricas { background: var(--soft-rose); color: #56243a; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .week-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .week-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .week-top h3 { margin-bottom: 4px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 11px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+
+    th {
+      background: #eef3f0;
+      color: #40504b;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      display: none;
+      place-items: center;
+      background: rgba(23,33,31,0.46);
+      z-index: 30;
+      padding: 20px;
+    }
+
+    .modal-backdrop.open { display: grid; }
+
+    .modal {
+      width: min(720px, 100%);
+      max-height: 86vh;
+      overflow: auto;
+      background: white;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      box-shadow: 0 30px 90px rgba(23,33,31,0.28);
+      padding: 22px;
+    }
+
+    .modal-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .close {
+      border: 0;
+      background: #eef3f0;
+      border-radius: 999px;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .day {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      min-height: 140px;
+      padding: 10px;
+    }
+
+    .day b {
+      display: block;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .day p {
+      font-size: 13px;
+      margin-bottom: 7px;
+    }
+
+    @media (max-width: 980px) {
+      .cols-3, .cols-4, .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .calendar-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <span class="eyebrow">25 mayo - 23 agosto 2026</span>
+      <h1>Timeline Wellbive 90 dias</h1>
+      <p class="lead">Escala semanal para experimentar el sistema completo: YouTube, Jueves Wellkitt en Clinica, productos, cursos, WhatsApp y medicion.</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="wrap">
+      <button class="active" data-tab="timeline">Timeline</button>
+      <button data-tab="semanas">Semanas</button>
+      <button data-tab="ritmo">Ritmo semanal</button>
+      <button data-tab="evaluacion">Evaluacion</button>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="grid cols-4">
+      <div class="panel stat"><b>90</b><span>dias de prueba seria</span></div>
+      <div class="panel stat"><b>13</b><span>semanas publicas</span></div>
+      <div class="panel stat"><b>1</b><span>Jueves Wellkitt por semana</span></div>
+      <div class="panel stat"><b>6</b><span>carriles de trabajo</span></div>
+    </section>
+
+    <section id="timeline" class="view active">
+      <h2>Mejor vista: Gantt por semanas y carriles</h2>
+      <p class="muted">El timeline de cursos funciona por tareas diarias. Para Wellbive conviene este formato: una semana por columna y un carril por funcion. Asi se ve si cada semana tiene contenido, producto, curso, evento y seguimiento.</p>
+      <div class="timeline-shell">
+        <div class="timeline" id="timelineGrid"></div>
+      </div>
+    </section>
+
+    <section id="semanas" class="view">
+      <h2>Detalle por semana</h2>
+      <div class="cards" id="weekCards"></div>
+    </section>
+
+    <section id="ritmo" class="view">
+      <h2>Ritmo semanal fijo</h2>
+      <div class="calendar-grid">
+        <div class="day"><b>Lunes</b><p>Video problema en YouTube.</p><p class="muted">Atraer desde una necesidad real.</p></div>
+        <div class="day"><b>Martes</b><p>Short del problema.</p><p class="muted">Descubrimiento y recordatorio.</p></div>
+        <div class="day"><b>Miercoles</b><p>Video herramienta, producto o kit.</p><p class="muted">Educar antes de vender.</p></div>
+        <div class="day"><b>Jueves</b><p>Jueves Wellkitt en Clinica + Zoom.</p><p class="muted">Crear flujo presencial.</p></div>
+        <div class="day"><b>Viernes</b><p>Seguimiento WhatsApp + cupon.</p><p class="muted">Convertir con vigencia corta.</p></div>
+        <div class="day"><b>Sabado</b><p>Resumen, Short o caso.</p><p class="muted">Mantener conversacion.</p></div>
+        <div class="day"><b>Domingo</b><p>Encuesta + analisis de datos.</p><p class="muted">Elegir el siguiente problema.</p></div>
+      </div>
+    </section>
+
+    <section id="evaluacion" class="view">
+      <h2>Como evaluar el experimento</h2>
+      <div class="grid cols-3">
+        <div class="panel">
+          <h3>Verde</h3>
+          <p>Un tema genera visitas presenciales, mensajes, ventas o interesados en curso.</p>
+          <span class="tag">Duplicar</span>
+        </div>
+        <div class="panel">
+          <h3>Amarillo</h3>
+          <p>El tema genera vistas o preguntas, pero no visitas ni venta.</p>
+          <span class="tag">Ajustar oferta</span>
+        </div>
+        <div class="panel">
+          <h3>Rojo</h3>
+          <p>Consume trabajo, no mueve mensajes, no lleva gente y no vende.</p>
+          <span class="tag">Eliminar o pausar</span>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:14px;">
+        <h3>Pregunta de cierre</h3>
+        <p>No preguntar solo si funciono. Preguntar: <strong>que parte del embudo se rompio?</strong></p>
+        <table>
+          <thead><tr><th>Parte</th><th>Senal de falla</th><th>Accion</th></tr></thead>
+          <tbody>
+            <tr><td>YouTube</td><td>No hay retencion ni mensajes</td><td>Mejorar titulo, hook y problema</td></tr>
+            <tr><td>Convocatoria</td><td>Hay interes pero no asisten</td><td>Mejorar beneficio presencial y recordatorios</td></tr>
+            <tr><td>Clinica</td><td>Asisten pero no compran</td><td>Mejorar mesa fisica, cupon y cierre</td></tr>
+            <tr><td>WhatsApp</td><td>Preguntan pero se enfria</td><td>Respuesta base + seguimiento 2, 7, 21 dias</td></tr>
+            <tr><td>Oferta</td><td>No entienden que comprar</td><td>Vender ruta, no frasco</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <span class="tag" id="modalTag"></span>
+          <h2 id="modalTitle" style="margin-top:10px;"></h2>
+          <p class="muted" id="modalDate"></p>
+        </div>
+        <button class="close" onclick="closeModal()">×</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script>
+    const weeks = [
+      { n: 1, range: "25-31 mayo", theme: "Estres, sueño y cuerpo en emergencia", youtube: "Tu cuerpo sigue en emergencia aunque ya termino el dia", jueves: "Jueves Wellkitt: calma, sueño y sistema nervioso", product: "Kit Anti-Estres, Ner-vit, Valeriana, L-Triptófano, Zapote Blanco, Diatonato 3", course: "Puente natural a Actos que Mueven: cuando hablar ya no alcanza", follow: "Registro, cupon presencial 15%, palabra clave CALMA y seguimiento dia 2", metric: "Probar asistencia, venta y conversion a Actos", key: "CALMA" },
+      { n: 2, range: "1-7 junio", theme: "Actos que Mueven CDMX", youtube: "Cuando hablar ya no alcanza / 5 senales de carga", jueves: "Talleres rituales personales", product: "Guia presencial y materiales", course: "Actos modulo 1, 6 junio", follow: "Inscritos y lista modulo 2", metric: "Asistentes / lista", key: "ACTOS" },
+      { n: 3, range: "8-14 junio", theme: "Digestion e inflamacion", youtube: "Me inflamo despues de comer / Probiotico vs prebiotico", jueves: "Digestion sin inflamacion", product: "Kit Digestivo, Colix, Jengibre, Melissa, Inulac, Lacticol", course: "Reset Metabolico / Fitoterapia", follow: "Seguimiento DIGESTION dias 2 y 7", metric: "5 ventas o conversaciones", key: "DIGESTION" },
+      { n: 4, range: "15-21 junio", theme: "Estres que se queda en el cuerpo y cierre Actos", youtube: "Cuando el estrés se queda en el cuerpo / Rituales, sistema nervioso y descanso", jueves: "Estrés que se queda en el cuerpo", product: "Kit Anti-Estres, Ner-vit, Valeriana, Zapote, Triptofano", course: "Actos modulo 2, 20 junio", follow: "Cupon 48h + seguimiento ESTRES", metric: "8 asistentes", key: "ESTRES" },
+      { n: 5, range: "22-28 junio", theme: "Energia y fatiga", youtube: "Cansancio constante / Maca, Q10 o Carnilis", jueves: "Energia celular y rendimiento", product: "Kit Energia, Q10, Fostprint, Maca, Carnilis, Espirulina", course: "Aminoacidos / Reset", follow: "Clasificar tipos de cansancio", metric: "Tipos de cansancio", key: "ENERGIA" },
+      { n: 6, range: "29 junio-5 julio", theme: "Dolor, articulaciones y cuerpo electrico", youtube: "Dolor que regresa / Kit Articulaciones", jueves: "Que es el cuerpo electrico", product: "Kit Articulaciones, Curcuma, Harpagofito, Uña de Gato, Mincartil", course: "El Cuerpo Electrico - RB", follow: "Lista de interesados RB", metric: "Interesados RB", key: "DOLOR / RB" },
+      { n: 7, range: "6-12 julio", theme: "Lanzamiento RB", youtube: "Regulacion bioelectrica / Rastreo explicado", jueves: "Preguntas antes de entrar a RB", product: "Apoyo articulaciones + energia/circulacion", course: "RB modulo 1, 11 julio", follow: "Confirmacion inscritos RB", metric: "Inscripciones finales", key: "RB" },
+      { n: 8, range: "13-19 julio", theme: "Salud femenina, hormonas y piel", youtube: "Calores e insomnio / Calciflavon, Fem-vit y Barbasco", jueves: "Hormonas, piel y energia femenina", product: "Kit Salud Femenina, Calciflavon, Fem-vit, Barbasco, Milenrama", course: "Reset Hormonal / Belleza", follow: "Ruta 60-90 dias", metric: "Mujeres interesadas", key: "HORMONAS" },
+      { n: 9, range: "20-26 julio", theme: "Peso, metabolismo y RB", youtube: "Peso, inflamacion y ansiedad / Kit Control de Peso", jueves: "Metabolismo lento y ansiedad por comer", product: "Kit Control de Peso, Fat-less, Te Verde, Ojo de Gallina, Carnilis", course: "RB modulo 2, 25 julio", follow: "Seguimiento PESO", metric: "Visitas por peso", key: "PESO" },
+      { n: 10, range: "27 julio-2 agosto", theme: "Higado, detox y cuerpo pesado", youtube: "Cuerpo pesado y digestion lenta / Detox no es jugos", jueves: "Ruta detox de 30 dias", product: "Kit Detox, Hepacryl, Diente de Leon, Cola de Caballo, Oligosor", course: "Fitoterapia / Reset", follow: "Vender ruta, no frasco", metric: "Rutas detox", key: "DETOX" },
+      { n: 11, range: "3-9 agosto", theme: "Defensas, respiratorio y RB", youtube: "Defensas bajas / Alergia, respiratorio e inmunidad", jueves: "Defensas, alergias y respiratorio", product: "Kit Inmunidad, Diatonato 1/2, Immune Herb, Equinacea, Anti-B", course: "RB modulo 3, 8 agosto", follow: "Seguimiento DEFENSAS", metric: "Demanda respiratoria", key: "DEFENSAS" },
+      { n: 12, range: "10-16 agosto", theme: "Actos Monterrey y emociones", youtube: "El cuerpo necesita un acto / Sistema nervioso y cierre emocional", jueves: "Actos que Mueven: experiencia y preparacion", product: "Guia impresa + apoyo estres/sueno", course: "Actos Monterrey, 15-16 agosto", follow: "Lista remota y asistentes", metric: "Asistentes MTY", key: "MONTERREY" },
+      { n: 13, range: "17-23 agosto", theme: "Circulacion, mente y cierre RB", youtube: "Circulacion lenta y mente cansada / Q10, Arginina, Resverasor", jueves: "Circulacion, rendimiento mental y vitalidad", product: "Q10, Arginina, Resverasor, Dilasor, Fosfoserina", course: "RB modulo 4, 22 agosto", follow: "Cierre RB + temas ganadores", metric: "Nueva lista", key: "CIRCULA / MENTE" }
+    ];
+
+    const lanes = [
+      { id: "youtube", name: "YouTube / Shorts", className: "youtube", field: "youtube" },
+      { id: "jueves", name: "Jueves Wellkitt", className: "jueves", field: "jueves" },
+      { id: "producto", name: "Producto / Kit", className: "producto", field: "product" },
+      { id: "curso", name: "Curso puente", className: "curso", field: "course" },
+      { id: "seguimiento", name: "WhatsApp", className: "seguimiento", field: "follow" },
+      { id: "metricas", name: "Meta", className: "metricas", field: "metric" }
+    ];
+
+    const buttons = document.querySelectorAll("nav button");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        buttons.forEach(b => b.classList.remove("active"));
+        button.classList.add("active");
+        document.querySelectorAll(".view").forEach(v => v.classList.remove("active"));
+        document.getElementById(button.dataset.tab).classList.add("active");
+      });
+    });
+
+    function renderTimeline() {
+      const root = document.getElementById("timelineGrid");
+      const header = `
+        <div class="week-header">
+          <div class="week-label">Carril</div>
+          ${weeks.map(w => `<div class="week-cell"><strong>Semana ${w.n}</strong>${w.range}<br><span class="muted">${w.key}</span></div>`).join("")}
+        </div>`;
+      const rows = lanes.map(lane => `
+        <div class="lane">
+          <div class="lane-name">${lane.name}</div>
+          ${weeks.map(w => `
+            <div class="slot">
+              <div class="mini-card ${lane.className}" onclick="openModal(${w.n}, '${lane.id}')">
+                <b>${w[lane.field]}</b>
+                <span>${w.theme}</span>
+              </div>
+            </div>
+          `).join("")}
+        </div>`).join("");
+      root.innerHTML = header + rows;
+    }
+
+    function renderWeekCards() {
+      const root = document.getElementById("weekCards");
+      root.innerHTML = weeks.map(w => `
+        <div class="week-card">
+          <div class="week-top">
+            <div>
+              <span class="tag">${w.range}</span>
+              <h3>Semana ${w.n}: ${w.theme}</h3>
+            </div>
+            <span class="tag">${w.key}</span>
+          </div>
+          <table>
+            <tbody>
+              <tr><th>YouTube</th><td>${w.youtube}</td></tr>
+              <tr><th>Jueves</th><td>${w.jueves}</td></tr>
+              <tr><th>Producto</th><td>${w.product}</td></tr>
+              <tr><th>Curso</th><td>${w.course}</td></tr>
+              <tr><th>Seguimiento</th><td>${w.follow}</td></tr>
+              <tr><th>Meta</th><td>${w.metric}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      `).join("");
+    }
+
+    function openModal(weekNumber, laneId) {
+      const week = weeks.find(w => w.n === weekNumber);
+      const lane = lanes.find(l => l.id === laneId);
+      document.getElementById("modalTag").textContent = `${week.range} · ${week.key}`;
+      document.getElementById("modalTitle").textContent = `${lane.name}: ${week.theme}`;
+      document.getElementById("modalDate").textContent = `Semana ${week.n}`;
+      document.getElementById("modalBody").innerHTML = `
+        <table>
+          <tbody>
+            <tr><th>Tema madre</th><td>${week.theme}</td></tr>
+            <tr><th>${lane.name}</th><td>${week[lane.field]}</td></tr>
+            <tr><th>YouTube</th><td>${week.youtube}</td></tr>
+            <tr><th>Jueves Wellkitt</th><td>${week.jueves}</td></tr>
+            <tr><th>Producto / kit</th><td>${week.product}</td></tr>
+            <tr><th>Curso puente</th><td>${week.course}</td></tr>
+            <tr><th>WhatsApp</th><td>${week.follow}</td></tr>
+            <tr><th>Meta</th><td>${week.metric}</td></tr>
+          </tbody>
+        </table>
+      `;
+      document.getElementById("modalBackdrop").classList.add("open");
+    }
+
+    function closeModal() {
+      document.getElementById("modalBackdrop").classList.remove("open");
+    }
+
+    document.getElementById("modalBackdrop").addEventListener("click", event => {
+      if (event.target.id === "modalBackdrop") closeModal();
+    });
+
+    renderTimeline();
+    renderWeekCards();
+  </script>
+</body>
+</html>

@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tablero Estrategico Wellbive</title>
+  <style>
+    :root {
+      --ink: #17211f;
+      --muted: #5a6662;
+      --line: #d9e1dc;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --green: #2f6f4e;
+      --teal: #0f766e;
+      --coral: #b7553b;
+      --gold: #a87923;
+      --blue: #315f8c;
+      --rose: #9d4563;
+      --soft-green: #e9f4ec;
+      --soft-teal: #e6f4f1;
+      --soft-coral: #f8ece7;
+      --soft-gold: #f7f1df;
+      --soft-blue: #e8f0f8;
+      --soft-rose: #f6e9ef;
+      --shadow: 0 18px 45px rgba(23, 33, 31, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 56px 28px 28px;
+      background:
+        linear-gradient(120deg, rgba(233,244,236,0.96), rgba(248,236,231,0.88)),
+        url("data:image/svg+xml,%3Csvg width='140' height='140' viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23c9d8d1' stroke-width='1'%3E%3Cpath d='M0 70h140M70 0v140M20 20l100 100M120 20L20 120'/%3E%3Ccircle cx='70' cy='70' r='34'/%3E%3C/g%3E%3C/svg%3E");
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.74);
+      border: 1px solid rgba(47,111,78,0.22);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      max-width: 920px;
+      font-size: clamp(34px, 5vw, 68px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 820px;
+      margin: 0;
+      color: #33413d;
+      font-size: clamp(17px, 2.1vw, 23px);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(251,252,250,0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav .wrap {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    nav a {
+      flex: 0 0 auto;
+      color: var(--ink);
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    nav a:hover {
+      border-color: var(--line);
+      background: white;
+    }
+
+    main {
+      padding: 34px 0 64px;
+    }
+
+    section {
+      margin: 0 0 34px;
+      scroll-margin-top: 70px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(25px, 3vw, 38px);
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+
+    .tight {
+      padding: 15px;
+    }
+
+    .hero-flow {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(110px, 1fr));
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .flow-step {
+      min-height: 98px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(23,33,31,0.1);
+      background: white;
+    }
+
+    .flow-step strong {
+      font-size: 14px;
+    }
+
+    .flow-step span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .accent-green { background: var(--soft-green); border-color: #cfe3d4; }
+    .accent-teal { background: var(--soft-teal); border-color: #c8e4df; }
+    .accent-coral { background: var(--soft-coral); border-color: #ebd0c6; }
+    .accent-gold { background: var(--soft-gold); border-color: #eadba8; }
+    .accent-blue { background: var(--soft-blue); border-color: #cad9e8; }
+    .accent-rose { background: var(--soft-rose); border-color: #ead0db; }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #eef3f0;
+      color: #2d3b37;
+      font-size: 12px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+
+    .big-number {
+      font-size: 42px;
+      line-height: 1;
+      font-weight: 850;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    ul, ol {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .quote {
+      border-left: 4px solid var(--coral);
+      background: var(--soft-coral);
+      padding: 15px 17px;
+      border-radius: 0 8px 8px 0;
+      font-size: 18px;
+      font-weight: 720;
+      color: #4d2a21;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      background: white;
+      border: 1px solid var(--line);
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+
+    th {
+      background: #eef3f0;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #40504b;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .module {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .module .tag {
+      width: fit-content;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 110px 1fr 150px;
+      gap: 12px;
+      align-items: start;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+    }
+
+    .day strong {
+      color: var(--green);
+    }
+
+    .metric {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .metric:last-child {
+      border-bottom: 0;
+    }
+
+    .metric b {
+      font-size: 20px;
+      color: var(--blue);
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 13px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 980px) {
+      .cols-2, .cols-3, .cols-4 {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-flow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .day {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      header {
+        padding-top: 38px;
+      }
+
+      .hero-flow {
+        grid-template-columns: 1fr;
+      }
+
+      th, td {
+        font-size: 13px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Wellbive + Wellkitt + Instituto</div>
+      <h1>Tablero estrategico para crear flujo, comunidad y ventas</h1>
+      <p class="lead">Directrices consolidadas a partir de la transcripcion, la investigacion de YouTube, los productos Wellkitt, los cursos del Instituto y la estrategia de Jueves Wellkitt en Clinica.</p>
+      <div class="hero-flow">
+        <div class="flow-step accent-green"><strong>Problema real</strong><span>WhatsApp, consulta, clase, comentario</span></div>
+        <div class="flow-step accent-teal"><strong>YouTube</strong><span>Explica y atrae sin parecer tienda</span></div>
+        <div class="flow-step accent-blue"><strong>Shorts</strong><span>Descubrimiento y recordatorio</span></div>
+        <div class="flow-step accent-gold"><strong>Jueves Wellkitt</strong><span>Clinica como centro de experiencia</span></div>
+        <div class="flow-step accent-coral"><strong>Tienda fisica</strong><span>Productos, kits, cupon y material</span></div>
+        <div class="flow-step accent-rose"><strong>WhatsApp</strong><span>Clasifica, responde y sigue</span></div>
+        <div class="flow-step accent-green"><strong>Curso / consulta</strong><span>Ruta de continuidad</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="wrap">
+      <a href="#resumen">Resumen</a>
+      <a href="#ecosistema">Ecosistema</a>
+      <a href="#directrices">Directrices</a>
+      <a href="#modulos">Modulos</a>
+      <a href="#matriz">Matriz</a>
+      <a href="#jueves">Jueves Wellkitt</a>
+      <a href="#youtube">YouTube</a>
+      <a href="#pagina">Pagina</a>
+      <a href="#calendario">Semana tipo</a>
+      <a href="#programacion">90 dias</a>
+      <a href="#metricas">Metricas</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="resumen">
+      <div class="grid cols-3">
+        <div class="panel">
+          <div class="big-number">01</div>
+          <h3>Idea rectora</h3>
+          <p>No se venden productos primero. Se entra por el problema de la persona y se ofrece una ruta: contenido, orientacion, clinica, producto, curso o consulta.</p>
+        </div>
+        <div class="panel">
+          <div class="big-number">02</div>
+          <h3>Objetivo fisico</h3>
+          <p>Crear flujo hacia la clinica para que la gente conozca la tienda Wellkitt, reciba un beneficio presencial y se registre para seguimiento.</p>
+        </div>
+        <div class="panel">
+          <div class="big-number">03</div>
+          <h3>Motor semanal</h3>
+          <p>Un sistema repetible: problema de la semana, video, Shorts, Jueves Wellkitt, cupon, ficha, seguimiento y reporte comercial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ecosistema">
+      <h2>Ecosistema</h2>
+      <div class="grid cols-4">
+        <div class="panel accent-green">
+          <h3>Wellbive / YouTube</h3>
+          <p>Atrae y educa. Debe mantener la mirada de salud, conflictos biologicos y sistema, sin volverse un catalogo.</p>
+          <span class="tag">Atraccion</span>
+        </div>
+        <div class="panel accent-coral">
+          <h3>Clinica</h3>
+          <p>Es la experiencia principal. La gente viene, escucha, pregunta, conoce productos y recibe algo presencial.</p>
+          <span class="tag">Flujo fisico</span>
+        </div>
+        <div class="panel accent-gold">
+          <h3>Wellkitt</h3>
+          <p>Convierte interes en herramientas concretas: productos, kits, materiales, cupones y rutas de 30 a 90 dias.</p>
+          <span class="tag">Venta educativa</span>
+        </div>
+        <div class="panel accent-blue">
+          <h3>Instituto</h3>
+          <p>Da autoridad, cursos, talleres, formaciones, portal de alumnos y continuidad formativa.</p>
+          <span class="tag">Autoridad</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="directrices">
+      <h2>Directrices clave</h2>
+      <div class="grid cols-2">
+        <div class="panel">
+          <div class="quote">"Hay que meternos en los problemas de la gente."</div>
+          <ul>
+            <li>Cada tema nace de WhatsApp, consulta, comentario, curso o pregunta repetida.</li>
+            <li>El titulo debe hablar del problema, no del producto.</li>
+            <li>La solucion se presenta como ruta, no como milagro.</li>
+            <li>El producto aparece como herramienta dentro de un contexto.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Regla 70 / 20 / 10</h3>
+          <ul>
+            <li><strong>70% valor:</strong> salud, sistema, conflictos, cuerpo, casos, explicacion.</li>
+            <li><strong>20% puente:</strong> Jueves Wellkitt, consulta, curso, Zoom, guia o WhatsApp.</li>
+            <li><strong>10% venta:</strong> producto, kit, cupon, promocion o material.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="modulos">
+      <h2>Modulos de problemas</h2>
+      <div class="grid cols-3">
+        <div class="panel module">
+          <span class="tag">DIGESTION</span>
+          <h3>Inflamacion, colitis, digestion pesada</h3>
+          <p>Productos: Inulac, Lacticol, Colix, Jengibre, Melissa.</p>
+          <p>Ruta: Kit Digestivo, Fitoterapia, Reset Metabolico.</p>
+        </div>
+        <div class="panel module">
+          <span class="tag">ESTRES</span>
+          <h3>Ansiedad, insomnio, ruido mental</h3>
+          <p>Productos: L-Triptófano, Ner-vit, Valeriana, Zapote Blanco, Diatonato 3.</p>
+          <p>Ruta: Kit Anti-Estres, Escudo Anti-Estres, Sueno Profundo.</p>
+        </div>
+        <div class="panel module">
+          <span class="tag">ENERGIA</span>
+          <h3>Cansancio, baja energia, rendimiento</h3>
+          <p>Productos: Coenzima Q10, Fostprint, Maca Peruana, Carnilis.</p>
+          <p>Ruta: Kit Energia, Aminoacidos, Reset Metabolico.</p>
+        </div>
+        <div class="panel module">
+          <span class="tag">HORMONAS</span>
+          <h3>Menopausia, calores, cambios de humor</h3>
+          <p>Productos: Calciflavon, Fem-vit, Barbasco, Milenrama, Diatonato 5.1.</p>
+          <p>Ruta: Kit Salud Femenina, Reset Hormonal, Belleza Regenerativa.</p>
+        </div>
+        <div class="panel module">
+          <span class="tag">DOLOR / RB</span>
+          <h3>Dolor que regresa, articulaciones, tension</h3>
+          <p>Productos: Curcuma, Harpagofito, Uña de Gato, Mincartil.</p>
+          <p>Ruta: Kit Articulaciones, Dolor Cero, El Cuerpo Electrico.</p>
+        </div>
+        <div class="panel module">
+          <span class="tag">ACTOS</span>
+          <h3>Cuando hablar ya no mueve nada</h3>
+          <p>Puente: Ritual Experiencing, materiales, experiencia presencial.</p>
+          <p>Ruta: Actos que Mueven, Terapia Creativa, cursos vivenciales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="matriz">
+      <h2>Matriz tema-producto</h2>
+      <div class="grid cols-2">
+        <div class="panel">
+          <h3>Decision estrategica</h3>
+          <p>La comunicacion debe iniciar por el <strong>problema de la persona</strong>, pero la planeacion interna debe cruzarse con el <strong>catalogo real de Wellkitt</strong>.</p>
+          <p>No conviene hacer videos desde nombres de producto como punto de partida publico. Si el titulo dice "Hepacryl", solo entra quien ya lo conoce. Si dice "cuerpo pesado, digestion lenta y cansancio", entra mucha mas gente y despues se presenta Hepacryl como herramienta posible.</p>
+        </div>
+        <div class="panel accent-teal">
+          <h3>Regla practica</h3>
+          <p><strong>Hacia afuera:</strong> tema primero.</p>
+          <p><strong>Hacia adentro:</strong> producto, kit, stock y objetivo comercial primero.</p>
+          <p><strong>Resultado:</strong> cada semana tiene un problema gancho, un producto protagonista, un kit, un curso puente y una palabra clave.</p>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:16px;">
+        <h3>Mapa ampliado desde productos Wellkitt</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Tema publico</th>
+              <th>Productos / kits Wellkitt</th>
+              <th>Titulos posibles</th>
+              <th>CTA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Digestión, colitis, gases, inflamación</td>
+              <td>Kit Digestivo, Colix, Jengibre, Melissa, Inulac, Lacticol, Laxil, Colex, Hinojo</td>
+              <td>Me inflamo despues de comer / Probiótico, prebiótico y digestivo no son lo mismo</td>
+              <td>DIGESTION</td>
+            </tr>
+            <tr>
+              <td>Hígado, detox, cuerpo pesado</td>
+              <td>Kit Detox, Hepacryl, Diente de León, Cola de Caballo, Oligosor, Minesor Selenio, Boldo, Cardomariano, Alcachofa</td>
+              <td>Detox no es matarte de jugos / Cuando el hígado necesita apoyo</td>
+              <td>DETOX</td>
+            </tr>
+            <tr>
+              <td>Estrés, ansiedad, insomnio</td>
+              <td>Kit Anti-Estrés, Ner-vit, Valeriana, Zapote Blanco, L-Triptófano, Diatonato 3, Oligosor Litio, Oligosor Magnesio, Anxifem, In-So</td>
+              <td>Tu cuerpo sigue en emergencia / Duermo pero no descanso</td>
+              <td>ESTRES</td>
+            </tr>
+            <tr>
+              <td>Energía, fatiga, rendimiento</td>
+              <td>Kit Energía, Coenzima Q10, Fostprint Classic, Fostprint MAX, Maca Peruana, Espirulina, Carnilis, Totalvid 4, Cronovida</td>
+              <td>Cansancio constante: qué revisar primero / Q10, Maca o Carnilis</td>
+              <td>ENERGIA</td>
+            </tr>
+            <tr>
+              <td>Hormonas, menopausia, ciclo femenino</td>
+              <td>Kit Salud Femenina, Calciflavón, Fem-vit, Barbasco, Milenrama, Diatonato 5.1, Pro-vit, Anxifem</td>
+              <td>Calores, sueño y cambios de humor / No estás exagerando: tu cuerpo cambia</td>
+              <td>HORMONAS</td>
+            </tr>
+            <tr>
+              <td>Dolor, articulaciones, movilidad</td>
+              <td>Kit Articulaciones, Uña de Gato, Harpagofito, Cúrcuma, Bálsamo 3 Damianas, Mincartil, Oligonato 1, Artrox, Cartílago de Tiburón</td>
+              <td>Dolor que regresa / Inflamación corporal y movilidad</td>
+              <td>DOLOR</td>
+            </tr>
+            <tr>
+              <td>Defensas, alergias, respiratorio</td>
+              <td>Kit Inmunidad, Diatonato 1, Diatonato 2, Immune Herb, Equinácea, Anti-B, Sorivid, Equinácea + VC, Jarabe Sauco-vit, Jarabe Bálsamo</td>
+              <td>Defensas bajas: qué revisar / Respiratorio, alergias e inmunidad</td>
+              <td>DEFENSAS</td>
+            </tr>
+            <tr>
+              <td>Peso, metabolismo, apetito</td>
+              <td>Kit Control de Peso, Fat-less, Té Verde, Ojo de Gallina, Carnilis, Oligonato 2, Diatonato 5.2, Gluvit</td>
+              <td>No bajo de peso aunque me cuido / El cuerpo defiende su peso</td>
+              <td>PESO</td>
+            </tr>
+            <tr>
+              <td>Piel, colágeno, cabello, belleza</td>
+              <td>Crisálida G, Glicam, Glicina, Prolina, Mincartil, Cola de Caballo, Diatonato 5.1, Vitamina C, Vitamina E</td>
+              <td>La piel no empieza en la crema / Colágeno, piel y metabolismo</td>
+              <td>PIEL</td>
+            </tr>
+            <tr>
+              <td>Memoria, concentración, sistema nervioso</td>
+              <td>Fosfoserina Complex, Analis Neurotransmisores, Fostprint MAX, Té Verde, Oligosor Fósforo, Ginkgo, Totalvid 4</td>
+              <td>Me cuesta concentrarme / Cerebro cansado y rendimiento mental</td>
+              <td>MENTE</td>
+            </tr>
+            <tr>
+              <td>Circulación, presión, vitalidad vascular</td>
+              <td>Dilasor, L-Arginina, Coenzima Q10, Resverasor, Zapote Blanco, Castaña de Indias, Vari Vit, Varilex</td>
+              <td>Circulación lenta: señales que se notan / Energía y vasos sanguíneos</td>
+              <td>CIRCULA</td>
+            </tr>
+            <tr>
+              <td>Urinario, retención, drenaje</td>
+              <td>Cola de Caballo, Diente de León, Gayuba, Palo Azul, Pelo de Elote, Ren-vit, Uricol, Oligonato 2</td>
+              <td>Retención de líquidos: por dónde empezar / Riñón, drenaje y hábitos</td>
+              <td>DRENAJE</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="jueves">
+      <h2>Jueves Wellkitt en Clinica</h2>
+      <div class="grid cols-2">
+        <div class="panel">
+          <h3>Formato base</h3>
+          <ol>
+            <li>Clase presencial de 1 hora en clinica, transmitida por Zoom para quienes estan lejos.</li>
+            <li>Tema nombrado por problema, no por producto.</li>
+            <li>Mesa fisica con productos protagonistas, complementos, kit y material impreso.</li>
+            <li>Cupon personal no transferible para quienes asisten presencial.</li>
+            <li>Ficha de asistente y seguimiento por WhatsApp.</li>
+          </ol>
+        </div>
+        <div class="panel accent-gold">
+          <h3>Beneficio presencial</h3>
+          <ul>
+            <li>Cupon 15% con nombre, valido 48 horas.</li>
+            <li>Manualito o guia impresa de 1 a 2 hojas.</li>
+            <li>Recorrido por la tienda fisica Wellkitt.</li>
+            <li>Mini orientacion para elegir producto o kit.</li>
+            <li>Registro para seguimiento de 30 a 90 dias.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:16px;">
+        <h3>Agenda de la hora</h3>
+        <table>
+          <thead>
+            <tr><th>Minutos</th><th>Contenido</th><th>Objetivo</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>0-10</td><td>Problema comun y por que importa</td><td>Identificacion</td></tr>
+            <tr><td>10-25</td><td>Mirada sistemica, biologica o funcional</td><td>Autoridad sin venta dura</td></tr>
+            <tr><td>25-40</td><td>Herramientas y productos protagonistas</td><td>Venta educativa</td></tr>
+            <tr><td>40-50</td><td>Preguntas presenciales y Zoom</td><td>Interaccion viva</td></tr>
+            <tr><td>50-60</td><td>Cupon, tienda fisica, registro y siguiente paso</td><td>Conversion</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="youtube">
+      <h2>Como actua YouTube</h2>
+      <div class="grid cols-3">
+        <div class="panel accent-blue">
+          <h3>Antes del jueves</h3>
+          <p>Publica un video problema de 8 a 15 minutos y 1 o 2 Shorts que invitan a la sesion presencial.</p>
+        </div>
+        <div class="panel accent-teal">
+          <h3>Durante la semana</h3>
+          <p>No compite con la clinica. Alimenta el deseo de asistir, pedir Zoom o escribir la palabra clave.</p>
+        </div>
+        <div class="panel accent-green">
+          <h3>Despues del jueves</h3>
+          <p>Convierte la sesion en resumen, Shorts, post, preguntas frecuentes y tema siguiente.</p>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:16px;">
+        <h3>Series del canal</h3>
+        <table>
+          <thead>
+            <tr><th>Serie</th><th>Rol</th><th>Ejemplo</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>La Mirada Sistemica</td><td>Valor y autoridad</td><td>El cuerpo que no digiere</td></tr>
+            <tr><td>Conflictos del Cuerpo</td><td>Identidad del canal</td><td>Ansiedad, cuerpo y biologia</td></tr>
+            <tr><td>Preguntas de WhatsApp</td><td>Problemas reales</td><td>Preguntaron por Epacril</td></tr>
+            <tr><td>Jueves Wellkitt</td><td>Flujo a clinica</td><td>Digestión sin inflamacion</td></tr>
+            <tr><td>Herramientas de Apoyo</td><td>Venta educativa</td><td>Maca, Q10 o Carnilis</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="pagina">
+      <h2>Rol de la pagina web</h2>
+      <div class="grid cols-2">
+        <div class="panel">
+          <h3>Centro de conversion y autoridad</h3>
+          <p>La pagina del Instituto debe ordenar el ecosistema: calendario, cursos, servicios clinicos, Jueves Wellkitt, portal de alumnos y registro.</p>
+          <p>No reemplaza WhatsApp. Lo estructura.</p>
+        </div>
+        <div class="panel accent-rose">
+          <h3>Ruta recomendada</h3>
+          <ul>
+            <li><strong>/jueves-wellkitt:</strong> evento semanal y registro.</li>
+            <li><strong>/calendario:</strong> cursos, Zooms y actividades.</li>
+            <li><strong>/cursos:</strong> oferta formativa.</li>
+            <li><strong>/servicios-clinicos:</strong> consulta y terapias.</li>
+            <li><strong>/tienda-wellkitt:</strong> puente hacia productos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendario">
+      <h2>Semana tipo</h2>
+      <div class="timeline">
+        <div class="day">
+          <strong>Lunes</strong>
+          <div><b>Video problema</b><br>Contenido de salud o mirada sistemica basado en una pregunta real.</div>
+          <span class="tag">Atraccion</span>
+        </div>
+        <div class="day">
+          <strong>Martes</strong>
+          <div><b>Short</b><br>Micro idea con CTA a video, WhatsApp o evento presencial.</div>
+          <span class="tag">Descubrimiento</span>
+        </div>
+        <div class="day">
+          <strong>Miercoles</strong>
+          <div><b>Video herramienta</b><br>Producto, kit o ruta explicado desde el problema.</div>
+          <span class="tag">Educacion</span>
+        </div>
+        <div class="day">
+          <strong>Jueves</strong>
+          <div><b>Jueves Wellkitt</b><br>Clase presencial + Zoom + tienda fisica + cupon + ficha.</div>
+          <span class="tag">Conversion</span>
+        </div>
+        <div class="day">
+          <strong>Viernes</strong>
+          <div><b>Seguimiento</b><br>Mensajes, cupon vigente, registro de interesados y ventas.</div>
+          <span class="tag">WhatsApp</span>
+        </div>
+        <div class="day">
+          <strong>Sabado</strong>
+          <div><b>Resumen o caso</b><br>Lo que vimos, preguntas frecuentes, curso o proxima actividad.</div>
+          <span class="tag">Memoria</span>
+        </div>
+        <div class="day">
+          <strong>Domingo</strong>
+          <div><b>Encuesta</b><br>Elegir problema siguiente y revisar datos de la semana.</div>
+          <span class="tag">Datos</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="programacion">
+      <h2>Programacion 90 dias</h2>
+      <div class="grid cols-2">
+        <div class="panel">
+          <h3>Periodo recomendado</h3>
+          <p><strong>Del lunes 25 de mayo al domingo 23 de agosto de 2026.</strong></p>
+          <p>Tres meses es el periodo correcto para experimentar: suficiente para medir patrones reales, pero corto para corregir antes de que el sistema se vuelva pesado.</p>
+        </div>
+        <div class="panel accent-green">
+          <h3>Criterio de evaluacion</h3>
+          <p>La pregunta al final no es "funciono o no funciono". La pregunta correcta es: <strong>que parte del embudo se rompio</strong>: YouTube, convocatoria, clinica, oferta, WhatsApp o seguimiento.</p>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:16px;">
+        <table>
+          <thead>
+            <tr>
+              <th>Semana</th>
+              <th>Tema madre</th>
+              <th>Jueves Wellkitt</th>
+              <th>Productos / kit</th>
+              <th>Curso puente</th>
+              <th>Clave</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>25-31 mayo</td>
+              <td>Estres, sueño y cuerpo en emergencia</td>
+              <td>Calma, sueño y sistema nervioso: clase presencial + Zoom</td>
+              <td>Kit Anti-Estres, Ner-vit, Valeriana, L-Triptófano, Zapote Blanco, Diatonato 3</td>
+              <td>Actos que Mueven: cuando hablar ya no alcanza</td>
+              <td>CALMA</td>
+            </tr>
+            <tr>
+              <td>1-7 junio</td>
+              <td>Actos que Mueven CDMX</td>
+              <td>Talleres rituales personales</td>
+              <td>Guia presencial / materiales</td>
+              <td>Modulo 1, 6 junio</td>
+              <td>ACTOS</td>
+            </tr>
+            <tr>
+              <td>8-14 junio</td>
+              <td>Digestion e inflamacion</td>
+              <td>Digestión sin inflamación</td>
+              <td>Kit Digestivo, Colix, Jengibre, Melissa, Inulac, Lacticol</td>
+              <td>Reset Metabolico / Fitoterapia</td>
+              <td>DIGESTION</td>
+            </tr>
+            <tr>
+              <td>15-21 junio</td>
+              <td>Estres que se queda en el cuerpo y cierre Actos</td>
+              <td>Estrés que se queda en el cuerpo</td>
+              <td>Kit Anti-Estres, Ner-vit, Valeriana, Zapote, Triptófano</td>
+              <td>Modulo 2 Actos, 20 junio</td>
+              <td>ESTRES</td>
+            </tr>
+            <tr>
+              <td>22-28 junio</td>
+              <td>Energia y fatiga</td>
+              <td>Energia celular y rendimiento cotidiano</td>
+              <td>Kit Energia, Q10, Fostprint, Maca, Carnilis, Espirulina</td>
+              <td>Aminoacidos / Reset Metabolico</td>
+              <td>ENERGIA</td>
+            </tr>
+            <tr>
+              <td>29 junio-5 julio</td>
+              <td>Dolor, articulaciones y cuerpo electrico</td>
+              <td>Que es el cuerpo electrico</td>
+              <td>Kit Articulaciones, Curcuma, Harpagofito, Uña de Gato, Mincartil</td>
+              <td>El Cuerpo Electrico - RB</td>
+              <td>DOLOR / RB</td>
+            </tr>
+            <tr>
+              <td>6-12 julio</td>
+              <td>Lanzamiento RB</td>
+              <td>Preguntas antes de entrar a RB</td>
+              <td>Articulaciones + energia/circulacion segun caso</td>
+              <td>RB modulo 1, 11 julio</td>
+              <td>RB</td>
+            </tr>
+            <tr>
+              <td>13-19 julio</td>
+              <td>Salud femenina, hormonas y piel</td>
+              <td>Hormonas, piel y energia femenina</td>
+              <td>Kit Salud Femenina, Calciflavon, Fem-vit, Barbasco, Milenrama</td>
+              <td>Reset Hormonal / Belleza</td>
+              <td>HORMONAS</td>
+            </tr>
+            <tr>
+              <td>20-26 julio</td>
+              <td>Peso, metabolismo y RB</td>
+              <td>Metabolismo lento y ansiedad por comer</td>
+              <td>Kit Control de Peso, Fat-less, Te Verde, Ojo de Gallina, Carnilis</td>
+              <td>RB modulo 2, 25 julio</td>
+              <td>PESO</td>
+            </tr>
+            <tr>
+              <td>27 julio-2 agosto</td>
+              <td>Higado, detox y cuerpo pesado</td>
+              <td>Ruta detox de 30 dias</td>
+              <td>Kit Detox, Hepacryl, Diente de Leon, Cola de Caballo, Oligosor</td>
+              <td>Fitoterapia / Reset</td>
+              <td>DETOX</td>
+            </tr>
+            <tr>
+              <td>3-9 agosto</td>
+              <td>Defensas, respiratorio y RB</td>
+              <td>Defensas, alergias y respiratorio</td>
+              <td>Kit Inmunidad, Diatonato 1/2, Immune Herb, Equinacea, Anti-B</td>
+              <td>RB modulo 3, 8 agosto</td>
+              <td>DEFENSAS</td>
+            </tr>
+            <tr>
+              <td>10-16 agosto</td>
+              <td>Actos Monterrey y emociones</td>
+              <td>Actos que Mueven: experiencia y preparacion</td>
+              <td>Guia impresa + apoyo estres/sueno si aplica</td>
+              <td>Actos Monterrey, 15-16 agosto</td>
+              <td>MONTERREY</td>
+            </tr>
+            <tr>
+              <td>17-23 agosto</td>
+              <td>Circulacion, mente y cierre RB</td>
+              <td>Circulacion, rendimiento mental y vitalidad</td>
+              <td>Q10, Arginina, Resverasor, Dilasor, Fosfoserina</td>
+              <td>RB modulo 4, 22 agosto</td>
+              <td>CIRCULA / MENTE</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="metricas">
+      <h2>Metricas y operacion</h2>
+      <div class="grid cols-2">
+        <div class="panel">
+          <h3>Indicadores semanales</h3>
+          <div class="metric"><span>Videos largos</span><b>2-3</b></div>
+          <div class="metric"><span>Shorts</span><b>3-5</b></div>
+          <div class="metric"><span>Jueves Wellkitt</span><b>1</b></div>
+          <div class="metric"><span>Mensajes con palabra clave</span><b>10+</b></div>
+          <div class="metric"><span>Conversaciones calificadas</span><b>5+</b></div>
+          <div class="metric"><span>Ventas o interesados atribuibles</span><b>3+</b></div>
+        </div>
+        <div class="panel">
+          <h3>Checklist de ejecucion</h3>
+          <ul>
+            <li>Analizar WhatsApp del dia anterior.</li>
+            <li>Elegir problema madre de la semana.</li>
+            <li>Confirmar producto, kit y stock.</li>
+            <li>Crear guion, miniatura, Shorts y CTA.</li>
+            <li>Preparar mesa fisica y cupones con nombre.</li>
+            <li>Registrar asistentes y permisos de seguimiento.</li>
+            <li>Enviar seguimiento dia 2, 7, 21, 45 y 90.</li>
+            <li>Reportar ventas, interesados y tema siguiente.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="panel">
+        <h2>Directriz final</h2>
+        <p class="quote">YouTube no debe verse como tienda. La clinica no debe sentirse como mostrador. Wellkitt no debe ser catalogo. Todo debe sentirse como una ruta de acompanamiento: entendemos tu problema, te damos contexto, te invitamos a vivirlo en clinica y te ofrecemos herramientas concretas.</p>
+        <p class="footer-note">Archivo generado para el proyecto Wellbive, Wellkitt e Instituto Centrobioenergetica. Base: documentos de estrategia, transcripcion JSON y calendario operativo.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
