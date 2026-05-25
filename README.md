@@ -30,6 +30,27 @@ Usar estos documentos como referencia principal:
 - `calendario-editorial-piloto.md`: plantilla historica, no usar como calendario vigente.
 - `20260522 1403 Recording-transcription-20260522T152642.json`: transcripcion original usada como base.
 
+## Organizacion del repositorio
+
+```text
+semanas/
+  semana-01-2026-05-25-calma/
+  semana-02-2026-06-01-actos-cdmx/
+  ...
+  semana-13-2026-08-17-circulacion-mente/
+
+plantillas/
+reportes/
+materiales/
+base/
+```
+
+- `semanas/`: ejecucion de cada semana, con tema, CTA, productos, cursos y checklist.
+- `plantillas/`: formatos reutilizables para guiones, videos, WhatsApp y reportes.
+- `reportes/`: resultados semanales y cierre de 90 dias.
+- `materiales/`: guias, PDFs, imagenes, anuncios y recursos para clases.
+- `base/`: fuentes, transcripciones, inventarios, productos, cursos e investigacion.
+
 ## Estrategia central
 
 La estrategia no es vender productos de forma aislada. El sistema debe partir de problemas reales de las personas:
@@ -63,4 +84,3 @@ Abrir estos archivos en el navegador:
 - `tablero-estrategia-wellbive.html`
 
 No requieren servidor local.
-
