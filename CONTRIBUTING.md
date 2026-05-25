@@ -40,6 +40,20 @@ Cada contenido debe responder:
 4. Que producto, kit, consulta, curso o actividad sigue.
 5. Como se medira el resultado.
 
+## Regla de teleprompter
+
+Todo video debe tener dos niveles de documento:
+
+- Guion estrategico: estructura, objetivo, CTA, productos y descripcion.
+- Teleprompter: texto hablado palabra por palabra, ajustado al tiempo asignado.
+
+Usar `plantillas/plantilla-teleprompter.md` para crear nuevos scripts.
+
+Velocidad sugerida:
+
+- Video largo: 125-135 palabras por minuto.
+- Short/Reel: 130-150 palabras por minuto.
+
 ## Formato de propuesta
 
 Para proponer un nuevo tema:

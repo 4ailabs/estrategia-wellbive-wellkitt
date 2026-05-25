@@ -54,6 +54,7 @@ CALMA
 ## Archivos de produccion
 
 - Guion principal: `guiones/video-principal-tu-cuerpo-sigue-en-emergencia.md`
+- Teleprompter: `teleprompter/`
 - Shorts: `shorts/`
 - WhatsApp: `whatsapp/respuestas-calma.md`
 - Clase Jueves Wellkitt: `material-jueves/clase-calma-sueno-sistema-nervioso.md`
