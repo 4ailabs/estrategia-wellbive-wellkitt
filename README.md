@@ -51,6 +51,12 @@ base/
 - `materiales/`: guias, PDFs, imagenes, anuncios y recursos para clases.
 - `base/`: fuentes, transcripciones, inventarios, productos, cursos e investigacion.
 
+Para perfeccionar informacion de productos, consultar:
+
+- `base/productos/indice-editorial-productos.md`
+- `base/productos/catalogo/base-conocimiento-productos.json`
+- `base/productos/catalogo/LISTA_COMPLETA_PRODUCTOS_WELLKITT.md`
+
 ## Estrategia central
 
 La estrategia no es vender productos de forma aislada. El sistema debe partir de problemas reales de las personas:

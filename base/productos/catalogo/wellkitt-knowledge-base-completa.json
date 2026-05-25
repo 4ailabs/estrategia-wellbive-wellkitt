@@ -1,0 +1,2847 @@
+{
+  "empresa": {
+    "nombre": "Wellkitt",
+    "eslogan": "Tu Navegador de Salud Natural",
+    "descripcion": "Plataforma de recomendaciones personalizadas de suplementos naturales con IA",
+    "mision": "Revolucionar el bienestar con algoritmos especializados, tests genéticos, sueroterapia premium y recomendaciones personalizadas",
+    "contacto": {
+      "telefono": "+52 55 7907 6626",
+      "whatsapp": "https://wa.me/525579076626",
+      "ubicacion": {
+        "direccion": "Acapulco 36, Roma Norte",
+        "ciudad": "Ciudad de México",
+        "estado": "CDMX",
+        "codigoPostal": "06700",
+        "pais": "México"
+      },
+      "horario": {
+        "dias": "Lunes a Viernes",
+        "horas": "9:00 AM - 6:00 PM",
+        "zona": "CST (GMT-6)"
+      }
+    },
+    "sitioWeb": "https://www.wellkitt.com",
+    "envios": {
+      "cobertura": "Toda la República Mexicana",
+      "tiempoEntrega": "3-5 días hábiles",
+      "formasPago": [
+        "Transferencia bancaria",
+        "Depósito",
+        "Pago contra entrega (solo CDMX)"
+      ]
+    }
+  },
+  "marcas": [
+    {
+      "nombre": "Soria Natural",
+      "codigo": "SN",
+      "origen": "España",
+      "especialidad": "Fitoterapia científica, oligoelementos, nutrición celular",
+      "certificaciones": [
+        "ISO",
+        "GMP"
+      ],
+      "lineasProducto": [
+        "Diatonatos",
+        "Oligonatos",
+        "Fostprint",
+        "Vitaminas",
+        "Extractos"
+      ],
+      "presentaciones": [
+        "Cápsulas",
+        "Tablets",
+        "Comprimidos",
+        "Frascos ámbar 60ml (Diatonatos/Oligonatos)",
+        "Viales bebibles (Fostprint)",
+        "Emulsiones",
+        "Polvos"
+      ],
+      "destacados": [
+        "Coenzima Q10",
+        "Fostprint MAX",
+        "Oligosor",
+        "Resverasor"
+      ]
+    },
+    {
+      "nombre": "Biofito",
+      "codigo": "BF",
+      "origen": "México",
+      "especialidad": "Herbolaria tradicional mexicana, extractos naturales",
+      "presentaciones": [
+        "Frascos goteros 50ml",
+        "Comprimidos 750mg/500mg",
+        "Bálsamos"
+      ],
+      "destacados": [
+        "Ner-vit",
+        "Fem-vit",
+        "Immune Herb",
+        "Fat-less",
+        "Colix"
+      ]
+    },
+    {
+      "nombre": "Aminas y Derivados",
+      "codigo": "AA",
+      "origen": "México",
+      "especialidad": "Aminoácidos, neurotransmisores, nutrición avanzada",
+      "presentaciones": [
+        "Cápsulas 500mg (60 unidades)",
+        "Polvos 130g/260g/400g"
+      ],
+      "lineasProducto": [
+        "Analis (aminoácidos individuales)",
+        "Complejos especializados"
+      ],
+      "destacados": [
+        "Carnilis",
+        "Neurotransmisores",
+        "Cronovida",
+        "Glicam"
+      ],
+      "nota": "Fabricante de TODOS los productos con códigos AA* y también SN20, SN21"
+    }
+  ],
+  "formasFarmaceuticas": {
+    "formasSolidasOrales": {
+      "descripcion": "Presentaciones más comunes por conveniencia, estabilidad y precisión en dosificación",
+      "tipos": {
+        "tabletsYComprimidos": {
+          "descripcion": "Formas farmacéuticas sólidas fabricadas por compresión",
+          "ventajas": [
+            "Larga vida útil",
+            "Dosificación exacta",
+            "Fáciles de transportar",
+            "Convenientes para consumir"
+          ],
+          "productos": [
+            {
+              "id": "SN01",
+              "nombre": "Calciflavón",
+              "marca": "Soria Natural",
+              "formato": "Tablets"
+            },
+            {
+              "id": "SN12",
+              "nombre": "Inulac",
+              "marca": "Soria Natural",
+              "formato": "Tablets masticables"
+            },
+            {
+              "id": "SN15",
+              "nombre": "Minesor con Selenio",
+              "marca": "Soria Natural",
+              "formato": "Bote 24 comprimidos 200mg"
+            },
+            {
+              "id": "BF01",
+              "nombre": "Hepacryl",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 750mg"
+            },
+            {
+              "id": "BF04",
+              "nombre": "Colix",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 750mg"
+            },
+            {
+              "id": "BF11",
+              "nombre": "Alga Espirulina",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 750mg"
+            },
+            {
+              "id": "BF15",
+              "nombre": "Uña de Gato",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 500mg"
+            },
+            {
+              "id": "BF17",
+              "nombre": "Cúrcuma",
+              "marca": "Biofito",
+              "formato": "90 comprimidos"
+            },
+            {
+              "id": "BF20",
+              "nombre": "Equinácea",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 750mg"
+            },
+            {
+              "id": "BF21",
+              "nombre": "Anti-B",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 750mg"
+            },
+            {
+              "id": "BF22",
+              "nombre": "Fat-less",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 750mg"
+            },
+            {
+              "id": "BF13",
+              "nombre": "Barbasco",
+              "marca": "Biofito",
+              "formato": "90 comprimidos 500mg"
+            }
+          ]
+        },
+        "capsulas": {
+          "descripcion": "Cubiertas de gelatina que contienen principio activo en polvo o granulado",
+          "ventajas": [
+            "Enmascaran sabores desagradables",
+            "Protegen ingredientes de luz y aire",
+            "Pueden ser de liberación modificada",
+            "Fáciles de tragar"
+          ],
+          "productos": [
+            {
+              "id": "SN02",
+              "nombre": "Coenzima Q10",
+              "marca": "Soria Natural",
+              "formato": "Cápsulas"
+            },
+            {
+              "id": "SN09",
+              "nombre": "Fosfoserina Complex",
+              "marca": "Soria Natural",
+              "formato": "Cápsulas"
+            },
+            {
+              "id": "SN19",
+              "nombre": "Resverasor",
+              "marca": "Soria Natural",
+              "formato": "Cápsulas"
+            },
+            {
+              "id": "SN20",
+              "nombre": "Analis L-Triptófano",
+              "marca": "Aminas y Derivados",
+              "formato": "60 cápsulas 500mg"
+            },
+            {
+              "id": "SN21",
+              "nombre": "Carnilis",
+              "marca": "Aminas y Derivados",
+              "formato": "60 cápsulas 500mg"
+            },
+            {
+              "id": "AA003",
+              "nombre": "L-Arginina",
+              "marca": "Aminas y Derivados",
+              "formato": "60 cápsulas 500mg"
+            },
+            {
+              "id": "AA004",
+              "nombre": "L-Prolina",
+              "marca": "Aminas y Derivados",
+              "formato": "60 cápsulas 500mg"
+            },
+            {
+              "id": "AA005",
+              "nombre": "L-Triptófano",
+              "marca": "Aminas y Derivados",
+              "formato": "60 cápsulas 500mg"
+            },
+            {
+              "id": "AA006",
+              "nombre": "Neurotransmisores",
+              "marca": "Aminas y Derivados",
+              "formato": "60 cápsulas 500mg"
+            },
+            {
+              "id": "AA009",
+              "nombre": "Deprelat",
+              "marca": "Aminas y Derivados",
+              "formato": "60 cápsulas 500mg"
+            }
+          ]
+        },
+        "polvos": {
+          "descripcion": "Forma farmacéutica sólida para disolver en líquidos",
+          "ventajas": [
+            "Dosificación flexible",
+            "Ideal para grandes cantidades",
+            "Rápida absorción una vez disuelto",
+            "Económico para uso prolongado"
+          ],
+          "productos": [
+            {
+              "id": "SN14",
+              "nombre": "Mincartil",
+              "marca": "Soria Natural",
+              "formato": "Polvo"
+            },
+            {
+              "id": "AA001",
+              "nombre": "Glicina 130",
+              "marca": "Aminas y Derivados",
+              "formato": "Polvo 130g"
+            },
+            {
+              "id": "AA002",
+              "nombre": "Glicina 400",
+              "marca": "Aminas y Derivados",
+              "formato": "Polvo 400g"
+            },
+            {
+              "id": "AA008",
+              "nombre": "Cronovida",
+              "marca": "Aminas y Derivados",
+              "formato": "Polvo 260g"
+            },
+            {
+              "id": "AA010",
+              "nombre": "Glicam 130",
+              "marca": "Aminas y Derivados",
+              "formato": "Polvo 130g"
+            },
+            {
+              "id": "AA011",
+              "nombre": "Glicam 400",
+              "marca": "Aminas y Derivados",
+              "formato": "Polvo 400g"
+            }
+          ]
+        }
+      }
+    },
+    "formasLiquidasOrales": {
+      "descripcion": "Ideales para personas con dificultades para tragar y absorción rápida",
+      "tipos": {
+        "soluciones": {
+          "descripcion": "Mezcla homogénea donde el principio activo está completamente disuelto",
+          "ventajas": [
+            "Absorción rápida y uniforme",
+            "Dosificación fácil de ajustar",
+            "Biodisponibilidad óptima"
+          ],
+          "lineas": [
+            "Diatonatos",
+            "Oligonatos",
+            "Oligosor"
+          ],
+          "productos": [
+            {
+              "id": "SN04",
+              "nombre": "Diatonato 1",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            },
+            {
+              "id": "SN05",
+              "nombre": "Diatonato 2",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            },
+            {
+              "id": "SN06",
+              "nombre": "Diatonato 3",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            },
+            {
+              "id": "SN07",
+              "nombre": "Diatonato 5.1",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            },
+            {
+              "id": "SN08",
+              "nombre": "Diatonato 5.2",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            },
+            {
+              "id": "SN16",
+              "nombre": "Oligonato 1",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            },
+            {
+              "id": "SN17",
+              "nombre": "Oligonato 2",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            },
+            {
+              "id": "SN18",
+              "nombre": "Oligosor",
+              "marca": "Soria Natural",
+              "formato": "Frasco ámbar 60ml"
+            }
+          ]
+        },
+        "tabletsComprimidosEspeciales": {
+          "descripcion": "Comprimidos de oligoelementos con formulación especial",
+          "ventajas": [
+            "Alta concentración de minerales",
+            "Fácil dosificación",
+            "Estables y duraderos"
+          ],
+          "productos": [
+            {
+              "id": "SN15",
+              "nombre": "Minesor con Selenio",
+              "marca": "Soria Natural",
+              "formato": "Bote 24 comprimidos 200mg"
+            }
+          ]
+        },
+        "frascoGotero": {
+          "descripcion": "Extractos líquidos con dosificación precisa en gotas",
+          "ventajas": [
+            "Dosificación muy precisa",
+            "Fácil de administrar",
+            "Alta concentración de principios activos",
+            "Ideal para niños o dificultad al tragar"
+          ],
+          "capacidad": "50 ml",
+          "marca": "Biofito (principalmente)",
+          "productos": [
+            {
+              "id": "BF02",
+              "nombre": "Diente de León"
+            },
+            {
+              "id": "BF03",
+              "nombre": "Cola de Caballo"
+            },
+            {
+              "id": "BF05",
+              "nombre": "Jengibre"
+            },
+            {
+              "id": "BF06",
+              "nombre": "Melissa"
+            },
+            {
+              "id": "BF07",
+              "nombre": "Ner-vit"
+            },
+            {
+              "id": "BF08",
+              "nombre": "Valeriana"
+            },
+            {
+              "id": "BF09",
+              "nombre": "Zapote Blanco"
+            },
+            {
+              "id": "BF10",
+              "nombre": "Maca Peruana"
+            },
+            {
+              "id": "BF11",
+              "nombre": "Alga Espirulina (también en comprimidos)"
+            },
+            {
+              "id": "BF12",
+              "nombre": "Fem-vit"
+            },
+            {
+              "id": "BF13",
+              "nombre": "Barbasco (también en comprimidos)"
+            },
+            {
+              "id": "BF14",
+              "nombre": "Milenrama"
+            },
+            {
+              "id": "BF16",
+              "nombre": "Harpagofito"
+            },
+            {
+              "id": "BF17",
+              "nombre": "Cúrcuma (también en comprimidos)"
+            },
+            {
+              "id": "BF19",
+              "nombre": "Immune Herb"
+            },
+            {
+              "id": "BF20",
+              "nombre": "Equinácea (también en comprimidos)"
+            },
+            {
+              "id": "BF23",
+              "nombre": "Té Verde"
+            },
+            {
+              "id": "BF24",
+              "nombre": "Ojo de Gallina"
+            }
+          ]
+        },
+        "ampollas": {
+          "descripcion": "Viales de vidrio con dosis única estéril de preparado líquido",
+          "ventajas": [
+            "Dosis única perfecta",
+            "Estéril y protegido",
+            "Protege de oxidación",
+            "Máxima frescura de ingredientes"
+          ],
+          "linea": "Fostprint (Soria Natural)",
+          "productos": [
+            {
+              "id": "SN10",
+              "nombre": "Fostprint Classic",
+              "marca": "Soria Natural",
+              "formato": "Viales bebibles"
+            },
+            {
+              "id": "SN11",
+              "nombre": "Fostprint MAX",
+              "marca": "Soria Natural",
+              "formato": "Viales bebibles"
+            }
+          ]
+        },
+        "suspension": {
+          "descripcion": "Mezcla heterogénea con partículas dispersas en líquido. Agitar antes de usar",
+          "ventajas": [
+            "Adecuada para principios activos no solubles",
+            "Buena estabilidad"
+          ],
+          "productos": [
+            {
+              "id": "SN13",
+              "nombre": "Lacticol",
+              "marca": "Soria Natural",
+              "formato": "Suspensión líquida"
+            }
+          ]
+        }
+      }
+    },
+    "formasTopicas": {
+      "descripcion": "Diseñadas para aplicación externa directa en la piel",
+      "tipos": {
+        "emulsion": {
+          "descripcion": "Preparado semilíquido que combina fase acuosa y oleosa para aplicación cutánea",
+          "ventajas": [
+            "Fácil aplicación",
+            "Buena absorción",
+            "Sensación agradable en piel",
+            "Hidratante"
+          ],
+          "productos": [
+            {
+              "id": "SN03",
+              "nombre": "Crisálida G",
+              "marca": "Soria Natural",
+              "formato": "Emulsión tónico-renovadora"
+            }
+          ]
+        },
+        "balsamo": {
+          "descripcion": "Preparado semisólido con propiedades calmantes y antiinflamatorias",
+          "ventajas": [
+            "Acción localizada directa",
+            "Efecto prolongado",
+            "Aplicación en zona específica",
+            "No sistémico"
+          ],
+          "productos": [
+            {
+              "id": "BF18",
+              "nombre": "Bálsamo 3 Damianas",
+              "marca": "Biofito",
+              "formato": "Bote 120ml (uso tópico)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "guiaPresentaciones": {
+    "criteriosSeleccion": {
+      "factores": [
+        "Naturaleza del ingrediente (solubilidad, estabilidad)",
+        "Objetivo terapéutico (acción rápida o sostenida, local o sistémica)",
+        "Comodidad del usuario",
+        "Biodisponibilidad deseada",
+        "Cantidad de dosis necesaria"
+      ],
+      "ejemplos": [
+        {
+          "caso": "Oligoelementos (Diatonatos, Oligonatos)",
+          "presentacion": "Soluciones",
+          "razon": "Aseguran biodisponibilidad óptima de minerales"
+        },
+        {
+          "caso": "Extractos herbales (Biofito)",
+          "presentacion": "Frascos goteros",
+          "razon": "Fitoterapia tradicional con dosificación personalizable"
+        },
+        {
+          "caso": "Aminoácidos (Aminas y Derivados)",
+          "presentacion": "Cápsulas o polvos",
+          "razon": "Cápsulas para dosis estándar, polvos para dosis altas o personalizadas"
+        },
+        {
+          "caso": "Energéticos (Fostprint)",
+          "presentacion": "Ampollas bebibles",
+          "razon": "Protección de ingredientes frescos (jalea real, propóleo) y dosis única conveniente"
+        },
+        {
+          "caso": "Dolor muscular/articular",
+          "presentacion": "Bálsamo tópico",
+          "razon": "Acción directa localizada sin efecto sistémico"
+        }
+      ]
+    },
+    "recomendacionesUso": {
+      "capsulas": "Tomar con agua, preferiblemente con alimentos para mejor absorción",
+      "polvos": "Disolver en agua, jugo o licuado. Permite ajustar dosis según necesidad",
+      "goteros": "Diluir gotas en agua o tomar directamente. Dosis típica: 20-30 gotas 2-3 veces al día",
+      "frascosAmbar": "Agitar antes de usar. Diluir la dosis indicada en agua o tomar directamente. Diatonatos/Oligonatos: generalmente 1-2ml al día",
+      "soluciones": "Tomar ampolla bebible directamente o diluida en agua. Generalmente en ayunas",
+      "comprimidos": "Tomar con agua. Pueden masticarse si son masticables (como Inulac)",
+      "comprimidosOligoelementos": "Tomar 1 comprimido al día con agua, preferiblemente en ayunas para mejor absorción de minerales",
+      "ampollas": "Abrir y beber directamente o diluir en agua. Generalmente 1 ampolla al día",
+      "vialesBebibles": "Fostprint: Tomar 1 vial al día, preferiblemente en ayunas. Puede tomarse directo o diluir en agua",
+      "topicos": "Aplicar sobre piel limpia, masajeando suavemente. 2-3 veces al día"
+    }
+  },
+  "productos": {
+    "soriaNatural": [
+      {
+        "id": "SN01",
+        "nombre": "Calciflavón",
+        "marca": "Soria Natural",
+        "categoria": "Salud Femenina",
+        "ingredientes": [
+          "Isoflavonas de soja",
+          "Calcio",
+          "Fósforo",
+          "Magnesio",
+          "Silicio",
+          "Vitamina D"
+        ],
+        "beneficios": [
+          "Alivia síntomas menopáusicos",
+          "Fortalece huesos",
+          "Efecto antioxidante"
+        ],
+        "presentacion": "Tablets",
+        "sistemas": [
+          "Hormonal",
+          "Óseo"
+        ],
+        "indicaciones": [
+          "Menopausia",
+          "Osteoporosis",
+          "Salud ósea"
+        ]
+      },
+      {
+        "id": "SN02",
+        "nombre": "Coenzima Q10",
+        "marca": "Soria Natural",
+        "categoria": "Energía y Rendimiento",
+        "ingredientes": [
+          "Coenzima Q10 (100 mg)",
+          "Vitamina E (12 mg)"
+        ],
+        "beneficios": [
+          "Energía celular (ATP)",
+          "Salud cardiovascular",
+          "Antioxidante",
+          "Mejora resistencia física"
+        ],
+        "presentacion": "Cápsulas",
+        "sistemas": [
+          "Cardiovascular",
+          "Energético"
+        ],
+        "indicaciones": [
+          "Fatiga",
+          "Rendimiento deportivo",
+          "Salud cardíaca",
+          "Antienvejecimiento"
+        ]
+      },
+      {
+        "id": "SN03",
+        "nombre": "Crisálida G",
+        "marca": "Soria Natural",
+        "categoria": "Piel y Belleza",
+        "ingredientes": [
+          "Extracto de crisálida de gusano de seda (8%)",
+          "Centella asiática",
+          "Cola de caballo",
+          "Equinácea",
+          "Salvia",
+          "Vitamina C",
+          "Vitamina E",
+          "Elastina"
+        ],
+        "beneficios": [
+          "Regeneración de piel",
+          "Mejora de cicatrices",
+          "Firmeza",
+          "Elasticidad cutánea"
+        ],
+        "presentacion": "Emulsión tónico-renovadora",
+        "sistemas": [
+          "Piel"
+        ],
+        "indicaciones": [
+          "Envejecimiento cutáneo",
+          "Cicatrices",
+          "Flacidez",
+          "Estrías"
+        ],
+        "usoTopico": true
+      },
+      {
+        "id": "SN04",
+        "nombre": "Diatonato 1",
+        "marca": "Soria Natural",
+        "categoria": "Sistema Inmune",
+        "ingredientes": [
+          "Gluconato de manganeso (0.6 mg)"
+        ],
+        "beneficios": [
+          "Refuerza sistema respiratorio",
+          "Regula funciones alérgicas",
+          "Mejora defensas"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "Respiratorio",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Alergias",
+          "Problemas respiratorios",
+          "Defensas bajas"
+        ]
+      },
+      {
+        "id": "SN05",
+        "nombre": "Diatonato 2",
+        "marca": "Soria Natural",
+        "categoria": "Sistema Inmune",
+        "ingredientes": [
+          "Gluconato de manganeso",
+          "Gluconato de cobre"
+        ],
+        "beneficios": [
+          "Estimula sistema inmunológico y metabólico",
+          "Antioxidante"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "Inmune",
+          "Metabólico"
+        ],
+        "indicaciones": [
+          "Infecciones recurrentes",
+          "Metabolismo lento"
+        ]
+      },
+      {
+        "id": "SN06",
+        "nombre": "Diatonato 3",
+        "marca": "Soria Natural",
+        "categoria": "Anti-Estrés y Sueño",
+        "ingredientes": [
+          "Gluconato de manganeso",
+          "Gluconato de cobalto"
+        ],
+        "beneficios": [
+          "Apoyo en fatiga crónica",
+          "Ansiedad",
+          "Trastornos hormonales"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "Nervioso",
+          "Hormonal"
+        ],
+        "indicaciones": [
+          "Fatiga crónica",
+          "Ansiedad",
+          "Desequilibrio hormonal"
+        ]
+      },
+      {
+        "id": "SN07",
+        "nombre": "Diatonato 5.1",
+        "marca": "Soria Natural",
+        "categoria": "Salud Femenina",
+        "ingredientes": [
+          "Gluconato de zinc",
+          "Gluconato de cobre"
+        ],
+        "beneficios": [
+          "Equilibrio hormonal",
+          "Piel",
+          "Inmunidad",
+          "Energía"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "Hormonal",
+          "Piel",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Desequilibrio hormonal",
+          "Acné",
+          "Defensas bajas"
+        ]
+      },
+      {
+        "id": "SN08",
+        "nombre": "Diatonato 5.2",
+        "marca": "Soria Natural",
+        "categoria": "Metabolismo",
+        "ingredientes": [
+          "Gluconato de zinc",
+          "Gluconato de níquel",
+          "Gluconato de cobalto"
+        ],
+        "beneficios": [
+          "Regulación endocrina",
+          "Metabolismo energético"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "Endocrino",
+          "Metabólico"
+        ],
+        "indicaciones": [
+          "Problemas metabólicos",
+          "Diabetes",
+          "Resistencia a la insulina"
+        ]
+      },
+      {
+        "id": "SN09",
+        "nombre": "Fosfoserina Complex",
+        "marca": "Soria Natural",
+        "categoria": "Salud Cerebral",
+        "ingredientes": [
+          "Fosfatidilserina",
+          "Fosfatidilcolina",
+          "Taurina",
+          "Vitamina B6",
+          "Vitamina B12",
+          "Vitamina C",
+          "Vitamina D",
+          "Vitamina E",
+          "Vitamina A",
+          "Zinc"
+        ],
+        "beneficios": [
+          "Mejora memoria",
+          "Concentración",
+          "Rendimiento mental",
+          "Protección neuronal"
+        ],
+        "presentacion": "Cápsulas",
+        "sistemas": [
+          "Nervioso",
+          "Cerebral"
+        ],
+        "indicaciones": [
+          "Pérdida de memoria",
+          "Falta de concentración",
+          "Rendimiento mental",
+          "Neuroprotección"
+        ]
+      },
+      {
+        "id": "SN10",
+        "nombre": "Fostprint Classic",
+        "marca": "Soria Natural",
+        "categoria": "Energía y Rendimiento",
+        "ingredientes": [
+          "Jalea real",
+          "Propóleo",
+          "Vitaminas",
+          "Minerales"
+        ],
+        "beneficios": [
+          "Energía física y mental",
+          "Antioxidante",
+          "Inmunoestimulante"
+        ],
+        "presentacion": "Viales bebibles",
+        "sistemas": [
+          "Energético",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Fatiga",
+          "Convalecencia",
+          "Cambios de estación",
+          "Exámenes"
+        ]
+      },
+      {
+        "id": "SN11",
+        "nombre": "Fostprint MAX",
+        "marca": "Soria Natural",
+        "categoria": "Energía y Rendimiento",
+        "ingredientes": [
+          "Jalea real",
+          "Propóleo",
+          "Extracto de té verde",
+          "Vitaminas",
+          "Minerales"
+        ],
+        "beneficios": [
+          "Estimulación energética máxima",
+          "Antioxidante potente",
+          "Mejora concentración"
+        ],
+        "presentacion": "Viales bebibles",
+        "sistemas": [
+          "Energético",
+          "Cerebral"
+        ],
+        "indicaciones": [
+          "Alto rendimiento",
+          "Deporte",
+          "Exigencia mental",
+          "Fatiga extrema"
+        ]
+      },
+      {
+        "id": "SN12",
+        "nombre": "Inulac Tablets",
+        "marca": "Soria Natural",
+        "categoria": "Salud Digestiva",
+        "ingredientes": [
+          "Inulina",
+          "Enzimas digestivas",
+          "Probióticos"
+        ],
+        "beneficios": [
+          "Mejora digestión",
+          "Flora intestinal",
+          "Tránsito intestinal"
+        ],
+        "presentacion": "Tablets",
+        "sistemas": [
+          "Digestivo"
+        ],
+        "indicaciones": [
+          "Estreñimiento",
+          "Disbiosis",
+          "Digestión lenta",
+          "Gases"
+        ]
+      },
+      {
+        "id": "SN13",
+        "nombre": "Lacticol suspensión",
+        "marca": "Soria Natural",
+        "categoria": "Salud Digestiva",
+        "ingredientes": [
+          "Jugo de col fermentado",
+          "Remolacha roja"
+        ],
+        "beneficios": [
+          "Probiótico natural",
+          "Digestión",
+          "Refuerzo inmunológico"
+        ],
+        "presentacion": "Suspensión líquida",
+        "sistemas": [
+          "Digestivo",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Problemas digestivos",
+          "Gastritis",
+          "Colon irritable"
+        ]
+      },
+      {
+        "id": "SN14",
+        "nombre": "Mincartil polvo",
+        "marca": "Soria Natural",
+        "categoria": "Articulaciones y Movilidad",
+        "ingredientes": [
+          "Aminoácidos vegetales",
+          "Minerales",
+          "Vitaminas"
+        ],
+        "beneficios": [
+          "Fortalece articulaciones",
+          "Piel",
+          "Cabello y uñas"
+        ],
+        "presentacion": "Polvo",
+        "sistemas": [
+          "Musculoesquelético",
+          "Piel"
+        ],
+        "indicaciones": [
+          "Dolor articular",
+          "Artrosis",
+          "Uñas débiles",
+          "Cabello quebradizo"
+        ]
+      },
+      {
+        "id": "SN15",
+        "nombre": "Minesor con Selenio",
+        "marca": "Soria Natural",
+        "categoria": "Detox y Antioxidantes",
+        "ingredientes": [
+          "Oligoelementos",
+          "Selenio"
+        ],
+        "beneficios": [
+          "Antioxidante potente",
+          "Salud tiroidea",
+          "Fortalece inmunidad"
+        ],
+        "presentacion": "Bote 24 comprimidos 200mg",
+        "sistemas": [
+          "Endocrino",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Tiroides",
+          "Estrés oxidativo",
+          "Defensas bajas"
+        ]
+      },
+      {
+        "id": "SN16",
+        "nombre": "Oligonato 1",
+        "marca": "Soria Natural",
+        "categoria": "Oligoelementos",
+        "ingredientes": [
+          "Cobre",
+          "Magnesio",
+          "Manganeso",
+          "Potasio",
+          "Cobalto"
+        ],
+        "beneficios": [
+          "Mejora funciones neuromusculares y cardiovasculares"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "Nervioso",
+          "Cardiovascular",
+          "Muscular"
+        ],
+        "indicaciones": [
+          "Calambres",
+          "Arritmias",
+          "Nerviosismo"
+        ]
+      },
+      {
+        "id": "SN17",
+        "nombre": "Oligonato 2",
+        "marca": "Soria Natural",
+        "categoria": "Oligoelementos",
+        "ingredientes": [
+          "Fósforo",
+          "Flúor",
+          "Yodo",
+          "Azufre"
+        ],
+        "beneficios": [
+          "Salud ósea",
+          "Salud dental",
+          "Función hormonal"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "Óseo",
+          "Hormonal"
+        ],
+        "indicaciones": [
+          "Osteoporosis",
+          "Problemas dentales",
+          "Hipotiroidismo"
+        ]
+      },
+      {
+        "id": "SN18",
+        "nombre": "Oligosor",
+        "marca": "Soria Natural",
+        "categoria": "Oligoelementos completo",
+        "ingredientes": [
+          "Azufre",
+          "Cobalto",
+          "Cobre",
+          "Fósforo",
+          "Yodo",
+          "Litio",
+          "Magnesio",
+          "Potasio",
+          "Zinc"
+        ],
+        "beneficios": [
+          "Remineralización completa",
+          "Modulación neuroendocrina",
+          "Equilibrio emocional"
+        ],
+        "presentacion": "Frasco ámbar 60ml",
+        "sistemas": [
+          "General",
+          "Nervioso",
+          "Hormonal"
+        ],
+        "indicaciones": [
+          "Desmineralización",
+          "Depresión",
+          "Ansiedad",
+          "Estados emocionales alterados"
+        ]
+      },
+      {
+        "id": "SN19",
+        "nombre": "Resverasor",
+        "marca": "Soria Natural",
+        "categoria": "Antioxidantes",
+        "ingredientes": [
+          "Resveratrol (extracto de uva negra)"
+        ],
+        "beneficios": [
+          "Antioxidante potente",
+          "Salud cardiovascular",
+          "Antiinflamatorio",
+          "Neuroprotector"
+        ],
+        "presentacion": "Cápsulas",
+        "sistemas": [
+          "Cardiovascular",
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Antienvejecimiento",
+          "Prevención cardiovascular",
+          "Inflamación crónica"
+        ]
+      }
+    ],
+    "biofito": [
+      {
+        "id": "BF01",
+        "nombre": "Hepacryl",
+        "marca": "Biofito",
+        "categoria": "Detox y Antioxidantes",
+        "ingredientes": [
+          "Cardo mariano",
+          "Alcachofa",
+          "Boldo",
+          "Diente de león",
+          "Cúrcuma"
+        ],
+        "beneficios": [
+          "Protege hígado",
+          "Regenera células hepáticas",
+          "Desintoxica"
+        ],
+        "presentacion": "Bote 90 comprimidos 750 mg",
+        "sistemas": [
+          "Hepático",
+          "Digestivo"
+        ],
+        "indicaciones": [
+          "Hígado graso",
+          "Hepatitis",
+          "Desintoxicación",
+          "Excesos alimenticios"
+        ]
+      },
+      {
+        "id": "BF02",
+        "nombre": "Diente de León",
+        "marca": "Biofito",
+        "categoria": "Detox y Antioxidantes",
+        "ingredientes": [
+          "Taraxacum officinale"
+        ],
+        "beneficios": [
+          "Desintoxica",
+          "Diurético natural",
+          "Estimula producción de bilis"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Hepático",
+          "Renal"
+        ],
+        "indicaciones": [
+          "Retención de líquidos",
+          "Desintoxicación",
+          "Digestión lenta"
+        ]
+      },
+      {
+        "id": "BF03",
+        "nombre": "Cola de Caballo",
+        "marca": "Biofito",
+        "categoria": "Detox y Antioxidantes",
+        "ingredientes": [
+          "Equisetum arvense"
+        ],
+        "beneficios": [
+          "Diurético",
+          "Rico en silicio",
+          "Fortalece tejidos conectivos"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Renal",
+          "Conectivo"
+        ],
+        "indicaciones": [
+          "Retención de líquidos",
+          "Uñas débiles",
+          "Cabello frágil",
+          "Celulitis"
+        ]
+      },
+      {
+        "id": "BF04",
+        "nombre": "Colix",
+        "marca": "Biofito",
+        "categoria": "Salud Digestiva",
+        "ingredientes": [
+          "Menta",
+          "Manzanilla",
+          "Boldo",
+          "Hinojo",
+          "Galphimia glauca",
+          "Fenogreco",
+          "Orozuz",
+          "Aloe",
+          "Cúrcuma",
+          "Jengibre"
+        ],
+        "beneficios": [
+          "Antiespasmódico",
+          "Mejora digestión",
+          "Calma dolor abdominal"
+        ],
+        "presentacion": "Bote 90 comprimidos 750 mg",
+        "sistemas": [
+          "Digestivo"
+        ],
+        "indicaciones": [
+          "Colon irritable",
+          "Gastritis",
+          "Gases",
+          "Dolor abdominal",
+          "Espasmos intestinales"
+        ]
+      },
+      {
+        "id": "BF05",
+        "nombre": "Jengibre",
+        "marca": "Biofito",
+        "categoria": "Salud Digestiva",
+        "ingredientes": [
+          "Zingiber officinale"
+        ],
+        "beneficios": [
+          "Mejora digestión",
+          "Antiinflamatorio",
+          "Estimula inmunidad"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Digestivo",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Náuseas",
+          "Digestión lenta",
+          "Inflamación",
+          "Prevención de gripes"
+        ]
+      },
+      {
+        "id": "BF06",
+        "nombre": "Melissa",
+        "marca": "Biofito",
+        "categoria": "Salud Digestiva",
+        "ingredientes": [
+          "Melissa officinalis"
+        ],
+        "beneficios": [
+          "Calma nervios",
+          "Mejora digestión nerviosa",
+          "Antiviral"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Nervioso",
+          "Digestivo"
+        ],
+        "indicaciones": [
+          "Nerviosismo",
+          "Digestión nerviosa",
+          "Herpes labial"
+        ]
+      },
+      {
+        "id": "BF07",
+        "nombre": "Ner-vit",
+        "marca": "Biofito",
+        "categoria": "Anti-Estrés y Sueño",
+        "ingredientes": [
+          "Galphimia glauca",
+          "Valeriana",
+          "Azahar",
+          "Melisa",
+          "Pasiflora"
+        ],
+        "beneficios": [
+          "Calma nervios",
+          "Mejora sueño",
+          "Equilibra emociones"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Ansiedad",
+          "Insomnio",
+          "Estrés",
+          "Nerviosismo"
+        ]
+      },
+      {
+        "id": "BF08",
+        "nombre": "Valeriana",
+        "marca": "Biofito",
+        "categoria": "Anti-Estrés y Sueño",
+        "ingredientes": [
+          "Valeriana officinalis"
+        ],
+        "beneficios": [
+          "Sedante natural",
+          "Mejora calidad del sueño",
+          "Calma sistema nervioso"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Insomnio",
+          "Ansiedad",
+          "Nerviosismo",
+          "Hiperactividad"
+        ]
+      },
+      {
+        "id": "BF09",
+        "nombre": "Zapote Blanco",
+        "marca": "Biofito",
+        "categoria": "Anti-Estrés y Sueño",
+        "ingredientes": [
+          "Casimiroa edulis"
+        ],
+        "beneficios": [
+          "Reduce presión arterial",
+          "Calma sistema nervioso",
+          "Mejora sueño profundo"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Cardiovascular",
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Hipertensión",
+          "Insomnio",
+          "Nerviosismo"
+        ]
+      },
+      {
+        "id": "BF10",
+        "nombre": "Maca Peruana",
+        "marca": "Biofito",
+        "categoria": "Energía y Rendimiento",
+        "ingredientes": [
+          "Lepidium meyenii"
+        ],
+        "beneficios": [
+          "Aumenta energía y resistencia",
+          "Mejora función sexual",
+          "Equilibra hormonas"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Hormonal",
+          "Energético",
+          "Sexual"
+        ],
+        "indicaciones": [
+          "Fatiga",
+          "Libido baja",
+          "Fertilidad",
+          "Rendimiento físico"
+        ]
+      },
+      {
+        "id": "BF11",
+        "nombre": "Alga Espirulina",
+        "marca": "Biofito",
+        "categoria": "Energía y Rendimiento",
+        "ingredientes": [
+          "Spirulina maxima"
+        ],
+        "beneficios": [
+          "Rica en proteínas vegetales",
+          "Complejo vitamínico y mineral",
+          "Aumenta energía"
+        ],
+        "presentacion": "Bote 90 comprimidos 750 mg / Frasco gotero 50 ml",
+        "sistemas": [
+          "General",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Desnutrición",
+          "Vegetarianismo",
+          "Anemia",
+          "Deportistas"
+        ]
+      },
+      {
+        "id": "BF12",
+        "nombre": "Fem-vit",
+        "marca": "Biofito",
+        "categoria": "Salud Femenina",
+        "ingredientes": [
+          "Barbasco",
+          "Salvia",
+          "Melisa",
+          "Valeriana",
+          "Hipérico",
+          "Galphimia glauca"
+        ],
+        "beneficios": [
+          "Alivia síntomas menopáusicos",
+          "Equilibra emociones",
+          "Regula hormonas femeninas"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Hormonal",
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Menopausia",
+          "Síndrome premenstrual",
+          "Cambios hormonales",
+          "Bochornos"
+        ]
+      },
+      {
+        "id": "BF13",
+        "nombre": "Barbasco",
+        "marca": "Biofito",
+        "categoria": "Salud Femenina",
+        "ingredientes": [
+          "Dioscorea composita (raíz)"
+        ],
+        "beneficios": [
+          "Precursor natural de progesterona",
+          "Alivia síntomas menopáusicos"
+        ],
+        "presentacion": "Frasco gotero 50 ml / Bote 90 comprimidos 500 mg",
+        "sistemas": [
+          "Hormonal"
+        ],
+        "indicaciones": [
+          "Menopausia",
+          "Síndrome premenstrual",
+          "Ovarios poliquísticos"
+        ]
+      },
+      {
+        "id": "BF14",
+        "nombre": "Milenrama",
+        "marca": "Biofito",
+        "categoria": "Salud Femenina",
+        "ingredientes": [
+          "Achillea millefolium"
+        ],
+        "beneficios": [
+          "Regula ciclo menstrual",
+          "Mejora digestión",
+          "Antiinflamatorio"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Hormonal",
+          "Digestivo"
+        ],
+        "indicaciones": [
+          "Menstruación irregular",
+          "Dolor menstrual",
+          "Sangrado excesivo"
+        ]
+      },
+      {
+        "id": "BF15",
+        "nombre": "Uña de Gato",
+        "marca": "Biofito",
+        "categoria": "Articulaciones y Movilidad",
+        "ingredientes": [
+          "Uncaria tomentosa"
+        ],
+        "beneficios": [
+          "Antiinflamatorio potente",
+          "Inmunomodulador",
+          "Analgésico natural"
+        ],
+        "presentacion": "Bote 90 comprimidos 500 mg",
+        "sistemas": [
+          "Musculoesquelético",
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Artritis",
+          "Dolor articular",
+          "Inflamación crónica",
+          "Defensas bajas"
+        ]
+      },
+      {
+        "id": "BF16",
+        "nombre": "Harpagofito",
+        "marca": "Biofito",
+        "categoria": "Articulaciones y Movilidad",
+        "ingredientes": [
+          "Harpagophytum procumbens"
+        ],
+        "beneficios": [
+          "Antiinflamatorio",
+          "Analgésico",
+          "Mejora movilidad articular"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Musculoesquelético"
+        ],
+        "indicaciones": [
+          "Artritis",
+          "Artrosis",
+          "Dolor muscular",
+          "Lesiones deportivas"
+        ]
+      },
+      {
+        "id": "BF17",
+        "nombre": "Cúrcuma",
+        "marca": "Biofito",
+        "categoria": "Articulaciones y Movilidad",
+        "ingredientes": [
+          "Curcuma longa"
+        ],
+        "beneficios": [
+          "Potente antiinflamatorio",
+          "Antioxidante",
+          "Mejora digestión"
+        ],
+        "presentacion": "Bote 90 comprimidos / Frasco gotero 50 ml",
+        "sistemas": [
+          "Musculoesquelético",
+          "Digestivo"
+        ],
+        "indicaciones": [
+          "Inflamación crónica",
+          "Dolor articular",
+          "Problemas digestivos"
+        ]
+      },
+      {
+        "id": "BF18",
+        "nombre": "Bálsamo 3 Damianas",
+        "marca": "Biofito",
+        "categoria": "Articulaciones y Movilidad",
+        "ingredientes": [
+          "Damiana de California",
+          "Damiana de Guerrero",
+          "Damiana de San Luis",
+          "Castaño de Indias",
+          "Harpagofito",
+          "Manzanilla",
+          "Ortiga",
+          "Romero",
+          "Árnica"
+        ],
+        "beneficios": [
+          "Analgésico",
+          "Antiinflamatorio",
+          "Relajante muscular"
+        ],
+        "presentacion": "Bote 120 ml (uso tópico)",
+        "usoTopico": true,
+        "sistemas": [
+          "Musculoesquelético"
+        ],
+        "indicaciones": [
+          "Dolor muscular",
+          "Contracturas",
+          "Golpes",
+          "Inflamación articular"
+        ]
+      },
+      {
+        "id": "BF19",
+        "nombre": "Immune Herb",
+        "marca": "Biofito",
+        "categoria": "Sistema Inmune",
+        "ingredientes": [
+          "Astrágalo",
+          "Equinácea",
+          "Cúrcuma",
+          "Hongo shiitake",
+          "Maca",
+          "Uña de gato",
+          "Mapurite"
+        ],
+        "beneficios": [
+          "Fortalece inmunidad",
+          "Adaptógeno",
+          "Antioxidante"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Defensas bajas",
+          "Infecciones recurrentes",
+          "Prevención de gripes",
+          "Estrés inmunológico"
+        ]
+      },
+      {
+        "id": "BF20",
+        "nombre": "Equinácea",
+        "marca": "Biofito",
+        "categoria": "Sistema Inmune",
+        "ingredientes": [
+          "Echinacea purpurea"
+        ],
+        "beneficios": [
+          "Estimula sistema inmune",
+          "Previene infecciones",
+          "Reduce duración de gripes"
+        ],
+        "presentacion": "Bote 90 comprimidos 750 mg / Frasco gotero 50 ml",
+        "sistemas": [
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Gripes",
+          "Resfriados",
+          "Infecciones",
+          "Prevención en cambios de estación"
+        ]
+      },
+      {
+        "id": "BF21",
+        "nombre": "Anti-B",
+        "marca": "Biofito",
+        "categoria": "Sistema Inmune",
+        "ingredientes": [
+          "Equinácea",
+          "Caléndula",
+          "Tomillo",
+          "Cúrcuma",
+          "Jengibre",
+          "Uña de gato"
+        ],
+        "beneficios": [
+          "Antibiótico natural",
+          "Fortalece inmunidad",
+          "Antiinflamatorio"
+        ],
+        "presentacion": "Bote 90 comprimidos 750 mg",
+        "sistemas": [
+          "Inmune"
+        ],
+        "indicaciones": [
+          "Infecciones bacterianas",
+          "Antibiótico natural",
+          "Prevención"
+        ]
+      },
+      {
+        "id": "BF22",
+        "nombre": "Fat-less",
+        "marca": "Biofito",
+        "categoria": "Control de Peso",
+        "ingredientes": [
+          "Tamarindo malabar (Garcinia cambogia)",
+          "Alcachofa",
+          "Té verde",
+          "Cocolmeca",
+          "Jamaica",
+          "Tejocote",
+          "Cardo mariano"
+        ],
+        "beneficios": [
+          "Acelera metabolismo",
+          "Quema grasa",
+          "Diurético",
+          "Suprime apetito"
+        ],
+        "presentacion": "Bote 90 comprimidos 750 mg",
+        "sistemas": [
+          "Metabólico",
+          "Digestivo"
+        ],
+        "indicaciones": [
+          "Sobrepeso",
+          "Obesidad",
+          "Metabolismo lento",
+          "Retención de líquidos"
+        ]
+      },
+      {
+        "id": "BF23",
+        "nombre": "Té Verde",
+        "marca": "Biofito",
+        "categoria": "Control de Peso",
+        "ingredientes": [
+          "Camellia sinensis"
+        ],
+        "beneficios": [
+          "Potente antioxidante",
+          "Acelera metabolismo",
+          "Mejora concentración",
+          "Termogénico"
+        ],
+        "presentacion": "Frasco gotero de 50 ml",
+        "sistemas": [
+          "Metabólico",
+          "Cerebral"
+        ],
+        "indicaciones": [
+          "Pérdida de peso",
+          "Antioxidante",
+          "Energía mental"
+        ]
+      },
+      {
+        "id": "BF24",
+        "nombre": "Ojo de Gallina",
+        "marca": "Biofito",
+        "categoria": "Control de Peso",
+        "ingredientes": [
+          "Galphimia glauca"
+        ],
+        "beneficios": [
+          "Antihistamínico natural",
+          "Calma nervios",
+          "Acelera metabolismo"
+        ],
+        "presentacion": "Frasco 50 ml",
+        "sistemas": [
+          "Nervioso",
+          "Metabólico"
+        ],
+        "indicaciones": [
+          "Alergias",
+          "Ansiedad asociada a dietas",
+          "Control de peso"
+        ]
+      }
+    ],
+    "aminasYDerivados": [
+      {
+        "id": "AA001",
+        "nombre": "Analis Aminoácido Glicina 130",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos esenciales",
+        "ingredientes": [
+          "Glicina"
+        ],
+        "beneficios": [
+          "Neurotransmisor inhibidor",
+          "Favorece sueño profundo",
+          "Síntesis de colágeno",
+          "Modula inflamación",
+          "Antioxidante",
+          "Protege sistema nervioso"
+        ],
+        "presentacion": "Polvo 130g",
+        "sistemas": [
+          "Nervioso",
+          "Piel",
+          "Musculoesquelético"
+        ],
+        "indicaciones": [
+          "Insomnio",
+          "Producción de colágeno",
+          "Inflamación",
+          "Protección neuronal"
+        ]
+      },
+      {
+        "id": "AA002",
+        "nombre": "Analis Aminoácido Glicina 400",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos esenciales",
+        "ingredientes": [
+          "Glicina"
+        ],
+        "beneficios": [
+          "Neurotransmisor inhibidor",
+          "Favorece sueño profundo",
+          "Síntesis de colágeno",
+          "Modula inflamación",
+          "Antioxidante",
+          "Protege sistema nervioso"
+        ],
+        "presentacion": "Polvo 400g",
+        "sistemas": [
+          "Nervioso",
+          "Piel",
+          "Musculoesquelético"
+        ],
+        "indicaciones": [
+          "Insomnio crónico",
+          "Producción de colágeno",
+          "Inflamación",
+          "Protección neuronal"
+        ]
+      },
+      {
+        "id": "AA003",
+        "nombre": "Analis Aminoácido L-Arginina",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos semi-esenciales",
+        "ingredientes": [
+          "L-Arginina",
+          "L-Lisina"
+        ],
+        "beneficios": [
+          "Vasodilatador natural",
+          "Mejora circulación",
+          "Inmunomodulador",
+          "Precursor de óxido nítrico",
+          "Estimula hormona del crecimiento"
+        ],
+        "presentacion": "60 cápsulas 500mg",
+        "sistemas": [
+          "Circulatorio",
+          "Inmune",
+          "Hormonal"
+        ],
+        "indicaciones": [
+          "Circulación deficiente",
+          "Presión alta",
+          "Rendimiento deportivo",
+          "Recuperación muscular"
+        ]
+      },
+      {
+        "id": "AA004",
+        "nombre": "Analis Aminoácido L-Prolina",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos no esenciales",
+        "ingredientes": [
+          "L-Prolina",
+          "L-Lisina"
+        ],
+        "beneficios": [
+          "Cofactor en formación de colágeno",
+          "Elasticidad de tejidos",
+          "Reparación articular",
+          "Salud de piel y vasos sanguíneos"
+        ],
+        "presentacion": "60 cápsulas 500mg",
+        "sistemas": [
+          "Piel",
+          "Musculoesquelético",
+          "Circulatorio"
+        ],
+        "indicaciones": [
+          "Articulaciones",
+          "Piel envejecida",
+          "Elasticidad vascular"
+        ]
+      },
+      {
+        "id": "AA005",
+        "nombre": "Analis L-Triptófano",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos esenciales",
+        "ingredientes": [
+          "L-Lisina",
+          "L-Triptófano"
+        ],
+        "beneficios": [
+          "Precursor de serotonina y melatonina",
+          "Regula estado de ánimo",
+          "Mejora ritmo circadiano",
+          "Controla ansiedad y apetito"
+        ],
+        "presentacion": "60 cápsulas 500mg",
+        "sistemas": [
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Insomnio",
+          "Depresión leve",
+          "Ansiedad",
+          "Mal humor",
+          "Apetito excesivo"
+        ]
+      },
+      {
+        "id": "SN20",
+        "nombre": "Analis L-Triptófano",
+        "marca": "Aminas y Derivados",
+        "categoria": "Anti-Estrés y Sueño",
+        "ingredientes": [
+          "L-Lisina",
+          "L-Triptófano"
+        ],
+        "beneficios": [
+          "Precursor de serotonina y melatonina",
+          "Regula estado de ánimo",
+          "Mejora sueño"
+        ],
+        "presentacion": "60 cápsulas de 500 mg",
+        "sistemas": [
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Insomnio",
+          "Depresión",
+          "Ansiedad",
+          "Mal humor"
+        ],
+        "nota": "Mismo producto que AA005, código SN20 usado en algunos kits"
+      },
+      {
+        "id": "AA006",
+        "nombre": "Analis Neurotransmisores",
+        "marca": "Aminas y Derivados",
+        "categoria": "Complejo aminoácidos",
+        "ingredientes": [
+          "L-Lisina",
+          "L-Triptófano",
+          "Glicina",
+          "L-Arginina"
+        ],
+        "beneficios": [
+          "Apoyo neuromodulador",
+          "Equilibrio emocional",
+          "Ayuda con insomnio",
+          "Reduce ansiedad",
+          "Combate fatiga mental"
+        ],
+        "presentacion": "60 cápsulas 500mg",
+        "sistemas": [
+          "Nervioso"
+        ],
+        "indicaciones": [
+          "Estrés crónico",
+          "Insomnio",
+          "Ansiedad",
+          "Depresión leve",
+          "Agotamiento mental"
+        ]
+      },
+      {
+        "id": "AA007",
+        "nombre": "Carnilis",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos especializados",
+        "ingredientes": [
+          "L-Carnitina"
+        ],
+        "beneficios": [
+          "Transporte de ácidos grasos a mitocondrias",
+          "Mejora metabolismo energético",
+          "Reduce fatiga muscular",
+          "Ayuda en control de peso",
+          "Optimiza rendimiento físico"
+        ],
+        "presentacion": "60 cápsulas 500mg",
+        "sistemas": [
+          "Metabólico",
+          "Muscular"
+        ],
+        "indicaciones": [
+          "Fatiga",
+          "Pérdida de peso",
+          "Rendimiento deportivo",
+          "Metabolismo de grasas"
+        ],
+        "destacado": true,
+        "videoExplicativo": "https://youtu.be/c3d1YQ2s7qY",
+        "nota": "NO contiene cromo - Solo L-Carnitina pura"
+      },
+      {
+        "id": "AA008",
+        "nombre": "Cronovida",
+        "marca": "Aminas y Derivados",
+        "categoria": "Complejo aminoácidos avanzado",
+        "ingredientes": [
+          "Ácido glutámico",
+          "Glicina",
+          "Arginina",
+          "Fenilalanina",
+          "L-Lisina",
+          "L-Metionina",
+          "Ácido fólico",
+          "Colina"
+        ],
+        "beneficios": [
+          "Regulación neuroendocrina",
+          "Regula ciclo sueño-vigilia",
+          "Modulación de neurotransmisores",
+          "Regeneración hepática",
+          "Soporte metabólico y mental"
+        ],
+        "presentacion": "Polvo 260g",
+        "sistemas": [
+          "Nervioso",
+          "Hepático",
+          "Hormonal"
+        ],
+        "indicaciones": [
+          "Trastornos del sueño",
+          "Estrés crónico",
+          "Hígado graso",
+          "Soporte hormonal"
+        ]
+      },
+      {
+        "id": "AA009",
+        "nombre": "Deprelat",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos estado de ánimo",
+        "ingredientes": [
+          "L-Arginina",
+          "L-Triptófano"
+        ],
+        "beneficios": [
+          "Regulador del estado de ánimo",
+          "Coadyuvante en cuadros depresivos leves",
+          "Alivia síndrome premenstrual",
+          "Reduce ansiedad"
+        ],
+        "presentacion": "60 cápsulas 500mg",
+        "sistemas": [
+          "Nervioso",
+          "Hormonal"
+        ],
+        "indicaciones": [
+          "Depresión leve",
+          "Cambios de humor",
+          "Síndrome premenstrual",
+          "Ansiedad"
+        ]
+      },
+      {
+        "id": "AA010",
+        "nombre": "Glicam 130",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos colágeno",
+        "ingredientes": [
+          "Glicina",
+          "L-Lisina"
+        ],
+        "beneficios": [
+          "Estimula síntesis de colágeno",
+          "Modula respuesta inmunitaria",
+          "Favorece sueño profundo",
+          "Repara tejidos conectivos"
+        ],
+        "presentacion": "Polvo 130g",
+        "sistemas": [
+          "Piel",
+          "Inmune",
+          "Nervioso",
+          "Musculoesquelético"
+        ],
+        "indicaciones": [
+          "Envejecimiento cutáneo",
+          "Articulaciones",
+          "Inmunidad",
+          "Sueño"
+        ]
+      },
+      {
+        "id": "AA011",
+        "nombre": "Glicam 400",
+        "marca": "Aminas y Derivados",
+        "categoria": "Aminoácidos colágeno",
+        "ingredientes": [
+          "Glicina",
+          "L-Lisina"
+        ],
+        "beneficios": [
+          "Estimula síntesis de colágeno",
+          "Modula respuesta inmunitaria",
+          "Favorece sueño profundo",
+          "Repara tejidos conectivos"
+        ],
+        "presentacion": "Polvo 400g",
+        "sistemas": [
+          "Piel",
+          "Inmune",
+          "Nervioso",
+          "Musculoesquelético"
+        ],
+        "indicaciones": [
+          "Envejecimiento cutáneo",
+          "Articulaciones",
+          "Inmunidad",
+          "Sueño"
+        ]
+      }
+    ]
+  },
+  "kits": [
+    {
+      "id": "K01",
+      "nombre": "Kit Detox Completo",
+      "categoria": "Detoxificación",
+      "problema": "Desintoxicación general del cuerpo",
+      "beneficio": "Desintoxicación profunda de hígado, riñones y sistema linfático",
+      "descuento": 15,
+      "productosIncluidos": [
+        "BF01",
+        "BF02",
+        "BF03",
+        "SN18",
+        "SN15"
+      ],
+      "productos": [
+        {
+          "id": "BF01",
+          "nombre": "Hepacryl",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF02",
+          "nombre": "Diente de León",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF03",
+          "nombre": "Cola de Caballo",
+          "marca": "Biofito"
+        },
+        {
+          "id": "SN18",
+          "nombre": "Oligosor",
+          "marca": "Soria Natural"
+        },
+        {
+          "id": "SN15",
+          "nombre": "Minesor con Selenio",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "30-60 días",
+      "indicaciones": [
+        "Sobrecarga hepática",
+        "Retención de líquidos",
+        "Toxinas acumuladas",
+        "Alimentación poco saludable",
+        "Excesos"
+      ]
+    },
+    {
+      "id": "K02",
+      "nombre": "Kit Digestivo Integral",
+      "categoria": "Salud Digestiva",
+      "problema": "Problemas digestivos múltiples",
+      "beneficio": "Mejora la digestión, flora intestinal y elimina gases y espasmos",
+      "descuento": 12,
+      "productosIncluidos": [
+        "BF04",
+        "BF05",
+        "BF06",
+        "SN12",
+        "SN13"
+      ],
+      "productos": [
+        {
+          "id": "BF04",
+          "nombre": "Colix",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF05",
+          "nombre": "Jengibre",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF06",
+          "nombre": "Melissa",
+          "marca": "Biofito"
+        },
+        {
+          "id": "SN12",
+          "nombre": "Inulac Tablets",
+          "marca": "Soria Natural"
+        },
+        {
+          "id": "SN13",
+          "nombre": "Lacticol suspensión",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "30 días mínimo",
+      "indicaciones": [
+        "Colon irritable",
+        "Gastritis",
+        "Gases",
+        "Flora intestinal alterada",
+        "Digestión lenta"
+      ]
+    },
+    {
+      "id": "K03",
+      "nombre": "Kit Anti-Estrés y Sueño",
+      "categoria": "Descanso y Relajación",
+      "problema": "Estrés, ansiedad e insomnio",
+      "beneficio": "Promueve relajación profunda y sueño reparador de calidad",
+      "descuento": 18,
+      "productosIncluidos": [
+        "BF07",
+        "BF08",
+        "BF09",
+        "SN20",
+        "SN06"
+      ],
+      "productos": [
+        {
+          "id": "BF07",
+          "nombre": "Ner-vit",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF08",
+          "nombre": "Valeriana",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF09",
+          "nombre": "Zapote Blanco",
+          "marca": "Biofito"
+        },
+        {
+          "id": "SN20",
+          "nombre": "Analis L-Triptófano",
+          "marca": "Aminas y Derivados"
+        },
+        {
+          "id": "SN06",
+          "nombre": "Diatonato 3",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "30 días, evaluar continuidad según resultados",
+      "indicaciones": [
+        "Insomnio crónico",
+        "Ansiedad",
+        "Estrés laboral",
+        "Nerviosismo",
+        "Mala calidad de sueño"
+      ]
+    },
+    {
+      "id": "K04",
+      "nombre": "Kit Energía y Rendimiento",
+      "categoria": "Vitalidad y Performance",
+      "problema": "Fatiga crónica y bajo rendimiento físico/mental",
+      "beneficio": "Proporciona energía sostenida, mejora rendimiento y reduce fatiga",
+      "descuento": 20,
+      "productosIncluidos": [
+        "BF10",
+        "BF11",
+        "SN11",
+        "AA007",
+        "SN02"
+      ],
+      "productos": [
+        {
+          "id": "BF10",
+          "nombre": "Maca Peruana",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF11",
+          "nombre": "Alga Espirulina",
+          "marca": "Biofito"
+        },
+        {
+          "id": "SN11",
+          "nombre": "Fostprint MAX",
+          "marca": "Soria Natural"
+        },
+        {
+          "id": "AA007",
+          "nombre": "Carnilis",
+          "marca": "Aminas y Derivados"
+        },
+        {
+          "id": "SN02",
+          "nombre": "Coenzima Q10",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "45-60 días para resultados óptimos",
+      "indicaciones": [
+        "Fatiga crónica",
+        "Rendimiento deportivo",
+        "Exigencia mental",
+        "Convalecencia",
+        "Metabolismo lento"
+      ]
+    },
+    {
+      "id": "K05",
+      "nombre": "Kit Salud Femenina",
+      "categoria": "Salud de la Mujer",
+      "problema": "Desequilibrios hormonales femeninos",
+      "beneficio": "Equilibra hormonas y alivia síntomas menopáusicos y premenstruales",
+      "descuento": 15,
+      "productosIncluidos": [
+        "BF12",
+        "BF13",
+        "BF14",
+        "SN01",
+        "SN07"
+      ],
+      "productos": [
+        {
+          "id": "BF12",
+          "nombre": "Fem-vit",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF13",
+          "nombre": "Barbasco",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF14",
+          "nombre": "Milenrama",
+          "marca": "Biofito"
+        },
+        {
+          "id": "SN01",
+          "nombre": "Calciflavón",
+          "marca": "Soria Natural"
+        },
+        {
+          "id": "SN07",
+          "nombre": "Diatonato 5.1",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "3-6 meses para cambios hormonales duraderos",
+      "indicaciones": [
+        "Menopausia",
+        "Síndrome premenstrual",
+        "Irregularidad menstrual",
+        "Bochornos",
+        "Cambios de humor"
+      ]
+    },
+    {
+      "id": "K06",
+      "nombre": "Kit Articulaciones y Movilidad",
+      "categoria": "Salud Articular",
+      "problema": "Dolor articular e inflamación crónica",
+      "beneficio": "Reduce dolor, inflamación y mejora movilidad significativamente",
+      "descuento": 18,
+      "productosIncluidos": [
+        "BF15",
+        "BF16",
+        "BF17",
+        "BF18",
+        "SN14",
+        "SN16"
+      ],
+      "productos": [
+        {
+          "id": "BF15",
+          "nombre": "Uña de Gato",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF16",
+          "nombre": "Harpagofito",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF17",
+          "nombre": "Cúrcuma",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF18",
+          "nombre": "Bálsamo 3 Damianas",
+          "marca": "Biofito"
+        },
+        {
+          "id": "SN14",
+          "nombre": "Mincartil polvo",
+          "marca": "Soria Natural"
+        },
+        {
+          "id": "SN16",
+          "nombre": "Oligonato 1",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "60-90 días mínimo",
+      "indicaciones": [
+        "Artritis",
+        "Artrosis",
+        "Dolor crónico",
+        "Lesiones deportivas",
+        "Movilidad reducida"
+      ]
+    },
+    {
+      "id": "K07",
+      "nombre": "Kit Inmunidad Reforzada",
+      "categoria": "Sistema Inmune",
+      "problema": "Defensas bajas y resfriados frecuentes",
+      "beneficio": "Fortalece el sistema inmune de manera efectiva y duradera",
+      "descuento": 16,
+      "productosIncluidos": [
+        "BF19",
+        "BF20",
+        "BF21",
+        "SN10",
+        "SN19"
+      ],
+      "productos": [
+        {
+          "id": "BF19",
+          "nombre": "Immune Herb",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF20",
+          "nombre": "Equinácea",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF21",
+          "nombre": "Anti-B",
+          "marca": "Biofito"
+        },
+        {
+          "id": "SN10",
+          "nombre": "Fostprint Classic",
+          "marca": "Soria Natural"
+        },
+        {
+          "id": "SN19",
+          "nombre": "Resverasor",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "30 días, repetir en cambios de estación",
+      "indicaciones": [
+        "Infecciones recurrentes",
+        "Gripes frecuentes",
+        "Cambios de estación",
+        "Defensas bajas",
+        "Post-enfermedad"
+      ]
+    },
+    {
+      "id": "K08",
+      "nombre": "Kit Control de Peso",
+      "categoria": "Metabolismo y Peso",
+      "problema": "Sobrepeso y metabolismo lento",
+      "beneficio": "Acelera metabolismo, quema grasa y controla apetito",
+      "descuento": 14,
+      "productosIncluidos": [
+        "BF22",
+        "BF23",
+        "BF24",
+        "AA007",
+        "SN17"
+      ],
+      "productos": [
+        {
+          "id": "BF22",
+          "nombre": "Fat-less",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF23",
+          "nombre": "Té Verde",
+          "marca": "Biofito"
+        },
+        {
+          "id": "BF24",
+          "nombre": "Ojo de Gallina",
+          "marca": "Biofito"
+        },
+        {
+          "id": "AA007",
+          "nombre": "Carnilis",
+          "marca": "Aminas y Derivados"
+        },
+        {
+          "id": "SN17",
+          "nombre": "Oligonato 2",
+          "marca": "Soria Natural"
+        }
+      ],
+      "duracionRecomendada": "90 días con dieta equilibrada y ejercicio",
+      "indicaciones": [
+        "Sobrepeso",
+        "Obesidad",
+        "Metabolismo lento",
+        "Retención de líquidos",
+        "Dificultad para bajar de peso"
+      ]
+    }
+  ],
+  "servicios": {
+    "tests_salud": [
+      {
+        "id": "test_endotelial",
+        "nombre": "Test de Salud Endotelial",
+        "descripcion": "Evaluación científica de 20 preguntas que analiza 6 áreas fundamentales de tu salud cardiovascular",
+        "numeroPreguntas": 20,
+        "areasEvaluadas": 6,
+        "areas": [
+          "Salud cardiovascular",
+          "Función endotelial",
+          "Circulación",
+          "Presión arterial",
+          "Colesterol",
+          "Inflamación vascular"
+        ],
+        "duracion": "5-10 minutos",
+        "beneficios": [
+          "Evaluación personalizada de salud cardiovascular",
+          "Recomendaciones de productos específicos",
+          "Identificación de áreas de mejora",
+          "Prevención de problemas cardiovasculares"
+        ]
+      },
+      {
+        "id": "test_nutrigenomico",
+        "nombre": "Test de Nutrigenómica Wellvibe",
+        "descripcion": "Descubre cómo tus genes responden a los alimentos. Análisis personalizado sobre áreas genéticas clave",
+        "numeroPreguntas": 20,
+        "areasEvaluadas": 7,
+        "areas": [
+          "Genes detox",
+          "Metabolismo",
+          "Inflamación",
+          "Sensibilidad a nutrientes",
+          "Respuesta al ejercicio",
+          "Salud ósea",
+          "Salud mental"
+        ],
+        "duracion": "5-10 minutos",
+        "beneficios": [
+          "Optimización de nutrición según perfil genético",
+          "Recomendaciones personalizadas de suplementos",
+          "Identificación de sensibilidades alimentarias",
+          "Plan nutricional adaptado a tus genes"
+        ]
+      }
+    ],
+    "sueroterapia": {
+      "nombre": "Sueroterapia Premium",
+      "descripcion": "Hidratación intravenosa personalizada con vitaminas, minerales y antioxidantes",
+      "beneficios": [
+        "Recuperación inmediata de energía",
+        "Fortalecimiento del sistema inmune",
+        "Hidratación profunda celular",
+        "Mejora de concentración mental",
+        "Optimización de calidad del sueño",
+        "Aceleración de recuperación post-ejercicio",
+        "Reducción de fatiga"
+      ],
+      "aplicaciones": [
+        "Recuperación deportiva",
+        "Boost de energía",
+        "Fortalecimiento inmune",
+        "Rehidratación intensa",
+        "Recuperación post-fiesta",
+        "Preparación para eventos importantes",
+        "Anti-envejecimiento"
+      ],
+      "sitioWeb": "https://sueroterapia-premiun.vercel.app",
+      "tiposTratamiento": [
+        "Hidratación básica",
+        "Energía y vitalidad",
+        "Sistema inmune",
+        "Belleza y antienvejecimiento",
+        "Deportivo",
+        "Detox"
+      ]
+    },
+    "recomendacion_ia": {
+      "nombre": "Motor de Recomendaciones con IA",
+      "tecnologia": "Google Gemini AI",
+      "modelo": "gemini-2.5-flash",
+      "descripcion": "Sistema de recomendaciones personalizadas basado en objetivos de salud del usuario",
+      "funcionamiento": [
+        "Analiza objetivos de salud del usuario",
+        "Revisa catálogo completo de productos",
+        "Evalúa kits predefinidos",
+        "Crea kit personalizado si es necesario (2-5 productos)",
+        "Genera explicación detallada de la recomendación"
+      ],
+      "tipoRecomendaciones": [
+        "Kit predefinido (si coincide perfectamente con necesidad)",
+        "Kit personalizado (2-5 productos seleccionados inteligentemente)"
+      ]
+    }
+  },
+  "categorias": {
+    "principales": [
+      {
+        "nombre": "Salud General",
+        "descripcion": "Productos para necesidades generales de salud y bienestar",
+        "subcategorias": [
+          "Salud Femenina",
+          "Energía y Rendimiento",
+          "Piel y Belleza",
+          "Sistema Inmune",
+          "Anti-Estrés y Sueño",
+          "Metabolismo",
+          "Salud Cerebral",
+          "Salud Digestiva",
+          "Articulaciones y Movilidad",
+          "Detox y Antioxidantes",
+          "Control de Peso"
+        ],
+        "totalProductos": 24
+      },
+      {
+        "nombre": "Aminoácidos",
+        "descripcion": "Suplementos de aminoácidos especializados de Aminas y Derivados",
+        "marca": "Aminas y Derivados",
+        "subcategorias": [
+          "Aminoácidos colágeno",
+          "Aminoácidos detox",
+          "Aminoácidos esenciales",
+          "Aminoácidos especializados",
+          "Aminoácidos estado de ánimo",
+          "Aminoácidos no esenciales",
+          "Aminoácidos semi-esenciales",
+          "Complejo aminoácidos",
+          "Complejo aminoácidos avanzado"
+        ],
+        "totalProductos": 11
+      },
+      {
+        "nombre": "Vitaminas",
+        "descripcion": "Complejos vitamínicos y suplementos de Soria Natural",
+        "marca": "Soria Natural",
+        "subcategorias": [
+          "Complejo vitamínico",
+          "Multivitamínico completo"
+        ],
+        "destacados": [
+          "Sorivid",
+          "Totalvid 4"
+        ]
+      },
+      {
+        "nombre": "Minerales",
+        "descripcion": "Oligoelementos y minerales esenciales de Soria Natural",
+        "marca": "Soria Natural",
+        "lineas": [
+          "Diatonatos (1, 2, 3, 5.1, 5.2)",
+          "Oligonatos (1, 2)",
+          "Oligosor",
+          "Minesor"
+        ],
+        "subcategorias": [
+          "Oligoelementos",
+          "Oligoelementos completo"
+        ]
+      }
+    ]
+  },
+  "recomendacionesPorCondicion": {
+    "fatiga": {
+      "productos": [
+        "AA007",
+        "SN02",
+        "SN11",
+        "BF10",
+        "BF11"
+      ],
+      "kitRecomendado": "K04",
+      "descripcion": "Para combatir fatiga crónica y mejorar energía"
+    },
+    "estres": {
+      "productos": [
+        "BF07",
+        "BF08",
+        "SN20",
+        "SN06",
+        "AA006"
+      ],
+      "kitRecomendado": "K03",
+      "descripcion": "Para manejar estrés, ansiedad y mejorar sueño"
+    },
+    "digestion": {
+      "productos": [
+        "BF04",
+        "BF05",
+        "BF06",
+        "SN12",
+        "SN13"
+      ],
+      "kitRecomendado": "K02",
+      "descripcion": "Para problemas digestivos y salud intestinal"
+    },
+    "articulaciones": {
+      "productos": [
+        "BF15",
+        "BF16",
+        "BF17",
+        "SN14",
+        "SN16",
+        "AA004"
+      ],
+      "kitRecomendado": "K06",
+      "descripcion": "Para dolor articular, inflamación y movilidad"
+    },
+    "inmunidad": {
+      "productos": [
+        "BF19",
+        "BF20",
+        "BF21",
+        "SN04",
+        "SN05"
+      ],
+      "kitRecomendado": "K07",
+      "descripcion": "Para fortalecer sistema inmune y prevenir enfermedades"
+    },
+    "menopausia": {
+      "productos": [
+        "BF12",
+        "BF13",
+        "SN01",
+        "SN07"
+      ],
+      "kitRecomendado": "K05",
+      "descripcion": "Para síntomas menopáusicos y equilibrio hormonal"
+    },
+    "peso": {
+      "productos": [
+        "BF22",
+        "BF23",
+        "AA007",
+        "BF24"
+      ],
+      "kitRecomendado": "K08",
+      "descripcion": "Para pérdida de peso y aceleración metabólica"
+    },
+    "piel": {
+      "productos": [
+        "SN03",
+        "BF03",
+        "SN14",
+        "AA001",
+        "AA010"
+      ],
+      "kitRecomendado": null,
+      "descripcion": "Para salud de piel, cabello y uñas"
+    },
+    "memoria": {
+      "productos": [
+        "SN09",
+        "SN11",
+        "BF23"
+      ],
+      "kitRecomendado": null,
+      "descripcion": "Para memoria, concentración y rendimiento mental"
+    }
+  },
+  "productoDestacado": {
+    "id": "AA007",
+    "nombre": "Carnilis",
+    "marca": "Aminas y Derivados",
+    "razonDestacado": "Metabolismo energético y pérdida de peso",
+    "ingredientePrincipal": "L-Carnitina pura",
+    "ingredientes": [
+      "L-Carnitina"
+    ],
+    "notaImportante": "NO contiene cromo. Es L-Carnitina pura de alta calidad",
+    "beneficiosClave": [
+      "Transporta ácidos grasos a las mitocondrias para producir energía",
+      "Mejora metabolismo de grasas",
+      "Reduce fatiga muscular",
+      "Optimiza rendimiento físico",
+      "Ayuda en control de peso"
+    ],
+    "dosisRecomendada": "1-2 cápsulas al día",
+    "mecanismoAccion": "La L-Carnitina transporta los ácidos grasos de cadena larga al interior de las mitocondrias donde se oxidan para producir energía (ATP)",
+    "videoExplicativo": "https://youtu.be/c3d1YQ2s7qY",
+    "sinergiasCon": [
+      "BF22 (Fat-less)",
+      "BF23 (Té Verde)",
+      "SN02 (Coenzima Q10)"
+    ],
+    "presentacion": "60 cápsulas de 500mg",
+    "indicaciones": [
+      "Fatiga crónica",
+      "Pérdida de peso",
+      "Rendimiento deportivo",
+      "Metabolismo de grasas lento"
+    ]
+  },
+  "metadatos": {
+    "totalProductos": 35,
+    "productosSoriaNatural": 19,
+    "productosBiofito": 24,
+    "productosAminasYDerivados": 12,
+    "totalKits": 8,
+    "marcas": 3,
+    "categoriasPrincipales": 11,
+    "fechaActualizacion": "2025-10-15",
+    "version": "2.1",
+    "correccionesRealizadas": [
+      "TODOS los aminoácidos (incluyendo productos con prefijo AA y códigos SN20, SN21) son de 'Aminas y Derivados'",
+      "Carnilis (AA007/SN21) corregido: solo contiene L-Carnitina pura (SIN cromo)",
+      "Analis L-Triptófano (AA005/SN20) es de Aminas y Derivados",
+      "Información de marcas ampliada y detallada"
+    ],
+    "aclaraciones": [
+      "Los códigos SN20 y SN21 se usan en la app por compatibilidad, pero estos productos son de Aminas y Derivados",
+      "Todos los productos de la línea 'Analis' son fabricados por Aminas y Derivados",
+      "Soria Natural solo distribuye algunos de estos productos pero NO los fabrica"
+    ],
+    "generadoPara": "Base de conocimiento Claude AI - Proyecto Wellkitt"
+  }
+}
