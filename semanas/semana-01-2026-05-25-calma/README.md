@@ -13,6 +13,8 @@ Tu cuerpo sigue en emergencia aunque ya termino el dia.
 ## Jueves Wellkitt
 
 Calma, sueno y sistema nervioso.
+Fecha ajustada: jueves 4 de junio 2026.
+Razon: el video se publica esta semana — la clase recibe a quienes llegaron del video con perfil identificado.
 
 ## Productos / kit
 
