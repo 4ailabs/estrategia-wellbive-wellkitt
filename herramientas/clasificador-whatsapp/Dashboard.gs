@@ -19,7 +19,7 @@ function configurarDashboard() {
   sheet.getRange('A1:C1').merge();
 
   // --- HOY ---
-  sheet.getRange('A3').setValue('📅 HOY');
+  sheet.getRange('A3').setValue('HOY');
   sheet.getRange('A3:C3').merge();
   sheet.getRange('A3').setFontWeight('bold').setFontSize(12).setBackground('#e8f0fe');
 
@@ -39,7 +39,7 @@ function configurarDashboard() {
   sheet.getRange('B6').setBackground('#f4cccc');
 
   // --- ESTA SEMANA ---
-  sheet.getRange('A8').setValue('📊 ESTA SEMANA');
+  sheet.getRange('A8').setValue('ESTA SEMANA');
   sheet.getRange('A8:C8').merge();
   sheet.getRange('A8').setFontWeight('bold').setFontSize(12).setBackground('#e8f0fe');
 
@@ -60,7 +60,7 @@ function configurarDashboard() {
 
   // --- TOP PALABRAS CLAVE ---
   var rowKw = 17;
-  sheet.getRange(rowKw, 1).setValue('🔑 TOP PALABRAS CLAVE (esta semana)');
+  sheet.getRange(rowKw, 1).setValue('TOP PALABRAS CLAVE (esta semana)');
   sheet.getRange(rowKw, 1, 1, 2).merge();
   sheet.getRange(rowKw, 1).setFontWeight('bold').setFontSize(12).setBackground('#e8f0fe');
 
@@ -78,7 +78,7 @@ function configurarDashboard() {
 
   // --- URGENCIAS ALTA PENDIENTES ---
   var rowUrg = rowKw + 2 + keywords.length + 2;
-  sheet.getRange(rowUrg, 1).setValue('⚠️ URGENCIAS ALTA PENDIENTES');
+  sheet.getRange(rowUrg, 1).setValue('URGENCIAS ALTA PENDIENTES');
   sheet.getRange(rowUrg, 1, 1, 3).merge();
   sheet.getRange(rowUrg, 1).setFontWeight('bold').setFontSize(12).setBackground('#f4cccc');
 
@@ -136,7 +136,7 @@ function enviarReporteSemanal() {
       SpreadsheetApp.getUi().alert(
         'Error: No se encontró el email de Alberto.\n\n' +
         'En Apps Script ve a:\n' +
-        'Proyecto ⚙️ > Propiedades de la secuencia de comandos\n' +
+        'Proyecto > Propiedades de la secuencia de comandos\n' +
         'y agrega: ALBERTO_EMAIL = email@ejemplo.com'
       );
     } catch(e) { Logger.log('ALBERTO_EMAIL no configurado'); }
@@ -232,7 +232,7 @@ function enviarReporteSemanal() {
   }
 
   if (urgenciasAlta.length > 0) {
-    html += '<h3 style="color:#c62828">⚠️ Urgencias Alta (' + urgenciasAlta.length + ')</h3>';
+    html += '<h3 style="color:#c62828">Urgencias Alta (' + urgenciasAlta.length + ')</h3>';
     html += '<table border="1" cellpadding="8" style="border-collapse:collapse;width:100%">';
     html += '<tr style="background:#f4cccc"><th>Fecha</th><th>Nombre</th><th>Acción siguiente</th></tr>';
     urgenciasAlta.forEach(function(u) {
@@ -278,7 +278,7 @@ function configurarTrigger() {
     '✓ Activado.\n\n' +
     'El reporte se enviará cada lunes a las 8am a la dirección en ALBERTO_EMAIL.\n\n' +
     'Si aún no configuraste ALBERTO_EMAIL ve a:\n' +
-    'Apps Script > Proyecto ⚙️ > Propiedades de la secuencia de comandos'
+    'Apps Script > Proyecto > Propiedades de la secuencia de comandos'
   );
 }
 

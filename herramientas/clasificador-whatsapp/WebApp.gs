@@ -221,7 +221,7 @@ function generarHTML(metricas) {
     '</div>' +
 
     '<div class="section">' +
-    '<div class="section-title">⚠ Urgencias Alta</div>' +
+    '<div class="section-title">Urgencias Alta</div>' +
     '<table><thead><tr>' +
     '<th>Fecha</th><th>Nombre</th><th>Acción siguiente</th>' +
     '</tr></thead><tbody>' + urgenciasFilas + '</tbody></table>' +
