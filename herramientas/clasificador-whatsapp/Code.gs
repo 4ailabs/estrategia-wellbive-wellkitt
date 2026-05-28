@@ -8,6 +8,10 @@ function onOpen() {
     .addItem('⚡ Clasificar conversación', 'clasificarConversacion')
     .addSeparator()
     .addItem('⚙️ Configurar hojas (primera vez)', 'configurarHojas')
+    .addItem('📊 Crear Dashboard (una vez)', 'configurarDashboard')
+    .addSeparator()
+    .addItem('📧 Enviar reporte ahora', 'enviarReporteSemanal')
+    .addItem('⏰ Activar envío automático (lunes 8am)', 'configurarTrigger')
     .addToUi();
 }
 
