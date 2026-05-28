@@ -17,6 +17,10 @@ Palabra clave: CALMA
 
 ## Script
 
+Hola, soy el Dr. Miguel Ojeda. Bienvenidos a Wellbive.
+
+[pausa]
+
 Si termina tu dia, apagas la luz, te acuestas, y aun asi tu mente sigue trabajando, este video es para ti.
 
 Porque tal vez el problema no es que no puedes dormir.
@@ -156,6 +160,10 @@ Y vivir asi cansa muchisimo.
 Porque la vida real siempre tiene algo pendiente. Siempre hay algo que no esta resuelto. Siempre hay algo que podria salir mal.
 
 Si tu cuerpo no puede descansar hasta que todo este perfecto, nunca va a poder descansar de verdad.
+
+[pausa]
+
+Si esto que acabas de escuchar ya resuena contigo, suscribete al canal. Cada semana subimos contenido sobre como leer lo que tu cuerpo esta tratando de decirte.
 
 [pausa]
 
@@ -340,3 +348,15 @@ Cuentanos cual es tu patron principal: ansiedad, insomnio, cansancio, tension co
 Si estas cerca, te esperamos los jueves en la clinica.
 
 Si estas lejos, pide el link de Zoom.
+
+[pausa]
+
+Y antes de irte, dos cosas rapidas.
+
+Si este video te fue util, dejame un like. Eso ayuda a que llegue a mas personas que lo necesitan.
+
+Y dejame en los comentarios cual de los cinco patrones es el tuyo: ruido mental, insomnio de conciliacion, despertares nocturnos, cansancio al despertar o tension corporal.
+
+Me interesa saber con cual se identifican mas.
+
+Nos vemos el proximo jueves.
