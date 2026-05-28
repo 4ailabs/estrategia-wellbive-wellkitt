@@ -69,8 +69,19 @@ function llamarClaudeAPI(texto) {
     }
 
     var data = JSON.parse(response.getContentText());
+    if (!data.content || !data.content[0] || !data.content[0].text) {
+      Logger.log('Respuesta inesperada de API: ' + response.getContentText());
+      SpreadsheetApp.getUi().alert('Error: Respuesta inesperada de Claude. Revisa el log.');
+      return null;
+    }
     var jsonText = data.content[0].text.trim();
-    return JSON.parse(jsonText);
+    try {
+      return JSON.parse(jsonText);
+    } catch (jsonErr) {
+      Logger.log('Claude no devolvió JSON válido: ' + jsonText);
+      SpreadsheetApp.getUi().alert('Claude no devolvió un formato válido. Texto recibido: ' + jsonText.substring(0, 100));
+      return null;
+    }
 
   } catch (e) {
     Logger.log('Excepción en llamarClaudeAPI: ' + e.toString());
