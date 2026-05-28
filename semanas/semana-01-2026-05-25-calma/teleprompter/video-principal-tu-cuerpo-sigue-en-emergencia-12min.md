@@ -290,31 +290,21 @@ Es mejor revisar con cuidado.
 
 [pausa]
 
-Ahora quiero contarte como lo vamos a trabajar esta semana en Wellkitt.
+Quiero contarte como lo revisamos en el Instituto.
 
-Esta semana el tema es calma, sueño y sistema nervioso.
+Cuando alguien llega con este patron — no puede bajar, no descansa, no encuentra calma aunque quiera — lo primero que hacemos no es elegir un producto.
 
-Y tendremos un Jueves Wellkitt en la clinica, tambien con opcion por Zoom para quienes estan lejos.
+Lo primero es entender que necesita el cuerpo en ese momento: si apoyo mineral, si apoyo desde la fitoterapia, si un reajuste desde la oligoterapia, o los tres al mismo tiempo.
 
-La clase se llama: Calma, sueño y sistema nervioso.
+Esa lectura es lo que hace la diferencia entre tomar algo y tomar algo que tiene sentido para tu caso especifico.
 
-La idea es que puedas identificar tu patron.
+Para eso existe el Jueves Wellkitt: una clase semanal en la clinica y por Zoom donde revisamos el tema, identificamos patrones y orientamos la ruta.
 
-No es lo mismo una persona con ruido mental, que una persona con despertares, que una persona con tension corporal, que una persona que esta cansada todo el dia.
+Esta semana el tema es exactamente este: calma, sueno y sistema nervioso.
 
-Por eso no queremos que el producto se elija por moda.
+Si asistes presencialmente hay un cupon personal con vigencia de cuarenta y ocho horas.
 
-Queremos que el producto, si aplica, forme parte de una ruta.
-
-En la mesa de Wellkitt vamos a trabajar con apoyos como Ner-vit, Valeriana, L-Triptófano, Zapote Blanco y Diatonato 3.
-
-Pero lo voy a repetir: no se trata de vender un frasco suelto.
-
-Se trata de entender el patron y construir una ruta responsable.
-
-Quienes asistan presencialmente podran conocer la tienda fisica, resolver dudas, llenar una ficha breve y recibir un cupon personal con vigencia de cuarenta y ocho horas.
-
-Y quienes esten lejos podran conectarse por Zoom y escribir por WhatsApp para orientacion.
+Si estas lejos puedes conectarte por Zoom o escribir directamente por WhatsApp.
 
 [pausa]
 
@@ -348,9 +338,7 @@ Si esto te hizo sentido, escribe `CALMA` por WhatsApp.
 
 Cuéntanos cual es tu problema principal: ansiedad, insomnio, cansancio, tension corporal o ruido mental.
 
-Y dinos tambien si tomas algun medicamento o si estas en tratamiento, para orientarte con mas cuidado.
-
-Si estas cerca, te esperamos este jueves en la clinica.
+Si estas cerca, te esperamos los jueves en la clinica.
 
 Si estas lejos, pide el link de Zoom.
 
