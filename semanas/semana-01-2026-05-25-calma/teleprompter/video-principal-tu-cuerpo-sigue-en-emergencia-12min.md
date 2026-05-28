@@ -1,24 +1,29 @@
 # Teleprompter video principal
 
-Titulo: Tu cuerpo sigue en emergencia aunque ya termino el dia  
-Duracion objetivo: 12 minutos  
-Velocidad sugerida: 125-135 palabras por minuto  
+Titulo: Tu cuerpo sigue en emergencia aunque ya termino el dia
+Duracion objetivo: 11 minutos
+Velocidad sugerida: 125-135 palabras por minuto
 Palabra clave: CALMA
 
 ## Instrucciones de lectura
 
-- Leer con calma, como conversacion directa.
-- Hacer pausa breve donde aparezca `[pausa]`.
+- Leer con calma. Hablar pausado proyecta autoridad, no lentitud.
+- Pausa de 2 a 3 segundos donde aparezca `[pausa]`. Contar mentalmente.
 - No leer los encabezados.
-- Si se siente largo, cortar primero el bloque "errores comunes 3".
+- Antes de grabar: pon un lapiz horizontal entre los dientes y habla un minuto. Al quitarlo la voz suena mas fluida.
+- Si se siente largo: cortar el bloque "Error numero tres".
 
 ## Script palabra por palabra
 
-Si termina tu dia, apagas la luz, te acuestas, y aun asi tu mente sigue trabajando, quiero que pongas atencion a este video.
+Si termina tu dia, apagas la luz, te acuestas, y aun asi tu mente sigue trabajando, este video es para ti.
 
-Porque tal vez el problema no es solamente que "no puedes dormir".
+Porque tal vez el problema no es que no puedes dormir.
 
 Tal vez tu cuerpo sigue en emergencia aunque el dia ya termino.
+
+[pausa]
+
+Hoy voy a explicarte por que sucede eso, como reconocerlo en tu cuerpo, y que puedes cambiar esta misma semana.
 
 [pausa]
 
@@ -31,10 +36,6 @@ Personas que se acuestan y empiezan a repasar conversaciones, pendientes, errore
 Personas que duermen varias horas, pero despiertan como si no hubieran dormido.
 
 Personas que tienen la mandibula apretada, los hombros tensos, el pecho cerrado, el estomago inquieto, o una sensacion de alerta que no se va.
-
-Hoy vamos a hablar de eso.
-
-Vamos a hablar de calma, sueño y sistema nervioso.
 
 [pausa]
 
@@ -82,8 +83,6 @@ Y cuando el cuerpo se queda en alerta, el sueño puede volverse ligero, interrum
 
 [pausa]
 
-Vamos a decirlo de una forma sencilla.
-
 Tu cuerpo no distingue tan facilmente entre un peligro real y una carga acumulada.
 
 Claro que no es lo mismo estar frente a una amenaza fisica que tener pendientes o preocupaciones.
@@ -110,9 +109,7 @@ La sensacion de que si tu no resuelves, todo se cae.
 
 Todo eso puede mantener al cuerpo en un estado de vigilancia.
 
-Y por eso una persona puede decir:
-
-"Ya estoy en mi casa, ya no estoy trabajando, ya no esta pasando nada, pero no puedo apagarme".
+Y por eso una persona puede decir: ya estoy en mi casa, ya no esta pasando nada, pero no puedo apagarme.
 
 [pausa]
 
@@ -126,57 +123,29 @@ Del celular a la almohada.
 
 De una conversacion intensa a intentar dormir.
 
-De revisar pendientes a exigirle al cuerpo que descanse.
-
 Y el cuerpo no tuvo un puente.
 
 No tuvo un momento para decir: ya terminamos por hoy.
 
 Segunda señal: duermes, pero no reparas.
 
-Aqui no hablamos solo de dormir muchas horas.
+No hablamos solo de dormir muchas horas.
 
 Hablamos de despertar con la sensacion de haber descansado.
 
-Si despiertas cansado, irritable, tenso, con ganas de seguir durmiendo, o con el cuerpo pesado, vale la pena observar que esta pasando.
+Si despiertas cansado, irritable, tenso o con el cuerpo pesado, vale la pena observar que esta pasando.
 
 Tercera señal: necesitas que todo este perfecto para sentir calma.
 
-Si tu calma depende de que no haya pendientes, de que nadie te escriba, de que nadie se enoje, de que todo este bajo control, entonces cualquier detalle puede volver a prender la alarma.
+Si tu calma depende de que no haya pendientes, de que nadie te escriba, de que todo este bajo control, entonces cualquier detalle puede volver a prender la alarma.
 
 Y eso cansa muchisimo.
 
 [pausa]
 
-Tambien hay señales fisicas.
+Estas señales tambien aparecen en el cuerpo: mandibula apretada, respiracion corta, despertares a media noche, necesidad de comer dulce o tomar estimulantes para seguir funcionando.
 
-Mandibula apretada.
-
-Cuello rigido.
-
-Hombros arriba.
-
-Respiracion corta.
-
-Opresion en el pecho.
-
-Estomago inquieto.
-
-Manos tensas.
-
-Dolor de cabeza.
-
-Despertares a media noche.
-
-Sueño superficial.
-
-Necesidad de comer dulce o tomar estimulantes para seguir funcionando.
-
-No significa que todas estas señales tengan la misma causa.
-
-No significa que podamos explicar todo con una sola frase.
-
-Pero si aparecen juntas, y se repiten, son pistas.
+Si aparecen juntas y se repiten, son pistas.
 
 Y las pistas hay que escucharlas.
 
@@ -188,35 +157,29 @@ Error numero uno: pensar que todo se resuelve con echarle ganas.
 
 El sistema nervioso no baja por regaño.
 
-No descansas porque alguien te diga: "ya relajate".
+No descansas porque alguien te diga: ya relajate.
 
 No duermes profundo porque te obligues a dormir.
 
 La calma no se ordena a gritos.
 
-La calma se construye con señales, con ritmo, con repeticion, con cuidado y con coherencia.
+La calma se construye con señales, con ritmo, con repeticion y con coherencia.
 
 Error numero dos: buscar una solucion aislada.
 
-A veces la persona quiere una gota, una capsula, un producto, una tecnica, una frase.
+A veces la persona quiere una capsula, un producto, una tecnica.
 
 Y puede haber apoyos utiles.
 
-Pero si al mismo tiempo sigue tomando cafe tarde, cenando pesado, viendo pantalla hasta el ultimo minuto, resolviendo problemas en la cama, y guardando todo en el cuerpo, el mensaje es contradictorio.
+Pero si al mismo tiempo sigue tomando cafe tarde, viendo pantalla hasta el ultimo minuto y resolviendo problemas en la cama, el mensaje que le das al cuerpo es contradictorio.
 
-El producto puede apoyar una ruta.
+El apoyo funciona dentro de una ruta.
 
-Pero no debe convertirse en una forma de ignorar el patron.
+Solo, no suele alcanzar.
 
 Error numero tres: esperar a estar al limite.
 
 Muchas personas atienden el cuerpo cuando ya no pueden mas.
-
-Cuando ya hay insomnio fuerte.
-
-Cuando ya hay crisis.
-
-Cuando ya hay agotamiento.
 
 Cuando ya el cuerpo grita.
 
@@ -226,69 +189,51 @@ Habla con tension.
 
 Habla con cansancio.
 
-Habla con irritabilidad.
-
-Habla con despertares.
-
-Habla con esa frase: "no se que tengo, pero no me siento bien".
+Habla con esa frase: no se que tengo, pero no me siento bien.
 
 [pausa]
 
-Entonces, ¿por donde empezar?
-
-Te propongo tres pasos simples para esta semana.
+Por donde empezar.
 
 Paso uno: crea una bajada de veinte minutos.
 
 No pases directo del dia a la cama.
 
-Durante veinte minutos, baja luces, deja pantalla, escribe los pendientes de mañana, respira mas lento, toma algo tibio si lo toleras, estira suavemente el cuello, los hombros, la espalda.
+Baja luces, deja pantalla, escribe los pendientes de mañana, respira mas lento, estira el cuello y los hombros.
 
 No tiene que ser perfecto.
 
 Tiene que ser repetible.
 
-El mensaje para el cuerpo es: ya no estamos resolviendo.
-
-Por hoy, soltamos.
+El mensaje para el cuerpo es: ya no estamos resolviendo. Por hoy, soltamos.
 
 Paso dos: observa tu patron durante tres noches.
 
-Anota a que hora te acostaste.
-
-Si usaste pantalla.
-
-Si tomaste cafe, alcohol, te o estimulantes.
-
-Si cenaste pesado.
-
-Que emocion domino tu dia.
-
-Donde sentiste tension.
-
-Si despertaste a media noche.
-
-Y como calificas tu descanso del uno al diez.
+Anota a que hora te acostaste, si usaste pantalla, si tomaste cafe o estimulantes, que emocion domino tu dia, donde sentiste tension, si despertaste a media noche, y como calificas tu descanso del uno al diez.
 
 No es para juzgarte.
 
 Es para encontrar el patron.
 
-Paso tres: pide orientacion si hay medicamentos o condiciones previas.
-
-Esto es muy importante.
-
-Si tomas medicamentos, si tienes ansiedad intensa, depresion, presion alta, embarazo, enfermedad cronica, tratamiento activo, o sintomas que te preocupan, no conviene improvisar suplementos.
-
-Es mejor revisar con cuidado.
+Paso tres: si tomas medicamentos o tienes condiciones previas, consulta antes de tomar cualquier suplemento.
 
 [pausa]
 
-Quiero contarte como lo revisamos en el Instituto.
+Ahora te digo algo importante.
 
-Cuando alguien llega con este patron — no puede bajar, no descansa, no encuentra calma aunque quiera — lo primero que hacemos no es elegir un producto.
+Si empiezas a darle esas señales a tu cuerpo esta semana, puedes despertar con energia de verdad, con la cabeza clara, listo para el dia.
 
-Lo primero es entender que necesita el cuerpo en ese momento: si apoyo mineral, si apoyo desde la fitoterapia, si un reajuste desde la oligoterapia, o los tres al mismo tiempo.
+Si no, puedes seguir durmiendo ocho horas y levantarte igual de agotado, igual de tenso, preguntandote que esta mal.
+
+La diferencia no es el numero de horas.
+
+La diferencia es que tu cuerpo reciba la senal de que ya puede descansar.
+
+[pausa]
+
+En el Instituto, cuando alguien llega con este patron, lo primero que hacemos no es elegir un producto.
+
+Lo primero es entender que necesita el cuerpo: si apoyo mineral, si apoyo desde la fitoterapia, si un reajuste desde la oligoterapia, o los tres al mismo tiempo.
 
 Esa lectura es lo que hace la diferencia entre tomar algo y tomar algo que tiene sentido para tu caso especifico.
 
@@ -302,41 +247,32 @@ Si estas lejos puedes conectarte por Zoom o escribir directamente por WhatsApp.
 
 [pausa]
 
-Tambien hay un puente importante con Actos que Mueven.
+Y si al escuchar esto sientes que lo tuyo no es solo cansancio o insomnio, sino una carga mas profunda, algo que el cuerpo sigue sosteniendo aunque mentalmente ya lo entendiste, tambien puedes preguntar por Actos que Mueven.
 
-Porque a veces el problema no es solamente dormir.
+Porque a veces el cuerpo no necesita mas explicaciones.
 
-A veces hay una carga.
-
-Una historia.
-
-Un ciclo.
-
-Una decision.
-
-Algo que el cuerpo sigue sosteniendo aunque mentalmente ya lo entendiste.
-
-Y cuando hablar ya no alcanza, a veces el cuerpo necesita una experiencia concreta, un acto, una transicion, un cierre.
-
-Por eso, si al escuchar este video sientes que lo tuyo no es solo cansancio o insomnio, sino una carga mas profunda, tambien puedes preguntar por Actos que Mueven.
+Necesita una experiencia concreta, un acto, una transicion, un cierre.
 
 [pausa]
 
-Vamos a cerrar con una pregunta sencilla.
+El dia puede terminar.
 
-Cuando llega la noche, ¿tu cuerpo siente que ya puede descansar?
+Pero tu cuerpo no baja automaticamente.
 
-O solamente se acuesta mientras sigue en emergencia.
+Necesita una senal.
 
-Si esto te hizo sentido, escribe `CALMA` por WhatsApp.
+La pregunta no es cuantas horas duermes.
 
-Cuéntanos cual es tu problema principal: ansiedad, insomnio, cansancio, tension corporal o ruido mental.
+La pregunta es: cuando apagas la luz, ¿tu cuerpo sabe que ya puede descansar?
+
+O sigue en emergencia aunque el dia ya termino.
+
+[pausa]
+
+Si esto te hizo sentido, escribe CALMA por WhatsApp.
+
+Cuentanos cual es tu problema principal: ansiedad, insomnio, cansancio, tension corporal o ruido mental.
 
 Si estas cerca, te esperamos los jueves en la clinica.
 
 Si estas lejos, pide el link de Zoom.
-
-El objetivo no es dormir por fuerza.
-
-El objetivo es que tu cuerpo vuelva a sentir que ya puede descansar.
-
