@@ -4,6 +4,10 @@
  * @returns {Object} métricas para generarHTML()
  */
 function calcularMetricas(datos) {
+  if (!datos || !Array.isArray(datos)) {
+    Logger.log('calcularMetricas: ejecutar testCalcularMetricas o testWebApp, no esta función directamente.');
+    return { totalSemana:0, urgenciasAltaCount:0, topKeyword:'N/A', topCategoria:'N/A', urgenciasAlta:[], categorias:[], keywords:[], fechaCarga:'' };
+  }
   var hoy = new Date();
   var diasDesdeHoy = (hoy.getDay() + 6) % 7;
   var lunesEstaSemana = new Date(hoy);
