@@ -36,12 +36,6 @@ Hoy vamos a hablar de eso.
 
 Vamos a hablar de calma, sueño y sistema nervioso.
 
-Y quiero decirlo desde el inicio: este video es educativo. No sustituye una consulta medica, terapeutica o personalizada.
-
-Si tomas medicamentos, tienes una condicion diagnosticada, estas embarazada, tienes sintomas intensos, crisis de ansiedad o una enfermedad cronica, lo responsable es revisar tu caso con mas cuidado.
-
-Pero si lo que quieres es empezar a entender que puede estar pasando en tu cuerpo, este video te puede ayudar mucho.
-
 [pausa]
 
 Primero: no todo cansancio es igual.
