@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flujo WhatsApp — Equipo Wellbive</title>
+  <style>
+    :root {
+      --ink: #17211f;
+      --muted: #5a6662;
+      --line: #d9e1dc;
+      --paper: #fbfcfa;
+      --panel: #ffffff;
+      --green: #2f6f4e;
+      --teal: #0f766e;
+      --blue: #315f8c;
+      --gold: #a87923;
+      --coral: #b7553b;
+      --soft-green: #e9f4ec;
+      --soft-teal: #e6f4f1;
+      --soft-blue: #e8f0f8;
+      --soft-gold: #f7f1df;
+      --soft-coral: #f8ece7;
+      --shadow: 0 4px 20px rgba(23,33,31,0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 40px 24px 80px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    .header { margin-bottom: 48px; }
+    .header h1 {
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .header p { color: var(--muted); font-size: 15px; }
+    .badge {
+      display: inline-block;
+      background: var(--soft-green);
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* FLUJO PRINCIPAL */
+    .flujo {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      margin-bottom: 56px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+    }
+    .flujo-paso {
+      flex: 1;
+      min-width: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .flujo-paso:not(:last-child)::after {
+      content: '→';
+      position: absolute;
+      right: -14px;
+      top: 28px;
+      font-size: 20px;
+      color: var(--line);
+      z-index: 1;
+    }
+    .flujo-icono {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 12px;
+      flex-shrink: 0;
+    }
+    .flujo-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    .flujo-sub {
+      font-size: 11px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* ROLES */
+    .roles { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 56px; }
+    .rol-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .rol-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .rol-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .rol-nombre { font-size: 15px; font-weight: 700; color: var(--ink); }
+    .rol-titulo { font-size: 12px; color: var(--muted); }
+    .rol-tareas { list-style: none; }
+    .rol-tareas li {
+      font-size: 13px;
+      color: var(--ink);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .rol-tareas li:last-child { border-bottom: none; }
+    .rol-tareas .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 10px;
+      white-space: nowrap;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    /* RITMO SEMANAL */
+    .ritmo { margin-bottom: 56px; }
+    .dias { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+    .dia-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .dia-nombre {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .dia-item {
+      font-size: 12px;
+      color: var(--ink);
+      padding: 5px 0;
+      border-bottom: 1px solid var(--line);
+      line-height: 1.4;
+    }
+    .dia-item:last-child { border-bottom: none; }
+    .dia-quien {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* DECISIONES */
+    .decisiones { margin-bottom: 56px; }
+    .decision-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .decision-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+    }
+    .decision-dato {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .decision-flecha {
+      font-size: 18px;
+      color: var(--line);
+      margin: 6px 0;
+    }
+    .decision-accion {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    /* HERRAMIENTAS */
+    .herramientas { margin-bottom: 40px; }
+    .herramienta-tabla { width: 100%; border-collapse: collapse; }
+    .herramienta-tabla th {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 2px solid var(--line);
+    }
+    .herramienta-tabla td {
+      font-size: 13px;
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .herramienta-tabla tr:last-child td { border-bottom: none; }
+    .herramienta-tabla tr:hover td { background: var(--paper); }
+
+    /* COLOR HELPERS */
+    .bg-green { background: var(--soft-green); }
+    .bg-teal { background: var(--soft-teal); }
+    .bg-blue { background: var(--soft-blue); }
+    .bg-gold { background: var(--soft-gold); }
+    .bg-coral { background: var(--soft-coral); }
+    .c-green { color: var(--green); }
+    .c-teal { color: var(--teal); }
+    .c-blue { color: var(--blue); }
+    .c-gold { color: var(--gold); }
+    .c-coral { color: var(--coral); }
+
+    @media (max-width: 600px) {
+      .flujo { flex-direction: column; gap: 16px; }
+      .flujo-paso::after { display: none; }
+      .flujo-paso { flex-direction: row; align-items: center; gap: 16px; }
+      .flujo-icono { margin-bottom: 0; }
+      .flujo-label, .flujo-sub { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <span class="badge">Sistema Wellbive / Wellkitt</span>
+    <h1>Flujo de trabajo — WhatsApp con IA</h1>
+    <p>Cómo funciona el sistema de clasificación, quién hace qué y qué decisiones permite tomar.</p>
+  </div>
+
+  <!-- FLUJO PRINCIPAL -->
+  <div class="section-title">El flujo completo</div>
+  <div class="flujo">
+    <div class="flujo-paso">
+      <div class="flujo-icono bg-green">💬</div>
+      <div class="flujo-label">WhatsApp</div>
+      <div class="flujo-sub">Cliente escribe al consultorio</div>
+    </div>
+    <div class="flujo-paso">
+      <div class="flujo-icono bg-teal">📋</div>
+      <div class="flujo-label">Secretaria</div>
+      <div class="flujo-sub">Copia el texto al clasificador</div>
+    </div>
+    <div class="flujo-paso">
+      <div class="flujo-icono bg-blue">🤖</div>
+      <div class="flujo-label">IA clasifica</div>
+      <div class="flujo-sub">Claude extrae categoría, productos, urgencia</div>
+    </div>
+    <div class="flujo-paso">
+      <div class="flujo-icono bg-gold">📊</div>
+      <div class="flujo-label">Base de datos</div>
+      <div class="flujo-sub">Queda guardado en Google Sheets</div>
+    </div>
+    <div class="flujo-paso">
+      <div class="flujo-icono bg-coral">📈</div>
+      <div class="flujo-label">Alberto analiza</div>
+      <div class="flujo-sub">Dashboard, email semanal, tendencias</div>
+    </div>
+    <div class="flujo-paso">
+      <div class="flujo-icono bg-green">✅</div>
+      <div class="flujo-label">Decisión</div>
+      <div class="flujo-sub">Video, producto, seguimiento, curso</div>
+    </div>
+  </div>
+
+  <!-- ROLES -->
+  <div class="section-title">Roles del equipo</div>
+  <div class="roles">
+
+    <div class="rol-card">
+      <div class="rol-header">
+        <div class="rol-avatar bg-teal">👩‍💼</div>
+        <div>
+          <div class="rol-nombre">Secretaria</div>
+          <div class="rol-titulo">Captura diaria</div>
+        </div>
+      </div>
+      <ul class="rol-tareas">
+        <li>
+          <span class="tag bg-teal c-teal">Diario</span>
+          Copia conversaciones importantes de WhatsApp al clasificador
+        </li>
+        <li>
+          <span class="tag bg-teal c-teal">Diario</span>
+          Presiona "Clasificar conversación" — la IA hace el resto
+        </li>
+        <li>
+          <span class="tag bg-coral c-coral">Urgente</span>
+          Notifica al Dr. Miguel cuando aparece una Urgencia Alta
+        </li>
+      </ul>
+    </div>
+
+    <div class="rol-card">
+      <div class="rol-header">
+        <div class="rol-avatar bg-blue">📊</div>
+        <div>
+          <div class="rol-nombre">Alberto</div>
+          <div class="rol-titulo">Análisis semanal</div>
+        </div>
+      </div>
+      <ul class="rol-tareas">
+        <li>
+          <span class="tag bg-blue c-blue">Lunes</span>
+          Lee el email con el resumen de la semana anterior
+        </li>
+        <li>
+          <span class="tag bg-blue c-blue">Viernes</span>
+          Revisa el dashboard y detecta tendencias
+        </li>
+        <li>
+          <span class="tag bg-gold c-gold">Mensual</span>
+          Prepara reporte de tendencias y recomendaciones para el Dr. Miguel
+        </li>
+      </ul>
+    </div>
+
+    <div class="rol-card">
+      <div class="rol-header">
+        <div class="rol-avatar bg-green">👨‍⚕️</div>
+        <div>
+          <div class="rol-nombre">Dr. Miguel</div>
+          <div class="rol-titulo">Decisiones estratégicas</div>
+        </div>
+      </div>
+      <ul class="rol-tareas">
+        <li>
+          <span class="tag bg-green c-green">Semanal</span>
+          Revisa con Alberto qué tema domina y decide el video de la semana
+        </li>
+        <li>
+          <span class="tag bg-green c-green">Semanal</span>
+          Decide qué producto o kit promocionar según la demanda real
+        </li>
+        <li>
+          <span class="tag bg-gold c-gold">Mensual</span>
+          Evalúa si lanzar un nuevo curso o taller basado en las preguntas frecuentes
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- RITMO SEMANAL -->
+  <div class="ritmo">
+    <div class="section-title">Ritmo semanal</div>
+    <div class="dias">
+      <div class="dia-card">
+        <div class="dia-nombre c-blue">Lunes</div>
+        <div class="dia-item">
+          <div class="dia-quien c-blue">Alberto</div>
+          Lee el email automático con resumen de la semana pasada
+        </div>
+        <div class="dia-item">
+          <div class="dia-quien c-teal">Dr. Miguel</div>
+          Decide el tema del video basado en el top de keywords
+        </div>
+      </div>
+      <div class="dia-card">
+        <div class="dia-nombre c-teal">Lun–Vie</div>
+        <div class="dia-item">
+          <div class="dia-quien c-teal">Secretaria</div>
+          Clasifica cada conversación importante del día
+        </div>
+        <div class="dia-item">
+          <div class="dia-quien c-coral">Urgencias</div>
+          Las Alta se atienden el mismo día
+        </div>
+      </div>
+      <div class="dia-card">
+        <div class="dia-nombre c-gold">Viernes</div>
+        <div class="dia-item">
+          <div class="dia-quien c-blue">Alberto</div>
+          Abre el dashboard — ¿qué cambió esta semana?
+        </div>
+        <div class="dia-item">
+          <div class="dia-quien c-teal">Dr. Miguel</div>
+          Revisa seguimientos pendientes antes del fin de semana
+        </div>
+      </div>
+      <div class="dia-card">
+        <div class="dia-nombre c-coral">Mensual</div>
+        <div class="dia-item">
+          <div class="dia-quien c-blue">Alberto</div>
+          Exporta Sheet y prepara reporte de tendencias del mes
+        </div>
+        <div class="dia-item">
+          <div class="dia-quien c-teal">Dr. Miguel</div>
+          Decide si hay demanda para un curso o taller nuevo
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATOS → DECISIONES -->
+  <div class="decisiones">
+    <div class="section-title">De los datos a las decisiones</div>
+    <div class="decision-grid">
+      <div class="decision-card">
+        <div class="decision-dato">📊 DOLOR aparece 12 veces esta semana</div>
+        <div class="decision-flecha">↓</div>
+        <div class="decision-accion">El video del lunes es sobre articulaciones y dolor crónico</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-dato">📦 Mincartil preguntado 15 veces</div>
+        <div class="decision-flecha">↓</div>
+        <div class="decision-accion">Verificar inventario y lanzar promoción esta semana</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-dato">🔴 8 conversaciones Urgencia Alta sin respuesta</div>
+        <div class="decision-flecha">↓</div>
+        <div class="decision-accion">Llamar hoy — son personas listas para comprar o consultar</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-dato">🎓 10 personas preguntan por biomagnetismo este mes</div>
+        <div class="decision-flecha">↓</div>
+        <div class="decision-accion">Hay demanda real para un curso o taller de biomagnetismo</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-dato">📈 ENERGIA subió 40% vs. semana pasada</div>
+        <div class="decision-flecha">↓</div>
+        <div class="decision-accion">El video de energía funcionó — hacer Short de refuerzo</div>
+      </div>
+      <div class="decision-card">
+        <div class="decision-dato">🛒 Inulac + Lacticol siempre juntos</div>
+        <div class="decision-flecha">↓</div>
+        <div class="decision-accion">Crear Kit Digestivo con precio especial por los dos</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERRAMIENTAS -->
+  <div class="herramientas">
+    <div class="section-title">Las herramientas del sistema</div>
+    <table class="herramienta-tabla">
+      <thead>
+        <tr>
+          <th>Herramienta</th>
+          <th>Quién la usa</th>
+          <th>Para qué</th>
+          <th>Cuándo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Clasificador WhatsApp</strong><br><span style="font-size:11px;color:var(--muted)">Pestaña Clasificar en Google Sheets</span></td>
+          <td>Secretaria</td>
+          <td>Clasificar cada conversación con un clic</td>
+          <td>Diario</td>
+        </tr>
+        <tr>
+          <td><strong>Dashboard en Sheets</strong><br><span style="font-size:11px;color:var(--muted)">Pestaña Dashboard</span></td>
+          <td>Alberto, Dr. Miguel</td>
+          <td>Ver métricas y filtrar datos en tiempo real</td>
+          <td>Cuando se necesite</td>
+        </tr>
+        <tr>
+          <td><strong>Email automático</strong><br><span style="font-size:11px;color:var(--muted)">Lunes 8am a Alberto</span></td>
+          <td>Alberto</td>
+          <td>Resumen de la semana anterior sin abrir nada</td>
+          <td>Lunes automático</td>
+        </tr>
+        <tr>
+          <td><strong>Monitor Web (dark)</strong><br><span style="font-size:11px;color:var(--muted)">URL pública del Web App</span></td>
+          <td>Alberto</td>
+          <td>Ver KPIs desde el celular sin login</td>
+          <td>Cualquier momento</td>
+        </tr>
+        <tr>
+          <td><strong>Looker Studio</strong><br><span style="font-size:11px;color:var(--muted)">Dashboard visual con gráficas</span></td>
+          <td>Alberto</td>
+          <td>Análisis mensual de tendencias con gráficas</td>
+          <td>Mensual</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:40px">
+    Sistema Wellbive / Wellkitt / Instituto Centrobioenergetica · 2026
+  </p>
+
+</body>
+</html>
