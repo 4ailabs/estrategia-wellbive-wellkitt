@@ -75,6 +75,8 @@ function llamarClaudeAPI(texto) {
       return null;
     }
     var jsonText = data.content[0].text.trim();
+    // Limpiar bloques de codigo markdown que Claude a veces agrega
+    jsonText = jsonText.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/, '').trim();
     try {
       return JSON.parse(jsonText);
     } catch (jsonErr) {
