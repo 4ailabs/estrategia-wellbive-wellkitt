@@ -123,7 +123,7 @@ Presentar uno por uno. Preguntar si alguien se reconoce en cada uno.
 
 **Error 1: Tomar algo sin entender el patron**
 
-Comprar lo que recomienda un conocido, una red social o una tienda sin saber si corresponde al patron especifico. La valeriana no funciona igual para ruido mental que para tension corporal. El L-Triptofano no es lo mismo que el Diatonato 3.
+Comprar lo que recomienda un conocido, una red social o una tienda sin saber si corresponde al patron especifico. La valeriana no funciona igual para ruido mental que para tension corporal. El L-Triptofano no es lo mismo que el Oligosor Litio.
 
 **Error 2: Usar estimulantes para tapar el cansancio**
 
@@ -174,29 +174,36 @@ Si toman medicamentos, tienen un diagnostico o estan en tratamiento activo, lo m
 #### Los productos y su relacion con los perfiles
 
 **Ner-vit**
-Apoyo al sistema nervioso. Util en perfiles de tension corporal constante y ansiedad de fondo. Parte de rutas de equilibrio del sistema nervioso.
+Galphimia glauca + Valeriana + Azahar + Melisa + Pasiflora. Apoyo al sistema nervioso. Perfil: tension corporal constante y ansiedad de fondo sostenida.
 
 **Valeriana**
-Apoyo tradicional asociado a relajacion y conciliacion del sueno. Mas util en perfiles de insomnio de conciliacion y ruido mental leve.
-
-**L-Triptofano**
-Aminoacido precursor de serotonina y melatonina. Apoyo nutricional relacionado con la calidad del descanso. Util en perfiles de despertares nocturnos y cansancio al despertar.
+Valeriana officinalis pura. Sedante natural, apoya la conciliacion del sueno. Perfil: insomnio de conciliacion y ruido mental leve.
 
 **Zapote Blanco**
-Apoyo tradicional con uso historico en estados de nerviosismo y tension. Complemento en rutas de calma.
+Zapote blanco + Olivo + Espino blanco + Melisa + Galphimia. Calma el sistema nervioso, apoya despertares. Perfil: despertares nocturnos y nerviosismo de fondo.
 
-**Diatonato 3**
-Parte de las rutas de equilibrio mineral y oligoelementos. El sistema nervioso necesita minerales especificos para funcionar. Cuando hay deficiencia, la capacidad de bajar la alerta se ve afectada.
+**L-Triptofano**
+Precursor de serotonina y melatonina. Regula ritmo circadiano y estado de animo. Perfil: despertares nocturnos y cansancio al despertar — el sueno no repara.
+
+**Oligosor Litio**
+Minerales con Litio para modulacion neuroendocrina. Regula estados emocionales, util en ansiedad y variaciones de animo que afectan el sueno. Perfil: todos los perfiles como base mineral, especialmente cuando hay carga emocional sostenida.
+
+**Ojo de Gallina**
+Galphimia glauca pura. Antihistaminico natural, calma nervios, apoya metabolismo. Perfil: tension corporal con componente alergico o reactivo, ruido mental con sensacion de activacion fisica.
 
 #### Como orientar la eleccion
 
 Despues de que identificaron su perfil, decir:
 
-"Si tu perfil es principalmente ruido mental o insomnio de conciliacion, el primer paso suele ser apoyar la transicion y calmar la actividad mental.
+"Si tu perfil es ruido mental o insomnio de conciliacion: Valeriana o Ner-vit segun la intensidad de la tension.
 
-Si tu perfil es despertares o cansancio al despertar, el enfoque es diferente — hay que revisar la calidad del sueno profundo y el soporte nutricional.
+Si tu perfil es despertares nocturnos: Zapote Blanco o L-Triptofano segun si el despertar viene con pensamientos o con cansancio profundo.
 
-Si tu perfil es tension corporal, el trabajo empieza por el cuerpo fisico antes de pensar en suplementos para el sueno."
+Si tu perfil es cansancio al despertar: L-Triptofano como primer apoyo nutricional.
+
+Si tu perfil es tension corporal: Ner-vit o Ojo de Gallina segun si hay componente alergico o reactivo.
+
+Para todos los perfiles cuando hay carga emocional sostenida o variaciones de animo: Oligosor Litio como base mineral."
 
 Invitar a pasar por la mesa al terminar para orientacion individual.
 

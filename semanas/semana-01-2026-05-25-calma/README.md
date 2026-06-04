@@ -24,7 +24,8 @@ Kit Anti-Estres:
 - Valeriana
 - L-Triptófano
 - Zapote Blanco
-- Diatonato 3
+- Oligosor Litio
+- Ojo de Gallina
 
 ## Puente
 
