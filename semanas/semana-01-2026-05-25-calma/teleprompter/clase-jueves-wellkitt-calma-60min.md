@@ -438,32 +438,90 @@ La proxima fecha en CDMX es el 6 de junio. Este sabado.
 
 ---
 
-### Bloque 7 — Cierre y acciones (58-60 min)
+### Bloque 7 — Ritual de cierre: La hoja que espera (58-68 min)
 
-Antes de terminar, tres cosas concretas para llevarse hoy.
+Para cerrar vamos a hacer algo juntos. No es una reflexion. Es un acto.
 
-Primera: esta noche, la bajada de veinte minutos. Sin pantalla, luces bajas, pendientes escritos en papel.
+Necesitan un pedazo de papel pequeno y algo con que escribir. Puede ser una hoja arrancada de su cuaderno, lo que tengan a mano.
 
-Segunda: las tres noches de registro. Usen la hoja que les vamos a dar al salir. No tienen que hacerlo perfecto. Tienen que hacerlo.
+Los que estan por Zoom: busquen un papel en este momento.
 
-Tercera: si quieren orientacion sobre productos, pasen por la mesa antes de salir. Digan su perfil y los orientamos.
-
-[pausa]
-
-Para los que estan presencialmente: si todavia no registraron su ficha en la entrada, haganlo ahora. Su cupon personal de quince por ciento tiene vigencia de cuarenta y ocho horas a partir de hoy.
-
-Para los que estan por Zoom: escriban CALMA por WhatsApp y cuentenme cual de los cinco patrones es el suyo. Les respondo con orientacion especifica para su caso.
+[ESPERAR — 1 minuto para que todos tengan papel y lapiz]
 
 [pausa]
 
-Una ultima cosa.
+Bien. Antes de soltar algo hay que reconocer que lo estan cargando.
 
-El dia puede terminar.
+Pongan los dos pies en el suelo. Las manos sobre los muslos. La espalda como la traen, no la corrijan.
 
-Pero el cuerpo no baja automaticamente.
+Observen su cuerpo en este momento. Los hombros. La mandibula. El pecho.
 
-Necesita una senal.
+¿Que siente el cuerpo que todavia tiene que sostener?
 
-Esta semana, denle esa senal.
+[pausa de 15 segundos]
+
+En voz baja, digan esta frase:
+
+"Esto es lo que hago: seguir resolviendo aunque el dia ya termino."
+
+[pausa]
+
+Ahora tres respiraciones. Inhalen en cuatro tiempos, sostengan cuatro, exhalen en seis.
+
+[Contar en voz alta tres ciclos completos]
+
+Al terminar, digan:
+
+"Mi cuerpo esta aqui. Puedo soltar por esta noche."
+
+[pausa]
+
+Sientan los dos pies en el suelo. La silla debajo de ustedes. Abran las palmas hacia arriba sobre los muslos.
+
+"La silla me sostiene. El suelo esta aqui. No tengo que cargar yo solo."
+
+[pausa]
+
+Tomen el papel y el lapiz.
+
+Les voy a hacer una pregunta. No la piensen — escaneen el cuerpo y escriban lo primero que llegue.
+
+¿Que esta sosteniendo su cuerpo en este momento que podria esperar hasta mañana?
+
+[pausa de 40 segundos mientras escriben]
+
+Cuando terminen, miren el papel y digan en voz baja, dirigido a lo que escribieron:
+
+"Esto es real. Lo reconozco. Y puede esperar."
+
+[pausa]
+
+Ahora doblen el papel. Una vez. Dos veces. Hasta que quede pequeno.
+
+No lo pongan en el bolsillo ni en la bolsa.
+
+Coloquenlo sobre la mesa frente a ustedes, o en el suelo, o en el borde de su silla.
+
+Mientras lo colocan — en ese momento — digan en voz alta:
+
+"Ya lo anote. Por esta noche, ya puede esperar."
+
+[SILENCIO DE 45 SEGUNDOS — no decir nada. Dejar que el cuerpo procese.]
+
+[pausa]
+
+Abran las palmas de las manos hacia arriba.
+
+"La noche es mia. Mañana, cuando sea mañana."
+
+[pausa]
+
+El papel pueden llevarselo y abrirlo mañana. O dejarlo aqui. Lo que importa no es el papel. Es lo que paso en el cuerpo cuando lo pusieron ahi.
+
+[pausa]
+
+Para los que estan presencialmente: pasen por la mesa antes de salir para orientacion de productos. Su cupon personal de quince por ciento tiene vigencia de cuarenta y ocho horas.
+
+Para los que estan por Zoom: escriban CALMA por WhatsApp y cuentenme cual de los cinco patrones es el suyo.
 
 Gracias por estar aqui.
