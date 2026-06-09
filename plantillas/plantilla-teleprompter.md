@@ -20,6 +20,7 @@ CTA:
 - No leer encabezados.
 - Evitar frases demasiado largas.
 - Cuidar que no haya promesas medicas ni diagnosticos.
+- No usar el patrón `: de que...` (reescribir como estructura separada o con "Piensalo asi").
 
 ## Calculo rapido de palabras
 

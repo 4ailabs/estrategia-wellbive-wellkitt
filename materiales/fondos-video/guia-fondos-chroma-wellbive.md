@@ -34,6 +34,7 @@ Descripcion visual:
 - Fondo desenfocado de consultorio o sala terapeutica.
 - Pared clara, no blanca pura.
 - Luz natural lateral.
+- Luz suave de estudio o ambiental, sin rayos solares visibles.
 - Librero pequeno o repisa.
 - Una planta discreta.
 - Mesa o mueble bajo con pocos objetos.
@@ -124,7 +125,7 @@ Fondo recomendado:
 Descripcion:
 
 - Consultorio o estudio terapeutico.
-- Luz baja, calida, lateral.
+- Luz baja, calida, lateral, sin sol visible ni ventana protagonista.
 - Fondo con librero o repisa desenfocada.
 - Planta discreta.
 - Tono verde salvia / madera clara.
@@ -236,4 +237,3 @@ Fondo realista para video educativo de salud sobre calma, sueño y sistema nervi
 - Adobe recomienda separar sujeto y pantalla verde, y cuidar que la pantalla no quede irregular o dificil de recortar.
 - B&H recomienda iluminar la pantalla de forma pareja, separar sujeto y fondo, y hacer que la luz del sujeto tenga sentido con el fondo final.
 - Wistia recomienda elegir fondos que no distraigan, usar principios basicos de iluminacion y crear fondos simples pero intencionales.
-

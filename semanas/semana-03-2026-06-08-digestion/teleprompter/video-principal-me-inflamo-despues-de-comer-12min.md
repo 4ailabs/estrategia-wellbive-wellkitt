@@ -35,7 +35,7 @@ Eso explica algo que muchas personas viven sin entender: se cuidan, evitan alime
 
 Hoy si.
 
-Soy el Dr. Miguel Ojeda, Instituto Centrobioenergetica. Esto es Wellbive.
+Soy el Dr. Miguel Ojeda Rios y es  Esto es Wellbive.
 
 [pausa]
 
@@ -63,7 +63,7 @@ Eso cambia la pregunta.
 
 La pregunta no es cuantos probioticos tomas. La pregunta es que bacterias tienes y que estan inyectando en tus celulas.
 
-Un probiotico generico del supermercado introduce bacterias sin garantizar que sean las cepas que tu intestino necesita. La diferencia clinica esta en usar una ruta integral con productos especificos que preparen el terreno y reestablezcan la flora. No uno solo. Es un protocolo.
+Un probiotico generico del supermercado introduce bacterias sin garantizar que sean las cepas que tu intestino necesita ni que tengan la comida que necesitan para vivir. La diferencia clinica esta en usar comida especial para las bacterias buenas — Inulac — junto con un probiotico de cepa seleccionada — Lacticol. No uno solo. Los dos, en el orden correcto.
 
 [pausa]
 
@@ -87,17 +87,17 @@ Entonces que se puede hacer.
 
 En la clinica, cuando alguien llega con inflamacion cronica que no responde a nada, lo primero que revisamos no es un suplemento. Es la capa donde esta el dano.
 
-Si la pared del estomago e intestino esta danada — ardor, peso en el estomago, molestia con casi todo — lo primero es atender esa pared. Para eso existe Colix. Es una formula con menta, manzanilla, boldo, hinojo, aloe, curcuma y jengibre. Plantas que calman el espasmo, regeneran la pared y detienen la inflamacion.
+Si la pared del estomago e intestino esta danada — ardor, peso en el estomago, molestia con casi todo — lo primero es atender esa pared. Para eso existe el Cuachalalate, una planta mexicana que trabaja directamente sobre la pared del estomago e intestino. No la encuentras en el supermercado. Y en dosis que realmente funcione es todavia mas dificil fuera de un espacio clinico.
 
 [pausa]
 
-Si la inflamacion aparece especialmente despues de grasas, con pesadez en la parte alta del abdomen o sensacion en el costado derecho, lo relacionado con el higado es lo que hay que revisar. Cuando el higado no procesa bien las grasas, eso genera su propia inflamacion. Para eso existe Hepacryl, una formula con cardo mariano, alcachofa, boldo y curcuma que protege y regenera el higado.
+Si la inflamacion aparece especialmente despues de grasas, con pesadez en la parte alta del abdomen o sensacion en el costado derecho, lo relacionado con el higado y la bilis es lo que hay que revisar. Cuando el higado y la vesicula no procesan bien las grasas, la bilis no fluye correctamente y eso genera su propia inflamacion. Para eso existe el Cal-Bil, una formula especifica para ese proceso que casi ningun video de digestion menciona.
 
 [pausa]
 
-[OPCIONAL — cortar aqui si el video se siente largo]
 
-Y si llevas meses probando cosas sin respuesta sostenida, hay una posibilidad que casi nadie revisa: que las bacterias de tu intestino simplemente no esten recuperadas. Para eso el siguiente paso es Inulac — que tiene inulina y probioticos — junto con una ruta integral de apoyo que dure 30, 60 o 90 dias dependiendo de tu caso.
+
+Y si llevas meses probando cosas sin respuesta sostenida, hay una posibilidad que casi nadie revisa: carga parasitaria. Parasitos comunes que generan inflamacion de fondo constante y hacen que cualquier suplemento trabaje contra una resistencia que no cede. Para eso existen el Chaparro Amargo y el Vermi-vit, dentro de un protocolo con el orden correcto.
 
 [pausa]
 
@@ -115,15 +115,7 @@ Si reconoces tu capa — esa que lleva meses o años sin respuesta — escribe D
 
 Porque esto que acabas de entender tiene solución, pero requiere que identifiquemos exactamente dónde está el daño.
 
-[pausa]
-
-Y si lo tuyo es más profundo, si quieres tomar los productos y probarlos, si quieres aprender exactamente cómo actúan sobre tu tracto digestivo — nos vemos en **Jueves en Wellkitt**.
-
-Jueves 12 de junio. 45 minutos. Presencial en la clínica o por Zoom, como prefieras.
-
-Es una sesión de práctica: masaje abdominal guiado y degustación de los extractos. No es charla. Es movimiento. Es probar. Es que tu cuerpo entienda desde el primer contacto.
-
-Los que asistan presencialmente reciben cupón personal con 15% de descuento — válido 48 horas.
+Eso es lo que hacemos en Jueves Wellkitt cada semana — presencial o por Zoom — donde traducimos esto en una lectura real de tu caso.
 
 [pausa]
 
@@ -131,4 +123,4 @@ Si este video te dio informacion que no tenias, dejame un like. Ayuda a que lleg
 
 Y en los comentarios dime: de lo que escuchaste hoy, que fue lo que mas resuena con lo que estas viviendo.
 
-Nos vemos el jueves. O nos vemos en el siguiente video.
+Nos vemos en el siguiente video.

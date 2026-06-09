@@ -1,0 +1,32 @@
+<svg width="1000" height="420" viewBox="0 0 1000 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Paleta Wellvibe</title>
+  <desc id="desc">Paleta cromatica propuesta para Wellvibe.</desc>
+  <rect width="1000" height="420" rx="36" fill="#F5F1EA"/>
+  <text x="60" y="72" fill="#123C3A" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="750">Paleta Wellvibe</text>
+  <g transform="translate(60 120)">
+    <rect x="0" y="0" width="160" height="160" rx="24" fill="#123C3A"/>
+    <text x="0" y="202" fill="#123C3A" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Verde petroleo</text>
+    <text x="0" y="232" fill="#596360" font-family="Inter, Arial, sans-serif" font-size="18">#123C3A</text>
+  </g>
+  <g transform="translate(250 120)">
+    <rect x="0" y="0" width="160" height="160" rx="24" fill="#6F978A"/>
+    <text x="0" y="202" fill="#123C3A" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Verde salvia</text>
+    <text x="0" y="232" fill="#596360" font-family="Inter, Arial, sans-serif" font-size="18">#6F978A</text>
+  </g>
+  <g transform="translate(440 120)">
+    <rect x="0" y="0" width="160" height="160" rx="24" fill="#C9A35B"/>
+    <text x="0" y="202" fill="#123C3A" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Oro suave</text>
+    <text x="0" y="232" fill="#596360" font-family="Inter, Arial, sans-serif" font-size="18">#C9A35B</text>
+  </g>
+  <g transform="translate(630 120)">
+    <rect x="0" y="0" width="160" height="160" rx="24" fill="#596360"/>
+    <text x="0" y="202" fill="#123C3A" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Gris mineral</text>
+    <text x="0" y="232" fill="#596360" font-family="Inter, Arial, sans-serif" font-size="18">#596360</text>
+  </g>
+  <g transform="translate(820 120)">
+    <rect x="0" y="0" width="120" height="160" rx="24" fill="#F5F1EA" stroke="#D9D1C4" stroke-width="3"/>
+    <text x="0" y="202" fill="#123C3A" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">Blanco calido</text>
+    <text x="0" y="232" fill="#596360" font-family="Inter, Arial, sans-serif" font-size="18">#F5F1EA</text>
+  </g>
+</svg>
+

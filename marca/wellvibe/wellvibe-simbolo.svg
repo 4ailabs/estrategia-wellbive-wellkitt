@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Simbolo Wellvibe</title>
+  <desc id="desc">Simbolo circular con onda vital para la marca Wellvibe.</desc>
+  <rect width="512" height="512" rx="112" fill="#F5F1EA"/>
+  <circle cx="256" cy="256" r="154" fill="#123C3A"/>
+  <circle cx="256" cy="256" r="122" fill="none" stroke="#6F978A" stroke-width="12"/>
+  <path d="M126 262C154 262 158 218 186 218C214 218 216 304 246 304C276 304 280 208 310 208C340 208 346 262 386 262" stroke="#F5F1EA" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="386" cy="262" r="15" fill="#C9A35B"/>
+  <circle cx="126" cy="262" r="10" fill="#6F978A"/>
+</svg>
+

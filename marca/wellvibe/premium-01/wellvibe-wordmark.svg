@@ -1,0 +1,13 @@
+<svg width="1400" height="360" viewBox="0 0 1400 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Wellvibe wordmark premium</title>
+  <desc id="desc">Logotipo tipografico premium para Wellvibe.</desc>
+  <rect width="1400" height="360" rx="0" fill="#F6F1E8"/>
+  <g transform="translate(118 96)">
+    <text x="0" y="126" fill="#142321" font-family="Manrope, Inter, Aptos, Arial, sans-serif" font-size="132" font-weight="650" letter-spacing="-1">well</text>
+    <text x="300" y="126" fill="#142321" font-family="Manrope, Inter, Aptos, Arial, sans-serif" font-size="132" font-weight="650" letter-spacing="-1">ibe</text>
+    <path d="M281 31L323 126L366 31" stroke="#142321" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M323 126C333 104 343 83 354 62" stroke="#B88A55" stroke-width="6" stroke-linecap="round"/>
+    <path d="M781 154H930" stroke="#B88A55" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
+

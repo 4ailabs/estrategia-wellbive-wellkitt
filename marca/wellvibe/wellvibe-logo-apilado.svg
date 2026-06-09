@@ -1,0 +1,16 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Wellvibe apilado</title>
+  <desc id="desc">Version apilada del logotipo Wellvibe.</desc>
+  <rect width="900" height="900" rx="96" fill="#F5F1EA"/>
+  <g transform="translate(292 102)">
+    <circle cx="158" cy="158" r="136" fill="#123C3A"/>
+    <circle cx="158" cy="158" r="104" fill="none" stroke="#6F978A" stroke-width="10"/>
+    <path d="M46 164C71 164 75 126 100 126C125 126 127 200 154 200C181 200 185 118 212 118C239 118 244 164 280 164" stroke="#F5F1EA" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="280" cy="164" r="13" fill="#C9A35B"/>
+    <circle cx="46" cy="164" r="9" fill="#6F978A"/>
+  </g>
+  <text x="450" y="564" text-anchor="middle" fill="#123C3A" font-family="Inter, Manrope, Montserrat, Arial, sans-serif" font-size="104" font-weight="750" letter-spacing="0">wellvibe</text>
+  <text x="450" y="626" text-anchor="middle" fill="#596360" font-family="Inter, Manrope, Montserrat, Arial, sans-serif" font-size="25" font-weight="500" letter-spacing="4">SALUD INTEGRATIVA</text>
+  <text x="450" y="666" text-anchor="middle" fill="#596360" font-family="Inter, Manrope, Montserrat, Arial, sans-serif" font-size="25" font-weight="500" letter-spacing="4">EN MOVIMIENTO</text>
+</svg>
+

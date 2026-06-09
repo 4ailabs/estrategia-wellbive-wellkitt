@@ -1,0 +1,15 @@
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Wellvibe horizontal</title>
+  <desc id="desc">Logotipo horizontal de Wellvibe con simbolo de onda vital.</desc>
+  <rect width="1280" height="360" rx="48" fill="#F5F1EA"/>
+  <g transform="translate(72 58)">
+    <circle cx="122" cy="122" r="104" fill="#123C3A"/>
+    <circle cx="122" cy="122" r="79" fill="none" stroke="#6F978A" stroke-width="8"/>
+    <path d="M36 126C55 126 58 96 77 96C96 96 98 154 118 154C139 154 142 90 163 90C184 90 188 126 216 126" stroke="#F5F1EA" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="216" cy="126" r="10" fill="#C9A35B"/>
+    <circle cx="36" cy="126" r="7" fill="#6F978A"/>
+  </g>
+  <text x="342" y="184" fill="#123C3A" font-family="Inter, Manrope, Montserrat, Arial, sans-serif" font-size="94" font-weight="750" letter-spacing="0">wellvibe</text>
+  <text x="348" y="242" fill="#596360" font-family="Inter, Manrope, Montserrat, Arial, sans-serif" font-size="28" font-weight="500" letter-spacing="4">SALUD INTEGRATIVA EN MOVIMIENTO</text>
+</svg>
+
