@@ -117,15 +117,21 @@ Porque esto que acabas de entender tiene solución, pero requiere que identifiqu
 
 [pausa]
 
-**Jueves en Wellkitt.**
+**Jueves en Wellkitt. 45 minutos que cambian cómo tu cuerpo entiende la digestión.**
 
-Cada semana. Presencial o por Zoom.
+Presencial en la clínica o por Zoom. Tú decides.
 
-No es charla. Es práctica. Masaje abdominal. Degustación de extractos. Tu cuerpo aprendiendo desde el primer contacto.
+Aquí no vamos a escuchar más teoría. Vamos a trabajar directamente en tu cuerpo.
 
-Jueves 12 de junio. 45 minutos. Cupón personal 15% para los que asisten presencialmente.
+Primer bloque: masaje abdominal guiado. Aprenderás exactamente dónde está la tensión en tu intestino y cómo liberarla. Lo haces en casa todas las noches. Cinco minutos. Cambia el juego.
 
-**Jueves en Wellkitt.**
+Segundo bloque: degustación de extractos. Vas a probar jengibre, melissa, hinojo, boldo. Vivas qué hace cada uno en tu boca, en tu estómago, en tu cuerpo. No es medicamento. Es educación sensorial. Tu cuerpo aprende desde el primer contacto.
+
+Tercer bloque: qué llevar a casa. Cómo usar el kit digestivo según tu síntoma específico.
+
+Jueves 12 de junio. Cupón personal 15% si asistes presencialmente — válido 48 horas.
+
+**Jueves en Wellkitt. Para gente que ya leyó suficiente y quiere resultados.**
 
 [pausa]
 
