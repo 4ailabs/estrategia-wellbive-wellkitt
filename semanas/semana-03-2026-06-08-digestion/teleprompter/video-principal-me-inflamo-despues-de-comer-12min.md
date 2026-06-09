@@ -115,7 +115,15 @@ Si reconoces tu capa — esa que lleva meses o años sin respuesta — escribe D
 
 Porque esto que acabas de entender tiene solución, pero requiere que identifiquemos exactamente dónde está el daño.
 
-Eso es lo que hacemos en Jueves Wellkitt cada semana — presencial o por Zoom — donde traducimos esto en una lectura real de tu caso.
+[pausa]
+
+Y si lo tuyo es más profundo, si quieres tomar los productos y probarlos, si quieres aprender exactamente cómo actúan sobre tu tracto digestivo — nos vemos en **Jueves en Wellkitt**.
+
+Jueves 12 de junio. 45 minutos. Presencial en la clínica o por Zoom, como prefieras.
+
+Es una sesión de práctica: masaje abdominal guiado y degustación de los extractos. No es charla. Es movimiento. Es probar. Es que tu cuerpo entienda desde el primer contacto.
+
+Los que asistan presencialmente reciben cupón personal con 15% de descuento — válido 48 horas.
 
 [pausa]
 
@@ -123,4 +131,4 @@ Si este video te dio informacion que no tenias, dejame un like. Ayuda a que lleg
 
 Y en los comentarios dime: de lo que escuchaste hoy, que fue lo que mas resuena con lo que estas viviendo.
 
-Nos vemos en el siguiente video.
+Nos vemos el jueves. O nos vemos en el siguiente video.
