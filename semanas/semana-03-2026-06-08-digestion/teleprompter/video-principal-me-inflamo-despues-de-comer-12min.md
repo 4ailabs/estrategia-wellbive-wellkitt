@@ -63,7 +63,7 @@ Eso cambia la pregunta.
 
 La pregunta no es cuantos probioticos tomas. La pregunta es que bacterias tienes y que estan inyectando en tus celulas.
 
-Un probiotico generico del supermercado introduce bacterias sin garantizar que sean las cepas que tu intestino necesita. La diferencia clinica esta en usar una ruta integral con productos especificos que preparen el terreno y reestablezcan la flora. No uno solo. Es un protocolo.
+Un probiotico generico del supermercado introduce bacterias sin garantizar que sean las cepas que tu intestino necesita. La diferencia clinica esta en usar una ruta integral con herramientas especificas que preparen el terreno y reestablezcan la flora. No uno solo. Es un protocolo que requiere conocimiento.
 
 [pausa]
 
@@ -85,58 +85,56 @@ No es casualidad. Es que las bacterias de tu intestino todavia no se han recuper
 
 Entonces que se puede hacer.
 
-En la clinica, cuando alguien llega con inflamacion cronica que no responde a nada, lo primero que revisamos no es un suplemento. Es la capa donde esta el dano.
+Lo que viene ahora no es una venta. Es informacion sobre herramientas que existen.
 
-Si la pared del estomago e intestino esta danada — ardor, peso en el estomago, molestia con casi todo — lo primero es atender esa pared. Para eso existe Colix. Es una formula con menta, manzanilla, boldo, hinojo, aloe, curcuma y jengibre. Plantas que calman el espasmo, regeneran la pared y detienen la inflamacion.
+Si la pared del estomago e intestino esta danada — ardor, peso en el estomago, molestia con casi todo — lo primero es atender esa pared. Existen herramientas para eso: menta, manzanilla, boldo, hinojo, aloe, curcuma, jengibre. Son plantas que calman el espasmo, regeneran la pared y detienen la inflamacion. Tu cuerpo ya conoce estas plantas. Las culturas medicas las han usado durante siglos.
 
 [pausa]
 
-Si la inflamacion aparece especialmente despues de grasas, con pesadez en la parte alta del abdomen o sensacion en el costado derecho, lo relacionado con el higado es lo que hay que revisar. Cuando el higado no procesa bien las grasas, eso genera su propia inflamacion. Para eso existe Hepacryl, una formula con cardo mariano, alcachofa, boldo y curcuma que protege y regenera el higado.
+Si la inflamacion aparece especialmente despues de grasas, con pesadez en la parte alta del abdomen o sensacion en el costado derecho, hay un componente hepatobiliar. Tu higado y tu vesicula estan teniendo dificultad. Existen herramientas para apoyar ese proceso: cardo mariano, alcachofa, boldo, curcuma. De nuevo, plantas que tu cuerpo reconoce.
 
 [pausa]
 
 [OPCIONAL — cortar aqui si el video se siente largo]
 
-Y si llevas meses probando cosas sin respuesta sostenida, hay una posibilidad que casi nadie revisa: que las bacterias de tu intestino simplemente no esten recuperadas. Para eso el siguiente paso es Inulac — que tiene inulina y probioticos — junto con una ruta integral de apoyo que dure 30, 60 o 90 dias dependiendo de tu caso.
+Y si llevas meses observando estos patrones sin respuesta, hay una posibilidad: que las bacterias de tu intestino simplemente no se hayan recuperado. Para eso existen herramientas que preparan el terreno — inulina, enzimas, probioticos seleccionados — dentro de una ruta de 30, 60 o 90 dias dependiendo de lo que observes en tu caso.
 
 [pausa]
 
 Volvamos al principio.
 
-El ingrediente que actua como detergente en tu intestino sigue estando en lo que compras empacado. Las bacterias en tu intestino en este momento estan inyectando proteinas en tus celulas. Y si tomaste antibioticos en algun momento de tu vida, las bacterias de tu intestino pueden seguir recuperandose sin que nadie te lo haya dicho.
+El emulsificante sigue estando en lo que compras empacado. Las bacterias en tu intestino siguen inyectando proteinas. Y si tomaste antibioticos, tu ecosistema sigue recuperandose.
 
 La inflamacion no persiste porque no te cuides.
 
 Persiste porque hay capas que no se ven y que casi nadie esta revisando.
 
-[pausa]
-
-Si reconoces tu capa — esa que lleva meses o años sin respuesta — escribe DIGESTION al 55 7907 6626 por WhatsApp. Cuéntanos qué llevas tiempo sintiendo y te damos una orientación personalizada a tu caso.
-
-Porque esto que acabas de entender tiene solución, pero requiere que identifiquemos exactamente dónde está el daño.
+Ahora que lo sabes, tienes una responsabilidad: actuar.
 
 [pausa]
 
-**Jueves en Wellkitt. 45 minutos que cambian cómo tu cuerpo entiende la digestión.**
-
-Presencial en la clínica o por Zoom. Tú decides.
-
-Aquí no vamos a escuchar más teoría. Vamos a trabajar directamente en tu cuerpo.
-
-Primer bloque: masaje abdominal guiado. Aprenderás exactamente dónde está la tensión en tu intestino y cómo liberarla. Lo haces en casa todas las noches. Cinco minutos. Cambia el juego.
-
-Segundo bloque: degustación de extractos. Vas a probar jengibre, melissa, hinojo, boldo. Vivas qué hace cada uno en tu boca, en tu estómago, en tu cuerpo. No es medicamento. Es educación sensorial. Tu cuerpo aprende desde el primer contacto.
-
-Tercer bloque: qué llevar a casa. Cómo usar el kit digestivo según tu síntoma específico.
-
-Jueves 12 de junio. Cupón personal 15% si asistes presencialmente — válido 48 horas.
-
-**Jueves en Wellkitt. Para gente que ya leyó suficiente y quiere resultados.**
+Si reconoces tu capa — esa que lleva meses o años sin respuesta — escribe DIGESTION al 55 7907 6626 por WhatsApp. Cuéntanos qué llevas tiempo sintiendo. Vamos a ayudarte a identificar exactamente dónde está el daño y cuál es el siguiente paso para tu cuerpo específico.
 
 [pausa]
 
-Si este video te dio informacion que no tenias, dejame un like. Ayuda a que llegue a personas que llevan anos buscando una respuesta que nadie les habia dado con fundamento.
+Y si quieres que tu cuerpo lo entienda en vivo, en práctica, nos vemos en Jueves en Wellkitt.
 
-Y en los comentarios dime: de lo que escuchaste hoy, que fue lo que mas resuena con lo que estas viviendo.
+Presencial en la clínica o por Zoom. Tú decides. 45 minutos.
+
+No vamos a escuchar más teoría. Vamos a trabajar directamente en tu cuerpo.
+
+Masaje abdominal guiado. Aprenderás exactamente dónde está la tensión en tu intestino y cómo liberarla. Lo haces en casa todas las noches. Cinco minutos. Cambia el juego.
+
+Experiencia sensorial con los extractos. Vas a probar jengibre, melissa, hinojo, boldo. Vivirás qué hace cada uno en tu boca, en tu estómago, en tu cuerpo. Tu cuerpo aprende desde el primer contacto.
+
+Qué llevar a casa. Cómo usar estas herramientas según tu síntoma específico.
+
+Jueves 12 de junio.
+
+[pausa]
+
+Si este video te dio información que no tenías, déjame un like. Ayuda a que llegue a personas que llevan años buscando una respuesta que nadie les había dado con fundamento.
+
+Y en los comentarios dime: de lo que escuchaste hoy, qué fue lo que más resuena con lo que estás viviendo.
 
 Nos vemos en Jueves en Wellkitt.
