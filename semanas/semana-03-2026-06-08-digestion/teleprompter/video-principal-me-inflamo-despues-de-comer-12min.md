@@ -25,7 +25,7 @@ Y lo que hace es erosionar la capa de moco que protege la pared interna de tu in
 
 [pausa]
 
-Estudios publicados en 2025 documentaron el mecanismo exacto: estos compuestos destruyen las uniones entre las celulas que forman esa pared. Cuando esas uniones se rompen, sustancias que no deberian entrar al torrente sanguineo entran. Y el sistema inmune responde con inflamacion.
+Estudios publicados en 2025 documentaron el mecanismo exacto: estos compuestos destruyen los sellos entre las celulas que forman esa pared. Cuando esos sellos se rompen, sustancias que no deberian entrar al torrente sanguineo entran. Y el sistema inmune responde con inflamacion.
 
 No porque hayas comido algo malo. Sino porque la pared que te protege ya no esta entera.
 
@@ -41,7 +41,7 @@ Soy el Dr. Miguel Ojeda, Instituto Centrobioenergetica. Esto es Wellbive.
 
 Para entender por que la inflamacion persiste hay que entender que le esta pasando a la pared intestinal.
 
-Tu intestino tiene una barrera fisica: una capa de moco encima de las celulas, y entre esas celulas hay uniones estrechas que funcionan como sellos. Esos sellos deciden que pasa y que no pasa hacia tu sangre.
+Tu intestino tiene una barrera fisica: una capa de moco encima de las celulas, y entre esas celulas hay sellos que funcionan como un cierre. Esos sellos deciden que pasa y que no pasa hacia tu sangre.
 
 Cuando esa barrera esta integra, el intestino puede manejar casi cualquier cosa que le llegue. Cuando se rompe, entra de todo — bacterias, toxinas, fragmentos de alimentos sin digerir — y el sistema inmune no para de responder.
 
@@ -55,7 +55,7 @@ En marzo de 2026, investigadores del Instituto Helmholtz de Munich publicaron en
 
 Esas proteinas interactuan con tu sistema inmune. Activan o apagan la inflamacion dependiendo de que bacteria las este inyectando.
 
-No es que las bacterias "te ayudan" o "te danan" de forma vaga. Es que literalmente te estan inyectando algo en este momento. Y si la flora esta alterada, lo que inyectan activa senales inflamatorias dentro de tus propias celulas.
+No es que las bacterias "te ayudan" o "te danan" de forma vaga. Es que literalmente te estan inyectando algo en este momento. Y si las bacterias de tu intestino estan alteradas, lo que inyectan activa senales inflamatorias dentro de tus propias celulas.
 
 [pausa]
 
@@ -63,7 +63,7 @@ Eso cambia la pregunta.
 
 La pregunta no es cuantos probioticos tomas. La pregunta es que bacterias tienes y que estan inyectando en tus celulas.
 
-Un probiotico generico del supermercado introduce bacterias sin garantizar que sean las cepas que tu intestino necesita ni que tengan el sustrato para sobrevivir. La diferencia clinica esta en usar un prebiotico especifico que prepare el terreno — Inulac — junto con un probiotico de cepa seleccionada — Lacticol. No uno solo. Los dos, en el orden correcto.
+Un probiotico generico del supermercado introduce bacterias sin garantizar que sean las cepas que tu intestino necesita. La diferencia clinica esta en usar una ruta integral con productos especificos que preparen el terreno y reestablezcan la flora. No uno solo. Es un protocolo.
 
 [pausa]
 
@@ -75,11 +75,11 @@ Ahora hay una pregunta que vale la pena hacerte.
 
 Cuando fue la ultima vez que tomaste antibioticos.
 
-En marzo de 2026, Nature Medicine publico un estudio con casi quince mil personas seguidas durante ocho anos. Lo que encontraron: ciertos antibioticos alteran la composicion del microbioma entre cuatro y ocho anos despues de haberlos tomado. No semanas. Anos.
+En marzo de 2026, Nature Medicine publico un estudio con casi quince mil personas seguidas durante ocho anos. Lo que encontraron: ciertos antibioticos alteran las bacterias que viven en tu intestino entre cuatro y ocho anos despues de haberlos tomado. No semanas. Anos.
 
 Muchas personas pueden identificar el momento exacto en que su digestion cambio: despues de una infeccion, despues de una cirugia, despues de un tratamiento. Y desde entonces el intestino no volvio a ser igual.
 
-No es casualidad. Es que el ecosistema bacteriano que regula tu inflamacion todavia no se ha recuperado. Y sin un apoyo especifico, puede tardar anos mas.
+No es casualidad. Es que las bacterias de tu intestino todavia no se han recuperado. Y sin un apoyo especifico, puede tardar anos mas.
 
 [pausa]
 
@@ -87,35 +87,35 @@ Entonces que se puede hacer.
 
 En la clinica, cuando alguien llega con inflamacion cronica que no responde a nada, lo primero que revisamos no es un suplemento. Es la capa donde esta el dano.
 
-Si la mucosa esta comprometida — ardor, peso en el estomago, molestia con casi todo — lo primero es atender esa pared. Para eso existe el Cuachalalate, una planta mexicana que trabaja directamente sobre la mucosa gastrica e intestinal. No la encuentras en el supermercado. Y en concentracion terapeutica es todavia mas dificil fuera de un espacio clinico.
+Si la pared del estomago e intestino esta danada — ardor, peso en el estomago, molestia con casi todo — lo primero es atender esa pared. Para eso existe Colix. Es una formula con menta, manzanilla, boldo, hinojo, aloe, curcuma y jengibre. Plantas que calman el espasmo, regeneran la pared y detienen la inflamacion.
 
 [pausa]
 
-Si la inflamacion aparece especialmente despues de grasas, con pesadez en la parte alta del abdomen o sensacion en el costado derecho, el componente biliar es lo que hay que revisar. Cuando el higado y la vesicula no procesan bien las grasas, la bilis no fluye correctamente y eso genera su propia inflamacion. Para eso existe el Cal-Bil, una formula especifica para ese proceso que casi ningun video de digestion menciona.
+Si la inflamacion aparece especialmente despues de grasas, con pesadez en la parte alta del abdomen o sensacion en el costado derecho, lo relacionado con el higado es lo que hay que revisar. Cuando el higado no procesa bien las grasas, eso genera su propia inflamacion. Para eso existe Hepacryl, una formula con cardo mariano, alcachofa, boldo y curcuma que protege y regenera el higado.
 
 [pausa]
 
 [OPCIONAL — cortar aqui si el video se siente largo]
 
-Y si llevas meses probando cosas sin respuesta sostenida, hay una posibilidad que casi nadie revisa: carga parasitaria. Parasitos comunes que generan inflamacion de fondo constante y hacen que cualquier suplemento trabaje contra una resistencia que no cede. Para eso existen el Chaparro Amargo y el Vermi-vit, dentro de un protocolo con el orden correcto.
+Y si llevas meses probando cosas sin respuesta sostenida, hay una posibilidad que casi nadie revisa: que las bacterias de tu intestino simplemente no esten recuperadas. Para eso el siguiente paso es Inulac — que tiene inulina y probioticos — junto con una ruta integral de apoyo que dure 30, 60 o 90 dias dependiendo de tu caso.
 
 [pausa]
 
 Volvamos al principio.
 
-El ingrediente que actua como detergente en tu intestino sigue estando en lo que compras empacado. Las bacterias en tu intestino en este momento estan inyectando proteinas en tus celulas. Y si tomaste antibioticos en algun momento de tu vida, tu ecosistema intestinal puede seguir recuperandose sin que nadie te lo haya dicho.
+El ingrediente que actua como detergente en tu intestino sigue estando en lo que compras empacado. Las bacterias en tu intestino en este momento estan inyectando proteinas en tus celulas. Y si tomaste antibioticos en algun momento de tu vida, las bacterias de tu intestino pueden seguir recuperandose sin que nadie te lo haya dicho.
 
-La inflamacion no persiste porque no te cuidas.
+La inflamacion no persiste porque no te cuides.
 
 Persiste porque hay capas que no se ven y que casi nadie esta revisando.
 
 [pausa]
 
-Si quieres saber cual es tu capa, escribe DIGESTION por WhatsApp. Cuentanos que llevas tiempo sintiendo y te orientamos con el siguiente paso concreto. Sin respuesta generica.
+Si reconoces tu capa — esa que lleva meses o años sin respuesta — escribe DIGESTION al 55 7907 6626 por WhatsApp. Cuéntanos qué llevas tiempo sintiendo y te damos una orientación personalizada a tu caso.
 
-Y te esperamos en Jueves en Wellkitt — cada semana, presencial o por Zoom, donde trabajamos exactamente este tipo de lectura.
+Porque esto que acabas de entender tiene solución, pero requiere que identifiquemos exactamente dónde está el daño.
 
-Los productos que mencionamos — Cuachalalate, Cal-Bil, Inulac, Lacticol, Chaparro Amargo — los encuentras en nuestra tienda Wellkitt. No en el supermercado. No en la farmacia de la esquina.
+Eso es lo que hacemos en Jueves Wellkitt cada semana — presencial o por Zoom — donde traducimos esto en una lectura real de tu caso.
 
 [pausa]
 
