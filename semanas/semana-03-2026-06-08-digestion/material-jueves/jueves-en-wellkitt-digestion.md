@@ -1,5 +1,6 @@
-# Jueves en Wellkitt — Digestion sin inflamacion
-Fecha: jueves 12 de junio 2026
+# Hoy en Wellkitt — Digestion sin inflamacion
+Fecha: viernes 12 de junio 2026
+Hora: 5:30 pm
 Duracion: 45 minutos
 Formato: presencial + Zoom
 Palabra clave: DIGESTION
