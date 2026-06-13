@@ -15,6 +15,8 @@ Tension, cansancio, sueno roto y cierre de Actos que Mueven.
 
 Estres que se queda en el cuerpo.
 
+Idea nueva: dar muestra de un producto en vasitos durante la sesion (ej. Saucovit). Revisar si Saucovit es el mejor fit para el tema estres o si conviene un producto del Kit Anti-Estres (Ner-vit, Valeriana).
+
 ## Productos / kit
 
 Kit Anti-Estres:
