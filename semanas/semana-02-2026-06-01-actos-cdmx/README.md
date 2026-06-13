@@ -2,6 +2,10 @@
 
 Fechas: 1-7 junio 2026
 
+## Estado
+
+No se ejecuto. La ventana de promocion de modulo 1 (6 junio) ya paso. Semana 3 (digestion) se hizo en su lugar. No se recicla este contenido — Semana 4 sigue como esta planeada, con cierre de Actos CDMX y modulo 2 (20 junio).
+
 ## Tema
 
 Cuando hablar ya no alcanza.
