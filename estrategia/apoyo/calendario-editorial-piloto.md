@@ -1,7 +1,7 @@
 # Calendario editorial piloto
 
 Estado: plantilla historica. No usar como calendario vigente.
-Calendario vigente: `programacion-90-dias-wellbive-mayo-agosto-2026.md` y `timeline-wellbive-90dias.html`.
+Calendario vigente: `../fuente-de-verdad/programacion-90-dias-wellbive-mayo-agosto-2026.md` y `../fuente-de-verdad/timeline-wellbive-90dias.html`.
 
 Duracion: 2 semanas
 

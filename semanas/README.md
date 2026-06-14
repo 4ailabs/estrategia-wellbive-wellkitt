@@ -4,9 +4,9 @@ Estas carpetas sirven para ejecutar la estrategia semana por semana.
 
 La programacion madre sigue siendo:
 
-- `../programacion-90-dias-wellbive-mayo-agosto-2026.md`
-- `../timeline-wellbive-90dias.html`
-- `../tablero-estrategia-wellbive.html`
+- `../estrategia/fuente-de-verdad/programacion-90-dias-wellbive-mayo-agosto-2026.md`
+- `../estrategia/fuente-de-verdad/timeline-wellbive-90dias.html`
+- `../estrategia/fuente-de-verdad/tablero-estrategia-wellbive.html`
 
 ## Como usar cada semana
 

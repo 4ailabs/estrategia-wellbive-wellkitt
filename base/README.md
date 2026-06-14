@@ -1,10 +1,10 @@
 # Base de conocimiento
 
-Aqui se colocan fuentes de consulta, transcripciones, inventarios y referencias.
+Aqui se colocan fuentes de consulta, inventarios y referencias.
 
-El JSON original de transcripcion sigue en la raiz:
+El JSON original de transcripcion esta en:
 
-- `../20260522 1403 Recording-transcription-20260522T152642.json`
+- `../estrategia/transcripciones/20260522 1403 Recording-transcription-20260522T152642.json`
 
 La base de productos Wellkitt esta en:
 

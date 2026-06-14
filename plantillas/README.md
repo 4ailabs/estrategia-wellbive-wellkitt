@@ -2,10 +2,10 @@
 
 Aqui van los formatos reutilizables para producir contenido.
 
-Plantillas actuales en la raiz:
+Plantillas disponibles:
 
-- `../ficha-produccion-video.md`
-- `../plantilla-reporte-whatsapp.md`
-
-Sugerencia: cuando una plantilla se vuelva estable, copiarla aqui o moverla aqui y actualizar el `README.md` principal.
+- `ficha-produccion-video.md`
+- `plantilla-reporte-whatsapp.md`
+- `plantilla-ficha-producto-editorial.md`
+- `plantilla-teleprompter.md`
 

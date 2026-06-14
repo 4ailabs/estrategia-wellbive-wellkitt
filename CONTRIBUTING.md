@@ -5,9 +5,9 @@
 Revisar primero:
 
 - `README.md`
-- `programacion-90-dias-wellbive-mayo-agosto-2026.md`
-- `timeline-wellbive-90dias.html`
-- `tablero-estrategia-wellbive.html`
+- `estrategia/fuente-de-verdad/programacion-90-dias-wellbive-mayo-agosto-2026.md`
+- `estrategia/fuente-de-verdad/timeline-wellbive-90dias.html`
+- `estrategia/fuente-de-verdad/tablero-estrategia-wellbive.html`
 
 ## Cambios de calendario
 
@@ -18,10 +18,10 @@ Hay dos tipos de cambios:
 
 Los cambios estrategicos deben actualizar los documentos relacionados:
 
-- Programacion madre: `programacion-90-dias-wellbive-mayo-agosto-2026.md`
-- Calendario operativo: `calendario-operativo-wellbive-junio-julio-2026.md`
-- Timeline visual: `timeline-wellbive-90dias.html`
-- Tablero estrategico: `tablero-estrategia-wellbive.html`
+- Programacion madre: `estrategia/fuente-de-verdad/programacion-90-dias-wellbive-mayo-agosto-2026.md`
+- Calendario operativo: `estrategia/fuente-de-verdad/calendario-operativo-wellbive-junio-julio-2026.md`
+- Timeline visual: `estrategia/fuente-de-verdad/timeline-wellbive-90dias.html`
+- Tablero estrategico: `estrategia/fuente-de-verdad/tablero-estrategia-wellbive.html`
 
 Los cambios de produccion deben hacerse dentro de la carpeta semanal correspondiente:
 
