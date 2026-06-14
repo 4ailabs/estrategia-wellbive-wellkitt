@@ -101,19 +101,41 @@ Y si llevas meses observando estos patrones sin respuesta, hay una posibilidad: 
 
 [pausa]
 
-Volvamos al principio.
+Volvamos al principio. Pero ahora con claridad.
 
 El emulsificante sigue estando en lo que compras empacado. Las bacterias en tu intestino siguen inyectando proteinas. Y si tomaste antibioticos, tu ecosistema sigue recuperandose.
 
 La inflamacion no persiste porque no te cuides.
 
-Persiste porque hay capas que no se ven y que casi nadie esta revisando.
+Persiste porque hay capas que no se ven.
 
-Ahora que lo sabes, tienes una responsabilidad: actuar.
+Y esas capas son diferentes en cada persona.
+
+Por capas me refiero a esto: la pared intestinal que se erosiona. La flora bacteriana que se altera. El patrón de vida que genera estrés. La historia con los antibioticos. Cada una es una capa. Y cada persona tiene una capa diferente que esta dañada.
+
+Para alguien que tomó antibioticos hace cinco años, la capa principal es la flora bacteriana que aún no se recupera.
+
+Para alguien que come emulsificantes todos los días sin saberlo, la capa principal es la pared intestinal erosionada.
+
+Para alguien que está bajo estrés crónico, la capa principal es el sistema nervioso que no para de activar la inflamacion.
+
+Para alguien que pasó por una cirugía abdominal, la capa principal puede ser el tejido cicatricial que restringe el movimiento.
+
+No es que uno esté bien y otro mal. Es que cada uno tiene un punto de ruptura diferente.
+
+Ahora que entiendes esto, tienes una responsabilidad: descubrir cuál es tu capa.
+
+Eso requiere observación. No suposición.
 
 [pausa]
 
-Si reconoces tu capa — esa que lleva meses o años sin respuesta — escribe DIGESTION al 55 7907 6626 por WhatsApp. Cuéntanos qué llevas tiempo sintiendo. Vamos a ayudarte a identificar exactamente dónde está el daño y cuál es el siguiente paso para tu cuerpo específico.
+Para orientación personalizada sobre tu caso específico, escribimos por WhatsApp. El número es 55 7907 6626.
+
+Cuéntanos qué llevas tiempo sintiendo. Cuándo empezó. Qué hace que mejore o que empeore. Qué ya probaste.
+
+Vamos a ayudarte a identificar exactamente cuál es tu capa y cuál es el siguiente paso para tu cuerpo específico.
+
+No es un paso genérico. Es el tuyo.
 
 [pausa]
 
@@ -135,6 +157,6 @@ Jueves 12 de junio.
 
 Si este video te dio información que no tenías, déjame un like. Ayuda a que llegue a personas que llevan años buscando una respuesta que nadie les había dado con fundamento.
 
-Y en los comentarios dime: de lo que escuchaste hoy, qué fue lo que más resuena con lo que estás viviendo.
+Y en los comentarios dime: de lo que escuchaste hoy, cuál es tu capa. Cuál fue el momento en que cambió para ti.
 
 Nos vemos en Jueves en Wellkitt.
