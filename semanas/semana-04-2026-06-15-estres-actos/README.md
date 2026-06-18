@@ -36,11 +36,10 @@ ESTRES
 
 ## Checklist
 
-- [ ] Guion video principal
+- [x] Guion video principal
 - [ ] Guion video puente
 - [ ] Short
 - [ ] Texto WhatsApp
 - [ ] Material presencial
 - [ ] Seguimiento Actos
 - [ ] Reporte de resultados
-
