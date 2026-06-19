@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #1e1e1e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+      font-family: 'Courier New', monospace;
+    }
+    .label {
+      color: rgba(255,255,255,0.4);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    svg {
+      box-shadow: 0 24px 80px rgba(0,0,0,0.7);
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</helmet>
+
+<p class="label">Estructura de Anaqueles — Prototipo Arquitectónico</p>
+
+<!--
+  ESCALA: 2px = 1cm
+  Anaquel 1: 121cm ancho × 235cm alto × 46cm prof → 242px × 470px × 92px(proj)
+  Anaquel 2:  91cm ancho × 235cm alto × 46cm prof → 182px × 470px
+  Secciones: 5 × 41cm = 82px c/u   |   Latones: 6 × 5cm = 10px c/u
+  Total alto: 6×10 + 5×82 = 470px ✓
+  Bastidores: 5cm = 10px
+  Vector profundidad: dx=+46, dy=-23  (isométrico 30°)
+  
+  A1: x=110..352, y=80..550
+  A2: x=400..582, y=80..550   (gap = 48px ≈ 24cm entre anaqueles)
+-->
+
+<svg viewBox="0 0 880 730" width="880" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+    <stop offset="0%"   stop-color="#f5f2e8"/>
+    <stop offset="100%" stop-color="#edead8"/>
+  </linearGradient>
+  <linearGradient id="gMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#111"/>
+    <stop offset="30%"  stop-color="#252525"/>
+    <stop offset="70%"  stop-color="#303030"/>
+    <stop offset="100%" stop-color="#1a1a1a"/>
+  </linearGradient>
+  <linearGradient id="gGold" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#f0c830"/>
+    <stop offset="20%"  stop-color="#d4a010"/>
+    <stop offset="100%" stop-color="#8a6008"/>
+  </linearGradient>
+  <linearGradient id="gGoldSide" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#6a4808"/>
+    <stop offset="100%" stop-color="#a07818"/>
+  </linearGradient>
+  <linearGradient id="gTop" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#d0ccbc"/>
+    <stop offset="100%" stop-color="#a8a490"/>
+  </linearGradient>
+  <linearGradient id="gSideWall" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#9a9688"/>
+    <stop offset="100%" stop-color="#80786c"/>
+  </linearGradient>
+  <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="10" cy="10" r="0.6" fill="#c0bcac"/>
+  </pattern>
+</defs>
+
+<!-- === FONDO TIPO PLANO ARQUITECTÓNICO === -->
+<rect width="880" height="730" fill="url(#paper)"/>
+<rect width="880" height="730" fill="url(#dots)" opacity="0.8"/>
+<rect x="10" y="10" width="860" height="710" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<rect x="14" y="14" width="852" height="702" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+
+<!-- ============================================================
+     ANAQUEL 1  —  121 cm ancho
+     Front: x=110..352, y=80..550   (w=242, h=470)
+     Back:  x=156..398, y=57..527   (+46, -23)
+     Bastidores: left=110-120, right=342-352
+============================================================ -->
+
+<!-- Back face A1 -->
+<polygon points="156,57 398,57 398,527 156,527" fill="#ccc8b8" opacity="0.35"/>
+
+<!-- Right side wall A1 -->
+<polygon points="352,80 398,57 398,527 352,550" fill="url(#gSideWall)"/>
+<!-- Laton stripes on right side A1 -->
+<polygon points="352,80  398,57  398,67  352,90"  fill="url(#gGoldSide)"/>
+<polygon points="352,172 398,149 398,159 352,182" fill="url(#gGoldSide)"/>
+<polygon points="352,264 398,241 398,251 352,274" fill="url(#gGoldSide)"/>
+<polygon points="352,356 398,333 398,343 352,366" fill="url(#gGoldSide)"/>
+<polygon points="352,448 398,425 398,435 352,458" fill="url(#gGoldSide)"/>
+<polygon points="352,540 398,517 398,527 352,550" fill="url(#gGoldSide)"/>
+<!-- Right support edge on side A1 -->
+<polygon points="342,80 352,80 398,57 388,57" fill="#0a0a0a"/>
+
+<!-- Top surface A1 (top laton) -->
+<polygon points="110,80 352,80 398,57 156,57" fill="url(#gTop)" stroke="#1a1a1a" stroke-width="1"/>
+<!-- Support footprints on top A1 -->
+<polygon points="110,80 120,80 166,57 156,57" fill="#1a1a1a" opacity="0.55"/>
+<polygon points="342,80 352,80 398,57 388,57" fill="#1a1a1a" opacity="0.55"/>
+
+<!-- Front face background A1 -->
+<rect x="110" y="80" width="242" height="470" fill="#e2dfd4"/>
+<!-- Open section tints A1 -->
+<rect x="120" y="90"  width="222" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="120" y="182" width="222" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="120" y="274" width="222" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="120" y="366" width="222" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="120" y="458" width="222" height="82" fill="#eceae0" opacity="0.8"/>
+<!-- Latones A1 -->
+<rect x="110" y="80"  width="242" height="10" fill="url(#gGold)"/>
+<rect x="110" y="172" width="242" height="10" fill="url(#gGold)"/>
+<rect x="110" y="264" width="242" height="10" fill="url(#gGold)"/>
+<rect x="110" y="356" width="242" height="10" fill="url(#gGold)"/>
+<rect x="110" y="448" width="242" height="10" fill="url(#gGold)"/>
+<rect x="110" y="540" width="242" height="10" fill="url(#gGold)"/>
+<!-- Laton highlights A1 -->
+<rect x="110" y="80"  width="242" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="110" y="172" width="242" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="110" y="264" width="242" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="110" y="356" width="242" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="110" y="448" width="242" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="110" y="540" width="242" height="2" fill="#fce060" opacity="0.6"/>
+<!-- Bastidores A1 -->
+<rect x="110" y="80" width="10" height="470" fill="url(#gMetal)"/>
+<rect x="342" y="80" width="10" height="470" fill="url(#gMetal)"/>
+<rect x="110" y="80" width="2" height="470" fill="rgba(255,255,255,0.06)"/>
+<rect x="342" y="80" width="2" height="470" fill="rgba(255,255,255,0.06)"/>
+<!-- Perforaciones bastidor izquierdo A1 -->
+<circle cx="115" cy="128" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="144" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="220" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="236" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="312" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="328" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="404" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="420" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="496" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="115" cy="512" r="1.5" fill="#060606" opacity="0.9"/>
+<!-- Perforaciones bastidor derecho A1 -->
+<circle cx="347" cy="128" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="144" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="220" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="236" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="312" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="328" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="404" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="420" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="496" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="347" cy="512" r="1.5" fill="#060606" opacity="0.9"/>
+<!-- Border A1 -->
+<rect x="110" y="80" width="242" height="470" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<!-- Depth lines A1 -->
+<line x1="110" y1="80"  x2="156" y2="57"  stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="352" y1="80"  x2="398" y2="57"  stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="352" y1="550" x2="398" y2="527" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="110" y1="550" x2="156" y2="527" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+
+<!-- Section labels A1 -->
+<text x="231" y="134" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.1</text>
+<text x="231" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.2</text>
+<text x="231" y="318" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.3</text>
+<text x="231" y="410" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.4</text>
+<text x="231" y="502" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.5</text>
+
+<!-- ============================================================
+     ANAQUEL 2  —  91 cm ancho
+     Front: x=400..582, y=80..550   (w=182, h=470)
+     Back:  x=446..628, y=57..527
+     Bastidores: left=400-410, right=572-582
+============================================================ -->
+
+<!-- Back face A2 -->
+<polygon points="446,57 628,57 628,527 446,527" fill="#ccc8b8" opacity="0.35"/>
+
+<!-- Right side wall A2 -->
+<polygon points="582,80 628,57 628,527 582,550" fill="url(#gSideWall)"/>
+<!-- Laton stripes on right side A2 -->
+<polygon points="582,80  628,57  628,67  582,90"  fill="url(#gGoldSide)"/>
+<polygon points="582,172 628,149 628,159 582,182" fill="url(#gGoldSide)"/>
+<polygon points="582,264 628,241 628,251 582,274" fill="url(#gGoldSide)"/>
+<polygon points="582,356 628,333 628,343 582,366" fill="url(#gGoldSide)"/>
+<polygon points="582,448 628,425 628,435 582,458" fill="url(#gGoldSide)"/>
+<polygon points="582,540 628,517 628,527 582,550" fill="url(#gGoldSide)"/>
+<!-- Right support edge on side A2 -->
+<polygon points="572,80 582,80 628,57 618,57" fill="#0a0a0a"/>
+
+<!-- Top surface A2 -->
+<polygon points="400,80 582,80 628,57 446,57" fill="url(#gTop)" stroke="#1a1a1a" stroke-width="1"/>
+<polygon points="400,80 410,80 456,57 446,57" fill="#1a1a1a" opacity="0.55"/>
+<polygon points="572,80 582,80 628,57 618,57" fill="#1a1a1a" opacity="0.55"/>
+
+<!-- Front face background A2 -->
+<rect x="400" y="80" width="182" height="470" fill="#e2dfd4"/>
+<!-- Open section tints A2 -->
+<rect x="410" y="90"  width="162" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="410" y="182" width="162" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="410" y="274" width="162" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="410" y="366" width="162" height="82" fill="#eceae0" opacity="0.8"/>
+<rect x="410" y="458" width="162" height="82" fill="#eceae0" opacity="0.8"/>
+<!-- Latones A2 -->
+<rect x="400" y="80"  width="182" height="10" fill="url(#gGold)"/>
+<rect x="400" y="172" width="182" height="10" fill="url(#gGold)"/>
+<rect x="400" y="264" width="182" height="10" fill="url(#gGold)"/>
+<rect x="400" y="356" width="182" height="10" fill="url(#gGold)"/>
+<rect x="400" y="448" width="182" height="10" fill="url(#gGold)"/>
+<rect x="400" y="540" width="182" height="10" fill="url(#gGold)"/>
+<!-- Laton highlights A2 -->
+<rect x="400" y="80"  width="182" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="400" y="172" width="182" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="400" y="264" width="182" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="400" y="356" width="182" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="400" y="448" width="182" height="2" fill="#fce060" opacity="0.6"/>
+<rect x="400" y="540" width="182" height="2" fill="#fce060" opacity="0.6"/>
+<!-- Bastidores A2 -->
+<rect x="400" y="80" width="10" height="470" fill="url(#gMetal)"/>
+<rect x="572" y="80" width="10" height="470" fill="url(#gMetal)"/>
+<rect x="400" y="80" width="2" height="470" fill="rgba(255,255,255,0.06)"/>
+<rect x="572" y="80" width="2" height="470" fill="rgba(255,255,255,0.06)"/>
+<!-- Perforaciones bastidor izquierdo A2 -->
+<circle cx="405" cy="128" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="144" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="220" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="236" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="312" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="328" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="404" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="420" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="496" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="405" cy="512" r="1.5" fill="#060606" opacity="0.9"/>
+<!-- Perforaciones bastidor derecho A2 -->
+<circle cx="577" cy="128" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="144" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="220" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="236" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="312" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="328" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="404" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="420" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="496" r="1.5" fill="#060606" opacity="0.9"/>
+<circle cx="577" cy="512" r="1.5" fill="#060606" opacity="0.9"/>
+<!-- Border A2 -->
+<rect x="400" y="80" width="182" height="470" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+<!-- Depth lines A2 -->
+<line x1="400" y1="80"  x2="446" y2="57"  stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="582" y1="80"  x2="628" y2="57"  stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="582" y1="550" x2="628" y2="527" stroke="#1a1a1a" stroke-width="1.5"/>
+<line x1="400" y1="550" x2="446" y2="527" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+
+<!-- Section labels A2 -->
+<text x="491" y="134" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.1</text>
+<text x="491" y="226" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.2</text>
+<text x="491" y="318" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.3</text>
+<text x="491" y="410" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.4</text>
+<text x="491" y="502" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#80786c">S.5</text>
+
+<!-- ============================================================
+     COTAS / DIMENSIONES
+============================================================ -->
+
+<!-- Ancho A1: 121 cm -->
+<line x1="110" y1="566" x2="352" y2="566" stroke="#b02818" stroke-width="1.2"/>
+<line x1="110" y1="560" x2="110" y2="572" stroke="#b02818" stroke-width="1.5"/>
+<line x1="352" y1="560" x2="352" y2="572" stroke="#b02818" stroke-width="1.5"/>
+<text x="231" y="579" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#b02818">121 cm</text>
+
+<!-- Ancho A2: 91 cm -->
+<line x1="400" y1="566" x2="582" y2="566" stroke="#b02818" stroke-width="1.2"/>
+<line x1="400" y1="560" x2="400" y2="572" stroke="#b02818" stroke-width="1.5"/>
+<line x1="582" y1="560" x2="582" y2="572" stroke="#b02818" stroke-width="1.5"/>
+<text x="491" y="579" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#b02818">91 cm</text>
+
+<!-- Altura total: 235 cm (izquierda) -->
+<line x1="88" y1="80" x2="88" y2="550" stroke="#b02818" stroke-width="1.2"/>
+<line x1="82" y1="80"  x2="94" y2="80"  stroke="#b02818" stroke-width="1.5"/>
+<line x1="82" y1="550" x2="94" y2="550" stroke="#b02818" stroke-width="1.5"/>
+<text x="74" y="318" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" font-weight="bold" fill="#b02818" transform="rotate(-90 74 318)">235 cm</text>
+
+<!-- Altura sección: 41 cm (derecha A2) -->
+<line x1="595" y1="90"  x2="607" y2="90"  stroke="#b02818" stroke-width="0.8" stroke-dasharray="2,2"/>
+<line x1="595" y1="172" x2="607" y2="172" stroke="#b02818" stroke-width="0.8" stroke-dasharray="2,2"/>
+<line x1="604" y1="90" x2="604" y2="172" stroke="#b02818" stroke-width="1"/>
+<line x1="599" y1="90"  x2="609" y2="90"  stroke="#b02818" stroke-width="1"/>
+<line x1="599" y1="172" x2="609" y2="172" stroke="#b02818" stroke-width="1"/>
+<text x="613" y="135" font-family="'Courier New', monospace" font-size="9" fill="#b02818">41 cm</text>
+
+<!-- Latón: 5 cm -->
+<line x1="595" y1="80"  x2="607" y2="80"  stroke="#b02818" stroke-width="0.8" stroke-dasharray="2,2"/>
+<line x1="604" y1="80" x2="604" y2="90" stroke="#b02818" stroke-width="1"/>
+<line x1="599" y1="80"  x2="609" y2="80"  stroke="#b02818" stroke-width="1"/>
+<text x="613" y="88" font-family="'Courier New', monospace" font-size="9" fill="#b02818">5 cm</text>
+
+<!-- Profundidad: 46 cm (en el techo del A2) -->
+<line x1="582" y1="68" x2="628" y2="45" stroke="#b02818" stroke-width="1"/>
+<line x1="578" y1="68" x2="586" y2="68" stroke="#b02818" stroke-width="1"/>
+<line x1="624" y1="45" x2="632" y2="45" stroke="#b02818" stroke-width="1"/>
+<text x="637" y="48" font-family="'Courier New', monospace" font-size="9" fill="#b02818">46 cm</text>
+
+<!-- Gap label -->
+<line x1="352" y1="595" x2="400" y2="595" stroke="#888" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="376" y="607" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#888">~24 cm</text>
+
+<!-- ============================================================
+     TÍTULO Y ETIQUETAS
+============================================================ -->
+
+<!-- View title -->
+<text x="110" y="38" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#1a1a1a" letter-spacing="1">VISTA ISOMÉTRICA — DOS ANAQUELES SEPARADOS</text>
+<text x="110" y="52" font-family="'Courier New', monospace" font-size="8.5" fill="#666">5 SECCIONES · 6 LATONES DE 5 cm · PROFUNDIDAD 46 cm · ESC. 1:20</text>
+
+<!-- Etiquetas anaqueles -->
+<text x="231" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#333" font-weight="bold">ANAQUEL 1</text>
+<text x="491" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#333" font-weight="bold">ANAQUEL 2</text>
+
+<!-- TITLE BLOCK -->
+<rect x="14" y="648" width="852" height="48" fill="#eeead8" stroke="#1a1a1a" stroke-width="0.8"/>
+<line x1="440" y1="648" x2="440" y2="696" stroke="#1a1a1a" stroke-width="0.5"/>
+<line x1="640" y1="648" x2="640" y2="696" stroke="#1a1a1a" stroke-width="0.5"/>
+
+<text x="227" y="665" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" font-weight="bold" fill="#1a1a1a" letter-spacing="1.5">ESTRUCTURA DE ANAQUELES</text>
+<text x="227" y="681" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#555">Instituto Centro Bioenergetica · Diseño Estructural</text>
+
+<text x="540" y="664" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#333">ESCALA 1:20 · UNIDADES: cm</text>
+<text x="540" y="678" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#555">5 SECCIONES · 6 LATONES (5 cm c/u)</text>
+
+<text x="758" y="660" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#333">A1: 121 × 46 × 235 cm</text>
+<text x="758" y="673" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#333">A2:  91 × 46 × 235 cm</text>
+<text x="758" y="686" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#888">BASTIDOR: 5 cm · SECCIÓN: 41 cm</text>
+
+</svg>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

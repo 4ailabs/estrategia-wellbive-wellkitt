@@ -29,17 +29,17 @@ Cuando la discusión ya pasó.
 
 Cuando llegaste a tu casa, cerraste la puerta y, en teoría, ya podrías descansar.
 
-Pero el cuerpo sigue apretando la mandíbula.
+Aun así, el cuerpo sigue apretando la mandíbula.
 
 Los hombros siguen arriba.
 
 La respiración sigue corta.
 
-Y cuando por fin te acuestas, estás cansado, pero no logras dormir profundamente.
+Y cuando por fin te acuestas, el cansancio está ahí, aunque el sueño profundo no llega.
 
 [pausa]
 
-Eso es lo que ocurre cuando el evento termina, pero la respuesta del cuerpo no encuentra una señal clara de cierre.
+Eso es lo que ocurre cuando el evento termina y la respuesta del cuerpo no encuentra una señal clara de cierre.
 
 El estrés se queda en forma de tensión.
 
@@ -95,13 +95,17 @@ Y aunque cada episodio parezca pequeño, el cuerpo va sumando carga.
 
 Al final del día dices: “No me pasó nada tan grave”.
 
-Pero el cuerpo no está contando historias. Está acumulando respuestas.
+El cuerpo, en cambio, no está contando historias. Está acumulando respuestas.
 
 [pausa]
 
-Esa carga suele aparecer en tres lugares.
+Esa carga suele aparecer en tres lugares. Siempre los mismos.
 
-El primero son los músculos.
+Tensión. Cansancio. Sueño roto.
+
+[pausa]
+
+El primero: los músculos.
 
 Mandíbula apretada.
 
@@ -113,11 +117,11 @@ Espalda tensa.
 
 Manos cerradas.
 
-Molestias que mejoran un poco con masaje, pero regresan en cuanto vuelves a la rutina.
+Molestias que mejoran un poco con masaje y regresan en cuanto vuelves a la rutina.
 
 No significa que todo dolor sea estrés. Un dolor persistente, intenso o nuevo necesita valoración.
 
-Pero sí conviene observar si tu tensión aumenta cuando hay presión, conflicto o exceso de pendientes.
+Lo que sí conviene es observar si tu tensión aumenta cuando hay presión, conflicto o exceso de pendientes.
 
 [pausa]
 
@@ -125,7 +129,7 @@ El segundo lugar es la energía.
 
 El cuerpo puede sentirse cansado y acelerado al mismo tiempo.
 
-No tienes energía para hacer lo que necesitas, pero tampoco puedes detenerte.
+No tienes energía para hacer lo que necesitas y, al mismo tiempo, tampoco puedes detenerte.
 
 Buscas café, azúcar, pantalla o actividad constante para seguir funcionando.
 
@@ -133,13 +137,13 @@ Después llega un bajón.
 
 Y como te sientes agotado, piensas que solo necesitas dormir más.
 
-Pero llega la noche y no puedes bajar.
+Entonces llega la noche y no puedes bajar.
 
 [pausa]
 
 El tercer lugar es el sueño.
 
-Tal vez te duermes, pero despiertas varias veces.
+Tal vez logras dormirte y, aun así, despiertas varias veces.
 
 Tal vez abres los ojos demasiado temprano y la mente empieza a resolver problemas.
 
@@ -157,19 +161,35 @@ Entonces reaccionas con más facilidad, te cuesta concentrarte y el cuerpo vuelv
 
 [pausa]
 
-Aquí aparece un error muy común.
+Hay tres errores que mantienen este ciclo aunque la persona esté intentando resolverlo.
 
-Intentar resolver cada señal por separado.
+Error número uno: atacar cada señal por separado.
 
-Algo para el dolor.
+Algo para el dolor. Algo para tener energía. Algo para dormir.
 
-Algo para tener energía.
-
-Algo para dormir.
-
-Pero nadie pregunta qué está manteniendo al cuerpo en tensión.
+La pregunta que suele faltar es qué está manteniendo al cuerpo en tensión.
 
 Si no miramos el patrón completo, podemos apagar una señal durante unas horas sin cambiar la dinámica que la produce.
+
+[pausa]
+
+Error número dos: creer que cinco minutos de relajación compensan horas de activación.
+
+Relajarte un momento puede ayudar. Lo que no puede hacer es compensar una rutina que activa al cuerpo durante todo el día.
+
+La carga se acumula en capas. Y se resuelve en capas.
+
+[pausa]
+
+Error número tres: elegir un suplemento sin revisar el patrón ni los medicamentos.
+
+Natural no significa automático ni libre de interacciones.
+
+Lo que funciona para ruido mental puede no funcionar para tensión corporal.
+
+Y si ya hay un tratamiento activo, agregar algo sin revisarlo puede interferir.
+
+Primero se observa el patrón. Después se orienta la ruta.
 
 [pausa]
 
@@ -229,8 +249,6 @@ Muchas personas descubren en ese momento que llevaban horas apretando algo sin n
 
 Ahora viene la parte importante.
 
-Relajarte cinco minutos puede ayudar, pero no compensa una rutina que activa al cuerpo durante todo el día.
-
 Necesitamos trabajar en tres niveles.
 
 El primero es reducir señales innecesarias de alerta.
@@ -239,7 +257,7 @@ Por ejemplo, cafeína tarde, noticias antes de dormir, trabajo desde la cama, di
 
 No tienes que resolver toda tu vida hoy.
 
-Pero sí puedes dejar de agregar activación cuando el cuerpo ya está saturado.
+Lo que sí puedes hacer es dejar de agregar activación cuando el cuerpo ya está saturado.
 
 [pausa]
 
@@ -275,9 +293,9 @@ Una relación que necesita un límite.
 
 Una decisión postergada.
 
-Una etapa que terminó por fuera, pero no se ha cerrado por dentro.
+Una etapa que terminó por fuera y sigue abierta por dentro.
 
-En esos casos, la regulación corporal ayuda, pero también puede hacer falta conversación, acompañamiento psicológico, atención médica o una experiencia que permita reconocer y trabajar lo que sigue pendiente.
+En esos casos, la regulación corporal ayuda. También puede hacer falta conversación, acompañamiento psicológico, atención médica o una experiencia que permita reconocer y trabajar lo que sigue pendiente.
 
 [pausa]
 
@@ -289,39 +307,13 @@ En Wellkitt contamos con una ruta de apoyo de 30 días para estrés y sueño.
 
 Puede incluir herramientas como Ner-vit, Valeriana, Zapote Blanco, L-Triptófano y Diatonato 3, según el patrón de cada persona.
 
-Pero no todas las personas necesitan lo mismo.
+Cada persona necesita una ruta distinta.
 
 No es igual quien vive con tensión durante el día que quien tarda horas en dormir.
 
 No es igual quien despierta de madrugada que quien se siente agotado desde la mañana.
 
-Y no es igual una persona sana que alguien que toma medicamentos, está embarazada, tiene una condición crónica o recibe tratamiento para ansiedad, depresión o insomnio.
-
-Por eso no recomendamos elegir un producto solo porque alguien dijo que era “natural”.
-
-Natural no significa automático ni libre de interacciones.
-
-Primero se observa el patrón. Después se orienta la ruta.
-
-[pausa]
-
-Si reconociste este patrón en tu propia semana, escribe la palabra ESTRES por WhatsApp al 55 7907 6626.
-
-Cuéntanos cuál es tu señal principal.
-
-Ansiedad.
-
-Insomnio.
-
-Cansancio.
-
-Tensión corporal.
-
-O ruido mental.
-
-También dinos si tomas algún medicamento o si ya estás en tratamiento. Esa información es necesaria para orientarte con más cuidado.
-
-Con esa información podemos orientarte mejor.
+Por eso la ruta de cada persona es diferente. El jueves explicamos cómo encontrar la tuya.
 
 [pausa]
 
@@ -334,8 +326,6 @@ Vamos a trabajar con observación corporal, respiración y una práctica concret
 También explicaremos cuándo puede tener sentido una ruta de apoyo y cuándo conviene buscar una valoración más amplia.
 
 Quienes vengan presencialmente podrán conocer la tienda, recibir una guía práctica y obtener un cupón personal del 15 por ciento, válido durante 48 horas para la categoría de esta sesión.
-
-Si estás fuera de la ciudad, escribe ESTRES y pide el enlace de Zoom.
 
 [pausa]
 
@@ -355,19 +345,19 @@ Y pide apoyo cuando la carga no baja o empieza a interferir con tu vida.
 
 [pausa]
 
-Escribe ESTRES por WhatsApp al 55 7907 6626 para pedir orientación, reservar tu lugar presencial o solicitar el enlace de Zoom.
+Escribe ESTRES por WhatsApp al 55 7907 6626.
+
+Cuéntanos cuál es tu señal principal: ansiedad, insomnio, cansancio, tensión corporal o ruido mental.
+
+Y dinos si tomas algún medicamento o si ya estás en tratamiento — esa información nos ayuda a orientarte con más cuidado.
+
+Con eso podemos ayudarte a reservar tu lugar, enviarte el enlace de Zoom, o simplemente orientarte sobre qué tiene sentido para tu caso.
+
+[pausa]
 
 Y en los comentarios dime cuál es la primera parte de tu cuerpo que se tensa cuando estás bajo presión.
 
-Mandíbula.
-
-Cuello.
-
-Hombros.
-
-Espalda.
-
-Abdomen.
+Mandíbula. Cuello. Hombros. Espalda. Abdomen.
 
 Reconocer dónde empieza tu respuesta es el primer paso para dejar de vivirla en automático.
 
@@ -387,7 +377,7 @@ Nos vemos en Jueves Wellkitt.
 
 ## Descripción YouTube
 
-¿Termina el problema, pero tu cuerpo sigue tenso? ¿Llegas cansado a la noche y aun así no logras descansar profundamente?
+¿El problema termina y tu cuerpo sigue tenso? ¿Llegas cansado a la noche y aun así no logras descansar profundamente?
 
 En este video aprenderás:
 
@@ -405,9 +395,9 @@ Este contenido es educativo y no sustituye atención médica o psicológica. Si 
 
 1. Estrés acumulado: 3 señales de que tu cuerpo no ha podido soltar
 2. Si el problema ya pasó, ¿por qué tu cuerpo sigue tenso?
-3. Cansado pero acelerado: cuando el estrés rompe tu descanso
+3. Cansado y acelerado: cuando el estrés rompe tu descanso
 4. Mandíbula, hombros y sueño: dónde se queda el estrés
-5. El día terminó, pero tu cuerpo sigue bajo presión
+5. El día terminó y tu cuerpo sigue bajo presión
 
 ## Miniatura
 

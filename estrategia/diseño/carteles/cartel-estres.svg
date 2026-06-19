@@ -1,0 +1,53 @@
+<svg width="150mm" height="200mm" viewBox="0 0 150 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo blanco -->
+  <rect width="150" height="200" fill="#FFFFFF"/>
+  <!-- Borde exterior clínico -->
+  <rect width="150" height="200" fill="none" stroke="#4A6FA5" stroke-width="1.2"/>
+  <!-- Bloque de color superior -->
+  <rect width="150" height="8" fill="#4A6FA5"/>
+  <!-- Logo Wellkitt (texto) en bloque superior -->
+  <text x="10" y="5.8" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4.5" fill="#FFFFFF" font-weight="800" letter-spacing="1">Wellkitt</text>
+  <text x="140" y="5.8" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.2" fill="#FFFFFF" text-anchor="end" opacity="0.8">semana 4</text>
+  <!-- Tag categoría -->
+  <rect x="10" y="14" width="30" height="7" rx="3" fill="#EEF2F8"/>
+  <text x="25" y="19.2" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4.5" fill="#4A6FA5" text-anchor="middle" font-weight="700" letter-spacing="0.5">ESTRÉS</text>
+  <!-- Palabra clave central -->
+  <text x="75" y="68" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="48" font-weight="900" fill="#4A6FA5" text-anchor="middle" opacity="0.08">ESTRÉS</text>
+  <text x="75" y="65" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="30" font-weight="900" fill="#2C2C2C" text-anchor="middle" letter-spacing="-0.5">ESTRÉS</text>
+  <!-- Subtítulo -->
+  <text x="75" y="76" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="7" fill="#4A6FA5" text-anchor="middle" font-weight="300" letter-spacing="2">QUE SE QUEDA EN EL CUERPO</text>
+  <!-- Línea decorativa -->
+  <line x1="30" y1="82" x2="120" y2="82" stroke="#4A6FA5" stroke-width="0.5"/>
+  <!-- 4 Patrones -->
+  <text x="75" y="92" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4.5" fill="#888888" text-anchor="middle" font-weight="600" letter-spacing="1.5">4 PATRONES</text>
+  <!-- Patrón 1 -->
+  <rect x="10" y="97" width="60" height="20" rx="3" fill="#F5F8FC"/>
+  <rect x="10" y="97" width="4" height="20" rx="2" fill="#4A6FA5"/>
+  <text x="18" y="106" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="5.5" fill="#2C2C2C" font-weight="700">Tensión</text>
+  <text x="18" y="112.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.8" fill="#666666">Mandíbula · hombros · espalda</text>
+  <!-- Patrón 2 -->
+  <rect x="80" y="97" width="60" height="20" rx="3" fill="#F5F8FC"/>
+  <rect x="80" y="97" width="4" height="20" rx="2" fill="#4A6FA5"/>
+  <text x="88" y="106" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="5.5" fill="#2C2C2C" font-weight="700">Ruido mental</text>
+  <text x="88" y="112.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.8" fill="#666666">Pensamientos · loop · alarma</text>
+  <!-- Patrón 3 -->
+  <rect x="10" y="122" width="60" height="20" rx="3" fill="#F5F8FC"/>
+  <rect x="10" y="122" width="4" height="20" rx="2" fill="#4A6FA5"/>
+  <text x="18" y="131" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="5.5" fill="#2C2C2C" font-weight="700">Sueño roto</text>
+  <text x="18" y="137.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.8" fill="#666666">No duerme · despierta · ligero</text>
+  <!-- Patrón 4 -->
+  <rect x="80" y="122" width="60" height="20" rx="3" fill="#F5F8FC"/>
+  <rect x="80" y="122" width="4" height="20" rx="2" fill="#4A6FA5"/>
+  <text x="88" y="131" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="5.5" fill="#2C2C2C" font-weight="700">Cansancio</text>
+  <text x="88" y="137.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.8" fill="#666666">Agotado desde mañana · vacío</text>
+  <!-- Línea divisora -->
+  <line x1="10" y1="150" x2="140" y2="150" stroke="#E8E8E8" stroke-width="0.5"/>
+  <!-- Evento Jueves -->
+  <text x="75" y="160" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="5" fill="#888888" text-anchor="middle" font-weight="600" letter-spacing="1">JUEVES WELLKITT EN CLÍNICA</text>
+  <text x="75" y="168" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="6.5" fill="#2C2C2C" text-anchor="middle" font-weight="700">Jueves 18 de junio</text>
+  <text x="75" y="175" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4.5" fill="#4B4B4B" text-anchor="middle">Presencial · Acapulco 36, piso 8, Roma</text>
+  <text x="75" y="181" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4.5" fill="#4B4B4B" text-anchor="middle">Transmisión por Zoom</text>
+  <!-- CTA WhatsApp -->
+  <rect x="20" y="185" width="110" height="10" rx="5" fill="#4A6FA5"/>
+  <text x="75" y="191.8" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4.5" fill="#FFFFFF" text-anchor="middle" font-weight="700">Escribe ESTRES · 55 7907 6626</text>
+</svg>

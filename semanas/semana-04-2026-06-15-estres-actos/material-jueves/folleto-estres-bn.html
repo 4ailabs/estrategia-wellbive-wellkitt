@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estrés · Wellkitt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    @page { size: A4; margin: 0; }
+
+    :root {
+      --azul:     #1a1a1a;
+      --azul-s:   #000000;
+      --azul-l:   #cccccc;
+      --azul-xs:  #efefef;
+      --ink:      #000000;
+      --graphite: #1a1a1a;
+      --mid:      #444444;
+      --rule:     #999999;
+      --nude:     #e8e8e8;
+      --cream:    #f5f5f5;
+      --paper:    #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #ffffff;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    /* ── PÁGINA ── */
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: var(--paper);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 20px;
+      page-break-after: always;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      padding: 22px 32px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+    .h-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 5px;
+    }
+    .h-logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+    .h-logo-text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--azul);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .h-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 26pt;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+    .h-titulo em {
+      color: var(--azul);
+      font-style: normal;
+      font-weight: 300;
+    }
+    .h-right {
+      text-align: right;
+    }
+    .h-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .h-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      font-weight: 300;
+      color: var(--graphite);
+    }
+
+    /* ── INTRO STRIP ── */
+    .intro {
+      padding: 13px 32px;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+    .intro p {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.6;
+    }
+
+    /* ── SECTION LABEL ── */
+    .sec-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    /* ═══════════ PÁGINA 1 ═══════════ */
+    .p1-body {
+      flex: 1;
+      padding: 20px 32px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* ── Patrones como filas ── */
+    .patrones-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .patron {
+      display: grid;
+      grid-template-columns: 130px 1fr 140px;
+      border-bottom: 1px solid var(--rule);
+      min-height: 0;
+    }
+    .patron:last-child { border-bottom: none; }
+
+    .patron-izq {
+      padding: 12px 16px;
+      border-right: 1px solid var(--rule);
+      background: var(--nude);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+    }
+    .patron-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 600;
+      color: var(--azul);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .patron-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.15;
+    }
+    .patron-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+
+    .patron-centro {
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+    .patron-check-item {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--graphite);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      line-height: 1.3;
+    }
+    .patron-check-box {
+      width: 10px;
+      height: 10px;
+      border: 1.5px solid var(--azul-l);
+      border-radius: 2px;
+      flex-shrink: 0;
+      background: var(--azul-xs);
+    }
+
+    .patron-der {
+      padding: 12px 16px;
+      border-left: 1px solid var(--rule);
+      background: var(--azul-xs);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+    .patron-prod-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .patron-prod-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: var(--azul);
+      line-height: 1.3;
+    }
+
+    /* ── Acciones inmediatas ── */
+    .acciones-section { display: flex; flex-direction: column; gap: 10px; }
+    .acciones-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .accion {
+      border: 1px solid var(--rule);
+      border-top: 2px solid var(--azul);
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .accion-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20pt;
+      font-weight: 700;
+      color: #bbbbbb;
+      line-height: 1;
+    }
+    .accion-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+    .accion-texto {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.55;
+    }
+
+    .p1-footer {
+      padding: 12px 32px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .p1-footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 280px;
+      line-height: 1.5;
+    }
+    .p1-footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.6;
+    }
+    .p1-footer-marca strong {
+      font-weight: 600;
+      color: var(--graphite);
+    }
+    .pagenum {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 10pt;
+      color: var(--azul);
+      font-weight: 300;
+    }
+
+    /* ═══════════ PÁGINA 2 ═══════════ */
+    .p2-body {
+      flex: 1;
+      padding: 18px 32px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      overflow: hidden;
+    }
+
+    .prod {
+      display: grid;
+      grid-template-columns: 82px 110px 1fr 90px;
+      gap: 0;
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--azul);
+      min-height: 0;
+    }
+    .prod-img {
+      padding: 8px 6px;
+      border-right: 1px solid var(--rule);
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prod-img img {
+      width: 100%;
+      max-height: 88px;
+      object-fit: contain;
+      display: block;
+      mix-blend-mode: multiply;
+    }
+    .prod-img-ph {
+      width: 36px;
+      height: 52px;
+      background: var(--azul-xs);
+      border: 1px solid var(--azul-l);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prod-img-ph span {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13pt;
+      font-weight: 700;
+      color: var(--azul-l);
+    }
+    .prod-izq {
+      padding: 12px 14px;
+      border-right: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .prod-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .prod-patron {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 5px;
+    }
+    .prod-patron-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6pt;
+      font-weight: 700;
+      background: var(--azul);
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 2px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .prod-patron-name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 500;
+      color: var(--azul);
+      letter-spacing: 0.5px;
+    }
+    .prod-centro {
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .prod-para {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .prod-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.55;
+    }
+    .prod-nota {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: #92400E;
+      background: #FFFBEB;
+      border-left: 2px solid #F59E0B;
+      padding: 4px 8px;
+      line-height: 1.45;
+      margin-top: 2px;
+    }
+    .prod-der {
+      padding: 12px 14px;
+      border-left: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+    }
+    .prod-timing-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+    .prod-timing-val {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    .p2-footer {
+      margin: 10px 32px 0;
+      padding: 12px 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .p2-footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 300px;
+      line-height: 1.5;
+    }
+    .p2-footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.6;
+    }
+    .p2-footer-marca strong { font-weight: 600; color: var(--graphite); }
+
+    @media print {
+      body { background: #fff; margin: 0; }
+      .page { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════ PÁGINA 1 · PATRONES ═══════ -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Kit <em>Anti-Estrés</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Guía de autocuidado</div>
+      <div class="h-sub">Cuando el cuerpo no encuentra cierre</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>El estrés no siempre se va cuando termina el evento. Se queda en el cuerpo en forma de tensión, cansancio o sueño roto. Identifica cuál de estos patrones te describe mejor — cada uno tiene su propia ruta.</p>
+  </div>
+
+  <div class="p1-body">
+
+    <div>
+      <div class="sec-label" style="margin-bottom:10px">Identifica tu patrón</div>
+      <div class="patrones-list">
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patrón 1</div>
+            <div class="patron-nombre">Tensión muscular</div>
+            <div class="patron-sub">El cuerpo apretado aunque el problema terminó</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Mandíbula apretada al despertar</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Cuello u hombros tensos al final del día</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Dolor que mejora con masaje pero regresa</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Cuerpo tenso sin razón aparente</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Ner-vit<br>Melissa</div>
+          </div>
+        </div>
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patrón 2</div>
+            <div class="patron-nombre">Ruido mental</div>
+            <div class="patron-sub">Motor encendido sin nada que resolver</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>La mente no para aunque el cuerpo descansó</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Repasas conversaciones del día sin querer</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Tardas más de 30 min en dormirte</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Sensación de no poder "apagar"</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Valeriana</div>
+          </div>
+        </div>
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patrón 3</div>
+            <div class="patron-nombre">Cansancio sin reserva</div>
+            <div class="patron-sub">Agotado desde la mañana sin importar cuánto duermas</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Te despiertas ya cansado</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Necesitas cafeína para arrancar</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Bajón de energía a media tarde</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Concentración baja aunque hayas dormido</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Magnesio</div>
+          </div>
+        </div>
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patrón 4</div>
+            <div class="patron-nombre">Sueño roto</div>
+            <div class="patron-sub">Duermes las horas pero el cuerpo no descansa</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Despiertas a las 2–3 am con la mente activa</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Sueño ligero, cualquier ruido te saca</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Duermes horas pero amaneces sin recuperación</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Fatiga diurna aunque hayas dormido suficiente</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Zapote Blanco<br>Glicam<br>L-Triptófano</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acciones-section">
+      <div class="sec-label">3 cosas que puedes hacer hoy</div>
+      <div class="acciones-grid">
+        <div class="accion">
+          <div class="accion-num">01</div>
+          <div class="accion-titulo">Revisa qué activa al cuerpo después de que el día terminó</div>
+          <div class="accion-texto">Cafeína tarde, noticias antes de dormir, trabajo desde la cama. No tienes que resolverlo todo — solo deja de agregar activación cuando el cuerpo ya está saturado.</div>
+        </div>
+        <div class="accion">
+          <div class="accion-num">02</div>
+          <div class="accion-titulo">Crea una señal de transición que se repita</div>
+          <div class="accion-texto">Cambiarte de ropa, escribir los pendientes y cerrar la libreta, bajar la luz. Lo importante es la repetición: el cuerpo aprende que esa acción significa "por hoy, terminé."</div>
+        </div>
+        <div class="accion">
+          <div class="accion-num">03</div>
+          <div class="accion-titulo">Practica la exhalación larga antes de dormir</div>
+          <div class="accion-texto">Inhala 4 tiempos · Sostén 2 · Exhala 6. Cuando la salida dura más que la entrada, el sistema nervioso recibe una señal directa de calma. Repite 3 veces.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p1-footer">
+    <div class="p1-footer-note">Si tienes más de un patrón activo, identifica el dominante y empieza por ahí. Ver productos en la página siguiente.</div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="p1-footer-marca"><strong>Wellkitt</strong><br>Acapulco 36, piso 8 · Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+      <div class="pagenum">1</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════ PÁGINA 2 · PRODUCTOS ═══════ -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Los <em>productos</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Kit Anti-Estrés</div>
+      <div class="h-sub">Qué hace cada uno y para quién</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>Cada producto responde a un patrón específico. No todos son para todos — el patrón que identificaste en la página anterior es el punto de partida. Si tomas algún medicamento, consúltanos antes de agregar cualquier suplemento.</p>
+  </div>
+
+  <div class="p2-body">
+
+    <div class="prod">
+      <div class="prod-img"><img src="../../../base/productos/imagenes/Nervit.jpg" alt="Ner-vit"></div>
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Ner-vit</div>
+          <div class="prod-patron">
+            <span class="prod-patron-num">P·1</span>
+            <span class="prod-patron-name">Tensión muscular</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Para quién</div>
+        <div class="prod-desc">Mandíbula, cuello y hombros tensos. Cuerpo en modo alerta aunque el problema ya pasó. Extracto de Galphimia, Valeriana, Azahar, Melisa y Pasiflora. No produce somnolencia.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Horario</div><div class="prod-timing-val">Mañana · tarde · noche<br>20 min antes de comer</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-img"><img src="../../../base/productos/imagenes/Melisa.jpg" alt="Melissa"></div>
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Melissa</div>
+          <div class="prod-patron">
+            <span class="prod-patron-num">P·1</span>
+            <span class="prod-patron-name">Tensión muscular</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Para quién</div>
+        <div class="prod-desc">Tensión muscular con irritabilidad o cuando el estrés llega al estómago — retortijones, colon nervioso. Extracto de Melisa officinalis: calmante y antiespasmódica al mismo tiempo.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Horario</div><div class="prod-timing-val">Mañana · tarde · noche<br>20 min antes de comer</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-img"><img src="../../../base/productos/imagenes/Valeriana-extracto.jpg" alt="Valeriana"></div>
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Valeriana</div>
+          <div class="prod-patron">
+            <span class="prod-patron-num">P·2</span>
+            <span class="prod-patron-name">Ruido mental</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Para quién</div>
+        <div class="prod-desc">Mente que no se apaga. Tarda más de 30 min en dormirse porque los pensamientos siguen activos. Extracto de Valeriana officinalis — sedante nervioso suave, facilita la transición al sueño sin dependencia.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Horario</div><div class="prod-timing-val">30–45 min antes de dormir</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-img"><img src="../../../base/productos/imagenes/magnesio.jpg" alt="Magnesio"></div>
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Magnesio</div>
+          <div class="prod-patron">
+            <span class="prod-patron-num">P·3</span>
+            <span class="prod-patron-name">Cansancio sin reserva</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Para quién</div>
+        <div class="prod-desc">Agotado desde la mañana, necesita cafeína para funcionar. El estrés crónico agota el magnesio — mineral esencial para producir energía celular (ATP) y relajar la musculatura.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Horario</div><div class="prod-timing-val">Con desayuno o cena</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-img"><img src="../../../base/productos/imagenes/Zapote blanco.jpg" alt="Zapote Blanco"></div>
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Zapote Blanco</div>
+          <div class="prod-patron">
+            <span class="prod-patron-num">P·4</span>
+            <span class="prod-patron-name">Sueño roto</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Para quién</div>
+        <div class="prod-desc">Se despierta a las 2–3 am con la mente activa y no vuelve a dormir. Zapote blanco, Olivo, Espino blanco, Melisa y Galphimia — calma el sistema nervioso y apoya el reingreso al sueño. Sin dependencia.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Horario</div><div class="prod-timing-val">30 min antes de dormir</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-img"><img src="../../../base/productos/imagenes/glicam400.jpg" alt="Glicam"></div>
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Glicam</div>
+          <div class="prod-patron">
+            <span class="prod-patron-num">P·4</span>
+            <span class="prod-patron-name">Sueño roto</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Para quién</div>
+        <div class="prod-desc">Duerme las horas pero amanece sin recuperación. Glicina — neurotransmisor inhibidor que baja la activación nocturna y permite entrar al sueño profundo donde el cuerpo se repara.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Horario</div><div class="prod-timing-val">30 min antes de dormir</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-img"><img src="../../../base/productos/imagenes/triptofano.jpg" alt="L-Triptófano"></div>
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">L-Triptófano</div>
+          <div class="prod-patron">
+            <span class="prod-patron-num">P·4</span>
+            <span class="prod-patron-name">Sueño roto</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Para quién</div>
+        <div class="prod-desc">Sueño fragmentado con ánimo bajo o ansiedad nocturna. Precursor de serotonina y melatonina — regula el ritmo circadiano y el sueño profundo. Efecto gradual y duradero.</div>
+        <div class="prod-nota">Consultar si hay antidepresivos o inhibidores de recaptura de serotonina activos.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Horario</div><div class="prod-timing-val">En la noche</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p2-footer">
+    <div class="p2-footer-note">Material educativo. No sustituye atención médica. Si los síntomas son intensos o persistentes, busca valoración profesional.</div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="p2-footer-marca"><strong>Wellkitt</strong><br>Acapulco 36, piso 8 · Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+      <div class="pagenum">2</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

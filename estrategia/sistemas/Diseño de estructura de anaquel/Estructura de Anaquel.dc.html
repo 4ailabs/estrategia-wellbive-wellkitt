@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      padding: 40px 20px;
+      user-select: none;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .header {
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      font-size: 32px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    .specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .spec-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .spec-card h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .spec-card p {
+      font-size: 24px;
+      color: #222;
+      font-weight: 600;
+    }
+    .views-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .view-card {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .view-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 20px;
+    }
+    .controls {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+    .controls h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 15px;
+    }
+    .info-box {
+      background: #fff3e0;
+      border-left: 4px solid #d84315;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 4px;
+    }
+    .info-box p {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+    }
+    canvas {
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      background: #fafafa;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</helmet>
+
+<div class="container">
+  <div class="header">
+    <h1>Estructura de Anaquel - Prototipo</h1>
+  </div>
+
+  <div class="specs">
+    <div class="spec-card">
+      <h3>Profundidad</h3>
+      <p>46 cm</p>
+    </div>
+    <div class="spec-card">
+      <h3>Ancho (Anaquel 1)</h3>
+      <p>121 cm</p>
+    </div>
+    <div class="spec-card">
+      <h3>Ancho (Anaquel 2)</h3>
+      <p>91 cm</p>
+    </div>
+    <div class="spec-card">
+      <h3>Alto por sección</h3>
+      <p>41 cm</p>
+    </div>
+    <div class="spec-card">
+      <h3>Número de secciones</h3>
+      <p>5</p>
+    </div>
+    <div class="spec-card">
+      <h3>Altura total</h3>
+      <p>205 cm</p>
+    </div>
+  </div>
+
+  <div class="controls">
+    <h3>Información</h3>
+    <div class="info-box">
+      <p><strong>Estructura metálica de 5 estantes:</strong> Cada sección tiene 41 cm de altura. 6 latones de 5 cm (1 arriba, 4 intermedios, 1 abajo) distribuyen el peso uniformemente. Profundidad de 46 cm permite almacenar productos en profundidad.</p>
+    </div>
+  </div>
+
+  <div class="views-container">
+    <div class="view-card">
+      <div class="view-title">Vista Frontal - Anaquel 1 (121 cm ancho)</div>
+      <canvas id="canvas1"></canvas>
+    </div>
+
+    <div class="view-card">
+      <div class="view-title">Vista Frontal - Anaquel 2 (91 cm ancho)</div>
+      <canvas id="canvas2"></canvas>
+    </div>
+
+    <div class="view-card">
+      <div class="view-title">Vista Lateral (Profundidad 46 cm)</div>
+      <canvas id="canvas3"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+function drawShelf(canvasId, width, height) {
+  const canvas = document.getElementById(canvasId);
+  const ctx = canvas.getContext('2d');
+  
+  canvas.width = width;
+  canvas.height = height;
+  
+  const padding = 40;
+  const availWidth = width - 2 * padding;
+  const availHeight = height - 2 * padding;
+  
+  const supportWidth = 50;
+  const shelfHeight = 30;
+  const bratonHeight = 20;
+  const sectionHeight = 410;
+  
+  // Fondo
+  ctx.fillStyle = '#fafafa';
+  ctx.fillRect(0, 0, width, height);
+  
+  // Soporte izquierdo
+  ctx.fillStyle = '#1a1a1a';
+  ctx.fillRect(padding, padding, supportWidth, availHeight);
+  ctx.strokeStyle = '#555';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(padding, padding, supportWidth, availHeight);
+  
+  // Soporte derecho
+  ctx.fillRect(width - padding - supportWidth, padding, supportWidth, availHeight);
+  ctx.strokeRect(width - padding - supportWidth, padding, supportWidth, availHeight);
+  
+  const shelfWidth = availWidth - 2 * supportWidth + 20;
+  const startX = padding + supportWidth - 10;
+  
+  // Latón superior
+  ctx.fillStyle = '#b8860b';
+  ctx.fillRect(startX, padding, shelfWidth, bratonHeight);
+  ctx.strokeStyle = '#996600';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(startX, padding, shelfWidth, bratonHeight);
+  
+  // Estantes y latones
+  for (let i = 0; i < 5; i++) {
+    const yPos = padding + bratonHeight + (i * (shelfHeight + bratonHeight));
+    
+    // Estante
+    ctx.fillStyle = '#2a2a2a';
+    ctx.fillRect(startX, yPos, shelfWidth, shelfHeight);
+    ctx.strokeStyle = '#555';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(startX, yPos, shelfWidth, shelfHeight);
+    
+    // Latón (si no es el último)
+    if (i < 4) {
+      ctx.fillStyle = '#b8860b';
+      ctx.fillRect(startX, yPos + shelfHeight, shelfWidth, bratonHeight);
+      ctx.strokeStyle = '#996600';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(startX, yPos + shelfHeight, shelfWidth, bratonHeight);
+    }
+  }
+  
+  // Latón inferior
+  const lastY = padding + bratonHeight + (4 * (shelfHeight + bratonHeight)) + shelfHeight;
+  ctx.fillStyle = '#b8860b';
+  ctx.fillRect(startX, lastY, shelfWidth, bratonHeight);
+  ctx.strokeStyle = '#996600';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(startX, lastY, shelfWidth, bratonHeight);
+  
+  // Dimensiones
+  ctx.fillStyle = '#d84315';
+  ctx.font = 'bold 16px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(width === 400 ? '121 cm' : '91 cm', width / 2, height - 20);
+}
+
+function drawSideView() {
+  const canvas = document.getElementById('canvas3');
+  const ctx = canvas.getContext('2d');
+  const width = 200;
+  const height = 600;
+  
+  canvas.width = width;
+  canvas.height = height;
+  
+  const padding = 20;
+  const availWidth = width - 2 * padding;
+  const availHeight = height - 2 * padding;
+  
+  const supportWidth = 20;
+  const shelfHeight = 10;
+  const bratonHeight = 5;
+  
+  // Fondo
+  ctx.fillStyle = '#fafafa';
+  ctx.fillRect(0, 0, width, height);
+  
+  // Soporte frontal
+  ctx.fillStyle = '#1a1a1a';
+  ctx.fillRect(padding, padding, supportWidth, availHeight);
+  ctx.strokeStyle = '#555';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(padding, padding, supportWidth, availHeight);
+  
+  // Soporte trasero
+  ctx.fillRect(width - padding - supportWidth, padding, supportWidth, availHeight);
+  ctx.strokeRect(width - padding - supportWidth, padding, supportWidth, availHeight);
+  
+  const shelfWidth = availWidth - 2 * supportWidth + 10;
+  const startX = padding + supportWidth - 5;
+  
+  // Latón superior
+  ctx.fillStyle = '#b8860b';
+  ctx.fillRect(startX, padding, shelfWidth, bratonHeight);
+  ctx.strokeStyle = '#996600';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(startX, padding, shelfWidth, bratonHeight);
+  
+  // Estantes y latones
+  for (let i = 0; i < 5; i++) {
+    const yPos = padding + bratonHeight + (i * (shelfHeight + bratonHeight));
+    
+    // Estante
+    ctx.fillStyle = '#2a2a2a';
+    ctx.fillRect(startX, yPos, shelfWidth, shelfHeight);
+    ctx.strokeStyle = '#555';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(startX, yPos, shelfWidth, shelfHeight);
+    
+    // Latón
+    if (i < 4) {
+      ctx.fillStyle = '#b8860b';
+      ctx.fillRect(startX, yPos + shelfHeight, shelfWidth, bratonHeight);
+      ctx.strokeStyle = '#996600';
+      ctx.lineWidth = 1;
+      ctx.strokeRect(startX, yPos + shelfHeight, shelfWidth, bratonHeight);
+    }
+  }
+  
+  // Latón inferior
+  const lastY = padding + bratonHeight + (4 * (shelfHeight + bratonHeight)) + shelfHeight;
+  ctx.fillStyle = '#b8860b';
+  ctx.fillRect(startX, lastY, shelfWidth, bratonHeight);
+  ctx.strokeStyle = '#996600';
+  ctx.lineWidth = 1;
+  ctx.strokeRect(startX, lastY, shelfWidth, bratonHeight);
+  
+  // Dimensión
+  ctx.fillStyle = '#d84315';
+  ctx.font = 'bold 12px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('46 cm', width / 2, height - 8);
+}
+
+// Inicializar
+document.addEventListener('DOMContentLoaded', function() {
+  drawShelf('canvas1', 400, 800);
+  drawShelf('canvas2', 300, 800);
+  drawSideView();
+});
+</script>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { };
+  renderVals() {
+    return { };
+  }
+}
+</script>
+</body>
+</html>

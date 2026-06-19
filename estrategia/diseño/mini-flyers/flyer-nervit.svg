@@ -1,0 +1,26 @@
+<svg width="100mm" height="70mm" viewBox="0 0 100 70" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo blanco -->
+  <rect width="100" height="70" fill="#FFFFFF"/>
+  <!-- Borde exterior -->
+  <rect width="100" height="70" fill="none" stroke="#E8E8E8" stroke-width="0.4"/>
+  <!-- Bloque superior de color -->
+  <rect width="100" height="3" fill="#4A6FA5"/>
+  <!-- Categoría tag -->
+  <rect x="4" y="6" width="22" height="5" rx="2" fill="#EEF2F8"/>
+  <text x="15" y="9.8" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.5" fill="#4A6FA5" text-anchor="middle" font-weight="600">ESTRÉS</text>
+  <!-- Nombre producto -->
+  <text x="4" y="22" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="800" fill="#2C2C2C">Ner-vit</text>
+  <!-- Frase beneficio -->
+  <text x="4" y="30" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="5.5" fill="#4A6FA5" font-weight="600">Para la tensión que no suelta</text>
+  <!-- Línea separadora -->
+  <line x1="4" y1="33" x2="96" y2="33" stroke="#E8E8E8" stroke-width="0.5"/>
+  <!-- Descripción -->
+  <text x="4" y="39" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4" fill="#4B4B4B">Sistema nervioso activo, mandíbula apretada,</text>
+  <text x="4" y="44.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4" fill="#4B4B4B">hombros tensos. Apoya la respuesta de calma</text>
+  <text x="4" y="50" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="4" fill="#4B4B4B">sin generar somnolencia.</text>
+  <!-- Ingrediente clave -->
+  <text x="4" y="58" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.5" fill="#888888">Ingrediente principal:</text>
+  <text x="4" y="62.5" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.8" fill="#2C2C2C" font-weight="600">Complejo vitamínico nervioso · fórmula sin somnolencia</text>
+  <!-- CTA WhatsApp -->
+  <text x="96" y="67" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="3.2" fill="#4A6FA5" text-anchor="end">Escribe ESTRES al 55 7907 6626</text>
+</svg>
