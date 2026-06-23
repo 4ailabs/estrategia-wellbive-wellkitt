@@ -77,6 +77,33 @@ Fuente: `semanas/semana-03-2026-06-08-digestion/material-jueves/teleprompter-zoo
 
 ---
 
+### Semana 5 — Energia: "Los 5 tipos de cansancio"
+
+| Tipo | Senales | Producto puente | Nivel de evidencia |
+|---|---|---|---|
+| 1. Fatiga de esfuerzo | Cansancio con esfuerzo fisico, recuperacion lenta, antes podia y ahora no | Coenzima Q10 | FUERTE — meta-analisis 13 RCTs, p=0.001 |
+| 2. Fatiga metabolica | Cansancio + dificultad para bajar peso + pesadez muscular | Carnilis (L-carnitina) | FUERTE — ensayo 2024: fatiga 6.7→2.1 en 7 semanas |
+| 3. Fatiga silenciosa | Manos frias, palidez, falta de concentracion, ferritina baja con hemoglobina "normal" | Espirulina | MODERADO — revision sistematica 2025, RCT 80 mujeres |
+| 4. Fatiga post-desgaste | Meses cansado, nada funciona, post-infeccion/desgaste prolongado | Fostprint MAX | MODERADO — ensayo 2025: jalea real estimula biogenesis mitocondrial (PGC-1alpha) |
+| 5. Fatiga reactiva | Energia que sube y baja segun presion, semanas buenas vs destruido | Maca Peruana | DEBIL-MODERADO — modulacion HPA propuesta pero no confirmada experimentalmente |
+
+**Transversal:** Espirulina puede complementar cualquier tipo si hay sospecha de hierro bajo.
+
+**Nota sobre Espirulina y B12:** La B12 en espirulina es en gran parte pseudovitamina B12 (analogo inactivo). No se debe presentar como fuente de B12. Si se sospecha B12 baja, se necesita suplementacion directa (metilcobalamina/cianocobalamina).
+
+**Errores comunes del tema:**
+1. Tomar cafe o estimulantes para compensar (activan sin restaurar)
+2. Asumir que "dormir mas" resuelve fatiga celular
+3. Comprar multivitaminico generico sin identificar cual es la capa afectada
+4. Ignorar ferritina baja porque la hemoglobina sale "normal"
+5. No conectar el inicio del cansancio con un evento (infeccion, antibioticos, estres prolongado)
+
+**Documento de respaldo:** `semanas/semana-05-2026-06-22-energia/investigacion-energia-fatiga.md`
+
+Fuente: video principal semana 05 + investigacion compilada junio 2026.
+
+---
+
 ## Frameworks pendientes (semana 4-13)
 
 Productos puente ya definidos en `../fuente-de-verdad/estrategia-temas-calendario-wellbive.md`; falta crear el framework de perfiles/capas para cada uno.
@@ -84,7 +111,7 @@ Productos puente ya definidos en `../fuente-de-verdad/estrategia-temas-calendari
 | Semana | Tema | Productos disponibles | Nombre del framework | Estado |
 |---|---|---|---|---|
 | 04 (15-21 jun) | Estrés | Diatonato 3, L-Triptófano, Ner-vit, Valeriana, Zapote Blanco, Melissa | *a definir* | **Próximo — urgente** |
-| 05 | Energía | Coenzima Q10, Fostprint, Maca Peruana, Espirulina, Carnilis | *a definir* | pendiente |
+| 05 | Energía | Coenzima Q10, Fostprint, Maca Peruana, Espirulina, Carnilis | "Los 5 tipos de cansancio" | **definido** |
 | 06 | Dolor | Mincartil, Oligonato 1, Uña de Gato, Harpagofito, Cúrcuma, Bálsamo 3 Damianas | *a definir* | pendiente |
 | 07 | RB / Cuerpo Eléctrico | semana de lanzamiento de curso, sin productos puente directos | — | **revisar**: ¿aplica un "perfil de candidato a RB" en vez de perfil de producto? |
 | 08 | Hormonas | Calciflavón, Diatonato 5.1/5.2, Fem-vit, Barbasco, Milenrama | *a definir* | pendiente |
