@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jueves en Wellkitt — Los 5 Tipos de Cansancio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#4CAF50;
+    --green-light:#7BC67B;
+    --green-glow:#9ED99E;
+    --green-dark:#2E7D32;
+    --green-deep:#1B5E20;
+    --gold:#D4A853;
+    --gold-soft:#E8C97A;
+    --black:#111;
+    --white:#fff;
+    --warm:#FAFAF7;
+    --gray:#888;
+    --danger:#C0392B;
+    --ev-strong:#27AE60;
+    --ev-mod:#F39C12;
+    --ev-weak:#E67E22;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#111;color:var(--white);font-family:"Inter",sans-serif}
+  body{padding:24px}
+  .deck{display:grid;gap:32px;justify-items:center}
+  .slide{
+    width:min(1280px, calc(100vw - 48px));
+    aspect-ratio:16/9;
+    position:relative;overflow:hidden;
+    box-shadow:0 24px 64px rgba(0,0,0,.5);
+    padding:72px 88px;border-radius:6px;
+    page-break-after:always;
+  }
+
+  /* FONDOS */
+  .bg-dark{background:linear-gradient(160deg,#0a0a0a 0%,#111 40%,#0a1a0a 100%)}
+  .bg-green{background:linear-gradient(135deg,#1B5E20 0%,#2E7D32 50%,#1B5E20 100%)}
+  .bg-warm{background:var(--warm);color:var(--black)}
+  .bg-deep{background:linear-gradient(180deg,#0a0a0a 0%,#0a1a0a 100%)}
+  .bg-gold{background:linear-gradient(135deg,#2C1810 0%,#1A1008 100%)}
+  .bg-product{background:linear-gradient(160deg,#0a0a0a 0%,#111 50%,#0a1a0a 100%)}
+  .bg-image{background:#0a0a0a;display:flex;align-items:center;justify-content:center;padding:0}
+  .bg-white{background:#fff;color:#111}
+
+  /* TIPOGRAFIA para proyector */
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:86px;line-height:.88}
+  h1 em{font-style:italic;color:var(--green-light)}
+  h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:58px;line-height:.92}
+  h2 em{font-style:italic;color:var(--green-light)}
+  h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:38px;line-height:1}
+  p{font-size:24px;line-height:1.3;max-width:950px}
+  .bg-warm p{color:#333}
+  .bg-warm h1 em,.bg-warm h2 em{color:var(--green-dark)}
+
+  .kicker{font-size:16px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green-light);margin-bottom:18px}
+  .bg-warm .kicker{color:var(--green-dark)}
+  .bg-gold .kicker{color:var(--gold)}
+  .rule{width:120px;height:4px;background:linear-gradient(90deg,var(--green),transparent);margin:32px 0}
+  .bg-gold .rule{background:linear-gradient(90deg,var(--gold),transparent)}
+  .lead{font-size:28px;line-height:1.25;font-weight:300;max-width:960px}
+  .small{font-size:18px;color:var(--gray);line-height:1.3}
+  .accent{color:var(--green-light)}
+  .bg-warm .accent{color:var(--green-dark)}
+  .gold{color:var(--gold)}
+
+  /* FOOTER */
+  .footer{position:absolute;bottom:28px;left:72px;right:72px;display:flex;justify-content:space-between;font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.25)}
+  .bg-warm .footer{color:rgba(0,0,0,.2)}
+  .slideNo{color:var(--green);font-weight:700}
+
+  /* ORBS */
+  .orb{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none}
+  .orb-green{background:rgba(76,175,80,.1);width:600px;height:600px}
+  .orb-gold{background:rgba(212,168,83,.07);width:500px;height:500px}
+
+  /* LOGO W SVG */
+  .logo-w{position:absolute}
+
+  /* CARDS */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:24px 22px}
+  .bg-warm .card{background:rgba(76,175,80,.04);border-color:rgba(76,175,80,.15)}
+  .card-accent{border-left:4px solid var(--green);background:rgba(76,175,80,.06)}
+  .card .label{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);margin-bottom:10px}
+  .card h3{margin-bottom:14px}
+  .card p{font-size:20px;line-height:1.28}
+
+  /* BADGES */
+  .product-badge{display:inline-flex;padding:8px 20px;border-radius:24px;font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px}
+  .badge-strong{background:rgba(39,174,96,.15);color:var(--ev-strong);border:1px solid rgba(39,174,96,.3)}
+  .badge-mod{background:rgba(243,156,18,.12);color:var(--ev-mod);border:1px solid rgba(243,156,18,.3)}
+  .badge-weak{background:rgba(230,126,34,.1);color:var(--ev-weak);border:1px solid rgba(230,126,34,.3)}
+
+  /* MECHANISM BOX */
+  .mechanism{margin-top:16px;padding:20px 24px;background:rgba(255,255,255,.04);border-radius:12px;border-left:4px solid var(--green);font-size:22px;line-height:1.3}
+  .mechanism b{color:var(--green-light);font-weight:700}
+
+  .sci-name{font-style:italic;color:var(--gray);font-size:20px;margin-top:6px}
+
+  /* CHAIN */
+  .chain{display:flex;align-items:center;gap:10px;margin-top:28px;flex-wrap:wrap}
+  .chain-node{padding:14px 20px;border-radius:10px;font-size:18px;font-weight:700;background:rgba(76,175,80,.1);border:1px solid rgba(76,175,80,.25);text-align:center;min-width:110px}
+  .chain-node.active{background:rgba(76,175,80,.2);border-color:var(--green);color:var(--green-light)}
+  .chain-node.gold-node{background:rgba(212,168,83,.1);border-color:rgba(212,168,83,.3);color:var(--gold)}
+  .chain-node.red-node{background:rgba(192,57,43,.1);border-color:rgba(192,57,43,.3);color:#E74C3C}
+  .chain-arrow{font-size:22px;color:var(--green)}
+
+  /* PHRASE */
+  .phraseSlide{display:flex;align-items:center;justify-content:center;text-align:center}
+  .bigPhrase{font-family:"Cormorant Garamond",Georgia,serif;font-size:60px;line-height:1.04;font-style:italic;max-width:1050px}
+  .bigPhrase em{color:var(--green-light)}
+  .bigPhrase .gold-em{color:var(--gold-soft)}
+
+  /* BIG NUMBER */
+  .big-number{font-family:"Cormorant Garamond",Georgia,serif;font-size:72px;font-weight:300;line-height:1;color:var(--green-light)}
+
+  /* ENZYME */
+  .enzyme-box{padding:20px 24px;border-radius:14px;margin-top:14px}
+  .enzyme-1{background:rgba(212,168,83,.08);border:1px solid rgba(212,168,83,.2)}
+  .enzyme-2{background:rgba(76,175,80,.06);border:1px solid rgba(76,175,80,.15)}
+  .enzyme-box h3{margin-bottom:8px;font-size:30px}
+  .enzyme-box p{font-size:20px}
+
+  /* WARNING */
+  .warning-box{padding:18px 22px;border-radius:12px;border-left:4px solid var(--danger);background:rgba(192,57,43,.06);margin-top:14px}
+  .warning-box b{color:var(--danger)}
+  .warning-box p{font-size:20px}
+
+  /* IMAGE PLACEHOLDER */
+  .img-placeholder{width:100%;height:100%;border:2px dashed rgba(255,255,255,.15);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;color:rgba(255,255,255,.3);text-align:center;padding:48px;background:rgba(255,255,255,.02)}
+
+  /* SUMMARY TABLE */
+  .summary-table{width:100%;border-collapse:collapse;margin-top:20px;font-size:20px}
+  .summary-table th{text-align:left;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green-light);padding:14px 18px;border-bottom:3px solid rgba(76,175,80,.3)}
+  .summary-table td{padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:top}
+  .type-num{font-family:"Cormorant Garamond",Georgia,serif;font-size:36px;font-weight:300;color:var(--green-light);width:50px}
+
+  /* COVER */
+  .cover-title{position:absolute;left:88px;bottom:100px;max-width:900px}
+  .cover-meta{font-size:18px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:28px}
+  .cover-line{width:160px;height:4px;background:linear-gradient(90deg,var(--green),var(--green-light));margin:32px 0}
+
+  @page{size:16in 9in;margin:0}
+  @media print{body{padding:0;background:#000}.deck{display:block}.slide{width:16in;height:9in;box-shadow:none;margin:0;border-radius:0}}
+</style>
+</head>
+<body>
+<main class="deck">
+
+<!-- ===== 01 PORTADA con LOGO W ===== -->
+<section class="slide bg-white" style="display:flex;align-items:center;justify-content:center;flex-direction:column;padding:0">
+  <div class="orb-green orb" style="top:-200px;right:-200px;background:rgba(76,175,80,.06)"></div>
+  <!-- Logo W grande -->
+  <svg width="420" height="360" viewBox="0 0 420 360" fill="none" style="margin-bottom:40px">
+    <defs>
+      <linearGradient id="wgrad" x1="0" y1="360" x2="420" y2="0">
+        <stop offset="0%" stop-color="#4CAF50"/>
+        <stop offset="50%" stop-color="#66BB6A"/>
+        <stop offset="100%" stop-color="#A5D6A7"/>
+      </linearGradient>
+      <linearGradient id="leafgrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#81C784"/>
+        <stop offset="100%" stop-color="#A5D6A7"/>
+      </linearGradient>
+    </defs>
+    <!-- W shape -->
+    <path d="M30 80 C30 80, 70 320, 110 320 C150 320, 150 140, 190 140 C230 140, 230 320, 270 320 C310 320, 310 80, 350 80" stroke="url(#wgrad)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Leaf -->
+    <path d="M285 60 C300 30, 340 30, 340 65 C340 100, 300 100, 285 60Z" fill="url(#leafgrad)"/>
+    <path d="M310 42 C310 42, 312 65, 305 82" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".4"/>
+  </svg>
+  <h2 style="color:#333;font-size:52px;text-align:center">Los 5 tipos de <em style="color:#4CAF50">cansancio.</em></h2>
+  <div style="width:120px;height:4px;background:linear-gradient(90deg,#4CAF50,#A5D6A7);margin:24px auto"></div>
+  <p style="color:#777;font-size:22px;text-align:center;max-width:600px">Dr. Miguel Ojeda Rios -- Instituto Centrobioenergetica<br>Jueves 26 de junio 2026 -- 5:30 pm</p>
+</section>
+
+<!-- ===== 02 PREGUNTA GANCHO ===== -->
+<section class="slide bg-green phraseSlide">
+  <div class="orb orb-gold" style="top:-100px;right:-200px"></div>
+  <div class="bigPhrase" style="color:#fff">Por que estas cansado<br>si <em style="color:#C8E6C9">no haces nada?</em></div>
+  <div class="footer"><span></span><span class="slideNo">02</span></div>
+</section>
+
+<!-- ===== 03 LA MITOCONDRIA ===== -->
+<section class="slide bg-dark">
+  <div class="orb orb-green" style="bottom:-200px;right:-150px"></div>
+  <p class="kicker">El motor de tu energia</p>
+  <h2>La <em>mitocondria.</em></h2>
+  <div class="rule"></div>
+  <p class="lead">Cada celula tiene cientos de mitocondrias. Convierten lo que comes y respiras en <span class="accent">ATP</span> — la molecula que hace funcionar todo.</p>
+  <p style="margin-top:24px;font-size:30px">Cuando funcionan bien: energia bajo demanda.</p>
+  <p style="margin-top:8px;font-size:30px">Cuando no: <b class="accent">el motor se queda sin flexibilidad.</b></p>
+  <div class="footer"><span>Mitocondria</span><span class="slideNo">03</span></div>
+</section>
+
+<!-- ===== 04 ANALOGIA ===== -->
+<section class="slide bg-deep phraseSlide">
+  <div class="orb orb-green" style="top:-200px;left:-100px"></div>
+  <div style="max-width:1050px;text-align:center">
+    <p class="kicker">Analogia</p>
+    <div class="bigPhrase" style="font-size:56px">Tu celular tiene 100% en la manana. Pero con 20 apps en segundo plano, a las 2 PM <em>ya vas en rojo.</em></div>
+    <div class="rule" style="margin:32px auto"></div>
+    <p style="color:var(--gray);font-size:30px;max-width:700px;margin:0 auto">Tu cuerpo funciona igual.</p>
+  </div>
+  <div class="footer"><span></span><span class="slideNo">04</span></div>
+</section>
+
+<!-- ===== 05 IMAGEN: MITOCONDRIA ===== -->
+<section class="slide bg-image">
+  <div class="img-placeholder"><span>IMAGEN: Diagrama de la mitocondria<br>Cadena de transporte de electrones<br><br><em style="color:var(--green)">Insertar imagen aqui</em></span></div>
+</section>
+
+<!-- ===== 06 QUEENSLAND ===== -->
+<section class="slide bg-dark">
+  <div class="orb orb-green" style="top:-100px;right:-200px"></div>
+  <p class="kicker">Universidad de Queensland -- Marzo 2026</p>
+  <h2>El hallazgo que cambio <em>lo que sabiamos.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:24px">
+    <div>
+      <p style="font-size:28px">Las celulas de personas con fatiga no producian poca energia.</p>
+      <p style="margin-top:16px;font-size:28px"><b class="accent">Producian demasiada.</b> En reposo, ya estaban al maximo.</p>
+      <p style="margin-top:16px;font-size:28px">Cuando necesitaban mas, no podian subir. Ya estaban al tope.</p>
+    </div>
+    <div class="card">
+      <div class="label">Publicacion</div>
+      <p style="font-size:22px">Translational Psychiatry</p>
+      <p style="margin-top:8px;font-size:22px">Espectroscopia 31P a 7 Tesla + ATP en sangre. Primera vez en cerebro y sangre al mismo tiempo.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Queensland 2026</span><span class="slideNo">06</span></div>
+</section>
+
+<!-- ===== 07 FRASE FLEXIBILIDAD ===== -->
+<section class="slide bg-green phraseSlide">
+  <div class="bigPhrase" style="color:#fff;font-size:62px">La fatiga no es deficit de energia.<br>Es perdida de <em style="color:#C8E6C9">flexibilidad energetica.</em></div>
+  <div class="footer"><span></span><span class="slideNo">07</span></div>
+</section>
+
+<!-- ===== 08 WASF3 ===== -->
+<section class="slide bg-dark">
+  <div class="orb" style="background:rgba(192,57,43,.06);width:500px;height:500px;bottom:-200px;right:-100px"></div>
+  <p class="kicker">Que esta drenando tu energia</p>
+  <h2>WASF3: la proteina que <em>apaga</em> tus mitocondrias.</h2>
+  <div class="rule"></div>
+  <div class="mechanism" style="border-left-color:#E74C3C;font-size:22px">
+    <b style="color:#E74C3C">Mecanismo:</b> WASF3 se localiza en la mitocondria y desarma el supercomplejo III2+IV. Resultado: la mitocondria deja de producir energia. No a medias. Se apaga.
+  </div>
+  <div class="card card-accent" style="margin-top:24px">
+    <p style="font-size:22px">Al bloquear WASF3, las mitocondrias volvieron a funcionar. <b class="accent">No es dano permanente. Es un bloqueo activo y reversible.</b></p>
+  </div>
+  <p class="small" style="margin-top:20px">NIH / PNAS, 2023 -- Dr. Paul Hwang</p>
+  <div class="footer"><span>WASF3</span><span class="slideNo">08</span></div>
+</section>
+
+<!-- ===== 09 ULTRA-PROCESADOS ===== -->
+<section class="slide bg-dark">
+  <div class="orb orb-green" style="top:-200px;left:-100px"></div>
+  <p class="kicker">Que esta drenando tu energia</p>
+  <h2>Ultra-procesados: el <em>drenaje</em> invisible.</h2>
+  <div class="rule"></div>
+  <div class="grid3" style="margin-top:28px">
+    <div class="card">
+      <div class="label">Barrera intestinal</div>
+      <p>Emulsificantes danan la pared intestinal. Endotoxinas pasan a la sangre.</p>
+    </div>
+    <div class="card">
+      <div class="label">Consumo de ATP</div>
+      <p>Inflamacion cronica activa el sistema inmune constantemente. Gasto silencioso.</p>
+    </div>
+    <div class="card">
+      <div class="label">Efecto sinergico</div>
+      <p>La mezcla de aditivos es mas toxica que cada uno por separado.</p>
+    </div>
+  </div>
+  <p class="small" style="margin-top:24px">Nature Reviews Endocrinology, 2025</p>
+  <div class="footer"><span>Ultra-procesados</span><span class="slideNo">09</span></div>
+</section>
+
+<!-- ===== 10 FERRITINA ===== -->
+<section class="slide bg-dark">
+  <div class="orb orb-gold" style="bottom:-200px;left:-100px"></div>
+  <p class="kicker">Que esta drenando tu energia</p>
+  <h2>Ferritina baja: el hierro <em>oculto.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:24px">
+    <div>
+      <p style="font-size:28px">Hemoglobina "normal" no significa que tus mitocondrias tengan hierro.</p>
+      <p style="margin-top:16px;font-size:28px">El hierro es cofactor de los <b class="accent">complejos I, II, III</b> y de la <b class="accent">aconitasa</b> en el ciclo de Krebs.</p>
+      <p style="margin-top:16px;font-size:28px">Sin hierro ahi, no hay ATP.</p>
+    </div>
+    <div class="card" style="border-left:4px solid var(--gold);background:rgba(212,168,83,.06)">
+      <div class="label" style="color:var(--gold)">Umbrales ASH 2026</div>
+      <div style="display:flex;gap:32px;margin-top:16px">
+        <div><div class="big-number" style="font-size:64px;color:var(--gold)">33</div><p style="font-size:22px">ug/L hombres</p></div>
+        <div><div class="big-number" style="font-size:64px;color:var(--gold)">25</div><p style="font-size:22px">ug/L mujeres</p></div>
+      </div>
+      <p style="margin-top:12px;font-size:22px;color:var(--gray)">La mayoria de labs marcan "normal" desde 10-12.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Ferritina</span><span class="slideNo">10</span></div>
+</section>
+
+<!-- ===== 11 FRASE TRES COSAS ===== -->
+<section class="slide bg-deep phraseSlide">
+  <div class="bigPhrase" style="font-size:50px">Una proteina que apaga tus mitocondrias.<br>Aditivos que drenan tu energia cada dia.<br>Un deposito de hierro vacio <em>aunque "todo salio bien."</em></div>
+  <div class="footer"><span></span><span class="slideNo">11</span></div>
+</section>
+
+<!-- ===== 12 IMAGEN DIAGRAMA CAUSAL ===== -->
+<section class="slide bg-image">
+  <div class="img-placeholder"><span>IMAGEN: Diagrama causal completo<br>Ultra-procesados &rarr; Inflamacion &rarr; WASF3 &rarr; Mitocondria apagada &rarr; Fatiga<br><br><em style="color:var(--green)">Insertar imagen aqui</em></span></div>
+</section>
+
+<!-- ===== 13 TPP INTRO ===== -->
+<section class="slide bg-gold phraseSlide">
+  <div class="orb orb-gold" style="top:-150px;left:-100px"></div>
+  <div style="max-width:1050px;text-align:center">
+    <p class="kicker" style="color:var(--gold)">Antes de los 5 tipos</p>
+    <div class="bigPhrase" style="color:var(--warm);font-size:62px">Hay una sustancia que aplica a <em class="gold-em">todos.</em><br>Y casi ningun medico la revisa.</div>
+  </div>
+  <div class="footer"><span></span><span class="slideNo">13</span></div>
+</section>
+
+<!-- ===== 14 TPP DETALLE ===== -->
+<section class="slide bg-gold">
+  <div class="orb orb-gold" style="top:-100px;right:-200px"></div>
+  <p class="kicker" style="color:var(--gold)">Transversal</p>
+  <h2 style="font-size:60px">Pirofosfato de <em style="color:var(--gold-soft)">Tiamina (TPP)</em></h2>
+  <p class="sci-name">Forma activa de Vitamina B1</p>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <div class="enzyme-box enzyme-1">
+        <h3 style="color:var(--gold)">PDH</h3>
+        <p>Piruvato deshidrogenasa. La puerta de entrada al ciclo de Krebs. Sin TPP, el piruvato se desvia a lactato.</p>
+      </div>
+      <div class="enzyme-box enzyme-2" style="margin-top:16px">
+        <h3 style="color:var(--green-light)">OGDH</h3>
+        <p>Alfa-cetoglutarato deshidrogenasa. Mantiene el ciclo de Krebs girando. Sin TPP, el ciclo se frena.</p>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="border-color:rgba(212,168,83,.2);background:rgba(212,168,83,.06)">
+        <div class="label" style="color:var(--gold)">Deficiencia</div>
+        <div class="big-number" style="color:var(--gold)">20-90%</div>
+        <p style="font-size:22px">de pacientes tienen deficiencia.</p>
+        <p class="small" style="margin-top:12px">Marrs & Lonsdale, 2021</p>
+      </div>
+      <div class="card" style="border-color:rgba(212,168,83,.2);background:rgba(212,168,83,.06);margin-top:20px">
+        <div class="label" style="color:var(--gold)">Restauracion</div>
+        <div class="big-number" style="color:var(--gold)">1h</div>
+        <p style="font-size:22px">La respiracion mitocondrial se recupera en 1 hora.</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>TPP</span><span class="slideNo">14</span></div>
+</section>
+
+<!-- ===== 15 TPP FRASE ===== -->
+<section class="slide bg-gold phraseSlide">
+  <div class="bigPhrase" style="color:var(--warm);font-size:58px">Sin tiamina, no importa cuanto Q10, carnitina o hierro tomes.<br>La puerta esta cerrada. <em class="gold-em">El ciclo no arranca.</em></div>
+  <div class="footer"><span></span><span class="slideNo">15</span></div>
+</section>
+
+<!-- ===== 16 TRANSICION ===== -->
+<section class="slide bg-green phraseSlide">
+  <div style="text-align:center">
+    <div class="bigPhrase" style="color:#fff;font-size:68px">Los <em style="color:#C8E6C9">5 tipos</em><br>de cansancio.</div>
+    <div class="rule" style="margin:32px auto;background:linear-gradient(90deg,#fff,transparent)"></div>
+    <p style="color:rgba(255,255,255,.7);font-size:30px;max-width:650px;margin:0 auto">Identifica el tuyo. Levanta la mano cuando te reconozcas.</p>
+  </div>
+  <div class="footer"><span></span><span class="slideNo">16</span></div>
+</section>
+
+<!-- ===== 17 TIPO 1 SENALES ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-green" style="bottom:-200px;right:-100px"></div>
+  <p class="kicker">Tipo 1</p>
+  <h2>Fatiga de <em>esfuerzo.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <p style="font-size:28px">Te cansas con cualquier esfuerzo fisico. Subir escaleras, caminar rapido, cargar algo.</p>
+      <p style="font-size:28px;margin-top:14px"><b class="accent">Antes podias y ahora no.</b></p>
+      <p style="font-size:28px;margin-top:14px">Un dia activo te cuesta <b class="accent">2-3 dias de agotamiento.</b></p>
+    </div>
+    <div class="mechanism">
+      <b>Que pasa adentro:</b> Cuando haces esfuerzo fisico, tus celulas necesitan producir mas ATP de golpe. Para eso, la cadena de transporte de electrones tiene que acelerar. Pero si falta una pieza del transportador entre los complejos, la cadena no puede subir la produccion. El cuerpo pide mas energia y la mitocondria no puede darla.
+    </div>
+  </div>
+  <div class="footer"><span>Tipo 1</span><span class="slideNo">17</span></div>
+</section>
+
+<!-- ===== 18 TIPO 1 Q10 ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-green" style="top:-100px;left:-200px"></div>
+  <p class="kicker">Tipo 1 -- Herramienta</p>
+  <h2>Coenzima <em>Q10</em></h2>
+  <p class="sci-name">Ubiquinona-10 -- Capsulas 100 mg + Vitamina E</p>
+  <div style="margin-top:16px"><span class="product-badge badge-strong">Evidencia fuerte</span></div>
+  <div class="mechanism">
+    <b>Mecanismo:</b> Ubiquinona es el transportador movil de electrones entre los complejos I/II y el complejo III de la cadena respiratoria mitocondrial. Sin Q10, los electrones se quedan atrapados y la produccion de ATP se detiene. Es una pieza fisica del motor — no un estimulante.
+  </div>
+  <div class="chain" style="margin-top:20px">
+    <div class="chain-node">Complejo I/II</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node active" style="font-size:20px">Q10</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node">Complejo III</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node">IV</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node gold-node">ATP</div>
+  </div>
+  <p style="margin-top:16px">Meta-analisis: <b class="accent">13 RCTs, 1,126 participantes, p = 0.001</b></p>
+  <p style="margin-top:6px;color:var(--gray)">Su produccion natural disminuye con la edad, el uso de estatinas y la inflamacion cronica.</p>
+  <div class="footer"><span>Q10</span><span class="slideNo">18</span></div>
+</section>
+
+<!-- ===== 19 IMAGEN ===== -->
+<section class="slide bg-image">
+  <div class="img-placeholder"><span>IMAGEN: Frasco de Q10<br>o diagrama de Q10 en la cadena<br><br><em style="color:var(--green)">Insertar imagen aqui</em></span></div>
+</section>
+
+<!-- ===== 20 TIPO 2 SENALES ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-green" style="top:-200px;right:-100px"></div>
+  <p class="kicker">Tipo 2</p>
+  <h2>Fatiga <em>metabolica.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <p style="font-size:28px">Cansancio + te cuesta bajar de peso.</p>
+      <p style="font-size:28px;margin-top:14px">Pesadez muscular. Recuperacion lenta.</p>
+      <p style="font-size:28px;margin-top:14px">Como si tuvieras <b class="accent">combustible guardado pero no pudieras usarlo.</b></p>
+    </div>
+    <div class="mechanism">
+      <b>Que pasa adentro:</b> Tu cuerpo tiene grasa almacenada — eso es combustible. Pero para quemarla, los acidos grasos tienen que cruzar la membrana mitocondrial. Si el transportador que los mete no esta disponible, la grasa se queda afuera y la mitocondria trabaja sin sustrato. Tienes el tanque lleno pero la manguera desconectada.
+    </div>
+  </div>
+  <div class="footer"><span>Tipo 2</span><span class="slideNo">20</span></div>
+</section>
+
+<!-- ===== 21 TIPO 2 CARNILIS ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-green" style="bottom:-200px;left:-100px"></div>
+  <p class="kicker">Tipo 2 -- Herramienta</p>
+  <h2><em>Carnilis</em> (L-Carnitina)</h2>
+  <p class="sci-name">Acido 3-hidroxi-4-(trimetilamonio)butanoico + Cromo</p>
+  <div style="margin-top:16px"><span class="product-badge badge-strong">Evidencia fuerte</span></div>
+  <div class="mechanism">
+    <b>Mecanismo:</b> La grasa es combustible, pero para quemarse tiene que entrar a la mitocondria. L-carnitina es la molecula que la transporta, usando dos enzimas en la membrana: <b>CPT-I</b> (membrana externa) y <b>CPT-II</b> (membrana interna). Sin carnitina, los acidos grasos se quedan afuera y la mitocondria trabaja sin sustrato — hay combustible guardado pero no se puede usar.
+  </div>
+  <div class="chain" style="margin-top:16px">
+    <div class="chain-node">Grasa</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node">CPT-I</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node active">Carnitina</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node">CPT-II</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node">Beta-oxidacion</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node gold-node">ATP</div>
+  </div>
+  <p style="margin-top:16px">Ensayo 2024: fatiga de <b class="accent">6.7 a 2.1</b> en escala de 10, en 7 semanas. Tambien reduce dano muscular post-ejercicio.</p>
+  <div class="footer"><span>Carnilis</span><span class="slideNo">21</span></div>
+</section>
+
+<!-- ===== 22 TIPO 3 SENALES ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-gold" style="bottom:-200px;right:-100px"></div>
+  <p class="kicker">Tipo 3</p>
+  <h2>Fatiga <em>silenciosa.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <p style="font-size:28px">Manos frias. Palidez. Falta de concentracion.</p>
+      <p style="font-size:28px;margin-top:14px">Sensacion de que <b class="accent">falta oxigeno.</b></p>
+      <p style="font-size:28px;margin-top:14px">Hemoglobina normal. Ferritina baja. <b class="accent">"No tienes nada."</b></p>
+    </div>
+    <div class="mechanism">
+      <b>Que pasa adentro:</b> Las enzimas de los complejos I, II y III necesitan hierro para funcionar. La hemoglobina puede mantenerse "normal" con poco hierro porque el cuerpo la prioriza. Pero las enzimas mitocondriales se quedan sin cofactor. El laboratorio dice que estas bien, pero tus mitocondrias estan trabajando sin herramienta.
+    </div>
+  </div>
+  <div class="footer"><span>Tipo 3</span><span class="slideNo">22</span></div>
+</section>
+
+<!-- ===== 23 TIPO 3 ESPIRULINA ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-green" style="top:-200px;right:-150px"></div>
+  <p class="kicker">Tipo 3 -- Herramienta</p>
+  <h2><em>Espirulina</em></h2>
+  <p class="sci-name">Arthrospira platensis -- Cianobacteria</p>
+  <div style="margin-top:16px"><span class="product-badge badge-mod">Evidencia moderada</span></div>
+  <div class="mechanism">
+    <b>Mecanismo:</b> El hierro no solo sirve para la hemoglobina. Es cofactor directo de los <b>complejos I, II y III</b> de la cadena de transporte de electrones, y de la <b>aconitasa</b> en el ciclo de Krebs. Sin hierro en esas posiciones, la mitocondria no puede producir ATP aunque todo lo demas funcione. Espirulina tiene <b>27% mayor biodisponibilidad</b> que otras fuentes vegetales.
+  </div>
+  <p style="margin-top:12px">RCT: 80 mujeres, 1000 mg/dia, 8 semanas. Incremento significativo en hemoglobina y hematocrito.</p>
+  <div class="warning-box">
+    <p><b>B12:</b> La B12 en espirulina es pseudovitamina B12 (analogo inactivo). No se debe presentar como fuente de B12.</p>
+  </div>
+  <div class="footer"><span>Espirulina</span><span class="slideNo">23</span></div>
+</section>
+
+<!-- ===== 24 IMAGEN ===== -->
+<section class="slide bg-image">
+  <div class="img-placeholder"><span>IMAGEN: Frascos de Espirulina, Carnilis y Q10 juntos<br><br><em style="color:var(--green)">Insertar imagen aqui</em></span></div>
+</section>
+
+<!-- ===== 25 TIPO 4 SENALES ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-gold" style="top:-200px;left:-100px"></div>
+  <p class="kicker">Tipo 4</p>
+  <h2>Fatiga <em>post-desgaste.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <p style="font-size:28px">Meses cansado. Has probado de todo. Nada funciona.</p>
+      <p style="font-size:28px;margin-top:14px">Empezo despues de una <b class="accent">infeccion, cirugia, embarazo o estres prolongado.</b></p>
+    </div>
+    <div class="mechanism">
+      <b>Que pasa adentro:</b> Cuando el cuerpo gasta mas de lo que repone durante meses, no solo se agotan los cofactores — las mitocondrias mismas se danan. Las que quedan funcionan mal y no hay suficientes. No falta una sola pieza. Falta la fabrica entera. Por eso ninguna vitamina sola resuelve: se necesita reconstruir la maquinaria desde cero.
+    </div>
+  </div>
+  <div class="footer"><span>Tipo 4</span><span class="slideNo">25</span></div>
+</section>
+
+<!-- ===== 26 TIPO 4 FOSTPRINT ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-gold" style="bottom:-200px;right:-100px"></div>
+  <p class="kicker">Tipo 4 -- Herramienta</p>
+  <h2><em>Fostprint MAX</em> MAX</h2>
+  <p class="sci-name">10-HDA (acido 10-hidroxi-2-decenoico) de jalea real + Complejo B + Minerales</p>
+  <div style="margin-top:16px"><span class="product-badge badge-mod">Evidencia moderada</span></div>
+  <div class="mechanism">
+    <b>Mecanismo:</b> El principio activo de la jalea real es el acido 10-HDA. Activa la via <b>AMPK &rarr; PGC-1&alpha;</b>, que estimula <b>biogenesis mitocondrial</b> — la creacion de nuevas mitocondrias. No repara las danadas. Genera nuevas desde cero. Ademas incluye complejo B (con tiamina/B1) y minerales que reponen cofactores agotados por el desgaste prolongado.
+  </div>
+  <div class="card card-accent" style="margin-top:16px">
+    <p><b class="accent">Q10 y Carnitina optimizan las mitocondrias que tienes. Fostprint MAX genera nuevas.</b> Por eso es la herramienta para desgaste prolongado.</p>
+  </div>
+  <p style="margin-top:12px">Ensayo 2025 (Pasdar et al.): aumento significativo de PGC-1&alpha; y resistencia al agotamiento en solo 2 semanas.</p>
+  <div class="footer"><span>Fostprint MAX</span><span class="slideNo">26</span></div>
+</section>
+
+<!-- ===== 27 TIPO 5 SENALES ===== -->
+<section class="slide bg-product">
+  <div class="orb" style="background:rgba(192,57,43,.06);width:500px;height:500px;bottom:-200px;left:-100px"></div>
+  <p class="kicker">Tipo 5</p>
+  <h2>Fatiga <em>reactiva.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <p style="font-size:28px">Tu energia sube y baja segun tu estres.</p>
+      <p style="font-size:28px;margin-top:14px">Semanas buenas: bien. Semanas de presion: <b class="accent">destruido.</b></p>
+      <p style="font-size:28px;margin-top:14px">Como si alguien <b class="accent">apagara el switch.</b></p>
+    </div>
+    <div class="mechanism">
+      <b>Que pasa adentro:</b> El estres sostenido activa la proteina WASF3, que se mete dentro de la mitocondria y desarma fisicamente el supercomplejo III2+IV. La mitocondria no se "cansa" — se apaga. Y cada vez que sube la presion, WASF3 se vuelve a activar. Es un bloqueo activo, no un dano permanente.
+    </div>
+  </div>
+  <div class="footer"><span>Tipo 5</span><span class="slideNo">27</span></div>
+</section>
+
+<!-- ===== 28 TIPO 5 MACA ===== -->
+<section class="slide bg-product">
+  <div class="orb orb-green" style="top:-100px;right:-200px"></div>
+  <p class="kicker">Tipo 5 -- Herramienta</p>
+  <h2><em>Maca</em> Peruana</h2>
+  <p class="sci-name">Lepidium meyenii -- Macamidas, macaenos, glucosinolatos</p>
+  <div style="margin-top:16px"><span class="product-badge badge-weak">Evidencia debil-moderada</span></div>
+  <div class="mechanism">
+    <b>Mecanismo propuesto:</b> El eje hipotalamo-hipofisis-adrenal (HPA) es el sistema que regula el cortisol y la respuesta al estres. Cuando ese eje se desregula por estres sostenido, activa WASF3, que desarma los complejos respiratorios. Maca se propone como modulador del eje HPA — no aporta hormonas ni estimulantes. Busca que el estres no apague la mitocondria.
+  </div>
+  <div class="warning-box" style="border-left-color:var(--ev-weak);background:rgba(230,126,34,.06);margin-top:14px">
+    <p style="font-size:22px"><b style="color:var(--ev-weak)">Honestidad:</b> Evidencia mas debil del kit. Complemento donde el estres es el detonante principal. No herramienta unica.</p>
+  </div>
+  <div class="footer"><span>Maca</span><span class="slideNo">28</span></div>
+</section>
+
+<!-- ===== 29 IMAGEN ===== -->
+<section class="slide bg-image">
+  <div class="img-placeholder"><span>IMAGEN: Fostprint MAX y Maca<br>o los 5 productos juntos<br><br><em style="color:var(--green)">Insertar imagen aqui</em></span></div>
+</section>
+
+<!-- ===== 30 CADENA COMPLETA ===== -->
+<section class="slide bg-deep">
+  <div class="orb orb-green" style="top:-200px;right:-150px"></div>
+  <div class="orb orb-gold" style="bottom:-200px;left:-100px"></div>
+  <p class="kicker">Donde actua cada herramienta</p>
+  <h2>La cadena <em>completa.</em></h2>
+  <div class="chain" style="margin-top:28px">
+    <div class="chain-node gold-node" style="min-width:100px">TPP<br><span style="font-size:13px;font-weight:400">PDH + OGDH</span></div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node" style="min-width:100px">Krebs</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node active" style="min-width:80px">Q10</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node" style="min-width:100px">I&rarr;II&rarr;III&rarr;IV</div>
+    <div class="chain-arrow">&rarr;</div>
+    <div class="chain-node gold-node" style="min-width:80px">ATP</div>
+  </div>
+  <div class="grid2" style="margin-top:28px;grid-template-columns:repeat(4,1fr);gap:16px">
+    <div class="card" style="padding:24px 20px"><div class="label">Carnitina</div><p style="font-size:22px">Mete grasa como combustible</p></div>
+    <div class="card" style="padding:24px 20px"><div class="label">Hierro</div><p style="font-size:22px">Cofactor de complejos I, II, III</p></div>
+    <div class="card" style="padding:24px 20px"><div class="label">Jalea real</div><p style="font-size:22px">Genera nuevas mitocondrias</p></div>
+    <div class="card" style="padding:24px 20px;border-left-color:#E74C3C"><div class="label" style="color:#E74C3C">Maca</div><p style="font-size:22px">Evita que WASF3 apague</p></div>
+  </div>
+  <div class="footer"><span>Cadena completa</span><span class="slideNo">30</span></div>
+</section>
+
+<!-- ===== 31 RESUMEN ===== -->
+<section class="slide bg-deep">
+  <div class="orb orb-green" style="top:-200px;left:-100px"></div>
+  <p class="kicker">Resumen</p>
+  <h2>Los 5 tipos y sus <em>herramientas.</em></h2>
+  <table class="summary-table" style="margin-top:24px">
+    <tr><th></th><th>Tipo</th><th>Herramienta</th><th>Evidencia</th></tr>
+    <tr><td class="type-num">1</td><td><b>Fatiga de esfuerzo</b></td><td>Q10 (ubiquinona)</td><td><span class="evidence-strong">Fuerte</span></td></tr>
+    <tr><td class="type-num">2</td><td><b>Fatiga metabolica</b></td><td>Carnilis (L-Carnitina)</td><td><span class="evidence-strong">Fuerte</span></td></tr>
+    <tr><td class="type-num">3</td><td><b>Fatiga silenciosa</b></td><td>Espirulina (hierro)</td><td><span class="evidence-mod">Moderada</span></td></tr>
+    <tr><td class="type-num">4</td><td><b>Fatiga post-desgaste</b></td><td>Fostprint MAX (10-HDA)</td><td><span class="evidence-mod">Moderada</span></td></tr>
+    <tr><td class="type-num">5</td><td><b>Fatiga reactiva</b></td><td>Maca (L. meyenii)</td><td><span class="evidence-weak">Debil-mod</span></td></tr>
+  </table>
+  <div class="card" style="margin-top:20px;border-left:4px solid var(--gold);background:rgba(212,168,83,.06);padding:20px 28px">
+    <p style="font-size:24px"><span class="gold" style="font-weight:700">+ TPP (Tiamina)</span> como base transversal para los 5 tipos.</p>
+  </div>
+  <div class="footer"><span>Resumen</span><span class="slideNo">31</span></div>
+</section>
+
+<!-- ===== 32 CUAL ES EL TUYO ===== -->
+<section class="slide bg-green phraseSlide">
+  <div class="bigPhrase" style="color:#fff;font-size:68px">De los cinco,<br><em style="color:#C8E6C9">cual es el tuyo?</em></div>
+  <div class="footer"><span></span><span class="slideNo">32</span></div>
+</section>
+
+<!-- ===== 33 DEGUSTACION ===== -->
+<section class="slide bg-dark">
+  <div class="orb orb-green" style="bottom:-200px;left:-100px"></div>
+  <p class="kicker">Experiencia en vivo</p>
+  <h2>Vamos a <em>probar tres.</em></h2>
+  <div class="rule"></div>
+  <div class="grid3" style="margin-top:28px">
+    <div class="card card-accent">
+      <div class="label">1. Fostprint MAX</div>
+      <h3>Jalea real</h3>
+      <p style="margin-top:12px">Biogenesis mitocondrial. Sabor dulce con fondo amargo.</p>
+    </div>
+    <div class="card card-accent">
+      <div class="label">2. Maca</div>
+      <h3>Adaptogeno</h3>
+      <p style="margin-top:12px">Modulacion HPA. Sabor terroso, amargo.</p>
+    </div>
+    <div class="card card-accent">
+      <div class="label">3. Espirulina</div>
+      <h3>Hierro</h3>
+      <p style="margin-top:12px">Cofactor mitocondrial. Sabor verde, marino.</p>
+    </div>
+  </div>
+  <p style="margin-top:28px;color:var(--gray);font-size:24px">Q10 y Carnilis estan en la mesa. Son capsulas.</p>
+  <div class="footer"><span>Degustacion</span><span class="slideNo">33</span></div>
+</section>
+
+<!-- ===== 34 CTA ===== -->
+<section class="slide bg-green">
+  <div class="orb orb-gold" style="bottom:-200px;right:-150px"></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;height:100%">
+    <p class="kicker" style="color:rgba(255,255,255,.7)">Siguiente paso</p>
+    <h1 style="color:#fff;font-size:72px">Escribe <em style="color:#C8E6C9">ENERGIA</em><br>por WhatsApp.</h1>
+    <div class="rule" style="background:linear-gradient(90deg,#fff,transparent)"></div>
+    <p style="color:rgba(255,255,255,.8);font-size:30px">Dinos tu tipo, desde cuando estas cansado, y te orientamos.</p>
+    <div class="card" style="display:inline-block;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);padding:24px 36px;margin-top:28px;max-width:500px">
+      <p style="font-size:28px;color:#fff"><b>15% en Kit Energia</b><br><span style="font-size:22px;color:rgba(255,255,255,.5)">Valido hasta 28 junio 2026</span></p>
+    </div>
+  </div>
+  <div class="footer"><span>Wellbive</span><span class="slideNo">34</span></div>
+</section>
+
+<!-- ===== 35 CIERRE ===== -->
+<section class="slide bg-dark phraseSlide">
+  <div class="orb orb-green" style="top:-200px;left:-100px"></div>
+  <div class="orb orb-gold" style="bottom:-200px;right:-100px"></div>
+  <div style="text-align:center">
+    <!-- Logo W pequeno -->
+    <svg width="120" height="100" viewBox="0 0 420 360" fill="none" style="margin-bottom:32px;opacity:.4">
+      <path d="M30 80 C30 80, 70 320, 110 320 C150 320, 150 140, 190 140 C230 140, 230 320, 270 320 C310 320, 310 80, 350 80" stroke="#4CAF50" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M285 60 C300 30, 340 30, 340 65 C340 100, 300 100, 285 60Z" fill="#81C784"/>
+    </svg>
+    <div class="bigPhrase" style="font-size:52px">El cansancio no es un problema de actitud.<br>Es un problema de <em>tipo.</em><br>Y cada tipo tiene una <em>herramienta.</em></div>
+    <div class="rule" style="margin:32px auto;background:linear-gradient(90deg,transparent,var(--green),transparent)"></div>
+    <p style="color:var(--gray);font-size:24px">Dr. Miguel Ojeda Rios -- Instituto Centrobioenergetica</p>
+  </div>
+  <div class="footer"><span></span><span class="slideNo">35</span></div>
+</section>
+
+</main>
+</body>
+</html>

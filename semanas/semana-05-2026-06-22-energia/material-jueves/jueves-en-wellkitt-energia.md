@@ -40,7 +40,9 @@ El facilitador dice:
 
 Porque no es lo mismo estar cansado por esfuerzo que estar cansado por estres. No es lo mismo un hierro bajo que una mitocondria que no puede quemar grasa. Y si no sabes cual es el tuyo, cualquier suplemento que tomes es un tiro a ciegas.
 
-Hoy vamos a probar tres productos en vivo. Pero antes de probar nada, primero vas a saber para que lo estarias tomando."
+Hoy vamos a probar tres productos en vivo. Pero antes de probar nada, primero vas a saber para que lo estarias tomando.
+
+Antes de hablar de los tipos, hay algo que aplica a todos. Una sustancia que es la llave de entrada de toda la produccion de energia: el pirofosfato de tiamina — la forma activa de la vitamina B1. Es cofactor obligatorio de dos enzimas criticas: la piruvato deshidrogenasa, que abre la puerta del combustible al ciclo de Krebs, y la alfa-cetoglutarato deshidrogenasa, que mantiene el ciclo girando. Sin esta sustancia, ninguna otra herramienta puede completar el ciclo. Y entre el 20 y el 90 por ciento de pacientes tiene deficiencia. Cuando se restaura, la respiracion mitocondrial se recupera en una hora."
 
 [pausa]
 
@@ -64,7 +66,7 @@ El facilitador dice:
 
 Te cansas con cualquier actividad fisica. Subir escaleras, caminar rapido, cargar bolsas. Antes podias y ahora no. Y lo que mas te llama la atencion es que la recuperacion es lenta. Un dia activo te cuesta dos o tres dias de agotamiento.
 
-Esto apunta directamente a la mitocondria. La pieza que falta se llama Coenzima Q10 — es parte de la cadena de produccion de energia dentro de la celula. Sin ella, el motor no completa el ciclo."
+Esto apunta directamente a la mitocondria. La pieza que falta se llama Coenzima Q10 — su nombre quimico es ubiquinona. Es el transportador de electrones entre los complejos I y II hacia el complejo III de la cadena respiratoria. Sin ella, los electrones no pasan y la produccion de ATP se interrumpe. Un meta-analisis de 13 ensayos clinicos con mas de mil participantes demostro reduccion significativa de la fatiga."
 
 [Mostrar frasco de Q10]
 
@@ -82,7 +84,7 @@ El facilitador dice:
 
 Estas cansado y ademas te cuesta bajar de peso. Sientes pesadez muscular. Recuperacion lenta despues de cualquier esfuerzo. Como si el cuerpo tuviera combustible guardado pero no pudiera usarlo.
 
-Eso es literalmente lo que pasa. La grasa es combustible, pero para quemarla tiene que entrar a la mitocondria. La molecula que la transporta es la L-carnitina. Sin carnitina, la grasa se queda afuera."
+Eso es literalmente lo que pasa. La grasa es combustible, pero para quemarla tiene que entrar a la mitocondria. La molecula que la transporta es la L-carnitina — lleva los acidos grasos a traves de la membrana mitocondrial usando un sistema de dos enzimas: CPT-I y CPT-II. Sin carnitina, la grasa se queda afuera. Un ensayo clinico de 2024 mostro que la carnitina bajo la fatiga de 6.7 a 2.1 en escala de 10. En siete semanas."
 
 [Mostrar frasco de Carnilis]
 
@@ -100,9 +102,11 @@ El facilitador dice:
 
 Cansancio con manos frias. Palidez. Dificultad para concentrarte. Sensacion de que falta oxigeno. Vas al doctor, te hacen analisis, la hemoglobina sale normal. Y te dicen que no tienes nada.
 
-Pero nadie te reviso la ferritina. La ferritina es el deposito de hierro del cuerpo. Y el hierro no solo sirve para la hemoglobina — es cofactor de las enzimas que producen energia dentro de la mitocondria. Puedes tener hemoglobina normal y mitocondrias sin hierro.
+Pero nadie te reviso la ferritina. La ferritina es el deposito de hierro del cuerpo. Y el hierro no solo sirve para la hemoglobina — es cofactor directo de los complejos I, II y III de la cadena de transporte de electrones, y de una enzima del ciclo de Krebs que se llama aconitasa. Puedes tener hemoglobina normal y mitocondrias sin hierro para producir ATP.
 
-Una revision de 2026 de la Sociedad Americana de Hematologia propone que el umbral deberia ser mas alto del que usan la mayoria de los laboratorios. Si tu ferritina esta debajo de 30, tu cuerpo puede estar funcionando con el tanque de reserva."
+Una revision de 2026 de la Sociedad Americana de Hematologia propone que el umbral deberia ser mas alto del que usan la mayoria de los laboratorios. Si tu ferritina esta debajo de 30, tu cuerpo puede estar funcionando con el tanque de reserva.
+
+La espirulina — Arthrospira platensis — es una de las fuentes vegetales con mayor biodisponibilidad de hierro. Estudios muestran 27% mayor absorcion. Un ensayo con 80 mujeres mostro incrementos significativos en hemoglobina y hematocrito en ocho semanas."
 
 [Mostrar frasco de Espirulina]
 
@@ -122,7 +126,7 @@ Estas cansado desde hace meses. Has probado vitaminas, dormir mas, cambiar dieta
 
 Cuando el cuerpo lleva mucho tiempo gastando, los depositos se vacian en multiples niveles. No falta una sola cosa — faltan muchas. Y ademas las mitocondrias existentes estan danadas.
 
-Un ensayo clinico de 2025 demostro que la jalea real estimula la creacion de nuevas mitocondrias. No repara las viejas. Genera nuevas."
+Fostprint MAX tiene como ingrediente principal la jalea real. Su principio activo es un acido graso llamado 10-HDA — acido 10-hidroxi-2-decenoico. Lo que hace es activar una via que se llama AMPK-PGC-1-alfa, que estimula la biogenesis mitocondrial — la creacion de nuevas mitocondrias. No repara las viejas. Genera nuevas. Ademas incluye complejo B — que contiene tiamina — y minerales para reponer cofactores. Un ensayo de 2025 mostro aumento de PGC-1-alfa y mayor resistencia al agotamiento en dos semanas."
 
 [Mostrar ampolla de Fostprint MAX]
 
@@ -140,9 +144,11 @@ El facilitador dice:
 
 Tu energia sube y baja segun tu nivel de estres. Semanas tranquilas, te sientes bien. Semanas de presion, destruido. Como si alguien apagara el switch.
 
-Esto tiene un mecanismo documentado: el estres sostenido activa una proteina llamada WASF3 que bloquea la produccion de energia en la mitocondria. Literalmente la apaga.
+Esto tiene un mecanismo documentado: el estres sostenido activa una proteina llamada WASF3 que desarma los complejos respiratorios de la mitocondria. Literalmente la apaga.
 
-Maca es un adaptogeno. No te da energia como un cafe. Ayuda al cuerpo a regular la respuesta al estres para que no se apague cada vez que hay presion."
+Maca — Lepidium meyenii — es un adaptogeno. No te da energia como un cafe. Lo que se propone es que modula el eje hipotalamo-hipofisis-adrenal, el sistema que regula el cortisol. Si ese eje se regula, WASF3 no se activa y la mitocondria sigue funcionando.
+
+Voy a ser honesto: la evidencia de maca para fatiga es la mas debil de las cinco. No esta al nivel de Q10 o carnitina. Pero donde el estres es el detonante principal, tiene sentido como complemento."
 
 [Mostrar gotero de Maca]
 
