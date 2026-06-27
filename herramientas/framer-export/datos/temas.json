@@ -1,0 +1,58 @@
+[
+  {
+    "titulo": "Energia",
+    "slug": "energia",
+    "subtitulo": "Cuando el cansancio no se va con dormir",
+    "intro": "El cansancio no es un problema de actitud. Es un problema de tipo. Cada tipo tiene un mecanismo diferente dentro de la celula y una herramienta distinta. Identifica cual te describe mejor.",
+    "videoYoutube": "",
+    "palabraClave": "ENERGIA",
+    "numeroWhatsApp": "5215512345678",
+    "colorAcento": "#2E7D32",
+    "baseTransversalTitulo": "Pirofosfato de Tiamina (Carzilasa)",
+    "baseTransversalTexto": "Forma activa de vitamina B1. Cofactor de PDH y OGDH, las dos enzimas que abren la produccion de energia. Sin Carzilasa, no importa cuanto Q10, carnitina o hierro tomes: la puerta esta cerrada y el ciclo no arranca.",
+    "orden": 5,
+    "activo": true
+  },
+  {
+    "titulo": "Estres",
+    "slug": "estres",
+    "subtitulo": "Cuando el cuerpo no encuentra cierre",
+    "intro": "El estres no siempre se va cuando termina el evento. Se queda en el cuerpo en forma de tension, cansancio o sueno roto. Identifica cual de estos patrones te describe mejor — cada uno tiene su propia ruta.",
+    "videoYoutube": "",
+    "palabraClave": "ESTRES",
+    "numeroWhatsApp": "5215512345678",
+    "colorAcento": "#4A6FA5",
+    "baseTransversalTitulo": "",
+    "baseTransversalTexto": "",
+    "orden": 4,
+    "activo": true
+  },
+  {
+    "titulo": "Digestion",
+    "slug": "digestion",
+    "subtitulo": "Me inflamo despues de comer",
+    "intro": "La inflamacion despues de comer no es normal. Tu tubo digestivo tiene varias capas y cada una puede estar afectada de forma diferente. Identifica cual es tu capa para saber por donde empezar.",
+    "videoYoutube": "",
+    "palabraClave": "DIGESTION",
+    "numeroWhatsApp": "5215512345678",
+    "colorAcento": "#8B6914",
+    "baseTransversalTitulo": "",
+    "baseTransversalTexto": "",
+    "orden": 3,
+    "activo": true
+  },
+  {
+    "titulo": "Calma y sueno",
+    "slug": "calma",
+    "subtitulo": "Tu cuerpo sigue en emergencia aunque ya termino el dia",
+    "intro": "Si tu cuerpo no puede descansar aunque estes en la cama, no es falta de disciplina. Es un sistema nervioso que no ha recibido la senal de que puede bajar la guardia. Identifica tu perfil de sueno.",
+    "videoYoutube": "",
+    "palabraClave": "CALMA",
+    "numeroWhatsApp": "5215512345678",
+    "colorAcento": "#5B4A8A",
+    "baseTransversalTitulo": "",
+    "baseTransversalTexto": "",
+    "orden": 1,
+    "activo": true
+  }
+]

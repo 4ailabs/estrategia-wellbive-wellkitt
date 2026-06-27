@@ -1,0 +1,122 @@
+[
+  {
+    "nombre": "Coenzima Q10",
+    "cientifico": "Ubiquinona-10",
+    "descripcionCorta": "Pieza clave de la cadena de energia celular",
+    "presentacion": "Capsulas 100mg + Vitamina E",
+    "horario": "Con alimento",
+    "categoria": "Energia"
+  },
+  {
+    "nombre": "Carnilis",
+    "cientifico": "Carnitina-Lisina + Cromo",
+    "descripcionCorta": "Transporta grasa como combustible a la mitocondria",
+    "presentacion": "Capsulas",
+    "horario": "Con alimento",
+    "categoria": "Energia"
+  },
+  {
+    "nombre": "Espirulina",
+    "cientifico": "Arthrospira platensis",
+    "descripcionCorta": "Hierro biodisponible para enzimas mitocondriales",
+    "presentacion": "Gotero o comprimidos",
+    "horario": "Con alimento",
+    "categoria": "Energia"
+  },
+  {
+    "nombre": "Fostprint MAX",
+    "cientifico": "10-HDA de jalea real + Complejo B + Minerales",
+    "descripcionCorta": "Genera nuevas mitocondrias",
+    "presentacion": "Ampollas",
+    "horario": "En ayunas o manana",
+    "categoria": "Energia"
+  },
+  {
+    "nombre": "Maca Peruana",
+    "cientifico": "Lepidium meyenii",
+    "descripcionCorta": "Adaptogeno que modula la respuesta al estres",
+    "presentacion": "Gotero",
+    "horario": "Manana o tarde",
+    "categoria": "Energia"
+  },
+  {
+    "nombre": "Ner-vit",
+    "cientifico": "Galphimia + Valeriana + Azahar + Melisa + Pasiflora",
+    "descripcionCorta": "Relajante nervioso y muscular sin somnolencia",
+    "presentacion": "Gotero",
+    "horario": "Manana, tarde y noche",
+    "categoria": "Estres"
+  },
+  {
+    "nombre": "Valeriana",
+    "cientifico": "Valeriana officinalis",
+    "descripcionCorta": "Sedante nervioso suave para conciliar el sueno",
+    "presentacion": "Gotero",
+    "horario": "30-45 min antes de dormir",
+    "categoria": "Calma"
+  },
+  {
+    "nombre": "Magnesio",
+    "cientifico": "Magnesio elemental",
+    "descripcionCorta": "Mineral para energia y relajacion muscular",
+    "presentacion": "Capsulas o polvo",
+    "horario": "Con desayuno o cena",
+    "categoria": "Estres"
+  },
+  {
+    "nombre": "Zapote Blanco",
+    "cientifico": "Casimiroa edulis + Olivo + Espino blanco",
+    "descripcionCorta": "Calma el sistema nervioso y apoya el sueno",
+    "presentacion": "Gotero",
+    "horario": "30 min antes de dormir",
+    "categoria": "Calma"
+  },
+  {
+    "nombre": "L-Triptofano",
+    "cientifico": "L-Triptofano",
+    "descripcionCorta": "Precursor de serotonina y melatonina",
+    "presentacion": "Capsulas",
+    "horario": "En la noche",
+    "categoria": "Calma"
+  },
+  {
+    "nombre": "COLIX",
+    "cientifico": "Extracto antiinflamatorio intestinal",
+    "descripcionCorta": "Reduce inflamacion de mucosa intestinal",
+    "presentacion": "Gotero",
+    "horario": "20 min antes de comer",
+    "categoria": "Digestion"
+  },
+  {
+    "nombre": "INULAC TABLETS",
+    "cientifico": "Prebiotico + probiotico",
+    "descripcionCorta": "Restaura la flora bacteriana intestinal",
+    "presentacion": "Tabletas masticables",
+    "horario": "Despues de comer",
+    "categoria": "Digestion"
+  },
+  {
+    "nombre": "MELISSA",
+    "cientifico": "Melissa officinalis",
+    "descripcionCorta": "Calmante y antiespasmódica digestiva",
+    "presentacion": "Gotero",
+    "horario": "20 min antes de comer",
+    "categoria": "Digestion"
+  },
+  {
+    "nombre": "HEPACRYL",
+    "cientifico": "Extracto hepatoprotector",
+    "descripcionCorta": "Apoya la detoxificacion del higado",
+    "presentacion": "Gotero",
+    "horario": "20 min antes de comer",
+    "categoria": "Digestion"
+  },
+  {
+    "nombre": "Glicam",
+    "cientifico": "Glicina",
+    "descripcionCorta": "Neurotransmisor inhibidor para sueno profundo",
+    "presentacion": "Capsulas",
+    "horario": "30 min antes de dormir",
+    "categoria": "Calma"
+  }
+]
