@@ -13,7 +13,7 @@ Dolor que regresa, articulaciones y preparacion para Regulacion Bioelectrica.
 
 ## Jueves Wellkitt
 
-Que es el cuerpo electrico.
+Pendiente de definicion exacta.
 
 ## Productos / kit
 
@@ -24,11 +24,15 @@ Kit Articulaciones:
 - Una de Gato
 - Mincartil
 
+Complementos disponibles:
+
+- Omega-3 (EPA/DHA)
+- Vitamina D
+
 ## Curso puente
 
-El Cuerpo Electrico / Regulacion Bioelectrica.
+Regulacion Bioelectrica / lanzamiento posterior.
 
 ## Palabra clave
 
 DOLOR / RB
-

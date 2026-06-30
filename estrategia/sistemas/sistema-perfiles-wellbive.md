@@ -112,7 +112,7 @@ Productos puente ya definidos en `../fuente-de-verdad/estrategia-temas-calendari
 |---|---|---|---|---|
 | 04 (15-21 jun) | Estrés | Diatonato 3, L-Triptófano, Ner-vit, Valeriana, Zapote Blanco, Melissa | *a definir* | **Próximo — urgente** |
 | 05 | Energía | Coenzima Q10, Fostprint, Maca Peruana, Espirulina, Carnilis | "Los 5 tipos de cansancio" | **definido** |
-| 06 | Dolor | Mincartil, Oligonato 1, Uña de Gato, Harpagofito, Cúrcuma, Bálsamo 3 Damianas | *a definir* | pendiente |
+| 06 | Dolor | Mincartil, Uña de Gato, Harpagofito, Cúrcuma, Bálsamo 3 Damianas, Omega-3 (EPA/DHA), Vitamina D | *a definir* | pendiente |
 | 07 | RB / Cuerpo Eléctrico | semana de lanzamiento de curso, sin productos puente directos | — | **revisar**: ¿aplica un "perfil de candidato a RB" en vez de perfil de producto? |
 | 08 | Hormonas | Calciflavón, Diatonato 5.1/5.2, Fem-vit, Barbasco, Milenrama | *a definir* | pendiente |
 | 09 | Peso / Metabolismo | Fat-less, Té Verde, Carnilis, Diatonato 5.2, Oligonato 2 | *a definir* | pendiente |

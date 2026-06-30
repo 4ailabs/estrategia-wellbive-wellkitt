@@ -51,7 +51,7 @@ Estos videos atraen gente nueva y abren conversacion comercial.
 | Cansancio, baja energia | Coenzima Q10, Fostprint, Maca Peruana, Alga Espirulina, Carnilis | Kit Energia y Rendimiento | Reset Metabolico / Nutricion con Aminoacidos | ENERGIA |
 | Estres, ansiedad, insomnio | Diatonato 3, L-Triptófano, Ner-vit, Valeriana, Zapote Blanco, Melissa | Kit Anti-Estres y Sueno | Escudo Anti-Estres / Sueno Profundo | ESTRES |
 | Menopausia, calores, cambios hormonales | Calciflavon, Diatonato 5.1, Diatonato 5.2, Fem-vit, Barbasco, Milenrama | Kit Salud Femenina | Reset Hormonal / Belleza Regenerativa | HORMONAS |
-| Articulaciones, dolor, inflamacion corporal | Mincartil, Oligonato 1, Uña de Gato, Harpagofito, Curcuma, Balsamo 3 Damianas | Kit Articulaciones y Movilidad | Dolor Cero / Par Biomagnetico / RB | DOLOR |
+| Articulaciones, dolor, inflamacion corporal | Mincartil, Uña de Gato, Harpagofito, Curcuma, Balsamo 3 Damianas, Omega-3 (EPA/DHA), Vitamina D | Kit Articulaciones y Movilidad | Dolor Cero / Par Biomagnetico / RB | DOLOR |
 | Defensas, alergias, respiratorio | Diatonato 1, Diatonato 2, Immune Herb, Equinacea, Anti-B, Sorivid | Kit Inmunidad Reforzada | Oligoterapia Catalitica / Fitoterapia Clinica | DEFENSAS |
 | Peso, metabolismo, ansiedad por comer | Fat-less, Te Verde, Carnilis, Diatonato 5.2, Oligonato 2 | Kit Control de Peso | Setpoint / Reset Metabolico | PESO |
 | Piel, belleza, cabello, colageno | Crisálida G, Glicam, Prolina, Mincartil, Diatonato 5.1 | Kit Belleza / piel | Rostro Vivo / Belleza Regenerativa | PIEL |

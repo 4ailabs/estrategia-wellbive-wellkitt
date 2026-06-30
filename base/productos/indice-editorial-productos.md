@@ -41,7 +41,8 @@ No es una guia medica. Es una herramienta editorial y comercial para ordenar men
   Duracion sugerida: 60-90 dias.
 
 - **K06 Kit Articulaciones y Movilidad**: dolor articular e inflamacion.  
-  Productos: Una de Gato, Harpagofito, Curcuma, Balsamo 3 Damianas, Mincartil, Oligonato 1.  
+  Productos: Una de Gato, Harpagofito, Curcuma, Balsamo 3 Damianas, Mincartil.  
+  Complementos disponibles: Omega-3 (EPA/DHA), Vitamina D3 / Vitamina D 5000 UI.  
   Duracion sugerida: 60-90 dias.
 
 - **K07 Kit Inmunidad Reforzada**: defensas bajas y resfriados frecuentes.  
@@ -61,7 +62,7 @@ No es una guia medica. Es una herramienta editorial y comercial para ordenar men
 | Inflamacion, digestion lenta, gases, colicos | Semana 03 / DIGESTION | Colix, Jengibre, Melissa, Inulac, Lacticol | Kit Digestivo Integral | Me inflamo despues de comer |
 | Tension, cansancio, sueno roto, carga corporal | Semana 04 / ESTRES | Ner-vit, Valeriana, L-Triptófano, Zapote Blanco | Kit Anti-Estres y Sueno | Cuando el estres se queda en el cuerpo |
 | Cansancio constante, bajo rendimiento, falta de energia | Semana 05 / ENERGIA | Coenzima Q10, Maca, Fostprint, Carnilis, Espirulina | Kit Energia y Rendimiento | Cansancio constante: que revisar primero |
-| Dolor articular, inflamacion, rigidez | Semana 06 / DOLOR-RB | Curcuma, Harpagofito, Una de Gato, Mincartil | Kit Articulaciones y Movilidad | Dolor que regresa |
+| Dolor articular, inflamacion, rigidez | Semana 06 / DOLOR-RB | Curcuma, Harpagofito, Una de Gato, Mincartil, Omega-3 (EPA/DHA), Vitamina D | Kit Articulaciones y Movilidad | Dolor que regresa |
 | Regulacion bioelectrica, rastreo, preguntas previas | Semana 07 / RB | Apoyo segun perfil: articulaciones, energia, circulacion | Puente a RB | Que es la regulacion bioelectrica |
 | Calores, insomnio, piel, energia femenina, menopausia | Semana 08 / HORMONAS | Fem-vit, Barbasco, Milenrama, Calciflavón, Diatonato 5.1 | Kit Salud Femenina | Calores e insomnio: que puede estar pasando |
 | Peso, ansiedad por comer, metabolismo lento | Semana 09 / PESO | Fat-less, Te Verde, Ojo de Gallina, Carnilis | Kit Control de Peso | Peso, inflamacion y ansiedad |
@@ -93,4 +94,3 @@ Ejemplo:
 ```text
 No vamos a elegir producto por moda. Primero identificamos el patron: ansiedad, insomnio, cansancio, tension o ruido mental. Despues vemos si tiene sentido una ruta de apoyo como CALMA.
 ```
-
