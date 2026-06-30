@@ -41,15 +41,19 @@ Y eso es exactamente lo que acaban de documentar.
 
 [pausa]
 
-En marzo de 2026, investigadores de la Universidad de Queensland midieron los niveles de ATP en el cerebro y en la sangre de personas jovenes con fatiga.
+En marzo de 2026, investigadores de la Universidad de Queensland tomaron a un grupo de adultos jovenes — algunos sanos, otros con depresion y fatiga persistente — y les midieron el ATP directamente. No con cuestionarios. Con resonancia magnetica de fosforo en el cerebro y pruebas metabolicas en las celulas de la sangre. Al mismo tiempo.
 
-Lo que encontraron fue lo contrario de lo que todos asumian.
+Es la primera vez que alguien mide la energia celular en ambos sitios a la vez en este tipo de pacientes.
 
-Las celulas de estas personas no producian poca energia. Producian demasiada. En reposo, ya estaban al maximo. El motor acelerado a fondo sin ir a ninguna parte.
+Y lo que encontraron fue lo contrario de lo que todos asumian.
+
+Las celulas de las personas con fatiga no producian poca energia. Producian demasiada. En reposo, ya estaban al maximo. El motor acelerado a fondo sin ir a ninguna parte.
 
 Y cuando el cuerpo necesitaba mas — por esfuerzo, por concentracion, por cualquier demanda real — no podia subir. Ya estaba al tope.
 
-Es la primera vez que se documenta esto en el cerebro y en la sangre al mismo tiempo. Publicado en Translational Psychiatry.
+El estudio es pequeno — veinticinco personas — y se hizo en jovenes con depresion, no en poblacion general. Pero el mecanismo que describe es mitocondrial. Y las mitocondrias son las mismas en todos. Lo que cambia es que tan danadas estan.
+
+Publicado en Translational Psychiatry.
 
 [pausa]
 
