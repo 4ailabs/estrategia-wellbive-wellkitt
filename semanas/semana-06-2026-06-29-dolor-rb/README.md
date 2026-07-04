@@ -13,7 +13,9 @@ Dolor que regresa, articulaciones y preparacion para Regulacion Bioelectrica.
 
 ## Jueves Wellkitt
 
-Pendiente de definicion exacta.
+"Dolor que regresa: leer el patron antes de tratarlo" — jueves 2 de julio 2026, 5:30pm, presencial + Zoom.
+
+Guion completo: [material-jueves/jueves-en-wellkitt-dolor.md](material-jueves/jueves-en-wellkitt-dolor.md)
 
 ## Productos / kit
 

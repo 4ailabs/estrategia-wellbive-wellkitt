@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jueves en Wellkitt - Dolor que regresa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#4CAF50;
+    --green-light:#8BD48F;
+    --green-dark:#2E7D32;
+    --forest:#163126;
+    --gold:#D4A853;
+    --gold-soft:#F0D89F;
+    --warm:#FAFAF7;
+    --ink:#111;
+    --white:#fff;
+    --gray:#94A09A;
+    --red:#C84C3A;
+    --red-soft:#E57368;
+    --amber:#D9A441;
+    --teal:#52B7A5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#111;color:var(--white);font-family:"Inter",sans-serif}
+  body{padding:24px}
+  .deck{display:grid;gap:32px;justify-items:center}
+  .slide{
+    width:min(1280px, calc(100vw - 48px));
+    aspect-ratio:16/9;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 24px 64px rgba(0,0,0,.5);
+    padding:72px 88px;
+    border-radius:6px;
+    page-break-after:always;
+  }
+  .bg-white{background:#fff;color:#111}
+  .bg-dark{background:linear-gradient(160deg,#08110d 0%, #101614 45%, #162019 100%)}
+  .bg-green{background:linear-gradient(135deg,#1B5E20 0%, #2E7D32 55%, #173F23 100%)}
+  .bg-deep{background:linear-gradient(180deg,#08110d 0%, #0a1d16 100%)}
+  .bg-gold{background:linear-gradient(135deg,#2C1B0C 0%, #17110A 100%)}
+  .bg-product{background:linear-gradient(160deg,#0c1110 0%, #141716 45%, #101d18 100%)}
+  .bg-image{background:#0a0a0a;display:flex;align-items:center;justify-content:center;padding:0}
+
+  h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:84px;line-height:.9}
+  h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:300;font-size:58px;line-height:.95}
+  h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:34px;line-height:1}
+  h1 em,h2 em{font-style:italic;color:var(--green-light)}
+  p{font-size:24px;line-height:1.3;max-width:980px}
+
+  .kicker{font-size:16px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green-light);margin-bottom:18px}
+  .rule{width:120px;height:4px;background:linear-gradient(90deg,var(--green),transparent);margin:30px 0}
+  .bg-gold .rule{background:linear-gradient(90deg,var(--gold),transparent)}
+  .lead{font-size:28px;line-height:1.25;font-weight:300}
+  .small{font-size:18px;color:var(--gray);line-height:1.3}
+  .accent{color:var(--green-light)}
+  .gold{color:var(--gold)}
+  .red{color:var(--red-soft)}
+  .teal{color:var(--teal)}
+
+  .footer{
+    position:absolute;bottom:28px;left:72px;right:72px;
+    display:flex;justify-content:space-between;
+    font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.25)
+  }
+  .bg-white .footer{color:rgba(0,0,0,.22)}
+  .slideNo{color:var(--green);font-weight:700}
+
+  .orb{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none}
+  .orb-green{background:rgba(76,175,80,.10);width:580px;height:580px}
+  .orb-gold{background:rgba(212,168,83,.08);width:460px;height:460px}
+  .orb-red{background:rgba(200,76,58,.08);width:520px;height:520px}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+  .card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:14px;
+    padding:24px 22px;
+  }
+  .card .label{
+    font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--green-light);margin-bottom:10px
+  }
+  .card p{font-size:20px;line-height:1.28}
+  .card-accent{border-left:4px solid var(--green);background:rgba(76,175,80,.06)}
+  .card-alert{border-left:4px solid var(--red);background:rgba(200,76,58,.08)}
+  .card-gold{border-left:4px solid var(--gold);background:rgba(212,168,83,.07)}
+
+  .mechanism{
+    margin-top:16px;padding:20px 24px;background:rgba(255,255,255,.04);
+    border-radius:12px;border-left:4px solid var(--green);
+    font-size:22px;line-height:1.3
+  }
+  .mechanism b{color:var(--green-light)}
+  .warning-box{
+    padding:18px 22px;border-radius:12px;border-left:4px solid var(--red);
+    background:rgba(192,57,43,.06);margin-top:14px
+  }
+  .warning-box p{font-size:20px}
+  .warning-box b{color:var(--red-soft)}
+
+  .phraseSlide{display:flex;align-items:center;justify-content:center;text-align:center}
+  .bigPhrase{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:60px;line-height:1.05;font-style:italic;max-width:1060px
+  }
+  .bigPhrase em{color:var(--green-light)}
+  .pill{
+    display:inline-flex;padding:8px 18px;border-radius:24px;
+    font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase
+  }
+  .pill-red{background:rgba(200,76,58,.12);color:var(--red-soft);border:1px solid rgba(200,76,58,.3)}
+  .pill-amber{background:rgba(217,164,65,.12);color:var(--amber);border:1px solid rgba(217,164,65,.3)}
+  .pill-green{background:rgba(82,183,165,.12);color:var(--teal);border:1px solid rgba(82,183,165,.3)}
+  .summary-table{width:100%;border-collapse:collapse;margin-top:20px;font-size:20px}
+  .summary-table th{
+    text-align:left;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--green-light);padding:14px 18px;border-bottom:3px solid rgba(76,175,80,.3)
+  }
+  .summary-table td{padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:top}
+  .type-num{
+    font-family:"Cormorant Garamond",Georgia,serif;
+    font-size:36px;font-weight:300;color:var(--green-light);width:50px
+  }
+  .img-placeholder{
+    width:100%;height:100%;border:2px dashed rgba(255,255,255,.15);border-radius:14px;
+    display:flex;align-items:center;justify-content:center;font-size:22px;color:rgba(255,255,255,.3);
+    text-align:center;padding:48px;background:rgba(255,255,255,.02)
+  }
+  .spectrum{
+    margin-top:28px;
+    padding:18px;
+    border-radius:18px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+  }
+  .spectrum-bar{
+    height:22px;
+    border-radius:999px;
+    background:linear-gradient(90deg,#C84C3A 0%, #D9A441 50%, #4CAF50 100%);
+    position:relative;
+    margin:18px 0 14px;
+  }
+  .spectrum-labels{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    font-size:18px;
+    color:rgba(255,255,255,.82);
+  }
+  .three-rail{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:24px;
+  }
+  .rail{
+    padding:24px 20px;
+    border-radius:16px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+  }
+  .rail h3{margin-bottom:12px}
+  .rail p{font-size:20px}
+
+  @page{size:16in 9in;margin:0}
+  @media print{
+    body{padding:0;background:#000}
+    .deck{display:block}
+    .slide{width:16in;height:9in;box-shadow:none;margin:0;border-radius:0}
+  }
+</style>
+</head>
+<body>
+<main class="deck">
+
+<section class="slide bg-white" style="display:flex;align-items:center;justify-content:center;flex-direction:column;padding:0">
+  <div class="orb-green orb" style="top:-200px;right:-200px;background:rgba(76,175,80,.06)"></div>
+  <svg width="420" height="360" viewBox="0 0 420 360" fill="none" style="margin-bottom:40px">
+    <defs>
+      <linearGradient id="wgrad" x1="0" y1="360" x2="420" y2="0">
+        <stop offset="0%" stop-color="#4CAF50"/>
+        <stop offset="50%" stop-color="#66BB6A"/>
+        <stop offset="100%" stop-color="#A5D6A7"/>
+      </linearGradient>
+      <linearGradient id="leafgrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#81C784"/>
+        <stop offset="100%" stop-color="#A5D6A7"/>
+      </linearGradient>
+    </defs>
+    <path d="M30 80 C30 80, 70 320, 110 320 C150 320, 150 140, 190 140 C230 140, 230 320, 270 320 C310 320, 310 80, 350 80" stroke="url(#wgrad)" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M285 60 C300 30, 340 30, 340 65 C340 100, 300 100, 285 60Z" fill="url(#leafgrad)"/>
+    <path d="M310 42 C310 42, 312 65, 305 82" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" opacity=".4"/>
+  </svg>
+  <h2 style="color:#333;font-size:50px;text-align:center">Dolor que <em style="color:#4CAF50">regresa.</em></h2>
+  <div style="width:120px;height:4px;background:linear-gradient(90deg,#4CAF50,#A5D6A7);margin:24px auto"></div>
+  <p style="color:#777;font-size:22px;text-align:center;max-width:760px">Entender que tipo de dolor domina<br>antes de elegir como apoyarlo<br><span style="font-size:18px">Dr. Miguel Ojeda Rios - Jueves 2 de julio 2026 - 5:30 pm</span></p>
+</section>
+
+<section class="slide bg-green phraseSlide">
+  <div class="orb orb-gold" style="top:-100px;right:-200px"></div>
+  <div class="bigPhrase" style="color:#fff">Si el dolor <em>vuelve</em>,<br>no siempre es daño nuevo.</div>
+  <div class="footer"><span></span><span class="slideNo">02</span></div>
+</section>
+
+<section class="slide bg-dark">
+  <div class="orb orb-red" style="bottom:-180px;right:-100px"></div>
+  <p class="kicker">Idea central</p>
+  <h2>No todo dolor recurrente es una <em>lesion fresca.</em></h2>
+  <div class="rule"></div>
+  <p class="lead">Muchas veces lo que sigue activo no es el daño, sino la <span class="accent">alarma</span> del cuerpo.</p>
+  <div class="grid2" style="margin-top:24px">
+    <div class="card">
+      <div class="label">Imagen simple</div>
+      <p>Como una alarma de casa que ya no detecta una amenaza real, pero sigue activandose con cualquier movimiento.</p>
+    </div>
+    <div class="warning-box" style="margin-top:0">
+      <p><b>Derivar:</b> dolor intenso y nuevo, fiebre, caida, perdida de fuerza, perdida de sensibilidad o dolor nocturno que despierta.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Apertura</span><span class="slideNo">03</span></div>
+</section>
+
+<section class="slide bg-deep">
+  <div class="orb orb-green" style="top:-220px;left:-80px"></div>
+  <p class="kicker">Marco de la sesion</p>
+  <h2>El cuerpo se mueve en un <em>espectro.</em></h2>
+  <div class="rule"></div>
+  <p class="lead">No solo "sano" o "con dolor". Hoy vamos a leer si el sistema esta mas cerca de <span class="red">modo defensa</span> o de <span class="accent">modo regulado.</span></p>
+  <div class="spectrum">
+    <div class="spectrum-bar"></div>
+    <div class="spectrum-labels">
+      <span><b class="red">Modo defensa</b><br>inflamado, rigido, en alerta</span>
+      <span style="text-align:right"><b class="accent">Modo regulado</b><br>equilibrio, flexibilidad, menos alarma</span>
+    </div>
+  </div>
+  <div class="footer"><span>Espectro</span><span class="slideNo">04</span></div>
+</section>
+
+<section class="slide bg-gold phraseSlide">
+  <div class="bigPhrase" style="color:var(--warm);font-size:58px">Hoy no vamos a buscar apagar el dolor<br>de un jalon.<br>Vamos a aprender a <em style="color:var(--gold-soft)">mover la aguja.</em></div>
+  <div class="footer"><span></span><span class="slideNo">05</span></div>
+</section>
+
+<section class="slide bg-dark">
+  <div class="orb orb-gold" style="top:-200px;right:-100px"></div>
+  <p class="kicker">De donde viene esta idea</p>
+  <h2>Que es la <em>salutogenesis.</em></h2>
+  <div class="rule"></div>
+  <p class="lead">El termino lo acuño Aaron Antonovsky, sociologo medico, al estudiar sobrevivientes de campos de concentracion.</p>
+  <div class="grid2" style="margin-top:20px">
+    <div class="card">
+      <div class="label">El hallazgo</div>
+      <p>Algunas de esas mujeres, pese al trauma extremo, se mantenian sanas decadas despues. Eso no encajaba con la pregunta medica de siempre.</p>
+    </div>
+    <div class="card card-accent">
+      <div class="label">La palabra</div>
+      <p><i>Salus</i> (salud) + <i>genesis</i> (origen). En vez de preguntar que causa la enfermedad, pregunta que origina la salud.</p>
+    </div>
+  </div>
+  <p style="margin-top:22px;font-size:24px;color:rgba(255,255,255,.7)">No es una idea nueva de hoy. Es un marco con casi 50 años de respaldo en salud publica.</p>
+  <div class="footer"><span>Marco</span><span class="slideNo">06</span></div>
+</section>
+
+<section class="slide bg-dark">
+  <div class="orb orb-gold" style="bottom:-220px;right:-80px"></div>
+  <p class="kicker">Salutogenesis</p>
+  <h2>La pregunta correcta cambia <em>todo.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:20px">
+    <div class="card card-gold">
+      <div class="label" style="color:var(--gold)">Mirada reactiva</div>
+      <p>Solo preguntar que se rompio o que esta causando el daño.</p>
+    </div>
+    <div class="card card-accent">
+      <div class="label">Mirada reguladora</div>
+      <p>Preguntar que necesita el cuerpo para volver a regularse mejor.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:22px">
+    <div class="label">Hoy, en la practica</div>
+    <p>Eso significa dos cosas concretas: identificar tu patron, y usar <b class="accent">productos puntuales con mecanismo especifico</b> -- no un generico "para el dolor". Eso es lo que sigue.</p>
+  </div>
+  <div class="footer"><span>Marco</span><span class="slideNo">07</span></div>
+</section>
+
+<section class="slide bg-green phraseSlide">
+  <div style="text-align:center">
+    <div class="bigPhrase" style="color:#fff;font-size:66px">Los <em>3 patrones</em><br>de dolor.</div>
+    <div class="rule" style="margin:32px auto;background:linear-gradient(90deg,#fff,transparent)"></div>
+    <p style="color:rgba(255,255,255,.75);font-size:30px;max-width:780px;margin:0 auto">Son tres frentes distintos por los que el cuerpo puede quedarse en modo defensa.</p>
+  </div>
+  <div class="footer"><span></span><span class="slideNo">08</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-red" style="bottom:-200px;right:-120px"></div>
+  <p class="kicker">Patron 1</p>
+  <h2>Dolor con <em>inflamacion activa.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <p style="font-size:28px">Caliente. Inflamado. Sensible.</p>
+      <p style="font-size:28px;margin-top:14px">Empeora con desvelo, estres, clima o ciertos alimentos.</p>
+      <p style="font-size:28px;margin-top:14px"><b class="red">No siempre hay una lesion nueva.</b></p>
+    </div>
+    <div class="mechanism" style="border-left-color:var(--red)">
+      <b style="color:var(--red-soft)">Que pasa adentro:</b> la respuesta inflamatoria fue util al principio, pero nunca encontro bien la señal de apagado. El frente sigue encendido.
+    </div>
+  </div>
+  <div class="footer"><span>Patron 1</span><span class="slideNo">09</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-gold" style="top:-180px;left:-120px"></div>
+  <p class="kicker">Antes de seguir &middot; Patron 1</p>
+  <h2>Una <em>alerta clinica.</em></h2>
+  <div class="rule"></div>
+  <div class="warning-box" style="margin-top:10px">
+    <p><b>Descartar artritis inflamatoria</b> si hay hinchazon persistente, calor y rigidez matutina prolongada, sobre todo en ambos lados del cuerpo o en manos, muñecas y pies.</p>
+  </div>
+  <p style="margin-top:20px;font-size:26px">Los cuatro apoyos que siguen no hacen lo mismo, pero todos bajan el mismo frente inflamatorio.</p>
+  <div class="footer"><span>Patron 1</span><span class="slideNo">10</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-red" style="top:-180px;left:-120px"></div>
+  <p class="kicker">Producto 1 de 7 &middot; Patron 1</p>
+  <h2>Curcuma <em>Curcuma longa</em></h2>
+  <div class="rule"></div>
+  <div class="mechanism" style="border-left-color:var(--red)">
+    <b style="color:var(--red-soft)">Mecanismo:</b> actua sobre el interruptor que enciende la inflamacion dentro de la celula (la via NF-kB), bajando la produccion de las sustancias que generan dolor, calor e hinchazon.
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><div class="label">Principio activo</div><p>Curcumina</p></div>
+    <div class="card"><div class="label">Presentacion</div><p>Extracto o capsulas, con alimento</p></div>
+  </div>
+  <div class="footer"><span>Patron 1</span><span class="slideNo">11</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-red" style="bottom:-200px;right:-120px"></div>
+  <p class="kicker">Producto 2 de 7 &middot; Patron 1</p>
+  <h2>Harpagofito <em>Harpagophytum procumbens</em></h2>
+  <div class="rule"></div>
+  <div class="mechanism" style="border-left-color:var(--red)">
+    <b style="color:var(--red-soft)">Mecanismo:</b> calma la misma respuesta inflamatoria, pero enfocada en la membrana que rodea la articulacion (el tejido sinovial) -- la zona que mas se resiente cuando hay hinchazon y calor local.
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><div class="label">Principio activo</div><p>Harpagosido</p></div>
+    <div class="card"><div class="label">Presentacion</div><p>Extracto o capsulas, con alimento</p></div>
+  </div>
+  <div class="footer"><span>Patron 1</span><span class="slideNo">12</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-red" style="top:-180px;left:-120px"></div>
+  <p class="kicker">Producto 3 de 7 &middot; Patron 1</p>
+  <h2>Uña de Gato <em>Uncaria tomentosa</em></h2>
+  <div class="rule"></div>
+  <div class="mechanism" style="border-left-color:var(--red)">
+    <b style="color:var(--red-soft)">Mecanismo:</b> sus compuestos activos bajan la misma via inflamatoria y ademas ayudan a equilibrar las celulas de defensa que mantienen encendida la inflamacion cuando ya lleva tiempo instalada.
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><div class="label">Principio activo</div><p>Alcaloides oxindolicos</p></div>
+    <div class="card"><div class="label">Presentacion</div><p>Extracto o capsulas, con alimento</p></div>
+  </div>
+  <div class="footer"><span>Patron 1</span><span class="slideNo">13</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-red" style="bottom:-200px;right:-120px"></div>
+  <p class="kicker">Producto 4 de 7 &middot; Apoyo de fondo</p>
+  <h2>Omega-3 <em>EPA y DHA</em></h2>
+  <div class="rule"></div>
+  <div class="mechanism" style="border-left-color:var(--red)">
+    <b style="color:var(--red-soft)">Mecanismo:</b> le quitan terreno a las grasas que alimentan la inflamacion, y ademas ayudan al cuerpo a resolverla activamente -- no solo a frenarla por un rato.
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><div class="label">Para quien</div><p>Cualquier patron -- un grado de inflamacion de bajo nivel suele estar presente en los tres</p></div>
+    <div class="card"><div class="label">Presentacion</div><p>Capsulas, con alimento</p></div>
+  </div>
+  <div class="footer"><span>Patron 1</span><span class="slideNo">14</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-gold" style="bottom:-200px;left:-80px"></div>
+  <p class="kicker">Patron 2</p>
+  <h2>Dolor de carga, <em>rigidez</em> o desgaste funcional.</h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <p style="font-size:28px">"Me cuesta arrancar."</p>
+      <p style="font-size:28px;margin-top:14px">"Si me siento, me paro duro."</p>
+      <p style="font-size:28px;margin-top:14px">La rodilla truena, la espalda tarda en soltarse.</p>
+    </div>
+    <div class="mechanism">
+      <b>Que pasa adentro:</b> el tejido ya no amortigua ni se recupera igual. Aqui no basta con bajar inflamacion. Hace falta <b>soporte estructural</b> y tiempo real de reparacion.
+    </div>
+  </div>
+  <div class="footer"><span>Patron 2</span><span class="slideNo">15</span></div>
+</section>
+
+<section class="slide bg-deep">
+  <div class="orb orb-gold" style="bottom:-200px;right:-100px"></div>
+  <p class="kicker">Logica del patron 2</p>
+  <h2>Por eso no basta un solo <em>ingrediente.</em></h2>
+  <div class="three-rail">
+    <div class="rail">
+      <h3>Inflamatorio</h3>
+      <p>Cuando el terreno sigue irritado, la rigidez y el dolor se sostienen.</p>
+    </div>
+    <div class="rail">
+      <h3>Metabolico</h3>
+      <p>La reparacion requiere cofactores reales, no solo descanso.</p>
+    </div>
+    <div class="rail">
+      <h3>Oxidativo</h3>
+      <p>Un tejido cargado y oxidado se degrada mas facil y se recupera peor.</p>
+    </div>
+  </div>
+  <p style="margin-top:24px;font-size:26px">La mezcla tiene sentido porque cubre varios frentes del mismo problema al mismo tiempo.</p>
+  <div class="footer"><span>Ejes</span><span class="slideNo">16</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-gold" style="top:-200px;right:-120px"></div>
+  <p class="kicker">Producto 5 de 7 &middot; Patron 2</p>
+  <h2>Mincartil <em>aminoacidos + minerales + vitaminas</em></h2>
+  <div class="rule"></div>
+  <div class="mechanism">
+    <b>Mecanismo:</b> le da a la celula los minerales (calcio, magnesio, silicio, manganeso), las vitaminas (C, A, D, grupo B) y los aminoacidos que necesita para fabricar su propio colageno y proteger el cartilago del desgaste diario.
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><div class="label">No es</div><p>Glucosamina ni condroitina</p></div>
+    <div class="card"><div class="label">Presentacion</div><p>Polvo, disolver en agua o yogur, en el desayuno</p></div>
+  </div>
+  <div class="footer"><span>Patron 2</span><span class="slideNo">17</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-gold" style="bottom:-200px;left:-80px"></div>
+  <p class="kicker">Producto 6 de 7 &middot; Patron 2</p>
+  <h2>Vitamina D3 <em>Colecalciferol</em></h2>
+  <div class="rule"></div>
+  <div class="mechanism">
+    <b>Mecanismo:</b> su forma activa entra a la celula y actua directamente sobre la actividad de los genes -- no solo mueve calcio. Tambien influye en inflamacion, fuerza muscular y reparacion del tejido.
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><div class="label">Para quien</div><p>Fragilidad, rigidez o poco tono muscular</p></div>
+    <div class="card"><div class="label">Presentacion</div><p>Perlas, con alimento con grasa</p></div>
+  </div>
+  <div class="footer"><span>Patron 2</span><span class="slideNo">18</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-green" style="bottom:-200px;right:-100px"></div>
+  <p class="kicker">Patron 3</p>
+  <h2>Dolor sensible o <em>reactivado.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <p style="font-size:28px">Sube con tension emocional o mal dormir.</p>
+      <p style="font-size:28px;margin-top:14px">Se dispara con esfuerzos pequeños que antes no provocaban nada.</p>
+      <p style="font-size:28px;margin-top:14px"><b class="accent">La intensidad no siempre calza con el esfuerzo.</b></p>
+    </div>
+    <div class="mechanism">
+      <b>Que pasa adentro:</b> ya no solo importa la zona que duele. Importa que el sistema interprete amenaza demasiado rapido. Es un cuerpo mas facil de disparar.
+    </div>
+  </div>
+  <div class="footer"><span>Patron 3</span><span class="slideNo">19</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-green" style="top:-180px;left:-120px"></div>
+  <p class="kicker">Patron 3 - Lectura</p>
+  <h2>Del modo defensa al modo <em>regulado.</em></h2>
+  <div class="grid2" style="margin-top:20px">
+    <div class="card card-accent">
+      <div class="label">Que significa</div>
+      <p>El sistema de proteccion se activa mas facil de lo que deberia. La alarma esta demasiado sensible.</p>
+    </div>
+    <div class="card card-gold">
+      <div class="label" style="color:var(--gold)">Implicacion</div>
+      <p>Aqui el suplemento solo no basta. Hace falta ayudar al sistema entero a recuperar regulacion.</p>
+    </div>
+  </div>
+  <p style="margin-top:24px;font-size:28px">Ahi el trabajo de fondo es ayudar al sistema a salir del modo defensa.</p>
+  <div class="footer"><span>Patron 3</span><span class="slideNo">20</span></div>
+</section>
+
+<section class="slide bg-product">
+  <div class="orb orb-green" style="bottom:-200px;left:-80px"></div>
+  <p class="kicker">Producto 7 de 7 &middot; Patron 3</p>
+  <h2>Manganeso <em>Diatonato 1</em></h2>
+  <div class="rule"></div>
+  <div class="mechanism">
+    <b>Mecanismo:</b> en la tradicion de la oligoterapia, el Manganeso acompaña a un cuerpo que reacciona de mas ante estimulos pequeños -- un sistema demasiado facil de disparar.
+  </div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><div class="label">No es lo mismo que en Mincartil</div><p>Ahi es cofactor nutricional. Aqui se usa como oligoelemento independiente.</p></div>
+    <div class="card"><div class="label">Presentacion</div><p>Frasco con gotero</p></div>
+  </div>
+  <p style="margin-top:18px;font-size:24px;color:rgba(255,255,255,.7)">El otro apoyo de este patron no viene en frasco: es la respiracion y el movimiento suave que practicamos hoy.</p>
+  <div class="footer"><span>Patron 3</span><span class="slideNo">21</span></div>
+</section>
+
+<section class="slide bg-deep phraseSlide">
+  <div class="bigPhrase" style="font-size:56px">Una cosa es tener una zona vulnerable.<br>Otra es tener un sistema que prende la alarma <em>con muy poco.</em></div>
+  <div class="footer"><span></span><span class="slideNo">22</span></div>
+</section>
+
+<section class="slide bg-dark">
+  <div class="orb orb-green" style="top:-150px;left:-80px"></div>
+  <p class="kicker">Mapa corporal</p>
+  <h2>Primero: <em>ubicar</em> el dolor.</h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:22px">
+    <div class="card card-accent">
+      <div class="label">Ejercicio</div>
+      <p>Marcar en una silueta la zona que molesta y ponerle intensidad de 0 a 10.</p>
+    </div>
+    <div class="card">
+      <div class="label">Objetivo</div>
+      <p>No pensarlo demasiado. Tomar una fotografia rapida de como esta el cuerpo hoy.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Practica 1</span><span class="slideNo">23</span></div>
+</section>
+
+<section class="slide bg-image">
+  <div class="img-placeholder"><span>IMAGEN: silueta corporal frontal y posterior<br>para marcar zonas de dolor e intensidad 0-10<br><br><em style="color:var(--green)">Insertar plantilla aqui</em></span></div>
+</section>
+
+<section class="slide bg-green phraseSlide">
+  <div class="bigPhrase" style="color:#fff;font-size:60px">Ahora no solo preguntamos<br><em>donde</em> duele.<br>Tambien preguntamos <em>que tipo de señal</em> da el movimiento.</div>
+  <div class="footer"><span></span><span class="slideNo">25</span></div>
+</section>
+
+<section class="slide bg-dark">
+  <div class="orb orb-gold" style="bottom:-200px;right:-100px"></div>
+  <p class="kicker">Semaforo del dolor</p>
+  <h2>Una forma simple de leer el <em>estado</em> del sistema.</h2>
+  <div class="rule"></div>
+  <div class="grid3">
+    <div class="card"><span class="pill pill-green">Verde</span><p style="margin-top:14px">Se puede mover sin preocupacion.</p></div>
+    <div class="card"><span class="pill pill-amber">Amarillo</span><p style="margin-top:14px">Hay molestia, pero es manejable.</p></div>
+    <div class="card"><span class="pill pill-red">Rojo</span><p style="margin-top:14px">Hay que frenar y respetar la señal.</p></div>
+  </div>
+  <div class="warning-box">
+    <p><b>Regla:</b> si aparece dolor agudo o mareo, se detiene el movimiento y la persona solo observa.</p>
+  </div>
+  <div class="footer"><span>Practica 2</span><span class="slideNo">26</span></div>
+</section>
+
+<section class="slide bg-product">
+  <p class="kicker">Movimiento 1</p>
+  <h2>Sentarse y <em>pararse.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <p style="font-size:28px">Dos repeticiones lentas.</p>
+      <p style="font-size:28px;margin-top:14px">Notar cadera, rodilla y espalda baja.</p>
+    </div>
+    <div class="card card-gold">
+      <div class="label" style="color:var(--gold)">Lectura</div>
+      <p>Si sale amarillo o rojo aqui, suele apuntar a <b>carga y rigidez</b>. Tejido que necesita soporte y tiempo.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Movimiento 1</span><span class="slideNo">27</span></div>
+</section>
+
+<section class="slide bg-product">
+  <p class="kicker">Movimiento 2</p>
+  <h2>Rotacion suave de <em>cuello.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <p style="font-size:28px">Girar a un lado y al otro sin forzar.</p>
+      <p style="font-size:28px;margin-top:14px">Solo hasta donde se sienta comodo.</p>
+    </div>
+    <div class="card card-alert">
+      <div class="label" style="color:var(--red-soft)">Lectura</div>
+      <p>Si aparece junto con calor, sensibilidad o sensacion inflamatoria, se relaciona mas con <b>inflamacion activa</b>.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Movimiento 2</span><span class="slideNo">28</span></div>
+</section>
+
+<section class="slide bg-product">
+  <p class="kicker">Movimiento 3</p>
+  <h2>Extension suave de <em>muneca.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:18px">
+    <div>
+      <p style="font-size:28px">Brazo al frente. Con la otra mano, llevar dedos hacia atras suavemente.</p>
+      <p style="font-size:28px;margin-top:14px">Cambiar de lado.</p>
+    </div>
+    <div class="card card-accent">
+      <div class="label">Lectura</div>
+      <p>Si la molestia cambia mucho segun el estres o aparece distinta sin razon clara, orienta a dolor <b>sensible o reactivado</b>.</p>
+    </div>
+  </div>
+  <div class="footer"><span>Movimiento 3</span><span class="slideNo">29</span></div>
+</section>
+
+<section class="slide bg-deep phraseSlide">
+  <div class="bigPhrase" style="font-size:56px">El semaforo no diagnostica.<br>Pero si te enseña a leer<br>cuando el cuerpo pide avanzar<br>y cuando pide <em>respetar.</em></div>
+  <div class="footer"><span></span><span class="slideNo">30</span></div>
+</section>
+
+<section class="slide bg-dark">
+  <div class="orb orb-green" style="bottom:-200px;left:-100px"></div>
+  <p class="kicker">Antes / despues</p>
+  <h2>Respirar puede mover la aguja hacia el modo <em>regulado.</em></h2>
+  <div class="rule"></div>
+  <div class="grid2" style="margin-top:22px">
+    <div class="card card-accent">
+      <div class="label">Paso 1</div>
+      <p>Elegir la zona mas molesta y calificarla de 0 a 10.</p>
+      <p style="margin-top:10px">Respirar un minuto: inhalar 4, exhalar 6.</p>
+    </div>
+    <div class="card">
+      <div class="label">Paso 2</div>
+      <p>Repetir el movimiento mas parecido a esa zona y volver a calificar.</p>
+    </div>
+  </div>
+  <p style="margin-top:24px;font-size:28px">Si cambia aunque sea un punto, ya viste algo clave: <b class="accent">el sistema si responde a la señal correcta.</b></p>
+  <div class="footer"><span>Practica 3</span><span class="slideNo">31</span></div>
+</section>
+
+<section class="slide bg-gold phraseSlide">
+  <div class="bigPhrase" style="color:var(--warm);font-size:58px">No siempre es instantaneo.<br>Pero cuando el numero cambia,<br>el cuerpo te esta diciendo que la alarma <em style="color:var(--gold-soft)">si escucha.</em></div>
+  <div class="footer"><span></span><span class="slideNo">32</span></div>
+</section>
+
+<section class="slide bg-deep">
+  <div class="orb orb-red" style="top:-200px;right:-100px"></div>
+  <p class="kicker">Resumen</p>
+  <h2>Que patron pide <em>que apoyo.</em></h2>
+  <table class="summary-table" style="margin-top:24px">
+    <tr><th></th><th>Patron</th><th>Herramientas</th><th>Logica</th></tr>
+    <tr><td class="type-num">1</td><td><b>Inflamacion activa</b></td><td>Curcuma, Uña de Gato, Harpagofito, Omega-3</td><td>Bajar un frente que sigue encendido</td></tr>
+    <tr><td class="type-num">2</td><td><b>Carga / rigidez</b></td><td>Mincartil, Vitamina D3</td><td>Dar soporte real al tejido</td></tr>
+    <tr><td class="type-num">3</td><td><b>Sensible / reactivado</b></td><td>Manganeso (Diatonato 1), respiracion y movimiento</td><td>Calmar un sistema que se dispara facil</td></tr>
+  </table>
+  <div class="footer"><span>Resumen</span><span class="slideNo">33</span></div>
+</section>
+
+<section class="slide bg-green">
+  <p class="kicker" style="color:rgba(255,255,255,.72)">Cierre conceptual</p>
+  <h2 style="color:#fff">No esperamos a que todo se rompa.<br>Buscamos <em style="color:#C8E6C9">mover el cuerpo</em> hacia un estado mejor.</h2>
+  <div class="three-rail">
+    <div class="rail">
+      <h3>Proteger</h3>
+      <p>Respetar lo rojo y bajar carga cuando el sistema sigue en defensa.</p>
+    </div>
+    <div class="rail">
+      <h3>Educar</h3>
+      <p>Entender patrones, colores y señales antes de reaccionar a ciegas.</p>
+    </div>
+    <div class="rail">
+      <h3>Promover</h3>
+      <p>Dar al cuerpo recursos para acercarse una y otra vez al modo regulado.</p>
+  </div>
+  </div>
+  <div class="footer"><span>Direccion</span><span class="slideNo">34</span></div>
+</section>
+
+<section class="slide bg-dark">
+  <div class="orb orb-green" style="top:-200px;left:-100px"></div>
+  <p class="kicker">Que se llevan hoy</p>
+  <h2>Comprender. Manejar. <em>Sostener.</em></h2>
+  <div class="three-rail">
+    <div class="rail"><h3>Comprender</h3><p>Un marco para leer si domina inflamacion, rigidez o sensibilidad.</p></div>
+    <div class="rail"><h3>Manejar</h3><p>Mapa corporal, semaforo y respiracion como herramientas practicas.</p></div>
+    <div class="rail"><h3>Sostener</h3><p>Una direccion clara: mover la aguja hacia el lado regulado.</p></div>
+  </div>
+  <div class="footer"><span>Cierre</span><span class="slideNo">35</span></div>
+</section>
+
+<section class="slide bg-green">
+  <div class="orb orb-gold" style="bottom:-200px;right:-150px"></div>
+  <div style="display:flex;flex-direction:column;justify-content:center;height:100%">
+    <p class="kicker" style="color:rgba(255,255,255,.7)">Siguiente paso</p>
+    <h1 style="color:#fff;font-size:72px">Escribe <em style="color:#C8E6C9">DOLOR</em><br>por WhatsApp.</h1>
+    <div class="rule" style="background:linear-gradient(90deg,#fff,transparent)"></div>
+    <p style="color:rgba(255,255,255,.82);font-size:30px">Dinos que zona te molesta, desde hace cuanto y si se parece mas a inflamacion, rigidez o dolor que se reactiva con facilidad.</p>
+    <div class="card" style="display:inline-block;background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);padding:24px 36px;margin-top:26px;max-width:540px">
+      <p style="font-size:28px;color:#fff"><b>15% en Kit Articulaciones</b><br><span style="font-size:22px;color:rgba(255,255,255,.55)">Valido hasta 4 julio 2026</span></p>
+    </div>
+  </div>
+  <div class="footer"><span>Wellkitt</span><span class="slideNo">36</span></div>
+</section>
+
+<section class="slide bg-dark phraseSlide">
+  <div class="orb orb-green" style="top:-200px;left:-100px"></div>
+  <div class="orb orb-gold" style="bottom:-200px;right:-100px"></div>
+  <div style="text-align:center">
+    <svg width="120" height="100" viewBox="0 0 420 360" fill="none" style="margin-bottom:32px;opacity:.4">
+      <path d="M30 80 C30 80, 70 320, 110 320 C150 320, 150 140, 190 140 C230 140, 230 320, 270 320 C310 320, 310 80, 350 80" stroke="#4CAF50" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M285 60 C300 30, 340 30, 340 65 C340 100, 300 100, 285 60Z" fill="#81C784"/>
+    </svg>
+    <div class="bigPhrase" style="font-size:50px">El dolor que regresa no siempre pide mas fuerza.<br>A veces pide una mejor lectura del <em>patron</em><br>y mas recursos para <em>regularse.</em></div>
+    <div class="rule" style="margin:32px auto;background:linear-gradient(90deg,transparent,var(--green),transparent)"></div>
+    <p style="color:var(--gray);font-size:24px">Dr. Miguel Ojeda Rios - Instituto Centrobioenergetica</p>
+  </div>
+  <div class="footer"><span></span><span class="slideNo">37</span></div>
+</section>
+
+</main>
+</body>
+</html>
