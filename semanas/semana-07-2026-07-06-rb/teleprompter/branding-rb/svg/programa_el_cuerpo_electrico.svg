@@ -1,0 +1,7 @@
+<svg width="160" height="40" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10" cy="20" r="5" fill="#0F6E56"/>
+<line x1="17" y1="20" x2="27" y2="20" stroke="#0F6E56" stroke-width="0.8"/>
+<circle cx="34" cy="20" r="5" fill="#0F6E56" opacity="0.35"/>
+<text x="50" y="17" font-family="Georgia, serif" font-size="11" font-weight="400" fill="#2C2C2A" letter-spacing="0.5">el cuerpo</text>
+<text x="50" y="31" font-family="Georgia, serif" font-size="11" font-weight="400" fill="#0F6E56" letter-spacing="0.5">eléctrico</text>
+</svg>

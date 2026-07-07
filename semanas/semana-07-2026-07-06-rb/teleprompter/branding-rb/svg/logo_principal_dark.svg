@@ -1,0 +1,7 @@
+<svg width="380" height="56" viewBox="0 0 380 56" xmlns="http://www.w3.org/2000/svg">
+<circle cx="14" cy="28" r="6" fill="#5DCAA5"/>
+<line x1="22" y1="28" x2="36" y2="28" stroke="#5DCAA5" stroke-width="1"/>
+<circle cx="44" cy="28" r="6" fill="#5DCAA5" opacity="0.35"/>
+<text x="64" y="24" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="400" fill="#E8E6DE" letter-spacing="1">regulación</text>
+<text x="64" y="48" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="400" fill="#5DCAA5" letter-spacing="1">bioeléctrica</text>
+</svg>
