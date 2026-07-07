@@ -1,10 +1,10 @@
 .DS_Store
 *.log
 node_modules/
+.tools/
 .env
 .env.*
 dist/
 build/
 .cache/
 .Trash/
-

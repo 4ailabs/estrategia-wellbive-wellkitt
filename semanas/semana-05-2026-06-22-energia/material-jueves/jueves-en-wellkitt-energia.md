@@ -1,5 +1,5 @@
 # Jueves en Wellkitt — Energia y fatiga celular
-Fecha: jueves 26 de junio 2026
+Fecha: jueves 25 de junio 2026
 Hora: 5:30 pm
 Duracion: 45 minutos
 Formato: presencial + Zoom
@@ -300,8 +300,8 @@ Campos minimos para cada persona presencial:
 ```
 JUEVES EN WELLKITT
 Nombre:
-Fecha: 26 junio 2026
+Fecha: 25 junio 2026
 Beneficio: 15% en Kit Energia
-Valido hasta: 28 junio 2026
+Valido hasta: 27 junio 2026
 No transferible.
 ```

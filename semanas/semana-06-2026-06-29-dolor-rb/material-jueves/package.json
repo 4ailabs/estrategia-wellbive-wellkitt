@@ -1,4 +1,8 @@
 {
+  "private": true,
+  "scripts": {
+    "exportar": "node exportar_folletos.js"
+  },
   "dependencies": {
     "puppeteer": "^25.2.1"
   }

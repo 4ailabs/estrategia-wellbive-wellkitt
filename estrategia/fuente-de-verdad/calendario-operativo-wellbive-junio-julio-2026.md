@@ -72,7 +72,7 @@ Objetivo: vender Kit Anti-Estres y cerrar Actos Modulo 2.
 
 | Dia | Publicacion | Titulo | CTA | Producto/curso |
 |---|---|---|---|---|
-| Lun 15 | Video largo | Cuando el estrés se queda en el cuerpo: tension, cansancio y sueño roto | ESTRES | Ner-vit, Valeriana, Triptófano |
+| Lun 15 | Video largo | Cuando el estrés se queda en el cuerpo: tension, cansancio y sueño roto | ESTRES | Ner-vit, Valeriana, Triptófano, Oligosor Litio |
 | Mar 16 | Short | El cuerpo no descansa solo porque cierres los ojos | ESTRES | L-Triptófano |
 | Mie 17 | Video puente | Rituales, sistema nervioso y descanso: que puede moverse en una experiencia | ESTRES | Actos + Anti-Estres |
 | Jue 18 | Premiere | Estrés que se queda en el cuerpo | ESTRES | Actos + Anti-Estres |

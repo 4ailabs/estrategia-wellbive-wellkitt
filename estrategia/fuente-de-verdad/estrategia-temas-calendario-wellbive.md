@@ -252,7 +252,7 @@ Tema madre: cierre Actos + estres.
 
 | Dia | Contenido | Producto/curso | CTA |
 |---|---|---|---|
-| Lun | Video: "Cuando el estrés se queda en el cuerpo: tension, cansancio y sueño roto" | Ner-vit, Valeriana, L-Triptófano | ESTRES |
+| Lun | Video: "Cuando el estrés se queda en el cuerpo: tension, cansancio y sueño roto" | Ner-vit, Valeriana, L-Triptófano, Oligosor Litio | ESTRES |
 | Mie | Video: "Rituales, sistema nervioso y descanso: que puede moverse en una experiencia" | Actos que Mueven + Kit Anti-Estres | ESTRES |
 | Jue | Premiere: "Estrés que se queda en el cuerpo" | Actos que Mueven + Escudo Anti-Estres | ESTRES |
 | Sab | Actividad: Modulo 2 Actos que Mueven | Curso | SEGUIMIENTO |

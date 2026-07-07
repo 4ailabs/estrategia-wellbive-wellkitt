@@ -25,6 +25,7 @@ Kit Anti-Estres:
 - Valeriana
 - L-Triptófano
 - Zapote Blanco
+- Oligosor Litio
 
 ## Curso puente
 

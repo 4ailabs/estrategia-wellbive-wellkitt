@@ -25,7 +25,7 @@ No es una guia medica. Es una herramienta editorial y comercial para ordenar men
   Duracion sugerida: 30 dias.
 
 - **K02 Kit Digestivo Integral**: problemas digestivos multiples.  
-  Productos: Colix, Jengibre, Melissa, Inulac Tablets, Lacticol.  
+  Productos: Colix, Jengibre, Melissa, Inulac Tablets.  
   Duracion sugerida: 30-60 dias.
 
 - **K03 Kit Anti-Estres y Sueno**: estres, ansiedad e insomnio.  
@@ -59,8 +59,8 @@ No es una guia medica. Es una herramienta editorial y comercial para ordenar men
 |---|---|---|---|---|
 | Ansiedad, insomnio, ruido mental, cuerpo en alerta | Semana 01 / CALMA | Ner-vit, Valeriana, L-Triptófano, Zapote Blanco, Diatonato 3 | Kit Anti-Estres y Sueno | Tu cuerpo sigue en emergencia aunque ya termino el dia |
 | Hablar ya no alcanza, carga emocional, necesidad de cierre | Semana 02 / ACTOS | Guia, material presencial, apoyo estres/sueno si aplica | Puente a Actos que Mueven | Cuando hablar ya no alcanza |
-| Inflamacion, digestion lenta, gases, colicos | Semana 03 / DIGESTION | Colix, Jengibre, Melissa, Inulac, Lacticol | Kit Digestivo Integral | Me inflamo despues de comer |
-| Tension, cansancio, sueno roto, carga corporal | Semana 04 / ESTRES | Ner-vit, Valeriana, L-Triptófano, Zapote Blanco | Kit Anti-Estres y Sueno | Cuando el estres se queda en el cuerpo |
+| Inflamacion, digestion lenta, gases, colicos | Semana 03 / DIGESTION | Colix, Jengibre, Melissa, Inulac | Kit Digestivo Integral | Me inflamo despues de comer |
+| Tension, cansancio, sueno roto, carga corporal | Semana 04 / ESTRES | Ner-vit, Valeriana, L-Triptófano, Zapote Blanco, Oligosor Litio | Kit Anti-Estres y Sueno | Cuando el estres se queda en el cuerpo |
 | Cansancio constante, bajo rendimiento, falta de energia | Semana 05 / ENERGIA | Coenzima Q10, Maca, Fostprint, Carnilis, Espirulina | Kit Energia y Rendimiento | Cansancio constante: que revisar primero |
 | Dolor articular, inflamacion, rigidez | Semana 06 / DOLOR-RB | Curcuma, Harpagofito, Una de Gato, Mincartil, Omega-3 (EPA/DHA), Vitamina D | Kit Articulaciones y Movilidad | Dolor que regresa |
 | Regulacion bioelectrica, rastreo, preguntas previas | Semana 07 / RB | Apoyo segun perfil: articulaciones, energia, circulacion | Puente a RB | Que es la regulacion bioelectrica |

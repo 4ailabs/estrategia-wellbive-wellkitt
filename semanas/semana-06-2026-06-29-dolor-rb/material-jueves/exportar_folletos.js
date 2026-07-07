@@ -1,35 +1,56 @@
-let puppeteer;
-try {
-  puppeteer = require('puppeteer');
-} catch {
-  puppeteer = require('../slides/node_modules/puppeteer');
-}
+#!/usr/bin/env node
 
-const path = require('path');
+/**
+ * Exporta cada elemento `.page` de un folleto HTML como una imagen PNG Letter.
+ *
+ * Uso:
+ *   npm run exportar
+ *   npm run exportar -- otro-folleto.html export_folletos/otra-version
+ *   npm run exportar -- otro-folleto.html export_folletos/otra-version --scale=3
+ */
+
 const fs = require('fs');
 const http = require('http');
-
-const SCALE = 4;
-const PAGE_W = 816;
-const PAGE_H = 1056;
-const PORT = 3013;
+const path = require('path');
+const puppeteer = require('puppeteer');
 
 const BASE_DIR = __dirname;
-const OUT_DIR = path.join(BASE_DIR, 'export_folletos');
+const LETTER_WIDTH = 816;
+const LETTER_HEIGHT = 1056;
 
-const ARCHIVOS = [
-  { archivo: 'folleto-dolor.html', carpeta: 'folleto-color' },
-  { archivo: 'folleto-dolor-bn.html', carpeta: 'folleto-bn' },
-];
+const positionalArgs = process.argv.slice(2).filter((arg) => !arg.startsWith('--'));
+const scaleArg = process.argv.slice(2).find((arg) => arg.startsWith('--scale='));
+const scale = scaleArg ? Number(scaleArg.split('=')[1]) : 4;
+const inputName = positionalArgs[0] || 'folleto-dolor.html';
+const outputName = positionalArgs[1] || path.join('export_folletos', 'folleto-color');
+const inputPath = path.resolve(BASE_DIR, inputName);
+const outputDir = path.resolve(BASE_DIR, outputName);
 
-(async () => {
-  console.log('────────────────────────────────────────────────────────');
-  console.log('Wellkitt Dolor — Exportacion Folletos a PNG');
-  console.log(`Resolucion: ${PAGE_W * SCALE} x ${PAGE_H * SCALE} px por pagina (Letter, ${SCALE}x)`);
-  console.log('────────────────────────────────────────────────────────\n');
+if (!Number.isFinite(scale) || scale < 1 || scale > 6) {
+  console.error('Error: --scale debe ser un numero entre 1 y 6.');
+  process.exit(1);
+}
 
-  let browser;
-  const server = http.createServer((req, res) => {
+if (!fs.existsSync(inputPath)) {
+  console.error(`Error: no existe el archivo ${inputPath}`);
+  process.exit(1);
+}
+
+const mimeTypes = {
+  '.css': 'text/css; charset=utf-8',
+  '.html': 'text/html; charset=utf-8',
+  '.jpeg': 'image/jpeg',
+  '.jpg': 'image/jpeg',
+  '.js': 'application/javascript; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.png': 'image/png',
+  '.svg': 'image/svg+xml',
+  '.woff': 'font/woff',
+  '.woff2': 'font/woff2',
+};
+
+function createServer() {
+  return http.createServer((req, res) => {
     if (!req.url || req.url.includes('favicon')) {
       res.writeHead(204);
       res.end();
@@ -37,107 +58,89 @@ const ARCHIVOS = [
     }
 
     const requestPath = decodeURIComponent(req.url.split('?')[0]);
-    let filePath;
-    if (requestPath === '/' || requestPath === '/index.html') {
-      filePath = path.join(BASE_DIR, 'folleto-dolor.html');
-    } else {
-      filePath = path.join(BASE_DIR, requestPath.replace(/^\/+/, ''));
-      if (!fs.existsSync(filePath)) {
-        filePath = path.join(BASE_DIR, '..', '..', '..', requestPath.replace(/^\/+/, ''));
-      }
+    const relativePath = requestPath === '/' ? path.basename(inputPath) : requestPath.replace(/^\/+/, '');
+    const candidates = [
+      path.resolve(BASE_DIR, relativePath),
+      path.resolve(BASE_DIR, '..', '..', '..', relativePath),
+    ];
+    const filePath = candidates.find((candidate) => fs.existsSync(candidate));
+
+    if (!filePath) {
+      res.writeHead(404);
+      res.end(`Not found: ${requestPath}`);
+      return;
     }
 
-    try {
-      const content = fs.readFileSync(filePath);
-      const ext = path.extname(filePath).toLowerCase();
-      const types = {
-        '.html': 'text/html; charset=utf-8',
-        '.css': 'text/css; charset=utf-8',
-        '.js': 'application/javascript; charset=utf-8',
-        '.json': 'application/json; charset=utf-8',
-        '.png': 'image/png',
-        '.jpg': 'image/jpeg',
-        '.jpeg': 'image/jpeg',
-        '.svg': 'image/svg+xml',
-        '.woff': 'font/woff',
-        '.woff2': 'font/woff2',
-      };
-      res.writeHead(200, { 'Content-Type': types[ext] || 'application/octet-stream' });
-      res.end(content);
-    } catch {
-      res.writeHead(404);
-      res.end('Not found: ' + requestPath);
-    }
+    const extension = path.extname(filePath).toLowerCase();
+    res.writeHead(200, { 'Content-Type': mimeTypes[extension] || 'application/octet-stream' });
+    fs.createReadStream(filePath).pipe(res);
   });
+}
+
+async function main() {
+  const server = createServer();
+  let browser;
 
   try {
     await new Promise((resolve, reject) => {
       server.once('error', reject);
-      server.listen(PORT, resolve);
+      server.listen(0, '127.0.0.1', resolve);
     });
-    console.log(`  Servidor local en puerto ${PORT}\n`);
+
+    const { port } = server.address();
+    fs.mkdirSync(outputDir, { recursive: true });
 
     browser = await puppeteer.launch({
-      headless: 'new',
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
 
-    let totalExportados = 0;
+    const page = await browser.newPage();
+    await page.setViewport({
+      width: LETTER_WIDTH,
+      height: LETTER_HEIGHT,
+      deviceScaleFactor: scale,
+    });
 
-    for (const { archivo, carpeta } of ARCHIVOS) {
-      const outDir = path.join(OUT_DIR, carpeta);
-      fs.mkdirSync(outDir, { recursive: true });
+    const url = `http://127.0.0.1:${port}/${encodeURIComponent(path.basename(inputPath))}`;
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
+    await page.evaluate(() => document.fonts.ready);
 
-      const page = await browser.newPage();
-      await page.setViewport({ width: 1000, height: 1400, deviceScaleFactor: SCALE });
+    const pages = await page.$$('.page');
+    if (pages.length === 0) {
+      throw new Error('No se encontraron elementos con la clase `.page`.');
+    }
 
-      const fullUrl = `http://localhost:${PORT}/${archivo}`;
-      console.log(`  ${archivo}`);
-      await page.goto(fullUrl, { waitUntil: 'networkidle0', timeout: 30000 });
-      await page.evaluate(() => document.fonts.ready);
-      await new Promise(r => setTimeout(r, 2000));
+    console.log(`Exportando ${pages.length} pagina(s) Letter a ${LETTER_WIDTH * scale} x ${LETTER_HEIGHT * scale} px`);
 
-      const pageCount = await page.evaluate(() => document.querySelectorAll('.page').length);
-      console.log(`  Paginas detectadas: ${pageCount}`);
+    for (let index = 0; index < pages.length; index += 1) {
+      const number = String(index + 1).padStart(2, '0');
+      const outputPath = path.join(outputDir, `pagina-${number}.png`);
+      const size = await pages[index].evaluate((element) => {
+        const rect = element.getBoundingClientRect();
+        return { width: Math.round(rect.width), height: Math.round(rect.height) };
+      });
 
-      for (let i = 0; i < pageCount; i++) {
-        const num = String(i + 1).padStart(2, '0');
-        const outPath = path.join(outDir, `pagina-${num}.png`);
-
-        const box = await page.evaluate((idx) => {
-          const el = document.querySelectorAll('.page')[idx];
-          if (!el) return null;
-          const r = el.getBoundingClientRect();
-          return { x: r.x, y: r.y, width: r.width, height: r.height };
-        }, i);
-
-        if (!box) {
-          console.log(`  x pagina-${num} — no encontrada`);
-          continue;
-        }
-
-        await page.screenshot({
-          path: outPath,
-          clip: { x: box.x, y: box.y, width: box.width, height: box.height },
-          omitBackground: false,
-        });
-
-        const pxW = Math.round(box.width * SCALE);
-        const pxH = Math.round(box.height * SCALE);
-        console.log(`  pagina-${num}.png  —  ${pxW} x ${pxH} px`);
-        totalExportados++;
+      if (size.width !== LETTER_WIDTH || size.height !== LETTER_HEIGHT) {
+        console.warn(
+          `Aviso: pagina ${number} mide ${size.width} x ${size.height} CSS px; Letter esperado: ${LETTER_WIDTH} x ${LETTER_HEIGHT}.`,
+        );
       }
 
-      await page.close();
+      await pages[index].screenshot({
+        path: outputPath,
+        type: 'png',
+        omitBackground: false,
+      });
+      console.log(`Creado: ${outputPath}`);
     }
-
-    console.log('\n────────────────────────────────────────────────────────');
-    console.log(`${totalExportados} paginas exportadas a ${OUT_DIR}`);
-    console.log('────────────────────────────────────────────────────────');
   } finally {
-    if (browser) {
-      await browser.close();
-    }
+    if (browser) await browser.close();
     await new Promise((resolve) => server.close(resolve));
   }
-})();
+}
+
+main().catch((error) => {
+  console.error(`Error al exportar: ${error.message}`);
+  process.exitCode = 1;
+});

@@ -103,7 +103,7 @@ Tema madre: digestion e inflamacion.
 | Short | No todo se arregla quitando alimentos |
 | Video miercoles | Probiótico, prebiótico y digestivo: no son lo mismo |
 | Jueves Wellkitt | Digestión sin inflamación: clase presencial + Zoom |
-| Producto/kit | Kit Digestivo, Colix, Jengibre, Melissa, Inulac, Lacticol |
+| Producto/kit | Kit Digestivo, Colix, Jengibre, Melissa, Inulac |
 | Curso puente | Reset Metabolico / Fitoterapia Clinica |
 | Palabra clave | DIGESTION |
 | Meta | 5 ventas o conversaciones calificadas de digestion |
@@ -118,7 +118,7 @@ Tema madre: estres, sueno y cierre de Actos CDMX.
 | Short | El cuerpo no descansa solo porque cierres los ojos |
 | Video miercoles | Rituales, sistema nervioso y descanso: que puede moverse en una experiencia |
 | Jueves Wellkitt | Estrés que se queda en el cuerpo |
-| Producto/kit | Kit Anti-Estres, Ner-vit, Valeriana, Zapote Blanco, L-Triptófano, Diatonato 3 |
+| Producto/kit | Kit Anti-Estres, Ner-vit, Valeriana, Zapote Blanco, L-Triptófano, Diatonato 3, Oligosor Litio |
 | Curso puente | Actos que Mueven modulo 2: 20 junio / Escudo Anti-Estres |
 | Palabra clave | ESTRES |
 | Meta | 8 asistentes presenciales o Zoom + seguimiento |
