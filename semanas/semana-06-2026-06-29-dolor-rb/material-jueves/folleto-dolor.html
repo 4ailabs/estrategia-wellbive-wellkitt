@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dolor · Wellkitt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    @page { size: letter; margin: 0; }
+    .prod-desc, .accion-texto, .intro p, .tpp-strip-text { text-align: justify; }
+
+    :root {
+      --verde:     #2E7D32;
+      --verde-s:   #1B5E20;
+      --verde-l:   #C8E6C9;
+      --verde-xs:  #E8F5E9;
+      --gold:      #8D6E28;
+      --gold-l:    #FFF8E1;
+      --gold-b:    #F9A825;
+      --ink:       #1a1e28;
+      --graphite:  #3a3f52;
+      --mid:       #7a8199;
+      --rule:      #d8dde8;
+      --nude:      #f6f7fa;
+      --cream:     #fafbfd;
+      --paper:     #ffffff;
+      --danger:    #C0392B;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #e8eaef;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      background: var(--paper);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 20px;
+      page-break-after: always;
+    }
+
+    /* HEADER */
+    .header {
+      padding: 16px 32px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+    .h-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 5px;
+    }
+    .h-logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+    .h-logo-text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--verde);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .h-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 26pt;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+    .h-titulo em {
+      color: var(--verde);
+      font-style: normal;
+      font-weight: 300;
+    }
+    .h-right { text-align: right; }
+    .h-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .h-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      font-weight: 300;
+      color: var(--graphite);
+    }
+
+    /* INTRO */
+    .intro {
+      padding: 8px 32px;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+    .intro p {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.6;
+    }
+
+    .sec-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    /* PAGINA 1 */
+    .p1-body {
+      flex: 1;
+      padding: 10px 32px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* TPP STRIP */
+    .tpp-strip {
+      padding: 12px 16px;
+      background: var(--gold-l);
+      border: 1px solid #EED9A0;
+      border-radius: 4px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .tpp-strip-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 700;
+      color: #5C4400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .tpp-strip-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 400;
+      color: #3D2E0A;
+      line-height: 1.5;
+    }
+    .tpp-strip-text b { font-weight: 700; color: #1A1200; font-size: 10.5pt; }
+
+    /* PATRONES */
+    .patrones-list {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .patron {
+      display: grid;
+      grid-template-columns: 120px 1fr 130px;
+      border-bottom: 1px solid var(--rule);
+      min-height: 0;
+    }
+    .patron:last-child { border-bottom: none; }
+    .patron-izq {
+      padding: 7px 12px;
+      border-right: 1px solid var(--rule);
+      background: var(--nude);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+    }
+    .patron-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 600;
+      color: var(--verde);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .patron-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 10pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.15;
+    }
+    .patron-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 7pt;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+    .patron-centro {
+      padding: 7px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+    }
+    .patron-check-item {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--graphite);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      line-height: 1.3;
+    }
+    .patron-check-box {
+      width: 9px;
+      height: 9px;
+      border: 1.5px solid var(--verde-l);
+      border-radius: 2px;
+      flex-shrink: 0;
+      background: var(--verde-xs);
+    }
+    .patron-der {
+      padding: 7px 12px;
+      border-left: 1px solid var(--rule);
+      background: var(--verde-xs);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+    }
+    .patron-prod-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .patron-prod-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--verde);
+      line-height: 1.3;
+    }
+    .patron-evidencia {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+    }
+    .ev-strong { color: #27AE60; }
+    .ev-mod { color: #F39C12; }
+    .ev-weak { color: #E67E22; }
+
+    /* ACCIONES */
+    .acciones-section { display: flex; flex-direction: column; gap: 5px; }
+    .acciones-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .accion {
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .accion-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14pt;
+      font-weight: 700;
+      color: var(--verde);
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .accion-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+    .accion-texto {
+      font-family: 'Inter', sans-serif;
+      font-size: 7pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.45;
+    }
+
+    /* FOOTER */
+    .p1-footer {
+      padding: 6px 32px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .p1-footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 280px;
+      line-height: 1.5;
+    }
+    .p1-footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.6;
+    }
+    .p1-footer-marca strong { font-weight: 600; color: var(--graphite); }
+    .pagenum {
+      font-family: 'Poppins', serif;
+      font-size: 10pt;
+      color: var(--verde);
+      font-weight: 300;
+    }
+
+    /* PAGINA 2 */
+    .p2-body {
+      flex: 1;
+      padding: 14px 32px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      overflow: hidden;
+    }
+
+    .prod {
+      display: grid;
+      grid-template-columns: 130px 1fr 95px;
+      gap: 0;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      min-height: 0;
+      flex-shrink: 0;
+    }
+    .prod-img {
+      padding: 6px 5px;
+      border-right: 1px solid var(--rule);
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prod-img-ph {
+      width: 34px;
+      height: 50px;
+      background: var(--verde-xs);
+      border: 1px solid var(--verde-l);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .prod-img-ph span {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12pt;
+      font-weight: 700;
+      color: var(--verde-l);
+    }
+    .prod-izq {
+      padding: 10px 12px;
+      border-right: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .prod-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+    .prod-sci {
+      font-family: 'Inter', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 300;
+      color: var(--mid);
+      font-style: italic;
+      line-height: 1.3;
+      margin-top: 2px;
+    }
+    .prod-patron {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 4px;
+    }
+    .prod-patron-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6pt;
+      font-weight: 700;
+      background: var(--verde);
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 2px;
+      letter-spacing: 0.5px;
+    }
+    .prod-patron-name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 500;
+      color: var(--verde);
+      letter-spacing: 0.5px;
+    }
+    .prod-centro {
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .prod-para {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .prod-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.5;
+    }
+    .prod-nota {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      color: #92400E;
+      background: #FFFBEB;
+      padding: 3px 8px;
+      line-height: 1.4;
+      margin-top: 2px;
+      border-radius: 3px;
+    }
+    .prod-nota-red {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      color: #991B1B;
+      background: #FEF2F2;
+      padding: 3px 8px;
+      line-height: 1.4;
+      margin-top: 2px;
+      border-radius: 3px;
+    }
+    .prod-der {
+      padding: 10px 12px;
+      border-left: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+    .prod-timing-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+    .prod-timing-val {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+    .prod-evidencia-badge {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 6.5pt;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+    .badge-s { background: #E8F5E9; color: #27AE60; }
+    .badge-m { background: #FFF8E1; color: #F39C12; }
+    .badge-w { background: #FFF3E0; color: #E67E22; }
+
+    .p2-footer {
+      margin: 8px 32px 0;
+      padding: 10px 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .p2-footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 300px;
+      line-height: 1.5;
+    }
+    .p2-footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.6;
+    }
+    .p2-footer-marca strong { font-weight: 600; color: var(--graphite); }
+
+    @media print {
+      body { background: #fff; margin: 0; }
+      .page { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- PAGINA 1 - PATRONES DE DOLOR -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Kit <em>Articulaciones</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Guia de autocuidado</div>
+      <div class="h-sub">Cuando el dolor va y regresa</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>El dolor que regresa no siempre significa daño nuevo. Cada patron tiene un mecanismo distinto en el cuerpo y una herramienta distinta. Identifica cual te describe mejor antes de elegir un apoyo.</p>
+  </div>
+
+  <div class="p1-body">
+
+    <div class="tpp-strip">
+      <div class="tpp-strip-label">Aplica a cualquier patron</div>
+      <div class="tpp-strip-text"><b>Omega-3 (EPA y DHA)</b> -- le quita terreno a las grasas que alimentan la inflamacion y ayuda al cuerpo a resolverla activamente, no solo a bloquearla por un rato. Es un apoyo de fondo razonable sin importar cual patron domine, porque un grado de inflamacion de bajo nivel suele estar presente en los tres.</div>
+    </div>
+
+    <div>
+      <div class="sec-label" style="margin-bottom:5px">Identifica tu patron de dolor</div>
+      <div class="patrones-list">
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patron 1</div>
+            <div class="patron-nombre">Inflamacion activa</div>
+            <div class="patron-sub">El sistema sigue en modo defensa</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Articulacion caliente, inflamada, sensible</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Empeora con desvelo, estres o cambios de clima</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>No siempre hay una lesion nueva</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Hinchazon y rigidez matutina prolongada: valoracion medica</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Curcuma + Harpagofito + Uña de Gato</div>
+          </div>
+        </div>
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patron 2</div>
+            <div class="patron-nombre">Carga, rigidez o desgaste</div>
+            <div class="patron-sub">El tejido perdio soporte y tiempo de recuperacion</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Cuesta arrancar en la mañana</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Te paras duro si te sientas un rato</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>La rodilla truena, la espalda tarda en soltarse</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Sensacion de perder libertad de movimiento</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Mincartil + Vitamina D3</div>
+          </div>
+        </div>
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patron 3</div>
+            <div class="patron-nombre">Dolor sensible o reactivado</div>
+            <div class="patron-sub">El sistema nervioso se volvio facil de disparar</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Sube con tension emocional o mal dormir</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Aparece con un esfuerzo minimo</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>La intensidad no calza con el esfuerzo hecho ese dia</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Mejora algo con calma, respiracion o movimiento suave</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Manganeso (Diatonato 1) + respiracion y movimiento suave</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acciones-section">
+      <div class="sec-label">3 cosas que puedes hacer hoy</div>
+      <div class="acciones-grid">
+        <div class="accion">
+          <div class="accion-num">01</div>
+          <div class="accion-titulo">Observa cuando empeora tu dolor</div>
+          <div class="accion-texto">Al despertar, al moverte, despues de estar quieto, despues de dormir mal o de semanas pesadas. Esa informacion vale mas que "me duele todo igual".</div>
+        </div>
+        <div class="accion">
+          <div class="accion-num">02</div>
+          <div class="accion-titulo">No confundas la imagen con el dolor</div>
+          <div class="accion-texto">Una radiografia o resonancia puede mostrar cambios y aun asi no explicar toda la intensidad del dolor -- y al reves. Dolor y estructura no son exactamente lo mismo.</div>
+        </div>
+        <div class="accion">
+          <div class="accion-num">03</div>
+          <div class="accion-titulo">Identifica tu patron antes de elegir un apoyo</div>
+          <div class="accion-texto">Curcuma no es lo mismo que Mincartil. Cada uno actua en un frente distinto. Si no sabes tu patron, es un tiro a ciegas.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p1-footer">
+    <div class="p1-footer-note">Si te reconoces en mas de un patron, identifica el dominante y empieza por ahi. Productos en la pagina siguiente.</div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="p1-footer-marca"><strong>Wellkitt</strong><br>Acapulco 36, piso 8 -- Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+      <div class="pagenum">1</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PAGINA 2 - PRODUCTOS -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Los <em>productos</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Kit Articulaciones</div>
+      <div class="h-sub">Mecanismo de accion y para quien</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>Cada producto actua en un punto distinto de la via inflamatoria o de la reparacion del tejido conectivo. El patron que identificaste en la pagina anterior determina cual necesitas. Si tomas medicamento, consultanos antes.</p>
+  </div>
+
+  <div class="p2-body">
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Curcuma</div>
+          <div class="prod-sci">Curcuma longa -- curcumina</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Inflamacion activa</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Mecanismo</div>
+        <div class="prod-desc">Actua sobre el interruptor que enciende la inflamacion dentro de la celula (la via NF-kB), bajando la produccion de las sustancias que generan dolor, calor e hinchazon.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Extracto o capsulas</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Harpagofito</div>
+          <div class="prod-sci">Harpagophytum procumbens -- harpagosido</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Inflamacion activa</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Mecanismo</div>
+        <div class="prod-desc">Calma la misma respuesta inflamatoria, pero enfocada en la membrana que rodea la articulacion (el tejido sinovial) -- la zona que mas se resiente cuando hay hinchazon y calor local.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Extracto o capsulas</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Uña de Gato</div>
+          <div class="prod-sci">Uncaria tomentosa -- alcaloides oxindolicos</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Inflamacion activa</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Mecanismo</div>
+        <div class="prod-desc">Sus compuestos activos bajan la misma via inflamatoria y ademas ayudan a equilibrar las celulas de defensa que mantienen encendida la inflamacion cuando ya lleva tiempo instalada.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Extracto o capsulas</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Omega-3</div>
+          <div class="prod-sci">EPA y DHA</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Apoyo de fondo, cualquier patron</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Mecanismo</div>
+        <div class="prod-desc">Le quitan terreno a las grasas que alimentan la inflamacion, y ademas ayudan al cuerpo a resolverla activamente -- no solo a frenarla por un rato.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Capsulas</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Mincartil</div>
+          <div class="prod-sci">Aminoacidos de soya + Ca, Mg, Si, Mn + Vit. C/A/D/grupo B</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Carga, rigidez o desgaste</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Mecanismo</div>
+        <div class="prod-desc">Le da a la celula los minerales, vitaminas y aminoacidos que necesita para fabricar su propio colageno y proteger el cartilago del desgaste diario.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Polvo, disolver en agua o yogur</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Vitamina D3</div>
+          <div class="prod-sci">Colecalciferol</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Carga, rigidez o desgaste</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Mecanismo</div>
+        <div class="prod-desc">Su forma activa entra a la celula y actua directamente sobre la actividad de los genes -- no solo mueve calcio. Tambien influye en inflamacion, fuerza muscular y reparacion del tejido.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Perlas</div></div>
+      </div>
+    </div>
+
+    <div class="prod" style="background:var(--gold-l);border-color:#EED9A0">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre" style="color:var(--gold)">Manganeso</div>
+          <div class="prod-sci">Diatonato 1 -- oligoelemento</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name" style="color:var(--gold)">Dolor sensible o reactivado</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Mecanismo</div>
+        <div class="prod-desc">En la tradicion de la oligoterapia, el Manganeso acompaña a las personas con un cuerpo que reacciona de mas ante estimulos pequeños -- un sistema demasiado facil de disparar.</div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Frasco con gotero</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p2-footer">
+    <div class="p2-footer-note">Material educativo. No sustituye atencion medica. Escribe DOLOR por WhatsApp para orientacion personalizada.</div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="p2-footer-marca"><strong>Wellkitt</strong><br>Acapulco 36, piso 8 -- Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+      <div class="pagenum">2</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
