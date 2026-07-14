@@ -6,14 +6,22 @@ Título del video: Calor, sueño y piel que cambian: lo que nadie te explica de 
 
 ## Descripción (pegar en YouTube)
 
-¿Sofocos que aparecen de la nada, insomnio sin razón aparente, o piel y energía que ya no se sienten igual? En este video te explico los mecanismos reales detrás de cada una de las tres zonas que más cambian en esta etapa — y por qué "son tus hormonas" no es una explicación suficiente. También aclaro un mito muy común sobre el barbasco que casi nadie explica bien.
+Sofocos, insomnio, la piel que cambia… y siempre la misma explicación: "son tus hormonas". Eso no explica nada.
 
-**Este jueves 16 de julio · Jueves en Wellkitt**
-Presencial en Acapulco 36, piso 8, Roma CDMX · también por Zoom
-Escribe HORMONAS al 55 7907 6626 para reservar tu lugar, pedir el enlace o recibir orientación.
+El Dr. Miguel Ojeda te muestra los mecanismos reales detrás de las tres zonas que más cambian en esta etapa —calor, sueño y ánimo, y piel y estructura— y por qué cada una necesita un apoyo distinto. Además, aclaramos el mito del barbasco.
 
-Dinos en los comentarios: ¿tú cuál de las tres zonas sientes más — el calor, el sueño y el ánimo, o la piel y la energía?
+⏱️ Capítulos
+0:00 · No es solo "son tus hormonas"
+1:44 · Las tres zonas
+2:05 · Calor: el termostato y la paradoja japonesa
+3:33 · Sueño y ánimo: progesterona y GABA
+4:33 · Piel y estructura: colágeno, zinc y cobre
+5:32 · Barbasco: el mito y lo que sí hace
+6:16 · Resumen y siguiente paso
 
-Este contenido es educativo y no sustituye atención médica. Si hay sangrado después de la menopausia ya establecida, sangrado irregular sin explicación o dolor pélvico severo, busca valoración profesional.
+💬 Escríbenos **HORMONAS** por WhatsApp y cuéntanos cuál zona sientes más.
+📅 Jueves en Wellkitt — presencial (Roma, CDMX) y por Zoom.
 
-#Wellkitt #Hormonas #Menopausia #SaludFemenina #Perimenopausia #SaludNatural #BienestarMexico
+⚠️ Contenido educativo. No sustituye atención médica.
+
+#Hormonas #Menopausia #SaludFemenina #Perimenopausia #Sofocos #Colágeno #Wellkitt #Wellbive
