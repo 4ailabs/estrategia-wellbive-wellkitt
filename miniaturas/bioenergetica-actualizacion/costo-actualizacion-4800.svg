@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#103f37"/>
+      <stop offset="0.48" stop-color="#0f6e56"/>
+      <stop offset="1" stop-color="#f6efe1"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="34%" cy="48%" r="52%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.44" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#08251f" flood-opacity="0.30"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="22" flood-color="#ff7448" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#halo)"/>
+
+  <g opacity="0.14" fill="none" stroke="#ffffff" stroke-width="2">
+    <path d="M86 560 C210 492 322 490 438 540 C548 588 648 584 738 532 C842 472 948 458 1098 528"/>
+    <path d="M124 604 C236 552 346 552 452 596 C558 640 676 636 790 574 C894 518 1012 518 1168 590"/>
+    <circle cx="1038" cy="154" r="82"/>
+    <circle cx="1038" cy="154" r="128"/>
+  </g>
+
+  <rect x="58" y="52" width="1164" height="616" rx="34" fill="none" stroke="#ffffff" stroke-opacity="0.42" stroke-width="2"/>
+
+  <g transform="translate(86 88)">
+    <text x="0" y="0" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="24" font-weight="900" letter-spacing="6" fill="#e3efe9">ACTUALIZACIÓN 2026</text>
+    <rect x="0" y="42" width="98" height="5" rx="3" fill="#ff7448"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="158" width="1096" height="430" rx="42" fill="#fbf7ee" fill-opacity="0.92"/>
+    <rect x="92" y="158" width="1096" height="430" rx="42" fill="none" stroke="#ffffff" stroke-opacity="0.75"/>
+  </g>
+
+  <g transform="translate(140 205)">
+    <text x="0" y="0" dominant-baseline="hanging" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="900" fill="#262620">Costo de esta</text>
+    <text x="0" y="78" dominant-baseline="hanging" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="900" fill="#262620">actualización</text>
+    <text x="0" y="184" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="5" fill="#0f6e56">INVERSIÓN TOTAL</text>
+  </g>
+
+  <g transform="translate(660 202)" filter="url(#glow)">
+    <rect x="0" y="0" width="442" height="252" rx="40" fill="#cf5730"/>
+    <text x="48" y="42" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="50" font-weight="900" fill="#ffffff">$</text>
+    <text x="112" y="34" dominant-baseline="hanging" font-family="Georgia, 'Times New Roman', serif" font-size="112" font-weight="900" fill="#ffffff">4,800</text>
+    <text x="68" y="190" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="30" font-weight="900" letter-spacing="3" fill="#ffffff" opacity="0.92">MXN</text>
+  </g>
+
+  <g transform="translate(140 622)">
+    <rect x="0" y="-36" width="520" height="60" rx="30" fill="#e3efe9" fill-opacity="0.92"/>
+    <text x="30" y="-21" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#0f6e56">Bioenergética Transgeneracional</text>
+  </g>
+</svg>
