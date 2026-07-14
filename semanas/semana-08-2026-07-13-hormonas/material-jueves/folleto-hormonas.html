@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hormonas · Wellkitt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    @page { size: letter; margin: 0; }
+    .accion-texto, .intro p, .tpp-strip-text { text-align: justify; }
+
+    :root {
+      --verde:     #2E7D32;
+      --verde-s:   #1B5E20;
+      --verde-l:   #C8E6C9;
+      --verde-xs:  #E8F5E9;
+      --gold:      #8D6E28;
+      --gold-l:    #FFF8E1;
+      --gold-b:    #F9A825;
+      --ink:       #1a1e28;
+      --graphite:  #3a3f52;
+      --mid:       #7a8199;
+      --rule:      #d8dde8;
+      --nude:      #f6f7fa;
+      --cream:     #fafbfd;
+      --paper:     #ffffff;
+      --danger:    #C0392B;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #e8eaef;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      background: var(--paper);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 20px;
+      page-break-after: always;
+    }
+
+    /* HEADER */
+    .header {
+      padding: 16px 32px 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+    .h-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 5px;
+    }
+    .h-logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+    .h-logo-text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--verde);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .h-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 26pt;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+    .h-titulo em {
+      color: var(--verde);
+      font-style: normal;
+      font-weight: 300;
+    }
+    .h-right { text-align: right; }
+    .h-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .h-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      font-weight: 300;
+      color: var(--graphite);
+    }
+
+    /* INTRO */
+    .intro {
+      padding: 8px 32px;
+      border-bottom: 1px solid var(--rule);
+      flex-shrink: 0;
+    }
+    .intro p {
+      font-family: 'Inter', sans-serif;
+      font-size: 11.5pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.6;
+    }
+
+    .sec-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    /* PAGINA 1 */
+    .p1-body {
+      flex: 1;
+      padding: 10px 32px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    /* TPP STRIP (nota medica, al final) */
+    .tpp-strip {
+      padding: 10px 16px;
+      background: var(--gold-l);
+      border: 1px solid #EED9A0;
+      border-radius: 4px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .tpp-strip-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7pt;
+      font-weight: 700;
+      color: #5C4400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .tpp-strip-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 400;
+      color: #3D2E0A;
+      line-height: 1.4;
+    }
+    .tpp-strip-text b { font-weight: 700; color: #1A1200; font-size: 7.5pt; }
+
+    /* PATRONES */
+    .patrones-list {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .patron {
+      display: grid;
+      grid-template-columns: 120px 1fr 150px;
+      border-bottom: 1px solid var(--rule);
+      min-height: 0;
+      flex: 1;
+    }
+    .patron:last-child { border-bottom: none; }
+    .patron-izq {
+      padding: 7px 12px;
+      border-right: 1px solid var(--rule);
+      background: var(--nude);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2px;
+    }
+    .patron-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--verde);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .patron-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.15;
+    }
+    .patron-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+    .patron-centro {
+      padding: 7px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+    .patron-check-item {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      font-weight: 300;
+      color: var(--graphite);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      line-height: 1.3;
+    }
+    .patron-check-box {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: var(--verde-l);
+      transform: translateY(-2px);
+    }
+    .patron-der {
+      padding: 7px 12px;
+      border-left: 1px solid var(--rule);
+      background: var(--verde-xs);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3px;
+    }
+    .patron-prod-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .patron-prod-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--verde);
+      line-height: 1.3;
+    }
+
+    /* ACCIONES */
+    .acciones-section { display: flex; flex-direction: column; gap: 5px; }
+    .acciones-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .accion {
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .accion-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 14pt;
+      font-weight: 700;
+      color: var(--verde);
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .accion-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+    .accion-texto {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      font-weight: 300;
+      color: var(--graphite);
+      line-height: 1.45;
+    }
+
+    /* FOOTER */
+    .p1-footer {
+      padding: 6px 32px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .p1-footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 280px;
+      line-height: 1.5;
+    }
+    .p1-footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.6;
+    }
+    .p1-footer-marca strong { font-weight: 600; color: var(--graphite); }
+    .pagenum {
+      font-family: 'Poppins', serif;
+      font-size: 10pt;
+      color: var(--verde);
+      font-weight: 300;
+    }
+
+    /* PAGINA 2 */
+    .p2-body {
+      flex: 1;
+      padding: 14px 32px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+      overflow: hidden;
+    }
+
+    .prod {
+      display: grid;
+      grid-template-columns: 150px 1fr 110px;
+      gap: 0;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      min-height: 96px;
+      flex: 1;
+    }
+    .prod-izq {
+      padding: 12px 16px;
+      border-right: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .prod-nombre {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5pt;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.05;
+      margin-bottom: 3px;
+    }
+    .prod-sci {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--mid);
+      font-style: italic;
+      line-height: 1.3;
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .prod-patron {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 5px;
+    }
+    .prod-patron-name {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 500;
+      color: var(--verde);
+      letter-spacing: 0.5px;
+    }
+    .prod-centro {
+      padding: 12px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
+    .prod-para {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .benefit-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .benefit-item {
+      font-family: 'Inter', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 400;
+      color: var(--graphite);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      line-height: 1.25;
+    }
+    .benefit-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: var(--verde-l);
+      transform: translateY(-1px);
+    }
+    .prod-der {
+      padding: 12px 16px;
+      border-left: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+    .prod-timing-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 500;
+      color: var(--mid);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+    .prod-timing-val {
+      font-family: 'Inter', sans-serif;
+      font-size: 10pt;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .p2-footer {
+      margin: 8px 32px 0;
+      padding: 10px 0;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .p2-footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 300;
+      color: var(--mid);
+      max-width: 300px;
+      line-height: 1.5;
+    }
+    .p2-footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.6;
+    }
+    .p2-footer-marca strong { font-weight: 600; color: var(--graphite); }
+
+    @media print {
+      body { background: #fff; margin: 0; }
+      .page { margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- PAGINA 1 - PATRONES HORMONALES -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Kit Salud <em>Femenina</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Guia de autocuidado</div>
+      <div class="h-sub">Calor, sueño y piel que cambian</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>El cuerpo no deja de producir hormonas de golpe -- las va reacomodando, y ese reacomodo se siente distinto segun la zona que mas lo resiente. Identifica cual de los tres patrones domina tu semana antes de elegir un apoyo.</p>
+  </div>
+
+  <div class="p1-body">
+
+    <div style="display:flex;flex-direction:column;flex:1;min-height:0">
+      <div class="sec-label" style="margin-bottom:5px">Identifica tu patron</div>
+      <div class="patrones-list">
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patron 1</div>
+            <div class="patron-nombre">Calor que sube solo</div>
+            <div class="patron-sub">El termostato interno se volvio mas sensible</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Sofocos que aparecen de la nada</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Sudoracion nocturna, cambias de pijama</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Palpitaciones subitas sin razon clara</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Calciflavon + Salvia + Barbasco</div>
+          </div>
+        </div>
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patron 2</div>
+            <div class="patron-nombre">El cuerpo no se apaga</div>
+            <div class="patron-sub">El sistema nervioso quedo mas expuesto</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Cuesta dormir aunque el dia fue tranquilo</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Despiertas a media noche sin razon</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Irritabilidad o ansiedad que antes no tenias</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Fem-vit completo</div>
+          </div>
+        </div>
+
+        <div class="patron">
+          <div class="patron-izq">
+            <div class="patron-num">Patron 3</div>
+            <div class="patron-nombre">Piel, energia y estructura</div>
+            <div class="patron-sub">El tejido de sosten se resiente</div>
+          </div>
+          <div class="patron-centro">
+            <div class="patron-check-item"><div class="patron-check-box"></div>Piel mas delgada, reseca, con menos firmeza</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Te cansas mas facil que antes</div>
+            <div class="patron-check-item"><div class="patron-check-box"></div>Preocupacion por densidad osea a futuro</div>
+          </div>
+          <div class="patron-der">
+            <div class="patron-prod-label">Apoyo</div>
+            <div class="patron-prod-nombre">Calciflavon + Diatonato 5.1</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="acciones-section">
+      <div class="sec-label">3 cosas que puedes hacer hoy</div>
+      <div class="acciones-grid">
+        <div class="accion">
+          <div class="accion-num">01</div>
+          <div class="accion-titulo">Nota cual patron domina tu semana</div>
+          <div class="accion-texto">Puedes reconocerte en mas de uno -- eso es normal. Pero casi siempre hay uno que pesa mas que los otros.</div>
+        </div>
+        <div class="accion">
+          <div class="accion-num">02</div>
+          <div class="accion-titulo">Dale tiempo real al apoyo elegido</div>
+          <div class="accion-texto">No es como un estimulante. Los efectos hormonales se notan en dias o semanas, no en minutos.</div>
+        </div>
+        <div class="accion">
+          <div class="accion-num">03</div>
+          <div class="accion-titulo">Si tienes ciclo irregular, revisa Milenrama</div>
+          <div class="accion-texto">Es distinta a los tres patrones -- pensada para perimenopausia con reglas que van y vienen sin orden.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tpp-strip">
+      <div class="tpp-strip-label">Antes de seguir</div>
+      <div class="tpp-strip-text"><b>Valoracion medica necesaria</b> si hay sangrado despues de la menopausia ya establecida, sangrado muy abundante o irregular sin explicacion, dolor pelvico severo, o bochornos muy intensos que llevan mas de un año sin mejoria con nada. Esta guia no sustituye eso.</div>
+    </div>
+
+  </div>
+
+  <div class="p1-footer">
+    <div class="p1-footer-note">Si te reconoces en mas de un patron, identifica el dominante y empieza por ahi. Productos en la pagina siguiente.</div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="p1-footer-marca"><strong>Wellkitt</strong><br>Acapulco 36, piso 8 -- Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+      <div class="pagenum">1</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- PAGINA 2 - PRODUCTOS -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Los <em>productos</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Kit Salud Femenina</div>
+      <div class="h-sub">Beneficios y para quien</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>Cada producto tiene beneficios distintos. El patron que identificaste en la pagina anterior determina cual necesitas. Si tomas medicamento o tienes antecedente de cancer hormono-dependiente, consultanos antes.</p>
+  </div>
+
+  <div class="p2-body">
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Calciflavon</div>
+          <div class="prod-sci">Isoflavonas de soja</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Calor / Piel y estructura</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Beneficios</div>
+        <div class="benefit-list">
+          <div class="benefit-item"><div class="benefit-dot"></div>Alivia sofocos y sudoracion</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Fortalece huesos</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Efecto antioxidante</div>
+        </div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Tableta, con alimento</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Salvia</div>
+          <div class="prod-sci">Salvia officinalis</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Calor</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Beneficios</div>
+        <div class="benefit-list">
+          <div class="benefit-item"><div class="benefit-dot"></div>Baja frecuencia e intensidad de sofocos</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Reduce sudoracion nocturna</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Tambien esta en Fem-vit; aqui va sola</div>
+        </div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Extracto, gotero</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Fem-vit</div>
+          <div class="prod-sci">Mezcla botanica</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Sueño y animo</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Beneficios</div>
+        <div class="benefit-list">
+          <div class="benefit-item"><div class="benefit-dot"></div>Alivia sintomas menopausicos</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Equilibra emociones</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Regula hormonas</div>
+        </div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Extracto, gotero</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Barbasco</div>
+          <div class="prod-sci">Dioscorea composita</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Uso tradicional menopausico</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Beneficios</div>
+        <div class="benefit-list">
+          <div class="benefit-item"><div class="benefit-dot"></div>Precursor natural de hormonas</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Alivia sintomas menopausicos</div>
+        </div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Extracto, gotero</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Milenrama</div>
+          <div class="prod-sci">Achillea millefolium</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Ciclo irregular</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Beneficios</div>
+        <div class="benefit-list">
+          <div class="benefit-item"><div class="benefit-dot"></div>Regula el ciclo menstrual</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Mejora digestion</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Antiinflamatorio</div>
+        </div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Extracto, gotero</div></div>
+      </div>
+    </div>
+
+    <div class="prod">
+      <div class="prod-izq">
+        <div>
+          <div class="prod-nombre">Diatonato 5.1</div>
+          <div class="prod-sci">Zinc y cobre</div>
+          <div class="prod-patron">
+            <span class="prod-patron-name">Piel y energia</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-centro">
+        <div class="prod-para">Beneficios</div>
+        <div class="benefit-list">
+          <div class="benefit-item"><div class="benefit-dot"></div>Equilibrio hormonal</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Mejora piel</div>
+          <div class="benefit-item"><div class="benefit-dot"></div>Fortalece inmunidad y energia</div>
+        </div>
+      </div>
+      <div class="prod-der">
+        <div><div class="prod-timing-label">Presentacion</div><div class="prod-timing-val">Solucion, en agua, ayunas</div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p2-footer">
+    <div class="p2-footer-note">Material educativo. No sustituye atencion medica. Escribe HORMONAS por WhatsApp para orientacion personalizada.</div>
+    <div style="display:flex;align-items:center;gap:16px;">
+      <div class="p2-footer-marca"><strong>Wellkitt</strong><br>Acapulco 36, piso 8 -- Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+      <div class="pagenum">2</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

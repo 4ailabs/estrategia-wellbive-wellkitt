@@ -130,7 +130,7 @@ El facilitador dice:
 
 "Dos productos mas que quiero mencionar aparte, porque no son de un solo patron.
 
-Barbasco tiene una historia real: de esta raiz se extrajo hace decadas la molecula base para sintetizar progesterona en laboratorio, y por eso mucha gente cree que 'se convierte en hormona' dentro del cuerpo. Eso no es asi — esa conversion solo pasa con procesos quimicos de laboratorio. Lo que Barbasco si hace en el cuerpo es distinto y tambien real: modula el eje suprarrenal, ayuda a bajar el cortisol, y tiene un efecto antiinflamatorio de fondo. Por eso esta dentro de Fem-vit, acompanando a las hierbas que calman el sistema nervioso — no como sustituto hormonal, sino como apoyo al eje del estres.
+Barbasco es un precursor natural de hormonas, de uso tradicional para aliviar sintomas menopausicos en general. Por eso esta dentro de Fem-vit, acompanando a las hierbas que calman el sistema nervioso.
 
 Milenrama es distinta: es mas util para quien todavia tiene ciclo, pero irregular — ayuda a regular el ciclo menstrual, no tanto los sintomas de menopausia ya establecida. Si tu caso es mas de perimenopausia con reglas que van y vienen sin orden, Milenrama es tu producto, mas alla de los tres patrones de arriba."
 
@@ -190,7 +190,7 @@ Preparacion: 15-20 gotas en un vaso con agua.
 
 El facilitador dice:
 
-"El segundo es Barbasco solo — Dioscorea composita. El que modula el eje suprarrenal y el cortisol que mencionamos antes.
+"El segundo es Barbasco solo — Dioscorea composita. El de uso tradicional que mencionamos antes.
 
 Prueben."
 
