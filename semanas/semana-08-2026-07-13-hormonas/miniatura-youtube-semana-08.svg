@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fffaf1" stop-opacity=".98"/>
+      <stop offset=".42" stop-color="#fffaf1" stop-opacity=".93"/>
+      <stop offset=".63" stop-color="#fffaf1" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#fffaf1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf1" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fffaf1" stop-opacity=".7"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#183c37" flood-opacity=".22"/>
+    </filter>
+  </defs>
+
+  <image x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" xlink:href="miniatura-youtube-semana-08-foto.png"/>
+  <rect width="1280" height="720" fill="url(#wash)"/>
+  <rect width="1280" height="720" fill="url(#bottom)"/>
+
+  <!-- subtle energy trails echoing the campaign references -->
+  <g fill="none" stroke-linecap="round" opacity=".48">
+    <path d="M0 648 C225 570 374 696 616 617 C767 568 835 560 956 598" stroke="#c9963f" stroke-width="4"/>
+    <path d="M0 671 C220 597 378 716 625 641 C774 596 852 588 1006 626" stroke="#79a95c" stroke-width="2"/>
+  </g>
+
+  <!-- header -->
+  <g transform="translate(64 48)">
+    <g fill="#4e8b42">
+      <path d="M2 0 C22 7 31 20 31 42 C12 32 5 20 2 0Z"/>
+      <path d="M39 1 C56 9 60 23 54 42 C39 31 34 18 39 1Z"/>
+      <path d="M69 0 C68 18 61 31 47 43 C47 22 54 8 69 0Z"/>
+    </g>
+    <text x="91" y="5" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="25" font-weight="850" fill="#173d36">Wellkitt · Semana 08</text>
+    <rect x="337" y="-3" width="196" height="39" rx="12" fill="#ee2929"/>
+    <circle cx="360" cy="16" r="9" fill="#ffffff"/>
+    <path d="M357 11 L357 21 L365 16Z" fill="#ee2929"/>
+    <text x="378" y="6" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="19" font-weight="950" letter-spacing="1" fill="#ffffff">NUEVO VIDEO</text>
+  </g>
+
+  <!-- main headline -->
+  <g transform="translate(62 127)">
+    <text x="0" y="0" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="76" font-weight="950" letter-spacing="-3" fill="#082f4b">¿SOFOCOS,</text>
+    <text x="0" y="73" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="76" font-weight="950" letter-spacing="-3" fill="#082f4b">INSOMNIO</text>
+    <text x="0" y="146" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="76" font-weight="950" letter-spacing="-3" fill="#082f4b">Y PIEL DISTINTA?</text>
+    <path d="M0 242 C162 228 334 228 518 240" fill="none" stroke="#70a348" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(68 401)">
+    <text x="0" y="0" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="34" font-weight="950" fill="#173d36">DESCUBRE QUÉ ESTÁ PASANDO</text>
+    <text x="0" y="45" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#294a43">Calor, sueño y piel: te lo explicamos claro.</text>
+  </g>
+
+  <!-- youtube callout -->
+  <g transform="translate(64 545)" filter="url(#shadow)">
+    <rect x="0" y="0" width="548" height="76" rx="20" fill="#0f5c42"/>
+    <rect x="20" y="15" width="64" height="46" rx="12" fill="#ee2929"/>
+    <path d="M46 26 L46 50 L66 38Z" fill="#ffffff"/>
+    <text x="104" y="22" dominant-baseline="hanging" font-family="Inter, Helvetica, Arial, sans-serif" font-size="29" font-weight="950" fill="#ffffff">MÍRALO AHORA EN YOUTUBE</text>
+  </g>
+
+  <!-- symptom chips -->
+  <g transform="translate(64 649)" font-family="Inter, Helvetica, Arial, sans-serif" font-size="19" font-weight="900">
+    <circle cx="13" cy="12" r="12" fill="#ef7159"/><path d="M13 4 C19 11 18 17 13 20 C8 18 7 12 13 4Z" fill="#fff"/>
+    <text x="34" y="0" dominant-baseline="hanging" fill="#173d36">SOFOCOS</text>
+    <circle cx="154" cy="12" r="12" fill="#6c8faa"/><path d="M154 5 A7 7 0 1 0 161 17 A9 9 0 0 1 154 5Z" fill="#fff"/>
+    <text x="175" y="0" dominant-baseline="hanging" fill="#173d36">SUEÑO</text>
+    <circle cx="270" cy="12" r="12" fill="#72a456"/><path d="M263 16 C270 4 278 7 276 11 C274 16 269 19 263 16Z" fill="#fff"/>
+    <text x="291" y="0" dominant-baseline="hanging" fill="#173d36">PIEL</text>
+  </g>
+</svg>
