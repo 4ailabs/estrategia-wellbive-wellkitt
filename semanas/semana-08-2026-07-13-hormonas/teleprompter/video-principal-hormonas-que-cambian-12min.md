@@ -106,7 +106,7 @@ Mucha gente cree que el barbasco "se convierte en hormonas" dentro del cuerpo. Y
 
 Pero el cuerpo humano no tiene las enzimas para hacer esa misma conversion. Comer o tomar barbasco no eleva la progesterona en tu sangre.
 
-Lo que si hace, y esto es real y documentado, es actuar sobre el eje suprarrenal: ayuda a modular el cortisol, y tiene un efecto antiinflamatorio de fondo. No es un sustituto hormonal. Es un apoyo al eje del estres — y por eso tiene sentido cuando se combina con hierbas que calman el sistema nervioso.
+Lo que si es real: es un precursor natural de hormonas, de uso tradicional para aliviar sintomas menopausicos en general. No es un sustituto hormonal. Por eso tiene sentido cuando se combina con hierbas que calman el sistema nervioso.
 
 [pausa]
 
