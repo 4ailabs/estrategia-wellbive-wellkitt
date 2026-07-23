@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tu Mapa Hormonal · Wellkitt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    @page {
+      size: letter portrait;
+      margin: 0;
+    }
+
+    :root {
+      /* B&W optimized palette */
+      --ink:       #000000;
+      --graphite:  #222222;
+      --mid:       #555555;
+      --light:     #aaaaaa;
+      --rule:      #dddddd;
+      --paper:     #ffffff;
+      --bg-zone:   #fcfcfc;
+      --bg-head:   #f4f4f4;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      background: var(--paper);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      /* Provide consistent page padding to avoid items touching edges */
+      padding: 0.5in 0.6in;
+    }
+
+    @media print {
+      body { background: none; }
+      .page {
+        margin: 0;
+        padding: 0.5in 0.6in;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+      }
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.25in;
+      flex-shrink: 0;
+    }
+    .h-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .h-logo img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      filter: grayscale(100%) contrast(120%);
+    }
+    .h-logo-text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .h-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 26pt;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+    .h-titulo em {
+      color: var(--mid);
+      font-style: normal;
+      font-weight: 300;
+    }
+    .h-right { text-align: right; padding-top: 5px; }
+    .h-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .h-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      font-weight: 400;
+      color: var(--mid);
+    }
+
+    /* INTRO */
+    .intro {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 0.25in;
+    }
+    .intro p {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 400;
+      color: var(--graphite);
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .intro p b {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .scale-key {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      color: var(--graphite);
+    }
+    .scale-pill {
+      background: var(--paper);
+      border: 1px solid var(--mid);
+      border-radius: 12px;
+      padding: 3px 8px;
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .scale-pill b {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .nameline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .nameline .lbl {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--mid);
+    }
+    .nameline .fill {
+      display: inline-block;
+      width: 200px;
+      border-bottom: 1px solid var(--mid);
+      height: 12px;
+      vertical-align: bottom;
+    }
+
+    /* BODY */
+    .body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15in;
+    }
+
+    /* ZONAS */
+    .zone {
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--bg-zone);
+      overflow: hidden;
+    }
+    .zhead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 14px;
+      background: var(--bg-head);
+    }
+    .zhead-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .zbadge {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: var(--paper);
+      background: var(--ink);
+    }
+    .zname {
+      font-family: 'Poppins', sans-serif;
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .zsub {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 500;
+      color: var(--mid);
+    }
+    
+    .zbody {
+      padding: 2px 14px;
+    }
+    .zitem {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 16px;
+      padding: 6px 0;
+      border-top: 1px solid var(--rule);
+    }
+    .zitem:first-child { border-top: none; }
+    .zitem-txt {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 400;
+      color: var(--graphite);
+      line-height: 1.35;
+    }
+    .dots {
+      display: flex;
+      gap: 8px;
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      border: 1px solid var(--mid);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: var(--mid);
+      background: var(--paper);
+    }
+
+    .zsum {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      border-top: 1px solid var(--rule);
+      background: var(--bg-head);
+    }
+    .zsum .lbl {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--graphite);
+    }
+    .zsum .box {
+      width: 40px;
+      height: 20px;
+      border: 1px solid var(--mid);
+      border-radius: 4px;
+      background: var(--paper);
+    }
+    .zsum .max {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: var(--mid);
+    }
+
+    /* RESULTADO */
+    .result {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--mid);
+      border-radius: 6px;
+      background: var(--bg-head);
+      margin-top: 4px;
+    }
+    .result .lbl {
+      font-family: 'Poppins', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .result .fill {
+      flex: 1;
+      border-bottom: 1px solid var(--mid);
+      height: 16px;
+    }
+
+    /* NOTA UROGENITAL */
+    .tpp-strip {
+      padding: 10px 14px;
+      background: var(--bg-zone);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: auto; /* push to bottom if space available */
+    }
+    .tpp-strip-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .tpp-strip-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 400;
+      color: var(--graphite);
+      line-height: 1.4;
+      text-align: justify;
+    }
+
+    /* FOOTER */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-shrink: 0;
+      margin-top: 0.25in;
+    }
+    .footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 400;
+      color: var(--mid);
+      max-width: 65%;
+      line-height: 1.4;
+    }
+    .footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.4;
+    }
+    .footer-marca strong { font-weight: 700; color: var(--ink); }
+    .footer-marca .cta { font-weight: 700; color: var(--ink); }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Tu Mapa <em>Hormonal</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Autolectura de síntomas</div>
+      <div class="h-sub">Adaptado de la Menopause Rating Scale</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>No le pega igual a todo el cuerpo. Para cada frase, marca <b>cuánto lo sientes esta última semana</b>. No lo pienses de más — la primera respuesta suele ser la buena. Al final, <b>suma cada zona por separado</b>: la del número más alto es tu zona dominante hoy.</p>
+    <div class="meta-bar">
+      <div class="scale-key">
+        <span class="scale-pill"><b>0</b> nada</span>
+        <span class="scale-pill"><b>1</b> leve</span>
+        <span class="scale-pill"><b>2</b> moderado</span>
+        <span class="scale-pill"><b>3</b> fuerte</span>
+        <span class="scale-pill"><b>4</b> muy fuerte</span>
+      </div>
+      <div class="nameline">
+        <span class="lbl">Nombre:</span>
+        <span class="fill"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- ZONA A -->
+    <div class="zone">
+      <div class="zhead">
+        <div class="zhead-left">
+          <span class="zbadge a">Zona A</span>
+          <span class="zname">Calor</span>
+        </div>
+        <span class="zsub">el termostato interno</span>
+      </div>
+      <div class="zbody">
+        <div class="zitem"><span class="zitem-txt">Bochornos / sofocos: calor súbito en cara, cuello o pecho</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Sudoración, sobre todo de noche (te despierta o te hace cambiarte)</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Palpitaciones o calor que sube sin razón aparente</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Todo empeora con desvelo, estrés o cambios de clima</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+      </div>
+      <div class="zsum"><span class="lbl">Suma Zona A</span><span class="box"></span><span class="max">/ 16</span></div>
+    </div>
+
+    <!-- ZONA B -->
+    <div class="zone">
+      <div class="zhead">
+        <div class="zhead-left">
+          <span class="zbadge b">Zona B</span>
+          <span class="zname">Sueño y ánimo</span>
+        </div>
+        <span class="zsub">el sistema nervioso</span>
+      </div>
+      <div class="zbody">
+        <div class="zitem"><span class="zitem-txt">Cuesta dormir o despiertas a media noche sin razón</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Irritabilidad o cambios de ánimo que antes no tenías</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Ansiedad, nervios o sensación de estar "al límite"</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Agotamiento mental / poca paciencia con cosas pequeñas</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+      </div>
+      <div class="zsum"><span class="lbl">Suma Zona B</span><span class="box"></span><span class="max">/ 16</span></div>
+    </div>
+
+    <!-- ZONA C -->
+    <div class="zone">
+      <div class="zhead">
+        <div class="zhead-left">
+          <span class="zbadge c">Zona C</span>
+          <span class="zname">Piel, energía y estructura</span>
+        </div>
+        <span class="zsub">el tejido de sostén</span>
+      </div>
+      <div class="zbody">
+        <div class="zitem"><span class="zitem-txt">Piel más seca, más delgada o con menos firmeza</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Cansancio físico / menos energía que antes</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Molestias musculares o en articulaciones</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Sensación de fragilidad, de que el cuerpo "ya no es el mismo"</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+      </div>
+      <div class="zsum"><span class="lbl">Suma Zona C</span><span class="box"></span><span class="max">/ 16</span></div>
+    </div>
+
+    <div class="result"><span class="lbl">Tu zona dominante:</span><span class="fill"></span></div>
+
+    <div class="tpp-strip">
+      <div class="tpp-strip-label">Aparte</div>
+      <div class="tpp-strip-text">¿Tu tema principal es sequedad íntima o molestias urinarias? Es otra zona (urogenital) que el kit no atiende de fondo; conviene orientarte a valoración. Coméntalo al final de la sesión.</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Material educativo. Es una autolectura para orientarte, no un diagnóstico ni un tratamiento. Ante sangrado tras la menopausia, sangrado irregular o dolor pélvico severo, busca valoración médica.</div>
+    <div class="footer-marca"><span class="cta">Para mayor información, contacta a Wellkitt</span><br><strong>Wellkitt</strong> · Acapulco 36, piso 8 -- Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
