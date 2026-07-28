@@ -35,7 +35,7 @@ Los **assets de imagen** (fotos/ilustraciones que no se pueden hacer con código
 | 2  | 0:18–0:32      | "O es llegar a las siete de la noche y ya no poder parar… es otra cosa la que pide comer."                    | **\[REM-FULL]**      | `PesoHookNoche` + IMG-02 (cocina de noche)     | Foto-ilustración editorial de la escena nocturna, con la frase clave quemada. Ancla emocional.                                                  |
 | 3  | 0:32–0:42      | "'Te falta disciplina.' … No es así."                                                                         | **\[CÁM + REM-OVL]** | `PesoNoEsDisciplina` (overlay)                 | "Te falta disciplina" aparece y se **tacha** en clay; "No es así" entra en ámbar. Sobre el Dr.                                                  |
 | 4  | 0:42–0:52      | "Soy el Dr. Miguel Ojeda… Esto es Wellbive."                                                                  | **\[CÁM]**           | Lower-third `PesoLowerThird` (overlay)         | Nombre + marca discretos, esquina inferior.                                                                                                     |
-| 5  | 0:52–1:05      | "Dos cosas… una en tu metabolismo, otra en tu cabeza. Medibles, no falta de voluntad."                        | **\[REM-FULL]**      | `PesoDosFrentes`                               | Dos columnas que entran: **Metabolismo** / **Mente**. Establece la estructura del video.                                                        |
+| 5  | 0:52–1:20      | "Dos perfiles… **Perfil 1: el metabolismo que aprendió a defenderse**. **Perfil 2: la ansiedad que decide antes que tú**." | **\[REM-FULL]**      | `PesoDosFrentes`                               | Dos columnas que entran: **Perfil 1** / **Perfil 2** con su nombre completo. Establece la estructura del video — todo lo demás cuelga de aquí. |
 | 6  | 1:05–1:50      | El estudio: bajaron 58 kg, metabolismo −610.                                                                  | **\[REM-FULL]**      | `PesoEstudioSetup`                             | Línea de tiempo animada: inicio → fin de competencia. `CountUp` de 58 kg y −610 kcal.                                                           |
 | 7  | 1:50–2:20      | "Seis años después… recuperaron 41 kg. Y su metabolismo seguía 704 por debajo."                               | **\[REM-FULL]**      | **`PesoDatoSeisAnos` ✅ (hecho)**               | El gancho. `CountUp` a −704 en ámbar incandescente. Ya construida.                                                                              |
 | 8  | 2:20–2:45      | "El cuerpo desarrolla una memoria… un sistema que aprendió a defenderse."                                     | **\[REM-FULL]**      | `PesoModoAhorro`                               | Diagrama: un medidor/termostato que baja y se **traba** abajo. Concepto "modo ahorro".                                                          |
@@ -50,12 +50,18 @@ Los **assets de imagen** (fotos/ilustraciones que no se pueden hacer con código
 | 17 | 6:35–7:25      | "La L-carnitina transporta la grasa a la mitocondria… 37 estudios: 1-2 kg. Real pero modesto."                | **\[REM-FULL]**      | `PesoCarnitina`                                | Diagrama: ácido graso + carnitina cruzan la membrana mitocondrial → se quema. `CountUp` honesto "1–2 kg".                                       |
 | 18 | 7:25–8:00      | "El té verde bloquea una enzima que degrada la señal de quemar grasa. Mecanismo real, evidencia mixta."       | **\[REM-FULL]**      | `PesoTeVerde`                                  | Tarjeta de mecanismo (COMT) con **sello de honestidad**: "mecanismo real · evidencia no garantizada".                                           |
 | 19 | 8:00–8:30      | "La alcachofa no quema grasa. Estimula la bilis del hígado, mejora cómo digieres la grasa."                   | **\[REM-FULL]**      | `PesoAlcachofa`                                | Diagrama hígado → bilis → digestión de grasa. Rótulo: "soporte hepático, no termogénico".                                                       |
-| 20 | 8:30–9:05      | "La jamaica: buena para la presión, débil para peso. Está por lo cardiovascular, no por la báscula."          | **\[REM-FULL]**      | `PesoJamaica`                                  | Tarjeta partida: ✓ **presión arterial** / ✗ **peso** (honestidad explícita).                                                                    |
-| 21 | 9:05–9:50      | Recap: metabolismo adaptado / ansiedad decide / herramientas específicas.                                     | **\[REM-FULL]**      | `PesoSintesis`                                 | Tres filas que entran en secuencia. Recapitula la estructura de la escena 5.                                                                    |
-| 22 | 9:50–10:30     | CTA: "Escribe PESO por WhatsApp… Jueves en Wellkitt, Acapulco 36…"                                            | **\[REM-FULL]**      | `PesoCTA`                                      | Palabra clave PESO grande + logística del Jueves (sede + Zoom).                                                                                 |
-| 23 | 10:30–11:15    | Cierre: "No significa que estés haciendo algo mal… dale al cuerpo una salida distinta."                       | **\[CÁM + REM-OVL]** | `PesoCierre` (overlay)                         | El Dr. cierra a cámara; wordmark Wellbive entra al final.                                                                                       |
+| 20 | 8:30–9:15      | Recap: **Perfil 1** (metabolismo + sus 4 herramientas) / **Perfil 2** (ansiedad + Ojo de Gallina).            | **\[REM-FULL]**      | `PesoSintesis`                                 | Tres filas que entran en secuencia. Recapitula la estructura de la escena 5, ya con las herramientas colgadas de cada perfil.                   |
+| 21 | 9:15–9:55      | CTA: "Escribe PESO por WhatsApp… dinos cuál perfil sientes más… Jueves en Wellkitt."                          | **\[REM-FULL]**      | `PesoCTA`                                      | Palabra clave PESO grande + logística del Jueves (sede + Zoom).                                                                                 |
+| 22 | 9:55–10:40     | Cierre: "No significa que estés haciendo algo mal… dale al cuerpo una salida distinta."                       | **\[CÁM + REM-OVL]** | `PesoCierre` (overlay)                         | El Dr. cierra a cámara; wordmark Wellbive entra al final.                                                                                       |
 
-**Escenas Remotion a construir: 21** (2 ya hechas ✅). Diagramas 100% código: 14. Con imagen generada: 2 (hook). Overlays: 5.
+**Escenas Remotion a construir: 20** (2 ya hechas ✅). Diagramas 100% código: 13. Con imagen generada: 2 (hook). Overlays: 5.
+
+> **Revisión del guion (los dos perfiles).** El guion se reescribió para nombrar
+> explícitamente **Perfil 1 · el metabolismo que aprendió a defenderse** y
+> **Perfil 2 · la ansiedad que decide antes que tú**, y para que cada producto
+> entre colgado de su perfil (antes los productos entraban de golpe, sin contexto).
+> Con eso se **eliminó el beat de la jamaica** (antiguo beat 20) y el video pasó de
+> 23 a **22 beats** (~6:50). La escena `PesoJamaica` ya no existe en el código.
 
 ***
 
@@ -81,8 +87,7 @@ Principio: **cada escena revela en secuencia y tiene una idea visual propia** �
 | `PesoCarnitina`            | Membrana mitocondrial; el ácido graso + carnitina cruzan; chispa de combustión; CountUp "1–2 kg".                      | —      |
 | `PesoTeVerde`              | Enzima (COMT) bloqueada; sello "evidencia no garantizada".                                                             | —      |
 | `PesoAlcachofa`            | Hígado → gota de bilis → grasa que se emulsiona. Rótulo honesto.                                                       | —      |
-| `PesoJamaica`              | Tarjeta partida con ✓/✗ animados.                                                                                      | —      |
-| `PesoSintesis`             | Tres filas ícono+texto en cascada (recap).                                                                             | —      |
+| `PesoSintesis`             | Tres filas ícono+texto en cascada (recap de los dos perfiles).                                                          | —      |
 | `PesoCTA`                  | PESO en grande + WhatsApp + fila de logística del Jueves.                                                              | —      |
 | `PesoLowerThird` (overlay) | Nombre/marca que se dibuja, esquina inferior. Alfa.                                                                    | —      |
 | `PesoCierre` (overlay)     | Wordmark Wellbive que entra al cierre. Alfa.                                                                           | —      |
@@ -182,7 +187,7 @@ La composición del overlay debe tener **fondo transparente** (sin `PesoAtmosphe
 
 Bloque 1 — estructura + datos + ansiedad: ✅ `PesoDosFrentes` (5), `PesoEstudioSetup` (6), `PesoDatoSeisAnos` (7), `PesoModoAhorro` (8), `PesoCortisol` (10), `PesoCircuitoRecompensa` ⭐ (11), `PesoOjoDeGallina` (13).
 
-Bloque 2 — herramientas + recap + CTA: ✅ `PesoEnsayoClinico` (14), `PesoCromo` (16), `PesoCarnitina` (17), `PesoTeVerde` (18), `PesoAlcachofa` (19), `PesoJamaica` (20), `PesoSintesis` (21), `PesoCTA` (22).
+Bloque 2 — herramientas + recap + CTA: ✅ `PesoEnsayoClinico` (14), `PesoCromo` (16), `PesoCarnitina` (17), `PesoTeVerde` (18), `PesoAlcachofa` (19), `PesoSintesis` (20), `PesoCTA` (21).
 
 **Pendiente — 6 overlays/hooks + 2 imágenes:**
 
@@ -191,12 +196,12 @@ Bloque 2 — herramientas + recap + CTA: ✅ `PesoEnsayoClinico` (14), `PesoCrom
 
 Se construyen al final: dependen de las imágenes que generas en Nano Banana y de validar el keying/alfa en DaVinci con un clip de prueba.
 
-**Render de las 15 listas** (para meterlas a DaVinci):
+**Render de las 14 listas** (para meterlas a DaVinci):
 
 ```
 for id in PesoDosFrentes PesoEstudioSetup PesoDatoSeisAnos PesoModoAhorro \
   PesoCortisol PesoCircuitoRecompensa PesoOjoDeGallina PesoEnsayoClinico \
-  PesoCromo PesoCarnitina PesoTeVerde PesoAlcachofa PesoJamaica \
+  PesoCromo PesoCarnitina PesoTeVerde PesoAlcachofa \
   PesoSintesis PesoCTA; do
   npx remotion render "$id" "out/$id.mp4"
 done

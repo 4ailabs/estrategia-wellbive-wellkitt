@@ -3,7 +3,7 @@
 ## Dirección del proyecto
 
 ```
-/Users/miguel/centrobioenergetica-videos
+/Users/miguelojedarios/centrobioenergetica-videos
 ```
 
 Remotion 4.0.484. Las escenas del video PESO viven en:
@@ -14,15 +14,34 @@ Remotion 4.0.484. Las escenas del video PESO viven en:
 
 ## Video completo ensamblado — composición `PesoVideo`
 
-El video entero ya está armado en Remotion: los 23 beats en secuencia, con la
-**narración real de ElevenLabs** (voz del Dr., `public/audio/peso/section-01..23.mp3`)
+El video entero ya está armado en Remotion: los 22 beats en secuencia, con la
+**narración real de ElevenLabs** (voz del Dr., `public/audio/peso/section-01..22.mp3`)
 sincronizada beat por beat. En los tramos donde va el Dr. a cámara se muestra una
 **silueta** como marcador de posición, hasta que se grabe/keye el material real.
 Los 2 hooks sin imagen (báscula, cocina de noche) llevan placeholder hasta que
 lleguen IMG-01 / IMG-02.
 
-- Composición: `PesoVideo` (1920x1080, 30fps). Duración total ~8 min (se fija sola
+- Composición: `PesoVideo` (1920x1080, 30fps). Duración total ~6:50 (se fija sola
   desde la duración real de cada audio vía `getAudioDurationInSeconds`).
+
+### Revisión del guion (los dos perfiles)
+
+El guion se reescribió para nombrar explícitamente **dos perfiles** —igual que en
+dolor y hormonas— en vez de hablar de "dos cosas" sueltas:
+
+- **Perfil 1 · el metabolismo que aprendió a defenderse** → cromo, carnitina, té
+  verde, alcachofa.
+- **Perfil 2 · la ansiedad que decide antes que tú** → Ojo de Gallina (Galphimia).
+
+Cambios que esto trajo al proyecto:
+
+- Los productos ya **no entran de golpe**: cada bloque se anuncia colgado de su
+  perfil ("empiezo por el perfil dos…", "para el perfil uno hay tres herramientas…").
+- Se **eliminó el beat de la jamaica** (era el antiguo beat 20). Con eso el video
+  pasó de 23 a 22 beats, y se borró la escena `PesoJamaica` del código, de
+  `Root.tsx` y su still de revisión.
+- `PesoDosFrentes` y `PesoSintesis` se actualizaron para decir "Perfil 1 / Perfil 2"
+  en pantalla, en línea con la narración.
 - Archivos nuevos: `src/projects/peso/PesoVideo.tsx` (ensamblaje) y
   `src/projects/peso/PesoPresentador.tsx` (silueta del Dr. + placeholder nocturno).
 - Guion de voz: `scripts/voiceover/peso.json`.
@@ -49,7 +68,7 @@ npx remotion render PesoVideo out/peso-semana9/PesoVideo-completo.mp4
 ## Abrir el preview (Remotion Studio)
 
 ```
-cd /Users/miguel/centrobioenergetica-videos
+cd /Users/miguelojedarios/centrobioenergetica-videos
 npm run dev
 ```
 
@@ -59,7 +78,7 @@ para ver el video completo con audio, o cualquier escena suelta `Peso...`.
 ## Renderizar una escena a MP4
 
 ```
-cd /Users/miguel/centrobioenergetica-videos
+cd /Users/miguelojedarios/centrobioenergetica-videos
 npx remotion render <IdComposicion> out/peso-semana9/<IdComposicion>.mp4
 ```
 
@@ -74,50 +93,70 @@ npx remotion still <IdComposicion> out/x.png --frame=N --scale=0.5
 ## Carpeta de salida (los MP4 renderizados)
 
 ```
-/Users/miguel/centrobioenergetica-videos/out/peso-semana9/
+/Users/miguelojedarios/centrobioenergetica-videos/out/peso-semana9/
 ```
 
-Ahí están los 15 MP4 listos + `00-ORDEN-MONTAJE.txt` (mapa beat -> archivo). El FCPXML que exporta el timeline apunta a esta ruta.
+Contenido de esa carpeta:
+
+- **26 MP4** del montaje, numerados por beat y **sin audio** (tu voz sale de tu grabación).
+- `alternativas/` — el mismo beat en el otro modo (SPLIT ↔ FULL).
+- `alfa/` — 19 `.mov` ProRes 4444: solo texto y animación, con transparencia.
+- `00-FONDO-limpio.mp4` — placa de atmósfera sin texto, para ponerte detrás.
+- `00-MUSICA-background.mp3` — 5 min instrumental (va en loop).
+- `00-ORDEN-MONTAJE.txt` — beat · modo · archivo · palabra clave de entrada.
+
+Para renumerar tras un re-render: `node scripts/organizar-peso-davinci.mjs`
 
 ## Estado de las escenas
 
 Todas 1920x1080 a 30fps.
 
-### Listas (15 escenas renderizadas)
+### Los 22 beats, por modo
 
-| Composición | Frames | Beat |
-|---|---|---|
-| PesoDosFrentes | 150 | 5 |
-| PesoEstudioSetup | 160 | 6 |
-| PesoDatoSeisAnos | 170 | 7 |
-| PesoModoAhorro | 170 | 8 |
-| PesoCortisol | 160 | 10 |
-| PesoCircuitoRecompensa | 252 | 11 |
-| PesoOjoDeGallina | 192 | 13 |
-| PesoEnsayoClinico | 150 | 14 |
-| PesoCromo | 160 | 16 |
-| PesoCarnitina | 165 | 17 |
-| PesoTeVerde | 140 | 18 |
-| PesoAlcachofa | 140 | 19 |
-| PesoJamaica | 140 | 20 |
-| PesoSintesis | 150 | 21 |
-| PesoCTA | 150 | 22 |
+Cada beat existe en el modo que le toca en el montaje (ver `00-ORDEN-MONTAJE.txt`):
 
-### Pendientes (6 escenas overlay/hook)
+- **FULL** (9) — gráfica o foto a pantalla completa: beats 1, 2, 7, 11, 12, 13, 14, 18, 22.
+- **SPLIT** (9) — gráfica izquierda 58% + tú a la derecha: beats 5, 6, 8, 10, 16, 17, 19, 20, 21.
+- **TEXTO** (4) — solo la frase clave + tú: beats 3, 4, 9, 15.
 
-- `PesoHookBascula`, `PesoHookNoche` — dependen de IMG-01 / IMG-02 (ver [prompts-imagenes.md](prompts-imagenes.md)).
-- `PesoNoEsDisciplina`, `PesoLowerThird`, `PesoConexion`, `PesoCierre` — overlays con canal alfa. Se exportan en **ProRes 4444** (`.mov`), no MP4, porque llevan transparencia.
+**Duraciones:** cada clip se dimensiona al **ritmo natural de tu voz + 15% de colchón**
+(NO a la narración de IA, que va acelerada a 1.1x). Si regeneras el audio o cambias el
+guion, hay que recalcularlas.
 
-Para overlays con alfa el render lleva flags de codec:
+### Remates de cierre
+
+Tres tarjetas al final, sin ti en cuadro, cada una en `.mp4` con fondo y en `alfa/`:
+
+| Archivo | Qué es |
+|---|---|
+| `23b-WellvibeTitulo-FULL` | La marca del **canal**. Wordmark tipográfico, sin símbolo (así lo pide el manual en `marca/wellvibe/`). Compuesto con Instrument Sans, la fuente del video. |
+| `23-WellkittTitulo-FULL` | La marca de **producto**. El logo verde con hoja. |
+| `24-Suscribete-FULL` | YouTube + campana. |
+
+Los tres con zoom continuo de principio a fin: se pueden cortar en cualquier punto.
+En alfa, el texto es tinta oscura — solo lee sobre fondo claro.
+
+Código: `src/projects/peso/PesoRemates.tsx`.
+
+### Overlays con canal alfa
+
+Ya están hechos, en `out/peso-semana9/alfa/`. Para regenerar uno hacen falta **cuatro**
+flags — con solo `--prores-profile=4444` sale ProRes 422 **sin** transparencia:
 
 ```
-npx remotion render PesoLowerThird out/peso-semana9/PesoLowerThird.mov --codec=prores --prores-profile=4444
+npx remotion render <Id> out/x.mov \
+  --codec=prores --prores-profile=4444 \
+  --pixel-format=yuva444p10le \
+  --image-format=png \
+  --muted
 ```
+
+Comprobar que el alfa es real: `ffprobe -show_entries stream=pix_fmt` debe empezar en `yuva`.
 
 ## Enlaces del proyecto
 
 - Rundown y flujo de edición: [produccion-video-remotion-davinci.md](produccion-video-remotion-davinci.md)
-- Plano de montaje interactivo: [timeline-davinci-peso.html](timeline-davinci-peso.html)
+- Orden de montaje (junto a los clips): `out/peso-semana9/00-ORDEN-MONTAJE.txt`
 - Prompts de imágenes: [prompts-imagenes.md](prompts-imagenes.md)
 - Guion completo: [../teleprompter/video-principal-cuerpo-quema-menos-12min.md](../teleprompter/video-principal-cuerpo-quema-menos-12min.md)
 - Investigación: [../investigacion-peso-metabolismo.md](../investigacion-peso-metabolismo.md)

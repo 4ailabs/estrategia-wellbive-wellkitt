@@ -41,11 +41,15 @@ Esto es Wellbive.
 
 [pausa]
 
-Hoy quiero hablar de dos cosas que casi nunca se explican bien cuando el peso no baja como debería. Una pasa en tu metabolismo. La otra pasa en tu cabeza. Y las dos son reales, medibles, y no tienen nada que ver con falta de voluntad.
+Hoy quiero hablar de dos perfiles distintos de por que el peso no responde como deberia. Los dos son reales, medibles, y no tienen nada que ver con falta de voluntad.
+
+Al primero lo voy a llamar el metabolismo que aprendio a defenderse. Al segundo, la ansiedad que decide antes que tu.
+
+Quedate hasta el final — casi siempre uno de los dos perfiles domina mas que el otro, y eso cambia por donde hay que empezar.
 
 [pausa]
 
-Primero, el metabolismo.
+Perfil uno: el metabolismo que aprendio a defenderse.
 
 Hay un estudio que deberia cambiar como piensas esto. Siguieron a los concursantes de un programa de television donde competian por bajar la mayor cantidad de peso posible. Los midieron al terminar la competencia, y otra vez, seis años despues.
 
@@ -69,9 +73,11 @@ Eso significa algo importante: el cuerpo no solo ajusta cuanto quema segun tu ta
 
 Por eso "solo come menos y muevete mas" deja de funcionar para tanta gente a largo plazo. No es que no lo esten intentando. Es que estan peleando contra un sistema que aprendio a defenderse.
 
+Si esto te suena mas a ti que lo que viene despues, ese es tu perfil uno.
+
 [pausa]
 
-Segundo, la ansiedad por comer.
+Perfil dos: la ansiedad que decide antes que tu.
 
 Esto tambien tiene un mecanismo real, no es debilidad de caracter.
 
@@ -87,9 +93,13 @@ El problema es que entre mas se repite ese circuito, mas se refuerza. El cerebro
 
 Por eso "comer por ansiedad" no es falta de caracter. Es un circuito biologico real, y atacarlo desde ahi cambia todo.
 
+Si esto te suena mas a ti que el perfil uno, este es tu perfil dos.
+
 [pausa]
 
-Aqui es donde quiero detenerme en algo que casi nadie conecta bien.
+Ahora, las herramientas — una para cada perfil.
+
+Empiezo por el perfil dos, porque aqui hay algo que casi nadie conecta bien.
 
 Hay una planta en el Kit Control de Peso que se vende como "acelera el metabolismo" — Ojo de Gallina, o Galphimia glauca.
 
@@ -103,13 +113,13 @@ En un ensayo clinico controlado de 15 semanas, un extracto estandarizado de esta
 
 El mecanismo tiene sentido: el compuesto activo de esta planta actua sobre el mismo circuito de recompensa que el estres cronico altera. El mismo que mencione hace un momento.
 
-Entonces no es que Ojo de Gallina "acelere tu metabolismo" de forma directa. Es que puede ayudar a bajarle volumen al gatillo que te hace comer de mas cuando el estres se acumula.
+Entonces no es que Ojo de Gallina "acelere tu metabolismo" de forma directa. Es la herramienta del perfil dos: puede ayudar a bajarle volumen al gatillo que te hace comer de mas cuando el estres se acumula.
 
 Esa es la conexion real. Y es mas interesante que la version simplificada de la etiqueta.
 
 [pausa]
 
-Ahora, las herramientas metabolicas. Sin prometer magia.
+Para el perfil uno, el metabolismo, hay tres herramientas con mecanismo real y evidencia distinta cada una.
 
 El cromo, presente en Carnilis, tiene evidencia real sobre antojos especificos de carbohidratos. En un ensayo clinico, una dosis diaria redujo de forma significativa esos antojos — probablemente porque un azucar en sangre mas estable le quita urgencia a la busqueda de una solucion rapida de energia.
 
@@ -129,23 +139,17 @@ Y la alcachofa, presente en Fat-less, no quema grasa directamente. Lo que hace e
 
 [pausa]
 
-Quiero ser honesto tambien con la jamaica. Tiene buena evidencia para bajar la presion arterial. Pero la evidencia para peso especificamente es debil — varios estudios no encuentran un efecto consistente ahi. Esta en la formula por su aporte cardiovascular y antioxidante, no porque vaya a mover la bascula por si sola.
-
-[pausa]
-
 Entonces, recapitulemos.
 
-Tu metabolismo puede estar genuinamente adaptado por intentos anteriores — eso no es excusa, es fisiologia medible.
+Perfil uno, el metabolismo que aprendio a defenderse — eso no es excusa, es fisiologia medible. Cromo, carnitina, te verde y alcachofa son piezas de esa maquinaria. Cada una hace algo especifico. Ninguna hace milagros por si sola.
 
-Tu ansiedad puede estar decidiendo por ti antes de que decidas tu — y ahi el apoyo no es "fuerza de voluntad", es regular el circuito de fondo.
-
-Y las herramientas metabolicas — cromo, carnitina, te verde, alcachofa — cada una hace algo especifico y real, ninguna hace milagros por si sola.
+Perfil dos, la ansiedad que decide antes que tu — ahi el apoyo no es fuerza de voluntad, es regular el circuito de fondo, y ahi es donde entra Ojo de Gallina.
 
 [pausa]
 
-Si te reconoces en el metabolismo que no responde, o en la ansiedad que decide antes que tu, escribe PESO por WhatsApp. Cuentanos cual de las dos sientes mas, y desde cuando. Con eso podemos orientarte mejor en el siguiente paso.
+Si te reconoces mas en el perfil uno, el metabolismo que no responde, o en el perfil dos, la ansiedad que decide antes que tu, escribe PESO por WhatsApp. Cuentanos cual perfil sientes mas, y desde cuando. Con eso podemos orientarte mejor en el siguiente paso.
 
-Y si este tema te hizo sentido, te espero en Jueves en Wellkitt. Sera una sesion presencial en la clinica, en Acapulco 36, piso 8, colonia Roma, y tambien por Zoom para quienes estan fuera. Vamos a hablar de metabolismo lento y ansiedad por comer con mas profundidad, y vamos a conocer de cerca las herramientas que tienen sentido para cada caso.
+Y si este tema te hizo sentido, te espero en Jueves en Wellkitt. Sera una sesion presencial en la clinica, en Acapulco 36, piso 8, colonia Roma, y tambien por Zoom para quienes estan fuera. Vamos a hablar de los dos perfiles con mas profundidad, y vamos a conocer de cerca las herramientas que tienen sentido para cada caso.
 
 [pausa]
 
@@ -157,4 +161,4 @@ El objetivo no es pelear mas duro contra ti mismo. Es entender que esta pasando 
 
 [pausa]
 
-Si conoces a alguien que "ya lo intento todo" y siente que nadie se lo explica bien, comparte este video. Y en comentarios cuentame: a ti, que se te dificulta mas — el metabolismo que no responde, o la ansiedad que decide antes que tu.
+Si conoces a alguien que "ya lo intento todo" y siente que nadie se lo explica bien, comparte este video. Y en comentarios cuentame: a ti, cual perfil te suena mas — el metabolismo que aprendio a defenderse, o la ansiedad que decide antes que tu.
