@@ -2,9 +2,10 @@
 
 Fecha: jueves 30 de julio 2026
 Hora: 5:30 pm
-Duración: 45 minutos
-Formato: presencial (Acapulco 36, piso 8, colonia Roma) + Zoom
+Duración: 48 minutos
+Formato: **solo Zoom**
 Palabra clave: PESO
+Guion para leer en vivo: [`teleprompter-zoom-peso.md`](teleprompter-zoom-peso.md)
 
 > Sesión dinámica. La asistente no escucha una charla: se autoevalúa, encuentra
 > su perfil dominante, hace un ejercicio en vivo que se lleva a casa, y conoce la
@@ -12,7 +13,7 @@ Palabra clave: PESO
 > (`../investigacion-peso-metabolismo.md`) y sobre técnicas con ensayo clínico
 > detrás, no sobre consejos genéricos.
 
----
+***
 
 ## Marco y respaldo — lectura del facilitador antes de la sesión
 
@@ -26,9 +27,16 @@ que se confunde con grasa."* Quien vio el video tiene razón para estar aquí.
 Con tres perfiles, además, cada producto del kit tiene casa propia. Con dos,
 Fat-less quedaba como nota al pie.
 
-### Las técnicas del bloque 4 y 5, y por qué estas
+### Las técnicas, y por qué estas
 
-- **Imagen funcional del objetivo (Functional Imagery Training, FIT).** En un
+* **Ritual "La frase prestada" (bloque 4).** Trabaja la vergüenza y la autoculpa de
+  "me falta disciplina", que es el obstáculo real: alguien puede oír cuarenta minutos
+  de fisiología y salir pensando exactamente lo mismo de sí mismo. Va **antes** de la
+  imagen, no después — primero se rompe el reproche, después se construye el futuro.
+  Documento completo, con precauciones y contraindicaciones, en
+  [`ritual-la-frase-prestada.md`](ritual-la-frase-prestada.md).
+
+* **Imagen funcional del objetivo (Functional Imagery Training, FIT).** En un
   ensayo controlado con 141 adultos, quienes hicieron FIT bajaron **4.11 kg a los
   6 meses contra 0.74 kg** del grupo con entrevista motivacional. Consiste en
   construir una imagen **multisensorial y personal** del objetivo y engancharla a
@@ -36,40 +44,73 @@ Fat-less quedaba como nota al pie.
   peso que existe sin costo, y ataca el problema real del kit — como la adaptación
   metabólica hace que los resultados sean lentos, el reto no es que compren, es que
   sostengan tres meses.
-- **Caminar 2 minutos después de comer.** Meta-análisis 2022 en *Sports Medicine*:
-  caminatas ligeras de 2-5 minutos tras la comida bajan la glucosa posprandial
-  ~17% frente a permanecer sentado, y funcionan mejor que solo ponerse de pie. En
-  la sesión **no es un ejercicio aparte**: el recorrido caminando a la mesa de
-  productos ES la demostración.
+
+* **Caminar 2 minutos después de comer.** Meta-análisis 2022 en *Sports Medicine*:
+  caminatas ligeras de 2-5 minutos tras la comida bajan la glucosa posprandial \~17%
+  frente a permanecer sentado. **No se hace en vivo**: en Zoom, pedirle a la gente
+  que se levante y se aleje de la pantalla vacía la sesión. Va como dato en el cierre
+  y como regla 3 de la hoja, que es donde sirve.
+
 
 ### Lo que se descartó, y por qué (por si alguien pregunta)
 
-- **Defusión cognitiva.** Formato grupal probado, pero en el estudio el antojo bajó
+* **Defusión cognitiva.** Formato grupal probado, pero en el estudio el antojo bajó
   **igual en el grupo control** y el consumo real no cambió.
-- **Mindfulness genérico.** Meta-análisis 2025: efecto pequeño (g = 0.28) y solo
+
+* **Mindfulness genérico.** Meta-análisis 2025: efecto pequeño (g = 0.28) y solo
   sobre la *intensidad* del antojo, no sobre su frecuencia.
-- **Degustación.** No aplica a este tema.
+
+* **Degustación.** No aplica a este tema.
 
 ### Qué NO se afirma
 
-- **Ningún producto "quema grasa".** Ni el té verde, ni el cromo, que son los que
+* **Ningún producto "quema grasa".** Ni el té verde, ni el cromo, que son los que
   mejor evidencia tienen.
-- **No se promete pérdida de peso ni kilos ni plazos.** La sección 1 de la
+
+* **No se promete pérdida de peso ni kilos ni plazos.** La sección 1 de la
   investigación obliga a lo contrario: hay que **manejar expectativas de tiempo**
   explícitamente.
-- **Cromo:** la evidencia sobre antojos de carbohidratos es de **picolinato**;
+
+* **Cromo:** la evidencia sobre antojos de carbohidratos es de **picolinato**;
   Carnilis usa **nitrato de cromo**. El mecanismo de fondo —cromo como cofactor de
   la acción de la insulina— aplica igual, pero no se iguala la evidencia de una
   forma química con otra. Se dice así: *"el mecanismo es el mismo; los estudios
   finos se hicieron con otra sal."*
-- **Jamaica: no se menciona.** Está en la fórmula de Fat-less, pero no entra en la
+
+* **Jamaica: no se menciona.** Está en la fórmula de Fat-less, pero no entra en la
   sesión ni en el folleto. Si alguien la lee en la etiqueta y pregunta: sirve para
   presión arterial y como antioxidante, no para peso. Sin desarrollar más.
-- **Té verde:** el mecanismo está bien descrito, los resultados en humanos son
+
+* **Té verde:** el mecanismo está bien descrito, los resultados en humanos son
   prometedores, **no garantizados** — hay variabilidad genética en COMT.
-- **Ojo de Gallina no "acelera el metabolismo".** Su evidencia real es ansiolítica,
+
+* **Ojo de Gallina no "acelera el metabolismo".** Su evidencia real es ansiolítica,
   y esa conexión es la más interesante de la sesión.
-- Esto es **orientación, no diagnóstico ni tratamiento.**
+
+* Esto es **orientación, no diagnóstico ni tratamiento.**
+
+### La sesión es por Zoom: qué cambia
+
+Es una sesión donde la gente **hace** cosas, y eso a distancia se cae si no se
+prepara. Tres decisiones la sostienen:
+
+1. **La hoja se manda antes.** Al confirmar el registro va el PDF de
+   `hoja-tu-perfil-metabolico.html` con una línea: *"imprímela o ten hoja y pluma a
+   la mano; la vamos a llenar en vivo."* Se vuelve a pegar en el chat al abrir. Si
+   alguien no la tiene, se comparte en pantalla y contesta en papel.
+2. **El chat sustituye a levantar la mano, pero solo si todos responden a la vez.**
+   Se pide escribir la letra **sin dar enter** hasta la señal, y entonces todos
+   sueltan. Esa cascada de golpe es el equivalente a mirar alrededor del salón; si
+   la gente contesta suelta, el momento no ocurre.
+3. **Cámara opcional en el bloque 5.** Para la imagen conviene ofrecer apagarla: se
+   sueltan más y el ejercicio sale mejor que en un salón.
+4. **Micrófonos abiertos en el bloque 4, y solo ahí.** El ritual depende de que
+   veinte voces suenen al mismo tiempo y de que se oiga el papel rompiéndose. Si el
+   facilitador deja el mute puesto "para que no se oiga feo", el bloque no funciona:
+   lo que cura es justamente el ruido de todos haciéndolo a la vez.
+
+**Si hay co-anfitrión:** se pueden abrir salas por perfil 3 minutos en el bloque 3.
+Sin co-anfitrión no conviene, se come el tiempo.
 
 ### Banderas rojas — derivar a valoración médica
 
@@ -78,36 +119,57 @@ peso rápido e inexplicable con hinchazón, sed y orina excesivas, o un patrón 
 atracón con pérdida de control y culpa intensa: eso necesita valoración, no un
 suplemento. Se dice sin dramatizar y se ofrece contacto.
 
----
+***
 
 ## Estructura de la sesión
 
-| Bloque | Contenido | Tiempo |
-|---|---|---|
-| 1. Apertura | El dato de los seis años: no es falta de voluntad | 6 min |
-| 2. Autotest | "Tu Perfil Metabólico": se puntúan y encuentran el suyo | 10 min |
-| 3. Agrupación | Se agrupan por perfil + el mecanismo de cada uno | 8 min |
-| 4. Experiencial | La imagen: FIT | 7 min |
-| 5. Recorrido | Caminata de 2 min a la mesa + productos por perfil | 8 min |
-| 6. Cierre | Ruta por perfil + expectativas reales + cupón | 6 min |
+| Bloque          | Contenido                                               | Tiempo |
+| --------------- | ------------------------------------------------------- | ------ |
+| 1. Apertura        | El dato de los seis años: no es falta de voluntad        | 6 min  |
+| 2. Autotest        | "Tu Perfil Metabólico": se puntúan y encuentran el suyo  | 9 min  |
+| 3. Agrupación      | Se agrupan por perfil + el mecanismo de cada uno         | 7 min  |
+| 4. La frase        | Ritual "La frase prestada": romper el reproche           | 8 min  |
+| 5. La imagen       | Imagen funcional del objetivo (FIT)                      | 6 min  |
+| 6. Productos       | Cada frasco a cámara, agrupados por perfil               | 7 min  |
+| 7. Cierre          | Ruta por perfil + expectativas reales + cupón            | 5 min  |
 
----
+**Total: 48 minutos.** Si hay que apretar a 45, se recortan los tres últimos: autotest
+a 8, productos a 6, cierre a 4. Lo que **no** se recorta es la pausa de 40 segundos
+del bloque 4 — es donde ese bloque hace su trabajo.
+
+***
 
 ## Materiales necesarios
 
-- **Hoja "Tu Perfil Metabólico"** impresa, una por asistente
-  (`hoja-tu-perfil-metabolico.html`). En Zoom: compartir en pantalla + PDF por chat.
-- Tarjetas de 3 colores: **naranja** (metabolismo), **azul** (ansiedad),
-  **verde** (digestión). En Zoom: escriben su color en el chat.
-- Mesa con el **Kit Control de Peso** completo y visible, **agrupado por perfil**,
-  con un cartel de color en cada grupo: Carnilis y Té Verde en naranja, Ojo de
-  Gallina en azul, Fat-less en verde.
-- Espacio despejado para caminar del salón a la mesa (bloque 5).
-- Tarjeta "Mi imagen y mi ancla" para llevar a casa (contenido abajo).
-- Cupón personal impreso por asistente presencial.
-- Hoja de registro de asistentes.
+**Lo que se manda antes** (al confirmar registro, y otra vez en el chat al abrir):
 
----
+* En el mismo correo, una línea: **"ten también un papel chico aparte —media hoja,
+  el reverso de un ticket, un post-it— y una pluma."** Es para el bloque 4; sin él,
+  ese bloque no se puede hacer.
+
+
+* PDF de `hoja-tu-perfil-metabolico.html` — dos caras: el autotest y "Mi imagen y mi
+  ancla". Con la instrucción de imprimirla o tener hoja y pluma.
+
+* PDF de `folleto-peso.html` — este se manda **al terminar**, no antes: si lo leen de
+  entrada, el autotest pierde la gracia.
+
+**Del lado del facilitador:**
+
+* Los cuatro frascos a la mano, **ordenados por perfil** en el orden en que los va a
+  mostrar: Carnilis y Té Verde, luego Ojo de Gallina, luego Fat-less. Buena luz.
+
+* La hoja abierta para compartir pantalla, por si alguien no la tiene.
+
+* Los tres textos de mecanismo del bloque 3 a la vista, para no perder los 40
+  segundos por perfil.
+
+* El código de cupón listo para pegar en el chat.
+
+* Lista de asistentes desde el registro de Zoom.
+
+
+***
 
 ## BLOQUE 1 — Apertura (6 min)
 
@@ -132,7 +194,7 @@ Seis años después, la mayoría había recuperado 41 de esos kilos.
 
 Y su metabolismo seguía **704 calorías por debajo** de donde empezó."
 
-[pausa — dejar que caiga]
+\[pausa — dejar que caiga]
 
 "Recuperaron casi todo el peso. Y el metabolismo seguía lento.
 
@@ -148,9 +210,9 @@ de control y luego te sientes muy mal: eso necesita valoración médica, no un
 suplemento. Y todo lo de hoy es información para orientarte — no es diagnóstico ni
 tratamiento."
 
----
+***
 
-## BLOQUE 2 — Autotest "Tu Perfil Metabólico" (10 min)
+## BLOQUE 2 — Autotest "Tu Perfil Metabólico" (9 min)
 
 El facilitador dice:
 
@@ -165,7 +227,7 @@ califican del 0 al 4 según cuánto les pasa **en el último mes**:
 No lo piensen de más — la primera respuesta suele ser la buena. Al final suman cada
 bloque por separado. El bloque con el número más alto es su perfil dominante."
 
-[Repartir. Dar 4-5 minutos para llenar y sumar. En Zoom: compartir la plantilla.]
+\[Repartir. Dar 4-5 minutos para llenar y sumar. En Zoom: compartir la plantilla.]
 
 ### Contenido de la hoja
 
@@ -203,20 +265,26 @@ El facilitador dice (al terminar):
 primero. Si dos empatan, no pasa nada — casi siempre se mezclan. Elijan el que más
 les pesa."
 
----
+***
 
-## BLOQUE 3 — Agrupación y mecanismo (8 min)
+## BLOQUE 3 — Agrupación y mecanismo (7 min)
 
 El facilitador dice:
 
-"Levanten la tarjeta del color de su perfil: naranja si fue A, azul si fue B, verde
-si fue C. En Zoom, escriban su color en el chat."
+"Vamos a hacer una cosa. Abran el chat y escriban la letra de su perfil dominante:
+A, B o C. **Pero no le den enter todavía.** Escríbanla y espérenme.
 
-[Contar. Anotar cuántos por perfil — este dato sirve para el reporte de la semana.]
+¿Ya la tienen? Tres, dos, uno — enter."
 
-"Miren alrededor: no están solos en su perfil. Y ahora, en cuarenta segundos por
-perfil, les digo **qué está pasando adentro**. Porque cuando entiendes el mecanismo,
-dejas de sentir que tu cuerpo te traiciona."
+\[Dejar que caiga la cascada. Leerla en voz alta: *"A, A, B, C, A, B…"*. Contar y
+anotar cuántos por perfil: ese dato va al reporte semanal.]
+
+"Miren el chat. Ahí está la sala. No son los únicos en su perfil — y fíjense que no
+somos todos iguales, que es justo el punto.
+
+Ahora, en cuarenta segundos por perfil, les digo **qué está pasando adentro**.
+Porque cuando entiendes el mecanismo, dejas de sentir que tu cuerpo te traiciona."
+
 
 **Naranja · El metabolismo que aprendió a defenderse**
 
@@ -249,9 +317,88 @@ pesada: hinchazón, plenitud, esa sensación de que la comida 'se te queda'.
 Mucha gente confunde eso con grasa corporal. No es lo mismo. Y se trabaja distinto:
 aquí no se trata de quemar nada, se trata de **procesar mejor lo que ya comiste**."
 
----
+***
 
-## BLOQUE 4 — La imagen (7 min)
+## BLOQUE 4 — La frase prestada (8 min)
+
+> Ritual completo, con el respaldo clínico y las precauciones:
+> [`ritual-la-frase-prestada.md`](ritual-la-frase-prestada.md). Aquí va lo que se dice.
+
+Va **antes** de la imagen y no al revés: primero se rompe el reproche, después se
+construye el futuro. Al revés, la imagen se monta encima de la vergüenza y no pega.
+
+**PASO 1 · La frase (2 min).** "Tomen el papel chico, no la hoja del perfil. Van a
+escribir una frase. No la bonita: la que de verdad se dicen. La que les pasa por la
+cabeza cuando se suben a la báscula y el número no bajó. O a las once de la noche,
+con la puerta del refrigerador abierta. Con sus palabras, tal cual."
+
+\[40 segundos en silencio. No llenarlo.]
+
+"Ahora todos se quitan el mute, y a la cuenta de tres dicen su frase en voz alta.
+Todos al mismo tiempo. Nadie va a distinguir la de nadie. Tres, dos, uno —"
+
+**Todos a la vez:** *"Esto es lo que me digo: [su frase]."*
+
+\[Dejar que se oiga el ruido encimado. Dos o tres segundos de cola. Luego mute.]
+
+**PASO 2 · Regulación (1.5 min).** "Papel boca abajo. Las dos manos encima, planas.
+Inhalan cuatro… sostienen cuatro… sueltan seis." \[Guiar seis rondas.]
+
+**Todos:** *"Mi cuerpo está aquí. Puedo seguir."*
+
+**PASO 3 · El peso en la silla (1 min).** "Sin levantarse: los dos pies planos en el
+piso. Sientan el peso del cuerpo sobre la silla. Una mano al centro del pecho. Hay
+calor debajo. Ese cuerpo lleva años respirando, digiriendo y defendiéndose todos los
+días, sin fallar."
+
+**Todos:** *"Este cuerpo me ha sostenido todos estos años. Funciona."*
+
+**PASO 4 · De quién es la voz (1.5 min).** "Volteen el papel. Léanlo otra vez, en
+silencio. Y contesten adentro, no en voz alta:"
+
+**Pregunta, la hace el facilitador:** *"¿De quién es esa voz?"*
+
+"¿Quién la dijo primero? Una tía en una comida. Un doctor. Tu mamá. Un comentario en
+una fiesta que se te quedó veinte años. A veces es la de uno mismo, y también cuenta:
+esa se aprendió en algún lado. Nada más ubíquenla."
+
+\[25 segundos de silencio, cronometrados.]
+
+**Todos:** *"Ya sé de quién es esa voz. La reconozco."*
+
+**PASO 5 · Romper (2 min).** "Tomen el papel con las dos manos. Quítense el mute:
+quiero que se oiga. Lo van a romper a la mitad, y otra vez, y otra, hasta que ya no
+se pueda. Sin prisa. Y **mientras** lo rompen, no antes ni después, dicen esto:"
+
+**Todos, durante el rompimiento:** *"Esto no era un diagnóstico. Era una frase."*
+
+**PAUSA — 40 segundos de silencio.** "Ahora no hagan nada. No hablen, no se muevan.
+Si les dio un suspiro largo, déjenlo. Si les ganó la risa, déjenla. Si se les
+llenaron los ojos, también."
+
+\[**El facilitador se calla 40 segundos completos, cronometrados, en cámara.** Este
+es el paso que más se salta y es el que hace que todo lo anterior sirva de algo.]
+
+**PASO 5B · Escribir el mecanismo (1 min).** "Empujen los pedacitos a un lado. Ahora
+tomen su hoja del perfil, y en el margen del bloque donde les salió el número más
+alto, escriban con su letra el mecanismo que les expliqué hace rato:
+
+Perfil A: **mi metabolismo bajó y se quedó abajo.**
+Perfil B: **el cortisol decide antes que yo.**
+Perfil C: **mi bilis va lenta.**"
+
+**Todos:** *"Esto sí es un mecanismo. Y un mecanismo se trabaja."*
+
+**PASO 6 · Lo que se queda (30 s).** "Miren su hoja. De un lado está lo que sienten,
+en el margen está por qué pasa. Con su letra las dos cosas. La hoja se la llevan. Los
+pedacitos, no."
+
+**Todos:** *"Me llevo el mecanismo. La frase se quedó rota."*
+
+***
+
+
+## BLOQUE 5 — La imagen (6 min)
 
 El facilitador dice:
 
@@ -265,7 +412,7 @@ El problema de casi todos ustedes no va a ser empezar. Va a ser **sostenerlo tre
 meses**, porque —como ya vimos— el cuerpo se defiende y los resultados son lentos.
 Esto es lo que sostiene."
 
-[pausa]
+\[pausa]
 
 "Cierren los ojos si están cómodos, o bajen la mirada.
 
@@ -286,7 +433,7 @@ sea el tema del día**.
 
 Quédense ahí diez segundos más. Que se vea, que se oiga, que se sienta."
 
-[10 segundos de silencio]
+\[10 segundos de silencio]
 
 "Abran los ojos.
 
@@ -300,29 +447,21 @@ hagan, treinta segundos de esa imagen.
 Y en el momento del antojo —cuando llega a las siete de la noche— primero la
 imagen, después deciden. En ese orden."
 
-[Recibir 2-3 comentarios. Repartir la tarjeta "Mi imagen y mi ancla".]
+\[Pedir que la escriban en la cara 2 de su hoja, ahí mismo. Dar un minuto en
+silencio. Recibir 2-3 comentarios por chat o por voz.]
 
----
+***
 
-## BLOQUE 5 — Caminata y recorrido de la mesa (8 min)
+## BLOQUE 6 — Los productos (7 min)
 
 El facilitador dice:
 
-"Todos de pie, por favor. Vamos caminando a la mesa, sin prisa, dando la vuelta al
-salón."
+"Ahora les voy a mostrar los cuatro productos, uno por uno. Van agrupados igual que
+los perfiles: pongan atención al suyo, el resto lo pueden oír de reojo.
 
-[Caminar ~2 minutos hacia la mesa, sin apurar.]
+Una cosa antes de empezar. No necesitan los cuatro. Esto es para que sepan cuál es su
+punto de partida, no para que se lleven todo."
 
-"Lo que acabamos de hacer tiene nombre y tiene estudio. Caminar entre dos y cinco
-minutos después de comer baja la subida de azúcar en sangre alrededor de un
-diecisiete por ciento, comparado con quedarte sentado. Y funciona mejor que solo
-pararse.
-
-Dos minutos. Después de cada comida. Para el perfil naranja es de lo más útil, y no
-cuesta nada.
-
-Ahora, la mesa está agrupada por colores, igual que sus perfiles. Voy uno por uno;
-pongan atención al de su tarjeta."
 
 ### NARANJA · El metabolismo
 
@@ -379,11 +518,13 @@ ciento de los participantes.
 No quema grasa. Ayuda a **procesarla**. Es soporte hepático y digestivo, y para el
 perfil verde eso es justo lo que hace falta."
 
-[Invitar a acercarse al grupo de su color. En Zoom: mostrar cada frasco a cámara.]
+\[Tomar cada frasco y acercarlo a la cámara al nombrarlo, con calma: es lo único que
+sustituye a tenerlo en la mano. Al terminar, preguntar por chat si quieren volver a
+ver alguno.]
 
----
+***
 
-## BLOQUE 6 — Cierre (6 min)
+## BLOQUE 7 — Cierre (5 min)
 
 El facilitador dice:
 
@@ -399,7 +540,7 @@ después de comer, que no cuestan nada.
 No necesitan los cuatro. Necesitan **empezar por su perfil dominante** — el que hoy
 salió más alto en su hoja."
 
-[pausa]
+\[pausa]
 
 "Una última cosa sobre los tiempos.
 
@@ -411,80 +552,94 @@ y que la digestión responda antes que el peso.
 Por eso el ejercicio de hoy no fue un extra. Su imagen y su ancla son lo que va a
 sostener esto cuando lleven cinco semanas y no vean el número que querían."
 
-[pausa]
+\[pausa]
 
-"Llévense su hoja del perfil y su tarjeta de la imagen.
+"Guarden su hoja: el perfil de un lado y su imagen del otro. Esa hoja es la sesión.
 
 Si quieren que los orientemos, escriban **PESO** por WhatsApp: dígannos su perfil
 dominante y qué han intentado antes.
 
-Los presenciales tienen su cupón en la mesa: quince por ciento en Kit Control de
-Peso, válido cuarenta y ocho horas."
+Y en el chat les dejo ahora mismo su código de cupón: quince por ciento en Kit
+Control de Peso, válido cuarenta y ocho horas."
 
-[pausa]
+\[Pegar el código en el chat en ese momento, no después.]
+
+\[pausa]
 
 "Gracias por venir. Que el peso no baje como esperabas no significa que estés
 haciendo algo mal. Puede significar que tu cuerpo aprendió a defenderse. Y eso tiene
 por dónde entrarle."
 
-### Tarjeta "Mi imagen y mi ancla" (imprimible, para llevar)
+> "Mi imagen y mi ancla" es la **cara 2** de `hoja-tu-perfil-metabolico.html`. No es
+> un material aparte: va en el mismo PDF que se manda antes de la sesión.
 
-```
-MI IMAGEN
 
-Ese martes dentro de seis meses. En tres líneas, con detalle:
-_______________________________________________________________
-_______________________________________________________________
-_______________________________________________________________
-
-MI ANCLA (lo que hago todos los días sin falta):
-_______________________________________________________________
-
-30 segundos de la imagen, cada vez que hagas tu ancla.
-Y cuando llegue el antojo: primero la imagen, después decides.
-
-Escribe PESO por WhatsApp y te acompañamos.
-```
-
----
+***
 
 ## Registro de asistentes
 
-- Nombre
-- WhatsApp
-- Perfil dominante (naranja / azul / verde) + los 3 puntajes si los comparte
-- ¿Empataron dos perfiles? cuáles
-- ¿Ha hecho dietas restrictivas antes? sí / no (predice perfil naranja)
-- Producto que más le llamó la atención
-- ¿Bandera roja detectada? sí / no — cuál
-- Cupón entregado: sí / no
+Del registro de Zoom salen nombre y correo. Lo demás se junta del chat y de lo que
+escriban después por WhatsApp:
 
-Al terminar, pasar los conteos por perfil al reporte semanal: sirven para saber qué
-producto del kit tiene más demanda real y para el clasificador de WhatsApp.
+* Nombre y WhatsApp
 
----
+* Perfil dominante (A / B / C) — **sale directo de la cascada del chat del bloque
+  3**; conviene guardar el chat de Zoom al terminar, ahí queda todo
 
-## Cupón presencial
+* ¿Empataron dos perfiles? cuáles
+
+* Producto que más le llamó la atención
+
+* ¿Bandera roja detectada? sí / no — cuál
+
+* Cupón enviado: sí / no
+
+**Guardar el chat antes de cerrar la reunión.** Se pierde si no.
+
+Los conteos por perfil van al reporte semanal: sirven para saber qué producto del
+kit tiene demanda real y para afinar el clasificador de WhatsApp.
+
+
+***
+
+## Cupón (se pega en el chat al cierre)
 
 ```
-JUEVES EN WELLKITT
-Nombre:
+JUEVES EN WELLKITT — Gracias por acompañarnos.
+Código: PESO30
 Beneficio: 15% en Kit Control de Peso
 Válido 48 horas · No transferible
+
+Escríbenos PESO por WhatsApp con tu perfil (A, B o C) y te ayudamos a elegir.
 ```
 
----
+Reenviarlo por WhatsApp a quien haya escrito: el chat de Zoom se borra al cerrar la
+reunión y el cupón se va con él.
+
+
+***
 
 ## Fuentes del respaldo (para el facilitador)
 
-- Adaptación metabólica a 6 años (The Biggest Loser): https://pmc.ncbi.nlm.nih.gov/articles/PMC4989512/
-- Estrés, comer y sistema de recompensa (Adam & Epel): https://pubmed.ncbi.nlm.nih.gov/17543357/
-- Galphimia glauca vs. lorazepam, ensayo de 15 semanas: https://pubmed.ncbi.nlm.nih.gov/22828921/
-- Cromo y antojos de carbohidratos: https://pubmed.ncbi.nlm.nih.gov/16184071/
-- L-carnitina, meta-análisis de 37 ensayos: https://pubmed.ncbi.nlm.nih.gov/32359762/
-- Alcachofa y manejo de obesidad / efecto colerético: https://pubmed.ncbi.nlm.nih.gov/29169467/
-- Jamaica: presión arterial sí, peso no: https://pubmed.ncbi.nlm.nih.gov/34927694/
-- **FIT vs. entrevista motivacional (RCT, 141 adultos):** https://www.nature.com/articles/s41366-018-0122-1
-- **Caminar tras la comida y glucosa posprandial (meta-análisis 2022):** https://pubmed.ncbi.nlm.nih.gov/35226240/
-- Interferencia visual y antojos (Tetris, Appetite 2014): https://pubmed.ncbi.nlm.nih.gov/24583414/
-- Mindfulness y antojo, meta-análisis 2025 (efecto pequeño): https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-025-03307-6
+* Adaptación metabólica a 6 años (The Biggest Loser): <https://pmc.ncbi.nlm.nih.gov/articles/PMC4989512/>
+
+* Estrés, comer y sistema de recompensa (Adam & Epel): <https://pubmed.ncbi.nlm.nih.gov/17543357/>
+
+* Galphimia glauca vs. lorazepam, ensayo de 15 semanas: <https://pubmed.ncbi.nlm.nih.gov/22828921/>
+
+* Cromo y antojos de carbohidratos: <https://pubmed.ncbi.nlm.nih.gov/16184071/>
+
+* L-carnitina, meta-análisis de 37 ensayos: <https://pubmed.ncbi.nlm.nih.gov/32359762/>
+
+* Alcachofa y manejo de obesidad / efecto colerético: <https://pubmed.ncbi.nlm.nih.gov/29169467/>
+
+* Jamaica: presión arterial sí, peso no: <https://pubmed.ncbi.nlm.nih.gov/34927694/>
+
+* **FIT vs. entrevista motivacional (RCT, 141 adultos):** <https://www.nature.com/articles/s41366-018-0122-1>
+
+* **Caminar tras la comida y glucosa posprandial (meta-análisis 2022):** <https://pubmed.ncbi.nlm.nih.gov/35226240/>
+
+* Interferencia visual y antojos (Tetris, Appetite 2014): <https://pubmed.ncbi.nlm.nih.gov/24583414/>
+
+* Mindfulness y antojo, meta-análisis 2025 (efecto pequeño): <https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-025-03307-6>
+

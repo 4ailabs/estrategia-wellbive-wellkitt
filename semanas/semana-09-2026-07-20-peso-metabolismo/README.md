@@ -13,7 +13,7 @@ Peso, inflamacion, ansiedad por comer y metabolismo lento.
 
 ## Jueves Wellkitt
 
-Sesión dinámica **"Tu Perfil Metabólico"** — jueves 30 de julio, 5:30 pm, presencial + Zoom.
+Sesión dinámica **"Tu Perfil Metabólico"** — jueves 30 de julio, 5:30 pm, **solo por Zoom**.
 
 En vez de una charla, cada asistente se autoevalúa, encuentra cuál de **tres perfiles**
 domina en su caso y se lleva un ejercicio hecho en vivo:
@@ -27,10 +27,15 @@ a quien ya lo vio, y hace que los cuatro productos del kit tengan casa propia.
 
 Material en [material-jueves/](material-jueves/):
 
-- `jueves-en-wellkitt-peso.md` — guía completa de la sesión (6 bloques, 45 min)
+- `jueves-en-wellkitt-peso.md` — guía completa de la sesión (7 bloques, 48 min)
 - `hoja-tu-perfil-metabolico.html` — imprimible carta, 2 caras: el autotest y "Mi imagen y mi ancla"
 - `folleto-peso.html` — folleto de 2 páginas: los perfiles y los productos
+- `teleprompter-zoom-peso.md` — **el guion para leer en vivo**
+- `ritual-la-frase-prestada.md` — el acto del bloque 4, con respaldo y precauciones
 - `facebook-invitacion-jueves-peso.md` — invitación (falta pegar el link de Zoom)
+
+Al ser solo Zoom, la hoja **se manda antes** al confirmar registro: sin ella en la
+mano no hay autotest. El folleto se manda al terminar, no antes.
 
 ## Productos / kit
 
