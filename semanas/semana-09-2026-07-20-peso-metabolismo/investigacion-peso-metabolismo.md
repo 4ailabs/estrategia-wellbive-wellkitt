@@ -1,5 +1,21 @@
 # Investigacion — Peso, metabolismo y ansiedad por comer
 
+> **CORRECCIÓN — agosto 2026.** La seccion 4 se escribio dando por hecho que Carnilis
+> contiene cromo. **No lo contiene.** El catalogo de productos
+> (`base/productos/catalogo/`) trae la ficha AA007 con la nota explicita: *"NO contiene
+> cromo - Solo L-Carnitina pura"*, 60 capsulas de 500 mg, marca Aminas y Derivados.
+> Ningun producto del catalogo lleva cromo. La evidencia sobre cromo y antojos de
+> carbohidratos sigue siendo valida como ciencia, pero **no aplica a nada que vendamos**,
+> y se retiro de todo el material de la semana.
+>
+> En la misma revision aparecieron otras dos cosas: **Fat-less no es solo alcachofa** —
+> son siete plantas (tamarindo malabar/Garcinia cambogia, alcachofa, te verde,
+> cocolmeca, jamaica, tejocote, cardo mariano)— y el **Kit Control de Peso trae cinco
+> productos**, no cuatro: falta Oligonato 2 (Soria Natural).
+>
+> **Leccion:** consultar `base/productos/catalogo/` ANTES de escribir la investigacion.
+> Es la fuente de verdad de composicion y presentacion, y estaba en el repo.
+
 Compilado: julio 2026
 Uso: respaldo editorial para video principal, material de Jueves en Wellkitt y clasificador WhatsApp.
 

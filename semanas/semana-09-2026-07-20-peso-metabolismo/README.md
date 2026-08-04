@@ -19,7 +19,7 @@ En vez de una charla, cada asistente se autoevalúa, encuentra cuál de **tres p
 domina en su caso y se lleva un ejercicio hecho en vivo:
 
 - **Perfil A · El metabolismo que aprendió a defenderse** → Carnilis + Té Verde
-- **Perfil B · La ansiedad que decide antes que tú** → Ojo de Gallina (+ el cromo de Carnilis)
+- **Perfil B · La ansiedad que decide antes que tú** → Galphimia glauca (Ojo de Gallina)
 - **Perfil C · La digestión que va lenta** → Fat-less
 
 El video habló de dos perfiles; la sesión agrega el digestivo. Eso le da razón de asistir
@@ -31,11 +31,21 @@ Material en [material-jueves/](material-jueves/):
 - `hoja-tu-perfil-metabolico.html` — imprimible carta, 2 caras: el autotest y "Mi imagen y mi ancla"
 - `folleto-peso.html` — folleto de 2 páginas: los perfiles y los productos
 - `teleprompter-zoom-peso.md` — **el guion para leer en vivo**
+- `slides-jueves-peso.html` — deck de 37 slides para compartir pantalla
+- Portada de stream (antes de la transmisión): `PortadaStreamJuevesPeso` en el repo
+  de videos → `out/peso-semana9/00-PORTADA-STREAM-jueves-peso.mp4`
 - `ritual-la-frase-prestada.md` — el acto del bloque 4, con respaldo y precauciones
 - `facebook-invitacion-jueves-peso.md` — invitación (falta pegar el link de Zoom)
 
-Al ser solo Zoom, la hoja **se manda antes** al confirmar registro: sin ella en la
-mano no hay autotest. El folleto se manda al terminar, no antes.
+**Los PDF listos para mandar** están junto a los HTML:
+
+- `hoja-tu-perfil-metabolico.pdf` — 2 páginas carta. **Se manda ANTES**, al confirmar
+  registro. Sin ella en la mano no hay autotest.
+- `folleto-peso.pdf` — 2 páginas carta. **Se manda AL TERMINAR**: si lo leen de
+  entrada, el autotest pierde la gracia.
+
+Para regenerarlos si se edita el HTML: abrir el archivo en Chrome → Imprimir →
+Guardar como PDF, tamaño Carta, márgenes ninguno, con gráficos de fondo.
 
 ## Productos / kit
 

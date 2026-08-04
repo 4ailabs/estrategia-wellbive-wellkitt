@@ -123,6 +123,31 @@ Cada beat existe en el modo que le toca en el montaje (ver `00-ORDEN-MONTAJE.txt
 (NO a la narración de IA, que va acelerada a 1.1x). Si regeneras el audio o cambias el
 guion, hay que recalcularlas.
 
+### Portada de stream (antes de la transmisión)
+
+`PortadaStreamJuevesPeso` — 1920x1080, 5 minutos exactos, sin audio.
+Sale en `out/peso-semana9/00-PORTADA-STREAM-jueves-peso.mp4`.
+
+Es la pantalla de espera que corre **antes** de que arranque el Jueves en
+Wellkitt. Sigue el patrón de las portadas que ya existían
+(`src/projects/stream-portada/`), pero con la paleta y la tipografía del video
+de peso, para que la semana entera se vea como un solo objeto.
+
+Lo importante no es el diseño: es **el aviso**. Como la sesión es por Zoom y se
+cae si la gente llega sin su hoja, la portada existe sobre todo para que la
+busquen mientras esperan — pide la hoja impresa y el papel chico aparte.
+
+El motivo de la derecha es el circuito de recompensa girando: el impulso recorre
+el anillo y enciende cada nodo al llegar. Es el único diagrama de la sesión que
+gana algo con estar en loop, porque cada vuelta lo refuerza — que es justo lo
+que explica.
+
+**Loop:** toda la animación ambiental es periódica sobre 300 frames, y 300
+divide exacto los 9000 de la composición. Si se repite el archivo, la entrada
+del texto vuelve a ocurrir; para stream continuo eso se ve bien.
+
+Código: `src/projects/stream-portada/PortadaStreamJuevesPeso.tsx`.
+
 ### Remates de cierre
 
 Tres tarjetas al final, sin ti en cuadro, cada una en `.mp4` con fondo y en `alfa/`:

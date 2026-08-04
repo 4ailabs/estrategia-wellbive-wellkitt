@@ -16,7 +16,7 @@
 
 **[Checklist de 30 segundos:]**
 
-**[· Los cuatro frascos a la mano, en este orden: Carnilis, Té Verde, Ojo de Gallina, Fat-less.]**
+**[· Los cuatro frascos a la mano, en este orden: Carnilis, Té Verde, Galphimia, Fat-less.]**
 **[· Cronómetro visible. Se usa dos veces: 40 segundos en el bloque 4, 25 en el paso de la voz.]**
 **[· El PDF de la hoja listo para pegar en el chat.]**
 **[· El código de cupón listo para pegar en el chat.]**
@@ -463,7 +463,7 @@ Se los digo antes de que lo compren."
 
 **[Tomar Ojo de Gallina.]**
 
-"**Ojo de Gallina.** Galphimia glauca.
+"**Galphimia glauca.** El que ustedes conocen como Ojo de Gallina.
 
 Aquí está lo más interesante de la sesión.
 
@@ -491,11 +491,7 @@ Esa es la conexión real. Y es mucho más interesante que lo que dice la etiquet
 
 ---
 
-Y algo que ayuda al perfil B desde otro lado: el cromo que trae Carnilis.
-
-En un ensayo doble ciego redujo de forma significativa los antojos de carbohidratos específicamente. Probablemente porque un azúcar en sangre más estable le quita urgencia a la búsqueda de energía rápida.
-
-Una aclaración: ese estudio se hizo con picolinato de cromo, y Carnilis usa otra sal. El mecanismo de fondo es el mismo. Los estudios finos se hicieron con la otra forma."
+Para el perfil B, esta es la herramienta. Una sola."
 
 ### Perfil C · La digestión
 
@@ -523,7 +519,7 @@ Es soporte hepático y digestivo. Y para el perfil C, eso es justo lo que hace f
 
 **Perfil A, el metabolismo** → Carnilis y Té Verde.
 
-**Perfil B, la ansiedad** → Ojo de Gallina, y el cromo que ya viene en Carnilis.
+**Perfil B, la ansiedad** → Galphimia glauca, el Ojo de Gallina.
 
 **Perfil C, la digestión** → Fat-less.
 

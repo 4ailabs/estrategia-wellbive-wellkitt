@@ -64,18 +64,12 @@ Fat-less quedaba como nota al pie.
 
 ### Qué NO se afirma
 
-* **Ningún producto "quema grasa".** Ni el té verde, ni el cromo, que son los que
-  mejor evidencia tienen.
+* **Ningún producto "quema grasa".** Ni el té verde, que es el de mejor
+  mecanismo descrito.
 
 * **No se promete pérdida de peso ni kilos ni plazos.** La sección 1 de la
   investigación obliga a lo contrario: hay que **manejar expectativas de tiempo**
   explícitamente.
-
-* **Cromo:** la evidencia sobre antojos de carbohidratos es de **picolinato**;
-  Carnilis usa **nitrato de cromo**. El mecanismo de fondo —cromo como cofactor de
-  la acción de la insulina— aplica igual, pero no se iguala la evidencia de una
-  forma química con otra. Se dice así: *"el mecanismo es el mismo; los estudios
-  finos se hicieron con otra sal."*
 
 * **Jamaica: no se menciona.** Está en la fórmula de Fat-less, pero no entra en la
   sesión ni en el folleto. Si alguien la lee en la etiqueta y pregunta: sirve para
@@ -499,12 +493,7 @@ Entonces no es que acelere su metabolismo. Es que puede bajarle el volumen al
 gatillo que los hace comer de más. Esa es la conexión real, y es mucho más
 interesante que lo que dice la etiqueta.
 
-Y algo que ayuda al perfil azul desde otro lado: el **cromo** que trae Carnilis. En
-un ensayo doble ciego redujo de forma significativa los antojos **de
-carbohidratos** específicamente — probablemente porque un azúcar en sangre más
-estable le quita urgencia a la búsqueda de energía rápida. Un matiz: ese estudio se
-hizo con picolinato de cromo y Carnilis usa otra sal. El mecanismo de fondo es el
-mismo; los estudios finos se hicieron con la otra forma."
+Para el perfil azul, esta es la herramienta. Una sola."
 
 ### VERDE · La digestión
 
@@ -533,7 +522,7 @@ El facilitador dice:
 **Naranja · El metabolismo** → Carnilis y Té Verde. Y los dos minutos de caminata
 después de comer, que no cuestan nada.
 
-**Azul · La ansiedad** → Ojo de Gallina, y el cromo que ya viene en Carnilis.
+**Azul · La ansiedad** → Galphimia glauca, el Ojo de Gallina.
 
 **Verde · La digestión** → Fat-less.
 

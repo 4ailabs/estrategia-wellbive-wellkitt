@@ -1,3 +1,5 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tu Perfil Metabólico — Jueves en Wellkitt</title>
 
 <style>
@@ -93,6 +95,96 @@ body {
   background: radial-gradient(closest-side, rgba(224, 100, 26, 0.13), transparent 72%);
   pointer-events: none;
 }
+
+/* ---------- Imágenes editoriales ---------- */
+
+.slide-image {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+  object-fit: cover;
+}
+.slide .cuerpo,
+.slide .pie { position: relative; z-index: 1; }
+
+.imagen-portada .slide-image {
+  inset: 0 0 0 auto;
+  width: 48%;
+  height: 100%;
+  object-position: 68% center;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.58) 22%, #000 52%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.58) 22%, #000 52%);
+}
+.imagen-portada .cuerpo { width: 58%; }
+.imagen-portada .titulo { max-width: 660px; }
+.imagen-portada .sub { max-width: 650px; }
+
+.imagen-estudio .slide-image,
+.imagen-ritual .slide-image,
+.imagen-digestion .slide-image,
+.imagen-productos .slide-image {
+  top: 0;
+  right: 0;
+  width: 46%;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.72) 24%, #000 54%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.72) 24%, #000 54%);
+}
+.imagen-estudio .slide-image { object-position: 70% center; }
+.imagen-ritual .slide-image { object-position: 71% center; }
+.imagen-digestion .slide-image { object-position: 72% center; }
+.imagen-productos .slide-image { object-position: 77% center; }
+
+.imagen-estudio .cuerpo,
+.imagen-ritual .cuerpo,
+.imagen-digestion .cuerpo,
+.imagen-productos .cuerpo { width: 61%; }
+.imagen-estudio .grande,
+.imagen-ritual .grande { max-width: 650px; }
+.imagen-digestion .perfil-sintoma,
+.imagen-digestion .perfil-mec { max-width: 730px; }
+.imagen-productos .puntos,
+.imagen-productos .noes { max-width: 700px; }
+.slide.imagen-productos .puntos { gap: 8px; }
+.slide.imagen-productos .puntos li { font-size: 22px; line-height: 1.32; }
+.slide.imagen-productos .noes { margin-top: 12px; padding-top: 12px; padding-bottom: 12px; font-size: 21px; }
+
+.imagen-productos .slide-image { opacity: .9; }
+.imagen-productos { background: linear-gradient(90deg, var(--verde-piel) 0%, #F7F8F3 58%, rgba(237,244,238,.72) 100%); }
+
+/* Producto protagonista: un envase por slide, como ficha de catálogo. */
+.imagen-carnilis .slide-image,
+.imagen-galphimia .slide-image,
+.imagen-fatless .slide-image {
+  top: 62px;
+  right: 0;
+  width: 39%;
+  height: 560px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 6px 0 0 6px;
+  filter: drop-shadow(0 18px 24px rgba(27, 26, 24, 0.14));
+}
+.imagen-carnilis .cuerpo,
+.imagen-galphimia .cuerpo,
+.imagen-fatless .cuerpo { width: 61%; }
+.imagen-galphimia .slide-image { object-fit: contain; }
+.imagen-carnilis .puntos,
+.imagen-galphimia .puntos,
+.imagen-fatless .puntos,
+.imagen-carnilis .noes,
+.imagen-galphimia .noes,
+.imagen-fatless .noes { max-width: 700px; }
+.slide.imagen-carnilis .puntos,
+.slide.imagen-galphimia .puntos,
+.slide.imagen-fatless .puntos { gap: 8px; }
+.slide.imagen-carnilis .puntos li,
+.slide.imagen-galphimia .puntos li,
+.slide.imagen-fatless .puntos li { font-size: 22px; line-height: 1.32; }
+.slide.imagen-carnilis .noes,
+.slide.imagen-galphimia .noes,
+.slide.imagen-fatless .noes { margin-top: 12px; padding-top: 12px; padding-bottom: 12px; font-size: 21px; }
 
 .slide {
   position: absolute;
@@ -415,6 +507,7 @@ body {
   line-height: 1;
   margin: 0;
 }
+.p-prod .cientifico.comun { font-style: normal; }
 .p-prod .cientifico {
   font-style: italic;
   font-size: 25px;
@@ -844,12 +937,12 @@ const LIMITES = {
    2. CONTENIDO — solo datos. Editar aqui nunca toca el layout.
    ========================================================================= */
 const SLIDES = [
-  { t: "portada", bloque: "", titulo: "Tu Perfil|Metabólico",
+  { t: "portada", bloque: "", imagen: "portada", titulo: "Tu Perfil|Metabólico",
     sub: "Por qué el peso deja de responder — y por dónde empezar según tu caso.",
     fecha: "Jueves 30 de julio · 5:30 pm" },
 
   /* ---- Bloque 1 · Apertura ---- */
-  { t: "frase", bloque: "1 · Apertura", eyebrow: "El experimento",
+  { t: "frase", bloque: "1 · Apertura", imagen: "estudio", eyebrow: "El experimento",
     grande: "Los midieron al terminar. Y otra vez seis años después." },
   { t: "dato", bloque: "1 · Apertura", eyebrow: "Durante la competencia",
     cifra: "58", unidad: "kg bajados en promedio", contexto: "" },
@@ -882,13 +975,13 @@ const SLIDES = [
 
   /* ---- Bloque 3 · Agrupación ---- */
   { t: "lista", bloque: "3 · Agrupación", eyebrow: "En el chat",
-    titulo: "Escribe tu letra. No des enter.",
+    titulo: "¿Cuál te salió más alto?",
     puntos: [
       "<b>A</b> · El metabolismo que aprendió a defenderse",
       "<b>B</b> · La ansiedad que decide antes que tú",
       "<b>C</b> · La digestión que va lenta"
     ],
-    nota: "Escríbela y espérame. A la cuenta de tres, todos dan enter al mismo tiempo." },
+    nota: "Escribe tu letra en el chat, pero <b>no la envíes todavía</b>. A la cuenta de tres la mandamos todos a la vez, y se ve de golpe cómo está repartida la sala." },
   { t: "perfil", bloque: "3 · Agrupación", letra: "A",
     nombre: "El metabolismo que aprendió a defenderse",
     sintoma: "Ya bajaste antes y lo recuperaste casi todo.",
@@ -903,13 +996,13 @@ const SLIDES = [
   { t: "circuito", bloque: "3 · Agrupación", eyebrow: "Perfil B · El circuito",
     titulo: "Cada vuelta lo deja más marcado",
     nota: "El estrés empuja a comer. Comer apaga el estrés un rato. Ese alivio <b>refuerza el circuito</b>, y la siguiente vez cuesta más resistirlo. No es carácter: es una vuelta que se repite." },
-  { t: "perfil", bloque: "3 · Agrupación", letra: "C",
+  { t: "perfil", bloque: "3 · Agrupación", imagen: "digestion", letra: "C",
     nombre: "La digestión que va lenta",
     sintoma: "Te hinchas después de comer, aunque comas poco.",
     mecanismo: "Cuando comes grasa, el hígado manda bilis para partirla en gotas pequeñas. Si ese flujo va lento, la grasa se queda pesada: hinchazón, plenitud. <b>Mucha gente confunde eso con grasa corporal.</b> No es lo mismo, y se trabaja distinto." },
 
   /* ---- Bloque 4 · El ritual ---- */
-  { t: "fraseXL", bloque: "4 · La frase prestada", eyebrow: "Toma el papel chico",
+  { t: "fraseXL", bloque: "4 · La frase prestada", imagen: "ritual", eyebrow: "Toma el papel chico",
     grande: "La frase prestada" },
   { t: "lista", bloque: "4 · La frase prestada", eyebrow: "Paso 1",
     titulo: "Escribe la frase",
@@ -984,12 +1077,12 @@ const SLIDES = [
     nota: "Una imagen que no se practica se pierde. Por eso necesita un ancla diaria." },
 
   /* ---- Bloque 6 · Productos (verde) ---- */
-  { t: "producto", bloque: "6 · Productos", perfil: "Perfil A · El metabolismo",
-    nombre: "Carnilis", cientifico: "L-carnitina y cromo",
+  { t: "producto", bloque: "6 · Productos", imagen: "carnilis", perfil: "Perfil A · El metabolismo",
+    nombre: "Carnilis", cientifico: "L-carnitina pura", comun: true,
     puntos: [
       "Para quemarse, la grasa tiene que entrar a la mitocondria. La carnitina es quien la transporta adentro.",
       "Análisis de 37 estudios, más de 2,000 personas: sí reduce peso y grasa. De uno a dos kilos en promedio.",
-      "El cromo redujo los antojos de carbohidratos específicamente."
+      "Es una sola molécula, no una mezcla. Hace un trabajo específico y nada más."
     ],
     noes: "Un quemador. Es el transporte del combustible, no el fuego." },
   { t: "producto", bloque: "6 · Productos", perfil: "Perfil A · El metabolismo",
@@ -1004,16 +1097,16 @@ const SLIDES = [
     titulo: "Se comparó contra un ansiolítico de receta",
     nota: "En personas con trastorno de ansiedad generalizada. <b>Efectividad comparable</b> — y por eso la conexión con el peso es el antojo, no el metabolismo.",
     etiquetaA: "Galphimia glauca", etiquetaB: "Benzodiacepina" },
-  { t: "producto", bloque: "6 · Productos", perfil: "Perfil B · La ansiedad",
-    nombre: "Ojo de Gallina", cientifico: "Galphimia glauca",
+  { t: "producto", bloque: "6 · Productos", imagen: "galphimia", perfil: "Perfil B · La ansiedad",
+    nombre: "Galphimia glauca", cientifico: "Ojo de Gallina", comun: true,
     puntos: [
       "Ensayo de 15 semanas contra una benzodiacepina en ansiedad generalizada: efectividad comparable.",
       "Actúa sobre el mismo circuito de recompensa que el estrés crónico altera.",
       "Puede bajarle el volumen al gatillo que te hace comer de más."
     ],
     noes: "Un acelerador del metabolismo. Su evidencia real es sobre ansiedad." },
-  { t: "producto", bloque: "6 · Productos", perfil: "Perfil C · La digestión",
-    nombre: "Fat-less", cientifico: "Cynara scolymus",
+  { t: "producto", bloque: "6 · Productos", imagen: "fatless", perfil: "Perfil C · La digestión",
+    nombre: "Fat-less", cientifico: "Fórmula botánica de 7 plantas", comun: true,
     puntos: [
       "La cinarina de la alcachofa estimula la producción de bilis en el hígado.",
       "Más bilis significa mejor digestión de la grasa: menos pesadez, menos hinchazón.",
@@ -1093,6 +1186,21 @@ function revisar(s) {
 const eyebrow = (s, clase) =>
   s.eyebrow ? `<div class="eyebrow ${clase || ""}">${s.eyebrow}</div>` : "";
 
+const IMAGENES = {
+  portada: "imagenes/hero-metabolismo.png",
+  estudio: "imagenes/apertura-estudio-medicion.png",
+  ritual: "imagenes/ritual-frase-prestada.png",
+  digestion: "imagenes/perfil-digestion-alcachofa.png",
+  productos: "imagenes/sistema-botanico-productos.png",
+  carnilis: "imagenes/productos/carnilis.png",
+  galphimia: "imagenes/productos/galphimia-ojo-de-gallina.png",
+  fatless: "imagenes/productos/fat-less.png",
+};
+
+const imagenEditorial = (s) => s.imagen
+  ? `<img class="slide-image" src="${IMAGENES[s.imagen]}" alt="" aria-hidden="true">`
+  : "";
+
 const PLANTILLAS = {
   portada: (s) => `<div class="cuerpo p-portada">
     <div class="marca">Wellkitt · Jueves en Wellkitt</div>
@@ -1153,7 +1261,7 @@ const PLANTILLAS = {
   producto: (s) => `<div class="cuerpo p-prod">
     <div class="eyebrow ambar">${s.perfil}</div>
     <h2 class="nombre">${s.nombre}</h2>
-    <p class="cientifico">${s.cientifico}</p>
+    <p class="cientifico${s.comun ? " comun" : ""}">${s.cientifico}</p>
     <ul class="puntos">${s.puntos.map((p) => `<li>${p}</li>`).join("")}</ul>
     <div class="noes"><span>Lo que no es</span>${s.noes}</div>
   </div>`,
@@ -1267,10 +1375,11 @@ SLIDES.forEach((s, i) => {
   const fallas = revisar(s);
   if (fallas.length) window.__errores.push({ slide: i + 1, tipo: s.t, fallas });
   const sec = document.createElement("section");
-  sec.className = "slide" + (s.t === "producto" ? " verde" : "");
+  sec.className = "slide" + (s.t === "producto" ? " verde" : "") +
+    (s.imagen ? ` con-imagen imagen-${s.imagen}` : "");
   sec.dataset.i = i;
   sec.innerHTML =
-    PLANTILLAS[s.t](s) +
+    imagenEditorial(s) + PLANTILLAS[s.t](s) +
     `<div class="pie">
        <span>${s.bloque || "Wellkitt"}</span>
        <span class="pie-num">${String(i + 1).padStart(2, "0")} / ${total}</span>
