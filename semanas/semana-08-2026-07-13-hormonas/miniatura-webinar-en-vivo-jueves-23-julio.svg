@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fffaf1" stop-opacity="1"/>
+      <stop offset=".47" stop-color="#fffaf1" stop-opacity=".96"/>
+      <stop offset=".68" stop-color="#fffaf1" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#fffaf1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset=".55" stop-color="#fffaf1" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fffaf1" stop-opacity=".74"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="150%" height="180%">
+      <feDropShadow dx="0" dy="9" stdDeviation="9" flood-color="#173d36" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <image x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice" xlink:href="miniatura-youtube-semana-08-foto.png"/>
+  <rect width="1280" height="720" fill="url(#wash)"/>
+  <rect width="1280" height="720" fill="url(#bottom)"/>
+
+  <g transform="translate(60 45)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <g fill="#4e8b42">
+      <path d="M2 0 C22 7 31 20 31 42 C12 32 5 20 2 0Z"/>
+      <path d="M39 1 C56 9 60 23 54 42 C39 31 34 18 39 1Z"/>
+      <path d="M69 0 C68 18 61 31 47 43 C47 22 54 8 69 0Z"/>
+    </g>
+    <text x="91" y="5" dominant-baseline="hanging" font-size="25" font-weight="850" fill="#173d36">Wellkitt</text>
+    <g transform="translate(235 -4)" filter="url(#shadow)">
+      <rect width="216" height="45" rx="14" fill="#e52b2f"/>
+      <circle cx="25" cy="22.5" r="9" fill="#fff"/>
+      <text x="46" y="10" dominant-baseline="hanging" font-size="21" font-weight="950" letter-spacing="1.1" fill="#fff">EN VIVO</text>
+      <path d="M148 12 C157 18 157 27 148 33 M160 8 C173 17 173 29 160 37" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g transform="translate(60 128)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <text x="0" y="0" dominant-baseline="hanging" font-size="39" font-weight="900" letter-spacing="1" fill="#4e8b42">WEBINAR</text>
+    <text x="0" y="49" dominant-baseline="hanging" font-size="77" font-weight="950" letter-spacing="-3" fill="#082f4b">HORMONAS:</text>
+    <text x="0" y="126" dominant-baseline="hanging" font-size="68" font-weight="950" letter-spacing="-2.5" fill="#082f4b">CALOR, SUEÑO</text>
+    <text x="0" y="195" dominant-baseline="hanging" font-size="68" font-weight="950" letter-spacing="-2.5" fill="#082f4b">Y PIEL</text>
+    <path d="M1 280 C154 266 340 267 520 280" fill="none" stroke="#70a348" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(60 467)" font-family="Inter, Helvetica, Arial, sans-serif" filter="url(#shadow)">
+    <rect width="570" height="94" rx="22" fill="#0f5c42"/>
+    <rect x="20" y="18" width="72" height="58" rx="16" fill="#e52b2f"/>
+    <path d="M48 31 L48 63 L74 47Z" fill="#fff"/>
+    <text x="111" y="15" dominant-baseline="hanging" font-size="30" font-weight="950" fill="#fff">JUEVES 23 DE JULIO</text>
+    <text x="111" y="53" dominant-baseline="hanging" font-size="25" font-weight="800" fill="#dff1dd">5:30 P. M.</text>
+  </g>
+
+  <g transform="translate(60 591)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <rect width="262" height="47" rx="15" fill="#dcebd4"/>
+    <text x="131" y="12" text-anchor="middle" dominant-baseline="hanging" font-size="21" font-weight="900" fill="#173d36">PRESENCIAL + ZOOM</text>
+    <text x="0" y="68" dominant-baseline="hanging" font-size="23" font-weight="850" fill="#294a43">Entiende lo que tu cuerpo te está diciendo</text>
+  </g>
+</svg>

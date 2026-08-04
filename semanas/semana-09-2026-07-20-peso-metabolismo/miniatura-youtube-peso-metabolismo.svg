@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fffaf1" stop-opacity="1"/>
+      <stop offset=".49" stop-color="#fffaf1" stop-opacity=".97"/>
+      <stop offset=".68" stop-color="#fffaf1" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#fffaf1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset=".62" stop-color="#fffaf1" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fffaf1" stop-opacity=".58"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-40%" width="170%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#173d36" flood-opacity=".24"/>
+    </filter>
+  </defs>
+
+  <image x="0" y="0" width="1280" height="720" preserveAspectRatio="xMidYMid slice"
+    xlink:href="miniatura-youtube-peso-metabolismo-fondo.png"/>
+  <rect width="1280" height="720" fill="url(#wash)"/>
+  <rect width="1280" height="720" fill="url(#bottom)"/>
+
+  <g transform="translate(58 42)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <g fill="#4e8b42">
+      <path d="M2 0 C22 7 31 20 31 42 C12 32 5 20 2 0Z"/>
+      <path d="M39 1 C56 9 60 23 54 42 C39 31 34 18 39 1Z"/>
+      <path d="M69 0 C68 18 61 31 47 43 C47 22 54 8 69 0Z"/>
+    </g>
+    <text x="91" y="5" dominant-baseline="hanging" font-size="25" font-weight="850" fill="#173d36">Wellkitt</text>
+    <g transform="translate(226 -2)">
+      <rect width="298" height="44" rx="14" fill="#dcebd4"/>
+      <text x="149" y="10" text-anchor="middle" dominant-baseline="hanging" font-size="20" font-weight="900" letter-spacing=".8" fill="#173d36">PESO + METABOLISMO</text>
+    </g>
+  </g>
+
+  <g transform="translate(58 139)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <text x="0" y="0" dominant-baseline="hanging" font-size="39" font-weight="900" letter-spacing=".8" fill="#4e8b42">¿POR QUÉ TU CUERPO</text>
+    <text x="0" y="54" dominant-baseline="hanging" font-size="85" font-weight="950" letter-spacing="-3.5" fill="#082f4b">QUEMA</text>
+    <text x="0" y="139" dominant-baseline="hanging" font-size="101" font-weight="950" letter-spacing="-4.5" fill="#082f4b">MENOS?</text>
+    <path d="M3 258 C168 244 354 245 544 259" fill="none" stroke="#70a348" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(58 454)" font-family="Inter, Helvetica, Arial, sans-serif" filter="url(#shadow)">
+    <rect width="570" height="97" rx="23" fill="#0f5c42"/>
+    <circle cx="51" cy="48.5" r="30" fill="#ef2b31"/>
+    <path d="M42 31 L42 66 L69 48.5Z" fill="#fff"/>
+    <text x="101" y="15" dominant-baseline="hanging" font-size="28" font-weight="950" fill="#fff">NO ES FALTA</text>
+    <text x="101" y="52" dominant-baseline="hanging" font-size="27" font-weight="850" fill="#dff1dd">DE DISCIPLINA</text>
+  </g>
+
+  <g transform="translate(58 590)" font-family="Inter, Helvetica, Arial, sans-serif">
+    <rect width="240" height="46" rx="15" fill="#f0d8c2"/>
+    <text x="120" y="11" text-anchor="middle" dominant-baseline="hanging" font-size="21" font-weight="900" fill="#7c3a27">DOS PERFILES REALES</text>
+    <text x="0" y="66" dominant-baseline="hanging" font-size="22" font-weight="850" fill="#294a43">Metabolismo lento • Ansiedad por comer</text>
+  </g>
+</svg>
