@@ -1,256 +1,286 @@
 # Teleprompter video principal
 
-Titulo: Tu higado no necesita una limpieza. Necesita que le quites trabajo.
-Duracion objetivo: 12-13 minutos
+Título: Cuando te sientes pesado, el problema no siempre es lo que comes
+Duración objetivo: 9-10 minutos
 Velocidad sugerida: 125-135 palabras por minuto
 Palabra clave: DETOX
 CTA: WhatsApp + Jueves Wellkitt
 
 ## Instrucciones de lectura
 
-- Leer como narracion directa, con tono firme y calido.
-- Hacer pausa de 2 a 3 segundos donde aparezca `[pausa]`.
+- Leer como narración directa, con tono firme y cálido.
+- Hacer una pausa breve donde aparezca `[pausa]`.
 - No leer los encabezados ni las instrucciones.
-- Dar mas peso a las frases cortas y de imagen.
-- No presentar el contenido como diagnostico ni reemplazo de valoracion medica.
-- No prometer perdida de peso. La diuresis mueve liquido, no grasa.
+- Dar más peso a las frases cortas y de imagen.
+- No presentar el contenido como diagnóstico ni reemplazo de valoración médica.
+- No prometer pérdida de peso. La diuresis mueve líquido, no grasa.
+
+### Tono: se habla desde la consulta
+
+- **Autoridad, no búsqueda.** El dato se afirma sin dramatizarlo.
+- **No hay nada que desmentir.** El hígado y los riñones ya hacen el trabajo.
+- **Cero referencias a vender, comprar o facturar.**
+- Los límites de cada planta se dicen con el mismo peso que sus posibles beneficios.
 
 ---
 
 ## Script
 
-Te sientes pesado. Inflamado. Como si la comida se te quedara.
+> Cada bloque numerado es un **beat**: un archivo de audio de referencia y un
+> clip de Remotion. Se graba beat por beat y se repite solo el que salga mal.
 
-Te levantas cansado aunque dormiste. Los anillos aprietan de noche. La ropa te queda distinta segun el dia.
+### 01
 
-Y en algun momento alguien te dijo la palabra: necesitas un detox.
+Hay una consulta que se repite mucho.
 
-[pausa]
+"Doctor, me siento pesado. Inflamado. Cansado sin razón. Y ya intenté de todo."
 
-Voy a empezar por lo incomodo.
+A esa persona normalmente ya le dijeron que coma mejor, que se mueva más, que baje unos kilos. Y lo intentó.
 
-Busque la evidencia de las dietas detox comerciales. De todas. Y lo que hay es esto: no existe un solo ensayo controlado que demuestre que funcionan en humanos.
-
-Ni uno.
-
-[pausa]
-
-La industria del detox factura miles de millones al año. Los jugos, los tes, los programas de siete dias, los parches para los pies.
-
-Y debajo de todo eso no hay nada.
+Por eso, una de las cosas que conviene revisar es el hígado.
 
 [pausa]
 
-Soy el doctor Miguel Ojeda, del Instituto Centrobioenergetica.
+### 02
 
-Esto es Wellvibe.
-
-[pausa]
-
-Pero que no haya evidencia para el detox no significa que lo que sientes no exista.
-
-Existe. Solo que tiene otro nombre, y ese si tiene numeros.
-
-Hoy quiero hablarte de tres perfiles distintos de cuerpo pesado. Los tres son reales, los tres son medibles, y ninguno se arregla con jugos.
-
-Al primero lo voy a llamar el higado que trabaja de mas. Al segundo, la retencion que no se va. Al tercero, la digestion que se quedo lenta.
-
-Y antes de terminar te voy a decir una cosa que casi nadie te va a decir cuando te venda un detox — y que le aplica a una de cada cinco mujeres que estan viendo esto.
-
-Quedate hasta el final.
+El hígado puede trabajar de más, en silencio, durante años. Y como sus alteraciones tempranas no suelen dar una señal clara, muchas personas no saben cómo está.
 
 [pausa]
 
-Perfil uno: el higado que trabaja de mas.
+### 03
 
-Tu higado limpia. Todos los dias, sin que nadie lo ayude, sin que se lo pidas. Filtra, transforma, elimina. Los riñones hacen su parte. Ese sistema ya existe y ya funciona.
-
-Nadie necesita una limpieza. Lo que si pasa es otra cosa: que ese sistema se sobrecargue.
+América Latina es la región del mundo con mayor prevalencia de hígado graso metabólico: alrededor de cuarenta y cuatro de cada cien adultos. Muchos siguen sin diagnóstico.
 
 [pausa]
 
-Y aqui vienen los numeros que te decia.
+### 04
 
-En Mexico, la enfermedad por higado graso — grasa acumulada dentro del higado, asociada a como esta funcionando tu metabolismo — es una epidemia silenciosa.
-
-Las cifras cambian segun como se mida. Por ultrasonido, alrededor del catorce por ciento. En estimaciones de encuesta nacional, cerca de la mitad de los adultos.
-
-Despues de los cincuenta años, hasta cuatro de cada diez.
+Soy el doctor Miguel Ojeda, del Instituto Centrobioenergética. Esto es Wellvibe.
 
 [pausa]
 
-Y hay un dato que a mi me parece el mas serio de todos.
+### 05
 
-Entre dos mil dieciocho y dos mil veinticuatro, la enfermedad hepatica fue el cuarenta y dos por ciento de los casos de cirrosis en los centros de referencia de este pais.
+Tu hígado no descansa. Filtra y transforma sustancias, produce bilis, procesa nutrientes y ayuda a eliminar lo que el cuerpo ya no necesita. Los riñones hacen su parte.
 
-Cuatro de cada diez.
-
-[pausa]
-
-Ahora, lo importante.
-
-El higado graso no duele.
-
-No hay sintoma. No hay señal clara. Se instala en silencio durante años, y cuando aparece la molestia, ya avanzo.
-
-Por eso cuando alguien me dice "me siento pesado, hinchado, cansado sin razon", casi nunca es que tenga toxinas acumuladas. Es que tiene un sistema trabajando con sobrecarga, y nadie se lo ha revisado.
+Ese sistema ya funciona. No hay que echarlo a andar. Lo que sí puede ocurrir es que aumente su carga metabólica.
 
 [pausa]
 
-Si esto te suena a ti — si te sientes pesado sin explicacion, si ya intentaste de todo, si nunca te han revisado el higado — ese es tu perfil uno.
+### 06
 
-Y lo primero que necesitas no es un producto. Es un analisis de enzimas hepaticas y un ultrasonido. Con eso sabes en donde estas parado.
+Parte de ese trabajo ocurre con enzimas. En un primer tiempo, sistemas como el citocromo P450 transforman distintas sustancias.
 
-[pausa]
-
-Perfil dos: la retencion que no se va.
-
-Este es distinto. Aqui la queja no es cansancio, es volumen.
-
-Te levantas con la cara diferente. Los anillos aprietan. Los calcetines dejan marca. Las piernas pesan al final del dia. Subes dos kilos de un dia para otro y sabes que dos kilos de grasa no se hacen en un dia.
-
-Porque no son grasa. Son liquido.
+Pero ahí no siempre termina el proceso: algunos productos intermedios pueden ser más reactivos que la sustancia original.
 
 [pausa]
 
-Y voy a ser claro con algo, porque es donde mas se miente en este tema.
+### 07
 
-Sacar liquido no es bajar de peso.
+Después vienen reacciones que facilitan su eliminación. El hígado puede unir esas moléculas con glutatión, sulfato o ácido glucurónico para volverlas más fáciles de excretar por la bilis o la orina.
 
-La bascula baja. Se siente bien. Y no perdiste ni un gramo de grasa. Cualquiera que te venda un diuretico como si fuera un adelgazante te esta viendo la cara.
-
-Lo que si hace, y no es poco, es que dejes de sentirte inflado.
-
-Si te reconoces mas en esto que en lo anterior, ese es tu perfil dos.
+Es un sistema coordinado, no una limpieza milagrosa.
 
 [pausa]
 
-Perfil tres: la digestion que se quedo lenta.
+### 08
 
-Comes y se te queda. Sobre todo si hay grasa de por medio. Plenitud, pesadez, esa sensacion de que la comida no avanza.
+El hígado graso no aparece porque una fase se "atore". Se relaciona sobre todo con disfunción metabólica y acumulación de grasa dentro del hígado.
 
-Aqui el mecanismo es la bilis.
-
-Cuando comes grasa, el higado manda bilis para partirla en gotas pequeñas y que se pueda digerir. Si ese flujo va lento, la grasa se queda pesada.
-
-Mucha gente confunde eso con grasa corporal. No es lo mismo, y se trabaja distinto: aqui no se trata de quemar nada, se trata de procesar mejor lo que ya comiste.
+Las cifras mexicanas cambian según cómo se mida: alrededor del catorce por ciento por ultrasonido y estimaciones mucho mayores en encuestas. Aumenta con la edad.
 
 [pausa]
 
-Ahora, las herramientas. Una para cada perfil.
+### 09
 
-Y te las voy a dar en orden de que tan solida es la evidencia, no en orden de que tanto me convenga venderte.
+Por eso conviene detectarlo temprano. El hígado graso puede avanzar de acumulación de grasa a inflamación, fibrosis y, en algunas personas, cirrosis.
 
-[pausa]
-
-Para el perfil uno, el higado, hay una planta que se lleva el premio: el cardo mariano.
-
-Su compuesto activo es la silimarina, y esta en Hepacryl.
-
-Un analisis que junto veintiseis ensayos clinicos, con dos mil trescientos setenta y cinco pacientes con higado graso, encontro que la silimarina baja las enzimas hepaticas por encima del placebo. De forma consistente. Y no solo los marcadores: tambien baja la grasa que se ve en el higado.
-
-En un ensayo de cuarenta y ocho semanas, hubo mejoria de fibrosis en biopsia.
+No ocurre de un día para otro. Precisamente por eso hay tiempo para actuar.
 
 [pausa]
 
-Ese es un nivel de evidencia que muy pocas plantas alcanzan.
+### 10
 
-Y ahora el limite, que tambien es parte del dato: baja marcadores y mejora la imagen. No cura enfermedad hepatica. Y en todos esos estudios funciono acompañada de dieta y de control de peso. No sola.
+La buena noticia es que puede mejorar mucho.
 
-Hepacryl trae ademas alcachofa, boldo, diente de leon y curcuma.
+Perder alrededor del cinco por ciento del peso puede reducir la grasa hepática. Y en un estudio intensivo, entre quienes sostuvieron una pérdida de al menos diez por ciento, nueve de cada diez resolvieron la inflamación y casi la mitad mejoró la fibrosis.
 
-[pausa]
-
-Para el perfil dos, la retencion, esta la cola de caballo. Equisetum arvense.
-
-Y aqui hay un estudio que me sorprendio.
-
-Un ensayo doble ciego comparo el extracto de cola de caballo contra hidroclorotiazida — que es un diuretico de receta, de los que se usan todos los dias en consulta.
-
-El efecto diuretico de la planta fue equivalente al del farmaco.
+No es una garantía individual, pero muestra cuánto puede cambiar el hígado cuando se interviene a tiempo.
 
 [pausa]
 
-Y hay un detalle que lo hace mas interesante.
+### 11
 
-Los diureticos farmacologicos tienen un costo: te tiran potasio. Por eso a quien los toma le miden electrolitos.
+Y no es solamente una enfermedad de personas con sobrepeso. Entre el diez y el veinte por ciento de los casos ocurre en personas delgadas.
 
-La cola de caballo igualo el efecto sin cambios significativos en la eliminacion de electrolitos.
-
-Ahora el limite, otra vez: fueron treinta y seis personas sanas, cuatro dias. Es efecto agudo. Y lo que hace es que orines mas — no que elimines toxinas.
+Es un problema metabólico, no una apariencia corporal.
 
 [pausa]
 
-Para el perfil tres, la digestion, esta el diente de leon. Taraxacum officinale.
+### 12
 
-Estimula el flujo de bilis y aumenta la diuresis. Es un uso tradicional muy consistente, esta en farmacopeas europeas.
-
-Y voy a decirte lo que casi nadie dice de sus propios productos: la evidencia en humanos del diente de leon es escasa. La mayoria de lo que sabemos viene de estudios preclinicos.
-
-No es lo mismo que el cardo mariano ni que la cola de caballo. Es tradicion solida con respaldo experimental, no un meta-analisis.
-
-Te lo digo para que sepas que cuando te doy un dato fuerte, es porque el dato existe.
+El hígado graso temprano normalmente no duele y puede existir aún con pocos síntomas. Sentirse pesado o cansado no lo diagnostica; solamente es una razón para revisar el contexto completo.
 
 [pausa]
 
-El kit trae dos cosas mas: Oligosor y Minesor con Selenio.
+### 13
 
-Y aqui tambien voy a ser preciso. Esos dos no son desintoxicantes. Son soporte mineral y antioxidante — oligoelementos que acompañan, no que limpian.
+Porque sentirse pesado puede venir de cosas distintas.
 
-[pausa]
+Para orientarnos, vamos a separar tres perfiles: hígado graso, retención de líquidos y digestión pesada relacionada con el flujo de bilis.
 
-Ahora, lo que te prometi al principio. Lo que casi nadie te va a decir.
-
-Todo lo que acabo de mencionarte funciona moviendo bilis. El cardo mariano, la alcachofa, el diente de leon, el boldo. Se llaman coléreticos: hacen que la bilis fluya.
-
-Y eso es exactamente lo que no quieres si hay una piedra en el camino.
+No son diagnósticos. Son tres rutas para saber qué preguntar y qué revisar.
 
 [pausa]
 
-En Mexico, una de cada cinco mujeres tiene calculos en la vesicula. Veinte punto cinco por ciento.
+### 14
 
-Entre los cuarenta y los cincuenta años, sube a casi una de cada tres.
+Perfil uno: posible hígado graso. Puede haber cansancio o pesadez, pero también puede no sentirse nada.
 
-Y muchas no lo saben.
+El primer paso no es un producto. Es una valoración, análisis de enzimas hepáticas y, cuando corresponde, un ultrasonido. Una enzima normal por sí sola tampoco descarta el problema.
+
+[pausa]
+
+### 15
+
+Perfil dos: retención de líquidos. Aquí la queja es volumen. Amaneces con la cara distinta, se marcan los calcetines y las piernas pesan al final del día.
+
+Si subes dos kilos de un día para otro, no son dos kilos de grasa. Pero una retención persistente también merece valoración para conocer su causa.
 
 [pausa]
 
-Si tienes piedras en la vesicula, mover bilis puede desencadenarte un colico. El boldo, ademas, esta contraindicado directamente en enfermedad de la via biliar y en enfermedad hepatica.
+### 16
 
-Entonces, antes de tomar cualquier cosa de las que te mencione hoy, la pregunta es una:
+Sacar líquido no es bajar grasa. La báscula puede bajar y la grasa seguir ahí.
 
-¿Te han dicho alguna vez que tienes piedras en la vesicula?
-
-Si la respuesta es si, o no lo sabes, eso se revisa primero. No es negociable.
+Lo que cambia es la sensación de hinchazón.
 
 [pausa]
+
+### 17
+
+Perfil tres: comes y sientes que la comida se queda, sobre todo si contiene grasa. Hay plenitud, pesadez y una digestión que parece avanzar lentamente.
+
+[pausa]
+
+### 18
+
+La bilis ayuda a dispersar la grasa en gotas pequeñas para que pueda digerirse. Si su flujo es insuficiente o existe otro problema digestivo, una comida grasa puede sentirse pesada.
+
+Eso no es grasa corporal y no se trabaja intentando "quemarla".
+
+[pausa]
+
+### 19
+
+Antes de hablar de plantas hay un filtro de seguridad.
+
+Si tienes piedras en la vesícula, obstrucción de la vía biliar, una enfermedad hepática diagnosticada, estás embarazada o no sabes cómo está tu vesícula, esta ruta necesita valoración primero.
+
+Varias de estas plantas mueven bilis y Hepacryl contiene boldo. Con una piedra en el camino, estimular ese flujo puede ser contraproducente.
+
+[pausa]
+
+### 20
+
+Para el perfil hepático, la planta con más investigación es el cardo mariano. Su compuesto activo se llama silimarina y forma parte de Hepacryl.
+
+[pausa]
+
+### 21
+
+Un meta-análisis reunió veintiséis ensayos clínicos y dos mil trescientos setenta y cinco pacientes con hígado graso. En conjunto, la silimarina redujo enzimas hepáticas frente al placebo y mostró mejorías en medidas de grasa hepática.
+
+Un ensayo de cuarenta y ocho semanas también encontró mejoría de fibrosis en biopsia.
+
+[pausa]
+
+### 22
+
+Ese dato pertenece a preparaciones y dosis de silimarina estudiadas; no demuestra por sí solo que cualquier producto produzca el mismo resultado.
+
+La silimarina no cura una enfermedad hepática y se estudió como complemento de dieta, control metabólico y seguimiento, no como sustituto.
+
+[pausa]
+
+### 23
+
+Para la retención está la cola de caballo, Equisetum arvense.
+
+Un ensayo doble ciego comparó un extracto estandarizado con hidroclorotiazida. Durante el estudio, el efecto diurético agudo fue comparable al del fármaco.
+
+[pausa]
+
+### 24
+
+El límite importa: fueron treinta y seis hombres sanos y solamente cuatro días. No demuestra seguridad ni eficacia de uso prolongado.
+
+En ese período no hubo cambios significativos en la eliminación de electrolitos. Lo que hizo fue aumentar la diuresis: orinar más, no eliminar grasa ni "toxinas".
+
+[pausa]
+
+### 25
+
+Para la digestión pesada se usa tradicionalmente el diente de león. Se le atribuyen efectos sobre el flujo de bilis y la diuresis, pero la evidencia en personas es mucho menor que la de la silimarina.
+
+Tradición de uso no significa el mismo nivel de certeza.
+
+[pausa]
+
+### 26
+
+El kit también trae Minesor con Selenio.
+
+El selenio participa en la defensa antioxidante mediante enzimas como la glutatión peroxidasa, que ayuda a controlar peróxidos y estrés oxidativo.
+
+Es soporte antioxidante. No significa que el producto "desintoxique" ni sustituye una valoración.
+
+[pausa]
+
+### 27
 
 Recapitulemos.
 
-Perfil uno, el higado que trabaja de mas. No duele, no avisa, y en este pais tiene cifras que dan miedo. Se revisa con enzimas hepaticas y ultrasonido, y se apoya con cardo mariano.
+Hígado graso: primero se revisa; el cardo mariano tiene la evidencia botánica más amplia.
 
-Perfil dos, la retencion. Es liquido, no grasa. Cola de caballo, con un estudio que le da la cara a un farmaco.
+Retención: es líquido, no grasa; la cola de caballo solo tiene evidencia aguda y limitada.
 
-Perfil tres, la digestion lenta. Es bilis. Diente de leon y la alcachofa del Hepacryl.
+Digestión pesada: el diente de león tiene sobre todo uso tradicional.
 
-Y el filtro que va antes de los tres: la vesicula.
-
-[pausa]
-
-Si te reconoces en alguno, escribe DETOX por WhatsApp. Cuentanos cual perfil sientes mas y desde cuando, y si te han revisado el higado alguna vez. Con eso podemos orientarte mejor.
-
-Y si este tema te hizo sentido, te espero en Jueves en Wellkitt. Vamos a hablar de los tres perfiles con mas profundidad y de como se arma una ruta realista — no de siete dias, de treinta a sesenta.
+Y antes de los tres: vesícula, diagnósticos y medicamentos.
 
 [pausa]
 
-Quiero cerrar con esto.
+### 28
 
-Tu higado no necesita que lo limpies. Ya limpia. Es lo unico que hace, todo el dia, desde que naciste.
+Si te reconoces en alguno, escribe DETOX por WhatsApp. Cuéntanos qué sientes, desde cuándo y si alguna vez te han revisado el hígado o la vesícula.
 
-Lo que necesita es que le quites trabajo. Y que alguien lo revise, porque no duele hasta que ya es tarde.
-
-Eso no se vende en un jugo de siete dias. Pero es lo unico que sirve.
+Con eso podemos orientarte sobre el siguiente paso.
 
 [pausa]
 
-Si conoces a alguien que anda comprando tes para desinflamarse, comparte este video. Y en comentarios cuentame: ¿alguna vez te han revisado el higado?
+### 29
+
+Este jueves, en Jueves en Wellkitt, vamos a ordenar la ruta completa y revisar los productos de cerca: para quién pueden tener sentido, cuándo no usarlos y qué conviene revisar primero.
+
+Puedes venir a Acapulco treinta y seis, piso ocho, colonia Roma, o conectarte por Zoom. Escríbenos y te pasamos el acceso.
+
+[pausa]
+
+### 30
+
+Tu hígado ya hace el trabajo todos los días. No necesita una limpieza milagrosa.
+
+Necesita menos carga, mejores condiciones y que sepamos cómo está.
+
+[pausa]
+
+### 31
+
+Si conoces a alguien que lleva años sintiéndose pesado sin una explicación, comparte este video. Y cuéntame: ¿con cuál de los tres perfiles te identificaste?
+
+[pausa]
+
+### 32
+
+Yo soy el doctor Miguel Ojeda, del Instituto Centrobioenergética. Gracias por quedarte hasta aquí. Nos vemos el jueves.

@@ -28,14 +28,13 @@ Ruta detox de 30 dias.
 
 ## Productos / kit
 
-Kit Detox Completo — **cinco** productos, 15% de descuento, 30-60 dias
+Kit Detox — **cuatro** productos, 15% de descuento, 30-60 dias
 (verificado contra `base/productos/catalogo/`):
 
 - **Hepacryl** (Biofito) — 90 comprimidos 750 mg. Cardo mariano, alcachofa,
   boldo, diente de leon, curcuma.
 - **Diente de Leon** (Biofito) — gotero 50 ml. *Taraxacum officinale*.
 - **Cola de Caballo** (Biofito) — gotero 50 ml. *Equisetum arvense*.
-- **Oligosor** (Soria Natural) — frasco ambar 60 ml. Nueve oligoelementos.
 - **Minesor con Selenio** (Soria Natural) — 24 comprimidos 200 mg.
 
 ## Antes de recomendar: el filtro de vesicula

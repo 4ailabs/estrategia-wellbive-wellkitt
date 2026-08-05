@@ -144,7 +144,7 @@ Solo 2 imágenes editoriales — el resto son diagramas de código. **Estilo uni
 
    * **\[REM-OVL]** → en **V2, sobre** el Dr. (necesita alfa, ver §5.5).
 
-   * **\[REM-SPLIT]** → V2 con **Crop** al 40-50%, y al Dr. en V1 lo desplazas y le das zoom para reencuadrar al lado libre.
+   * **\[REM-SPLIT]** → ya viene resuelto desde Remotion. Los archivos `*-SPLIT.mp4` traen la gráfica ocupando el **58% izquierdo** y el fondo corrido de borde a borde, sin costura. **No hay que recortar nada**: se ponen en V1 y tú vas en V2, keyeado, ocupando el 42% derecho. Una vez que encuentres tu posición en el primer SPLIT, copia el atributo y pégalo en los demás — todos usan la misma proporción.
 
 ### 5.4 Transiciones "push in" (dinamismo, no slides)
 
@@ -156,13 +156,29 @@ Solo 2 imágenes editoriales — el resto son diagramas de código. **Estilo uni
 
 ### 5.5 Escenas overlay — exportar con alfa (importante)
 
-Las escenas `[REM-OVL]` (lower-third, "No es así", conexión, cierre) deben flotar sobre el Dr. **sin caja**. Para eso NO se exportan en H.264 (no tiene alfa). Se exportan en **ProRes 4444** con canal alfa:
+Las escenas overlay deben flotar sobre el Dr. **sin caja**. No se exportan en H.264 (no tiene alfa), sino en **ProRes 4444**. Hacen falta **cuatro** flags, no dos:
 
 ```
-npx remotion render <EscenaOverlay> out/<escena>.mov --codec=prores --prores-profile=4444
+npx remotion render <EscenaAlpha> out/<escena>.mov \
+  --codec=prores --prores-profile=4444 \
+  --pixel-format=yuva444p10le \
+  --image-format=png \
+  --muted
 ```
 
-La composición del overlay debe tener **fondo transparente** (sin `PesoAtmosphere`). En DaVinci se ponen en V2 y se ven encima sin keying. *(Alternativa del notebook: exportar con fondo verde y keyear en DaVinci — funciona, pero el alfa de ProRes es más limpio y sin trabajo de key.)*
+**Con solo `--codec=prores --prores-profile=4444` sale `yuv422p12le`: ProRes 422 SIN transparencia.** Se ve bien, pero no tiene alfa, y eso no se nota hasta que lo pones en la timeline. Esto ya costó un ciclo completo de render.
+
+Verificar que el alfa es real antes de importar:
+
+```
+ffprobe -v error -select_streams v -show_entries stream=pix_fmt -of csv=p=0 <escena>.mov
+```
+
+Debe empezar en `yuva`. Y al medirlo, hacerlo **a mitad del clip**, no en el frame 0: casi todas las escenas entran con fade, así que el primer frame es 100% transparente y parece que el render falló.
+
+Las composiciones alfa ya existen registradas (sufijo `Alpha`) y suprimen la atmósfera por contexto. En DaVinci van en V3 y **no se keyean**: Resolve lee el canal alfa directo.
+
+**Ojo:** el texto de esas escenas es tinta oscura. Solo lee sobre fondo claro. Si abajo va una toma oscura, usa la versión con fondo o mete `00-FONDO-limpio.mp4` en la pista de abajo.
 
 ### 5.6 Color y export final
 

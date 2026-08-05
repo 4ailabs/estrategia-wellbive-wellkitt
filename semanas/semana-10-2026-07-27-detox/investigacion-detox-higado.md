@@ -19,6 +19,23 @@ Composición y presentación de los productos verificadas contra `base/productos
 
 ***
 
+## 0b. Cómo limpia el hígado de verdad: el sistema enzimático
+
+**Fuentes:** Actividad del citocromo P450 y su alteración en diversas patologías, *Rev Méd Chile*; vías de detoxificación hepática (fase I / fase II); rol del selenio en la síntesis de glutatión peroxidasa.
+
+**El mecanismo, en dos tiempos:**
+
+- **Fase I — transformar.** Las enzimas del **citocromo P450** oxidan, reducen o hidrolizan la sustancia para meterle grupos químicos polares. Aquí está el detalle que casi nadie cuenta: **el producto de la fase I es a veces más reactivo que la molécula original.** Queda a medias.
+- **Fase II — conjugar.** El hígado le pega otra molécula —**glutatión**, sulfato, ácido glucurónico, acetilo— y con eso la vuelve soluble en agua, lista para salir por bilis u orina.
+
+**Por qué importa editorialmente:** las dos fases tienen que ir **acompasadas**. Si la fase I corre más rápido que la fase II, se acumulan intermediarios reactivos. Eso es carga hepática real y medible — y es una explicación mucho mejor de "el hígado se satura" que cualquier metáfora de toxinas.
+
+Además da el marco correcto para el kit: no se trata de "limpiar" nada, se trata de **darle materia prima al sistema que ya limpia**.
+
+**Y corrige una omisión nuestra sobre Minesor.** El **selenio es necesario para sintetizar la glutatión peroxidasa**, una de las enzimas antioxidantes centrales del hígado, que trabaja justo en la fase II. En la primera versión de esta investigación lo clasificamos como "soporte antioxidante que acompaña" — es más que eso: alimenta la fase que suele quedarse corta. El cardo mariano también aparece en la literatura entre los agentes que aumentan glutatión.
+
+***
+
 ## 1. Lo que de verdad hay detrás de "cuerpo pesado": hígado graso
 
 **Fuentes:** Ajuste de prevalencia de esteatosis hepática metabólica (MASLD) en población mexicana, *Revista de Gastroenterología de México*, 2025; prevalencia de MASLD, *Acta Médica Grupo Ángeles*, 2024; datos de cirrosis en centros de referencia mexicanos 2018-2024.
@@ -26,6 +43,28 @@ Composición y presentación de los productos verificadas contra `base/productos
 **Hallazgo central:** la enfermedad por hígado graso asociada a disfunción metabólica es la epidemia silenciosa de México. Las cifras varían mucho según el método diagnóstico —**14.4% por ultrasonido**, hasta cerca del **50%** en estimaciones de encuesta nacional—, y sube con la edad: hasta **40% en mayores de 50 años**. La enfermedad hepática ya representa el **42.8% de los casos de cirrosis** registrados en centros de referencia mexicanos entre 2018 y 2024. La población de origen mexicano tiene mayor prevalencia que otros grupos.
 
 **Lo importante:** es **silenciosa**. No duele. Cuando alguien dice "me siento pesado, hinchado, la comida se me queda", casi nunca es "toxinas": es un hígado que está trabajando con sobrecarga metabólica y nadie se lo ha revisado.
+
+**Dos datos que reencuadran (agosto 2026):**
+
+- **América Latina es la región del mundo con mayor prevalencia de MASLD**, y se
+  estima que el **44.4% de los latinoamericanos lo tiene sin saberlo**. La región
+  está fuertemente subdiagnosticada: el acceso a biopsia y resonancia es limitado,
+  y hay pacientes con enzimas hepáticas normales que igual tienen la enfermedad
+  — o sea, ni el análisis de sangre lo descarta del todo.
+  *Fuente:* Epidemiology and diagnostic of MASLD in Latin America, PMC12883381.
+
+- **Entre el 10 y el 20% de los casos ocurren en personas delgadas** (lean MASLD).
+  No es una enfermedad de peso, es de metabolismo: se puede estar flaco y tener
+  el hígado con grasa. Y los hispanos tienen mayor susceptibilidad que europeos
+  y afroamericanos — en EE. UU. la prevalencia en hispanos ronda el 56% contra
+  48% de la población general.
+  *Fuentes:* Beyond BMI: revealing metabolic risk in lean MASLD, PMC12317428;
+  Disparities in steatosis prevalence by race/ethnicity, *Communications Medicine*, 2024.
+
+**Por qué importan:** el primero justifica la frase de apertura del video —"sin
+que nadie se lo haya revisado nunca"— con una cifra, no con una impresión. El
+segundo rompe el supuesto de que esto es de gente con sobrepeso, que es lo que
+hace que la mitad del público se desentienda del tema en el primer minuto.
 
 **Implicación editorial:** aquí está el video. En vez de vender una limpieza, decirle a la gente **qué sí conviene que le revisen**: enzimas hepáticas y un ultrasonido. Es el mismo movimiento que hicimos con el dato de los seis años en peso — dar información que reencuadra el problema, y después ofrecer la herramienta.
 
@@ -105,9 +144,9 @@ Composición y presentación de los productos verificadas contra `base/productos
 
 ***
 
-## 8. Los dos de Soria Natural: soporte mineral, no detox
+## 8. Minesor con Selenio: soporte mineral, no detox
 
-**Oligosor** — frasco ámbar 60 ml. Azufre, cobalto, cobre, fósforo, yodo, litio, magnesio, potasio y zinc. El catálogo lo clasifica en sistemas **general, nervioso y hormonal**, con indicaciones de desmineralización, ansiedad y estados emocionales alterados. **Su ficha no habla de hígado.** Está en el Kit Detox, pero como remineralización de fondo, no como agente hepático.
+> **Oligosor salió del kit** (agosto 2026): ya no está disponible.
 
 **Minesor con Selenio** — bote de 24 comprimidos de 200 mg. Oligoelementos y selenio; sistemas endocrino e inmune; antioxidante, salud tiroidea, defensas.
 
