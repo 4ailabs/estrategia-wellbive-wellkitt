@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tu Perfil Hepático · Wellkitt</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    @page {
+      size: letter portrait;
+      margin: 0;
+    }
+
+    :root {
+      /* Paleta optimizada para blanco y negro */
+      --ink:       #000000;
+      --graphite:  #222222;
+      --mid:       #555555;
+      --light:     #aaaaaa;
+      --rule:      #dddddd;
+      --paper:     #ffffff;
+      --bg-zone:   #fcfcfc;
+      --bg-head:   #f4f4f4;
+    }
+
+    html, body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      background: var(--paper);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0.5in 0.6in;
+    }
+    .page + .page { page-break-before: always; }
+
+    @media print {
+      body { background: none; }
+      .page {
+        margin: 0;
+        padding: 0.5in 0.6in;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+      }
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.15in;
+      flex-shrink: 0;
+    }
+    .h-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .h-logo img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      filter: grayscale(100%) contrast(120%);
+    }
+    .h-logo-text {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .h-titulo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 26pt;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.5px;
+    }
+    .h-titulo em {
+      color: var(--mid);
+      font-style: normal;
+      font-weight: 300;
+    }
+    .h-right { text-align: right; padding-top: 5px; }
+    .h-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--mid);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .h-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      font-weight: 400;
+      color: var(--mid);
+    }
+
+    /* INTRO */
+    .intro {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 0.15in;
+    }
+    .intro p {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 400;
+      color: var(--graphite);
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .intro p b {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .scale-key {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      color: var(--graphite);
+    }
+    .scale-pill {
+      background: var(--paper);
+      border: 1px solid var(--mid);
+      border-radius: 12px;
+      padding: 3px 8px;
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .scale-pill b {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .nameline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .nameline .lbl {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--mid);
+    }
+    .nameline .fill {
+      display: inline-block;
+      width: 200px;
+      border-bottom: 1px solid var(--mid);
+      height: 12px;
+      vertical-align: bottom;
+    }
+
+    /* BODY */
+    .body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1in;
+    }
+
+    /* PERFILES */
+    .zone {
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--bg-zone);
+      overflow: hidden;
+    }
+    .zhead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 14px;
+      background: var(--bg-head);
+    }
+    .zhead-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .zbadge {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: var(--paper);
+      background: var(--ink);
+    }
+    .zname {
+      font-family: 'Poppins', sans-serif;
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .zsub {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 500;
+      color: var(--mid);
+    }
+
+    .zbody {
+      padding: 2px 14px;
+    }
+    .zitem {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 16px;
+      padding: 4px 0;
+      border-top: 1px solid var(--rule);
+    }
+    .zitem:first-child { border-top: none; }
+    .zitem-txt {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 400;
+      color: var(--graphite);
+      line-height: 1.35;
+    }
+    .dots {
+      display: flex;
+      gap: 8px;
+    }
+    .dot {
+      width: 20px;
+      height: 20px;
+      border: 1px solid var(--mid);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: var(--mid);
+      background: var(--paper);
+    }
+
+    .zsum {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      border-top: 1px solid var(--rule);
+      background: var(--bg-head);
+    }
+    .zsum .lbl {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--graphite);
+    }
+    .zsum .box {
+      width: 40px;
+      height: 20px;
+      border: 1px solid var(--mid);
+      border-radius: 4px;
+      background: var(--paper);
+    }
+    .zsum .max {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: var(--mid);
+    }
+
+    /* RESULTADO */
+    .result {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--mid);
+      border-radius: 6px;
+      background: var(--bg-head);
+      margin-top: 4px;
+    }
+    .result .lbl {
+      font-family: 'Poppins', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+    .result .fill {
+      flex: 1;
+      border-bottom: 1px solid var(--mid);
+      height: 16px;
+    }
+
+    /* TIRA DE NOTA */
+    .tpp-strip {
+      padding: 10px 14px;
+      background: var(--bg-zone);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: auto;
+    }
+    .tpp-strip-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .tpp-strip-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 400;
+      color: var(--graphite);
+      line-height: 1.4;
+      text-align: justify;
+    }
+
+    /* ---- PAGINA 2: EL PLAN ---- */
+    .lead {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      color: var(--graphite);
+      line-height: 1.55;
+      text-align: justify;
+      margin-bottom: 0.2in;
+    }
+    .lead b { font-weight: 700; color: var(--ink); }
+
+    .prompts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 18px;
+      padding: 12px 14px;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--bg-zone);
+      margin-bottom: 0.22in;
+    }
+    .prompt {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      color: var(--graphite);
+      line-height: 1.35;
+      padding-left: 14px;
+      position: relative;
+    }
+    .prompt::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--mid);
+    }
+    .prompt b { font-weight: 700; color: var(--ink); }
+
+    .blockhead {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12pt;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .blockhead span {
+      font-family: 'Inter', sans-serif;
+      font-size: 9pt;
+      font-weight: 400;
+      color: var(--mid);
+      margin-left: 8px;
+    }
+
+    .writelines {
+      margin-bottom: 0.26in;
+    }
+    .wline {
+      border-bottom: 1px solid var(--light);
+      height: 0.5in;
+    }
+
+    .anchor-box {
+      border: 1px solid var(--mid);
+      border-radius: 6px;
+      padding: 12px 14px;
+      background: var(--bg-head);
+      margin-bottom: 0.24in;
+    }
+    .anchor-box .wline { border-bottom-color: var(--mid); height: 0.5in; }
+
+    .alarm-box {
+      border: 2px solid var(--ink);
+      border-radius: 6px;
+      padding: 12px 14px;
+      background: var(--paper);
+      margin-bottom: 0.24in;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .alarm-box .check {
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--ink);
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .alarm-box .txt {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .alarm-box .txt span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 8.5pt;
+      font-weight: 400;
+      color: var(--mid);
+      margin-top: 2px;
+    }
+
+    .rule-list {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-top: auto;
+      padding: 14px;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--bg-zone);
+    }
+    .rule-item {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5pt;
+      color: var(--graphite);
+      line-height: 1.4;
+    }
+    .rule-num {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--paper);
+      background: var(--ink);
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .rule-item b { font-weight: 700; color: var(--ink); }
+
+    /* FOOTER */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-shrink: 0;
+      margin-top: 0.12in;
+    }
+    .footer-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 8pt;
+      font-weight: 400;
+      color: var(--mid);
+      max-width: 65%;
+      line-height: 1.4;
+    }
+    .footer-marca {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 8pt;
+      color: var(--mid);
+      text-align: right;
+      line-height: 1.4;
+    }
+    .footer-marca strong { font-weight: 700; color: var(--ink); }
+    .footer-marca .cta { font-weight: 700; color: var(--ink); }
+  </style>
+</head>
+<body>
+
+<!-- ===================== PÁGINA 1 — EL AUTOTEST ===================== -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Tu Perfil <em>Hepático</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Autolectura</div>
+      <div class="h-sub">Jueves en Wellkitt</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>Sentirse pesado puede venir de tres cosas distintas, y no se trabajan igual. Para cada frase, marca <b>cuánto te pasa en el último mes</b>. No lo pienses de más — la primera respuesta suele ser la buena. Al final, <b>suma cada perfil por separado</b>: el del número más alto es por donde conviene empezar.</p>
+    <div class="meta-bar">
+      <div class="scale-key">
+        <span class="scale-pill"><b>0</b> nada</span>
+        <span class="scale-pill"><b>1</b> leve</span>
+        <span class="scale-pill"><b>2</b> a veces</span>
+        <span class="scale-pill"><b>3</b> seguido</span>
+        <span class="scale-pill"><b>4</b> todo el tiempo</span>
+      </div>
+      <div class="nameline">
+        <span class="lbl">Nombre:</span>
+        <span class="fill"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- PERFIL 1 -->
+    <div class="zone">
+      <div class="zhead">
+        <div class="zhead-left">
+          <span class="zbadge">Perfil 1</span>
+          <span class="zname">El hígado graso (posible)</span>
+        </div>
+        <span class="zsub">no siempre se siente</span>
+      </div>
+      <div class="zbody">
+        <div class="zitem"><span class="zitem-txt">Tengo más grasa acumulada en el abdomen que en el resto del cuerpo</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Me siento cansado o pesado sin razón clara, casi todos los días</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Nunca me han revisado enzimas hepáticas ni me he hecho un ultrasonido de hígado</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Tengo antecedente familiar de hígado graso, diabetes o triglicéridos altos</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+      </div>
+      <div class="zsum"><span class="lbl">Suma Perfil 1</span><span class="box"></span><span class="max">/ 16</span></div>
+    </div>
+
+    <!-- PERFIL 2 -->
+    <div class="zone">
+      <div class="zhead">
+        <div class="zhead-left">
+          <span class="zbadge">Perfil 2</span>
+          <span class="zname">Retención de líquidos</span>
+        </div>
+        <span class="zsub">es agua, no grasa</span>
+      </div>
+      <div class="zbody">
+        <div class="zitem"><span class="zitem-txt">Amanezco con la cara o los dedos hinchados, distinto a como me acosté</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Se me marcan los calcetines o los anillos aprietan más al final del día</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Mi peso en la báscula sube y baja más de un kilo de un día para otro</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Las piernas me pesan o se hinchan hacia la tarde</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+      </div>
+      <div class="zsum"><span class="lbl">Suma Perfil 2</span><span class="box"></span><span class="max">/ 16</span></div>
+    </div>
+
+    <!-- PERFIL 3 -->
+    <div class="zone">
+      <div class="zhead">
+        <div class="zhead-left">
+          <span class="zbadge">Perfil 3</span>
+          <span class="zname">Bilis lenta</span>
+        </div>
+        <span class="zsub">digestión pesada</span>
+      </div>
+      <div class="zbody">
+        <div class="zitem"><span class="zitem-txt">La comida grasosa se me repite o me cae pesada</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Me siento lleno o hinchado del vientre buena parte del día</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Mi digestión es lenta o irregular</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+        <div class="zitem"><span class="zitem-txt">Después de comidas grandes, la plenitud me dura horas</span><span class="dots"><span class="dot">0</span><span class="dot">1</span><span class="dot">2</span><span class="dot">3</span><span class="dot">4</span></span></div>
+      </div>
+      <div class="zsum"><span class="lbl">Suma Perfil 3</span><span class="box"></span><span class="max">/ 16</span></div>
+    </div>
+
+    <div class="result"><span class="lbl">Tu perfil dominante:</span><span class="fill"></span></div>
+
+    <div class="tpp-strip">
+      <div class="tpp-strip-label">¿Vesícula?</div>
+      <div class="tpp-strip-text"><b>¿Alguna vez te han dicho que tienes piedras en la vesícula?</b> En México le pasa a 1 de cada 5 mujeres. Si es tu caso, dilo en la sesión antes del bloque de productos — cambia cuál te conviene.</div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">Material educativo. Es una autolectura para orientarte, no un diagnóstico ni un tratamiento. Si tienes piel u ojos amarillos, orina muy oscura sostenida, o dolor fuerte del lado derecho del abdomen, busca valoración médica.</div>
+    <div class="footer-marca"><span class="cta">Para mayor información, contacta a Wellkitt</span><br><strong>Wellkitt</strong> · Acapulco 36, piso 8 -- Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+  </div>
+
+</div>
+
+<!-- ===================== PÁGINA 2 — EL PLAN CON FECHA ===================== -->
+<div class="page">
+
+  <div class="header">
+    <div>
+      <div class="h-logo">
+        <img src="../../../marca/wellkitt.png" alt="Wellkitt">
+        <span class="h-logo-text">Wellkitt</span>
+      </div>
+      <div class="h-titulo">Mi plan <em>con fecha</em></div>
+    </div>
+    <div class="h-right">
+      <div class="h-eyebrow">Lo que sostiene</div>
+      <div class="h-sub">Para llevar a casa</div>
+    </div>
+  </div>
+
+  <p class="lead">El hígado graso, en su etapa temprana, casi nunca duele. Y lo que no duele, el cerebro tiende a leerlo como "no debe ser nada" — es un sesgo real, no falta de disciplina. Un plan vago ("voy a revisarme") se pospone. Uno con fecha exacta, no: en estudios de este tipo, de la gente que <b>ya quería</b> hacerse un estudio, una de cada tres no lo hizo por no tener el cuándo resuelto. Aquí lo resuelves ahora.</p>
+
+  <div class="prompts">
+    <div class="prompt"><b>Perfil 1, hígado graso:</b> la próxima vez que tengas un análisis de rutina o vayas al médico, pide que incluyan enzimas hepáticas.</div>
+    <div class="prompt"><b>Perfil 2, retención:</b> la próxima vez que amanezcas hinchado, anota la fecha. Si se repite 3 veces en un mes, pide valoración.</div>
+    <div class="prompt"><b>Perfil 3, bilis lenta:</b> la próxima vez que una comida grasosa te caiga pesada, anota qué comiste y cuánto tardó en pasar.</div>
+    <div class="prompt">Sé específico con el cuándo: no "pronto" — un día exacto, de esta semana o la que sigue.</div>
+  </div>
+
+  <div class="blockhead">Mi plan <span>la próxima vez que… voy a…</span></div>
+  <div class="writelines">
+    <div class="wline"></div>
+    <div class="wline"></div>
+  </div>
+
+  <div class="anchor-box">
+    <div class="blockhead">Fecha exacta <span>día, y si puedes, hora</span></div>
+    <div class="wline"></div>
+  </div>
+
+  <div class="alarm-box">
+    <div class="check"></div>
+    <div class="txt">Ya puse la alarma o el recordatorio en mi celular.
+      <span>No lo dejes para "al rato". Al rato es donde se pierde.</span>
+    </div>
+  </div>
+
+  <div class="rule-list">
+    <div class="rule-item"><span class="rule-num">1</span><span><b>Ningún producto de hoy "desintoxica".</b> Tu hígado y tus riñones ya limpian; lo que puede pasar es que trabajen con sobrecarga.</span></div>
+    <div class="rule-item"><span class="rule-num">2</span><span><b>Si tienes piedras en la vesícula, Hepacryl no es para ti</b> — contiene boldo. Cola de Caballo sí, porque es diurética, no colerética.</span></div>
+    <div class="rule-item"><span class="rule-num">3</span><span><b>Sacar líquido no es bajar grasa.</b> La báscula puede bajar sin que cambie nada de fondo — lo que cambia es la hinchazón.</span></div>
+    <div class="rule-item"><span class="rule-num">4</span><span>Lo único que de verdad importa que te lleves de hoy no es la hoja ni el frasco: <b>es la fecha que acabas de poner.</b></span></div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-note">¿Estás en la sala? Coméntalo con el equipo antes de irte. ¿Nos ves por Zoom? Escribe <strong>DETOX</strong> por WhatsApp con tu perfil y si tienes piedras en la vesícula. Material educativo, no sustituye atención médica.</div>
+    <div class="footer-marca"><span class="cta">Para mayor información, contacta a Wellkitt</span><br><strong>Wellkitt</strong> · Acapulco 36, piso 8 -- Roma, CDMX<br>www.institutocentrobioenergetica.com</div>
+  </div>
+
+</div>
+
+</body>
+</html>

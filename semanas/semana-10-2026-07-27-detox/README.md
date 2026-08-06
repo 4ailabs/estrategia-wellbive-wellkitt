@@ -24,6 +24,31 @@ miercoles, y el material de Jueves en Wellkitt.
 
 ## Jueves Wellkitt
 
+**Jueves 6 de agosto, 5:30 pm · hibrido (sala Acapulco 36, piso 8, Roma + Zoom).**
+Palabra clave DETOX. Guion completo en
+[material-jueves/jueves-en-wellkitt-detox.md](material-jueves/jueves-en-wellkitt-detox.md),
+teleprompter en
+[material-jueves/teleprompter-zoom-detox.md](material-jueves/teleprompter-zoom-detox.md),
+hoja de autotest ("Tu Perfil Hepatico" + "Mi plan con fecha") en
+[material-jueves/hoja-tu-perfil-hepatico.html](material-jueves/hoja-tu-perfil-hepatico.html)
+(y su .pdf), y slides para compartir pantalla en
+[material-jueves/slides-jueves-detox.html](material-jueves/slides-jueves-detox.html)
+(25 slides, mismo motor que el deck de peso, verificado sin desbordamiento).
+
+Misma estructura de tres perfiles que el video. El bloque de tecnica no
+reutiliza el ritual de peso ("la frase prestada") porque el obstaculo es
+distinto: no es verguenza, es que el higado graso no duele y eso genera falsa
+tranquilidad. Se diseño una dinamica nueva, "El acuerdo con fecha" (intencion
+de implementacion, evidencia de Gollwitzer & Sheeran), pensada para hibrido
+desde el diseño, no adaptada despues. Detalle y fuentes en el doc maestro.
+
+El CTA de cierre distingue canal: sala se resuelve en persona con el equipo
+al salir, Zoom escribe DETOX por WhatsApp — no tiene sentido pedirle a quien
+ya esta en la clinica que escriba a un telefono.
+
+Pendiente, no critico para hoy: folleto para enviar despues de la sesion.
+Invitaciones ya generadas en `material-jueves/imagenes/`.
+
 Ruta detox de 30 dias.
 
 ## Productos / kit
