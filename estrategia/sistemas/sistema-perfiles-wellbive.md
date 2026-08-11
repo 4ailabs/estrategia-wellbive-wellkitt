@@ -102,6 +102,24 @@ Fuente: `semanas/semana-03-2026-06-08-digestion/material-jueves/teleprompter-zoo
 
 Fuente: video principal semana 05 + investigacion compilada junio 2026.
 
+### Semana 11 — Defensas: "Tu perfil respiratorio"
+
+| Perfil | Señales | Producto puente | Pregunta clave |
+|---|---|---|---|
+| Recuperación lenta | Cada infección tumba, dura mucho o se repite; sueño corto, exposición, medicamentos o condición de fondo pueden contribuir | Immune Herb / Sorivid como conversación de apoyo | ¿Cuántas infecciones confirmadas has tenido y cómo te recuperaste? |
+| Respiratorio/alérgico | Estornudos, comezón, escurrimiento claro, silbidos, opresión o síntomas ligados a polvo/temporada | Diatonato 1 según catálogo; primero diferenciar alergia, asma e infección | ¿Predomina fiebre/infección o comezón/silbido? |
+| Síntomas activos / “algo fuerte” | Ya hay síntomas y la persona quiere cortar el cuadro con un producto | Equinácea, Anti-B o Fostprint solo como conversación sobre límites y seguridad | ¿Hay señales de alarma o necesidad de valoración? |
+
+**Transversal:** sueño suficiente, vacunas indicadas, ventilación, higiene de manos y no automedicarse con antibióticos.
+
+**Errores comunes:** llamar “defensas bajas” a cualquier resfriado; confundir alergia con infección; usar antibióticos para virus; sustituir tratamiento del asma; comprar megadosis sin conocer medicamentos o deficiencias.
+
+**Tres acciones de la semana:** revisar vacunas indicadas, anotar durante siete días sueño/exposición/síntomas y consultar si hay infecciones frecuentes, graves o inusuales.
+
+**Seguridad:** el autotest no diagnostica inmunodeficiencia. Cuatro o más infecciones que requieren antibiótico en un año, neumonías repetidas, infecciones inusuales, hospitalización o antibiótico intravenoso son motivos para valoración médica.
+
+Fuente: `semanas/semana-11-2026-08-03-defensas/investigacion-defensas-respiratorio.md`.
+
 ---
 
 ## Frameworks pendientes (semana 4-13)
@@ -117,7 +135,7 @@ Productos puente ya definidos en `../fuente-de-verdad/estrategia-temas-calendari
 | 08 | Hormonas | Calciflavón, Diatonato 5.1/5.2, Fem-vit, Barbasco, Milenrama | *a definir* | pendiente |
 | 09 | Peso / Metabolismo | Fat-less, Té Verde, Carnilis, Diatonato 5.2, Oligonato 2 | *a definir* | pendiente |
 | 10 | Detox | Hepacryl, Diente de León, Cola de Caballo, Oligosor, Minesor con Selenio, Resverasor | *a definir* | pendiente |
-| 11 | Defensas | Diatonato 1, Diatonato 2, Immune Herb, Equinácea, Anti-B, Sorivid | *a definir* | pendiente |
+| 11 | Defensas | Immune Herb, Equinácea, Anti-B, Fostprint Classic, Sorivid | *Tu perfil respiratorio* | **creado** — recuperación lenta, patrón respiratorio/alérgico y síntomas que requieren valoración |
 | 12 | Actos Monterrey | semana de lanzamiento de curso, producto puente generico (apoyo estres/sueno) | — | **revisar**: igual que semana 07 |
 | 13 | Circulación / Mente | Coenzima Q10, Arginina, Resverasor, Dilasor, Fosfoserina | *a definir* | pendiente |
 
