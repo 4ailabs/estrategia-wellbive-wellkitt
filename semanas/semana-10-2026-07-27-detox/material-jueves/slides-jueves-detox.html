@@ -178,7 +178,13 @@ body {
 
 /* ---------- Plantilla: portada ---------- */
 
-.p-portada { align-items: flex-start; justify-content: center; }
+.p-portada {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(500px, 1.1fr);
+  align-items: center;
+  gap: 54px;
+}
+.portada-copy { min-width: 0; position: relative; z-index: 1; }
 .p-portada .marca {
   font-family: var(--mono);
   font-size: 13px;
@@ -189,7 +195,7 @@ body {
 }
 .p-portada .titulo {
   font-weight: 200;
-  font-size: 104px;
+  font-size: 88px;
   line-height: 0.98;
   letter-spacing: -0.035em;
   margin: 0;
@@ -209,6 +215,31 @@ body {
   text-transform: uppercase;
   color: var(--ambar);
   margin-top: 42px;
+}
+.portada-visual {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  margin: 0;
+  border-radius: 28px 6px 28px 6px;
+  overflow: hidden;
+  border: 1px solid rgba(47, 125, 99, 0.16);
+  box-shadow: 0 26px 60px rgba(27, 26, 24, 0.13);
+  background: var(--papel);
+}
+.portada-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.38);
+  pointer-events: none;
+}
+.portada-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 69% center;
 }
 
 /* ---------- Plantilla: dato ---------- */
@@ -372,11 +403,17 @@ body {
 
 /* ---------- Plantilla: perfil ---------- */
 
-.p-perfil { justify-content: center; }
+.p-perfil {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  align-items: center;
+  gap: 48px;
+}
+.perfil-copy { min-width: 0; }
 .perfil-cab { display: flex; align-items: baseline; gap: 26px; }
 .perfil-letra {
   font-family: var(--mono);
-  font-size: 112px;
+  font-size: 100px;
   font-weight: 500;
   line-height: 0.82;
   color: var(--ambar);
@@ -384,28 +421,52 @@ body {
 }
 .perfil-nombre {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 44px;
   line-height: 1.06;
   letter-spacing: -0.022em;
-  max-width: 880px;
+  max-width: 640px;
 }
 .perfil-sintoma {
-  font-size: 25px;
+  font-size: 24px;
   color: var(--suave);
   margin: 20px 0 0;
-  padding-left: 138px;
+  padding-left: 0;
 }
 .perfil-mec {
-  margin: 34px 0 0;
-  padding: 28px 32px;
+  margin: 28px 0 0;
+  padding: 24px 28px;
   border-left: 4px solid var(--ambar);
   background: rgba(255, 255, 255, 0.6);
-  font-size: 25px;
-  line-height: 1.5;
+  font-size: 23px;
+  line-height: 1.44;
   color: var(--tinta);
-  max-width: 1010px;
+  max-width: 650px;
 }
 .perfil-mec b { font-weight: 600; }
+.perfil-visual {
+  position: relative;
+  width: 390px;
+  height: 470px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px 28px 8px 28px;
+  border: 1px solid rgba(47, 125, 99, 0.16);
+  background: var(--papel);
+  box-shadow: 0 22px 54px rgba(27, 26, 24, 0.12);
+}
+.perfil-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 62%, rgba(27,26,24,0.08));
+  pointer-events: none;
+}
+.perfil-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* ---------- Plantilla: producto (verde Wellkitt) ---------- */
 
@@ -759,7 +820,9 @@ const LIMITES = {
 const SLIDES = [
   { t: "portada", bloque: "", titulo: "Tu Perfil|Hepático",
     sub: "Por qué el cuerpo pesa sin doler — y qué hacer con eso.",
-    fecha: "Jueves 6 de agosto · Sala y Zoom" },
+    fecha: "Jueves 6 de agosto · Sala y Zoom",
+    visual: "imagenes/hero-perfil-hepatico.png",
+    alt: "Ilustración editorial del hígado y la vesícula entre hojas botánicas" },
 
   /* ---- Bloque 1 · Apertura ---- */
   { t: "dato", bloque: "1 · Apertura", eyebrow: "América Latina",
@@ -796,15 +859,21 @@ const SLIDES = [
   { t: "perfil", bloque: "3 · Agrupación", letra: "1",
     nombre: "El hígado graso (posible)",
     sintoma: "Cansancio o pesadez — o puede no sentirse nada.",
-    mecanismo: "Puede acumular grasa y trabajar de más durante años sin dar señal clara. Casi nunca duele en esta etapa. <b>Responde bien si se detecta a tiempo.</b>" },
+    mecanismo: "Puede acumular grasa y trabajar de más durante años sin dar señal clara. Casi nunca duele en esta etapa. <b>Responde bien si se detecta a tiempo.</b>",
+    visual: "imagenes/perfil-higado-graso.png", pos: "64% center",
+    alt: "Ilustración del hígado con una zona de acumulación grasa" },
   { t: "perfil", bloque: "3 · Agrupación", letra: "2",
     nombre: "Retención de líquidos",
     sintoma: "Subes o bajas un kilo de un día para otro.",
-    mecanismo: "Si subes dos kilos de golpe, no es grasa — nadie gana grasa así de rápido. <b>Es agua.</b> Sacar líquido no es bajar grasa, aunque la báscula lo sugiera." },
+    mecanismo: "Si subes dos kilos de golpe, no es grasa — nadie gana grasa así de rápido. <b>Es agua.</b> Sacar líquido no es bajar grasa, aunque la báscula lo sugiera.",
+    visual: "imagenes/perfil-retencion-liquidos-v2.png", pos: "76% center",
+    alt: "Ilustración de tobillos con retención leve sobre ondas suaves de agua" },
   { t: "perfil", bloque: "3 · Agrupación", letra: "3",
     nombre: "Bilis lenta",
     sintoma: "La comida grasosa te cae pesada o se repite.",
-    mecanismo: "El hígado manda bilis para partir la grasa en gotas pequeñas. Si el flujo va lento, la grasa se queda pesada. <b>No es grasa corporal: es digestión.</b>" },
+    mecanismo: "El hígado manda bilis para partir la grasa en gotas pequeñas. Si el flujo va lento, la grasa se queda pesada. <b>No es grasa corporal: es digestión.</b>",
+    visual: "imagenes/perfil-bilis-lenta.png", pos: "67% center",
+    alt: "Ilustración del hígado, la vesícula y el flujo de bilis junto a diente de león" },
   { t: "dato", bloque: "3 · Agrupación", clay: true, eyebrow: "La pregunta más importante de hoy",
     cifra: "1 de 5", unidad: "mujeres tiene piedras",
     contexto: "En México. Entre 40 y 50 años, casi 1 de cada 3. Es el público de hoy." },
@@ -955,10 +1024,15 @@ const eyebrow = (s, clase) =>
 
 const PLANTILLAS = {
   portada: (s) => `<div class="cuerpo p-portada">
-    <div class="marca">Wellkitt · Jueves en Wellkitt</div>
-    <h1 class="titulo">${s.titulo.split("|").map((l, i) => i ? `<b>${l}</b>` : l).join("<br>")}</h1>
-    <p class="sub">${s.sub}</p>
-    <div class="fecha">${s.fecha}</div>
+    <div class="portada-copy">
+      <div class="marca">Wellkitt · Jueves en Wellkitt</div>
+      <h1 class="titulo">${s.titulo.split("|").map((l, i) => i ? `<b>${l}</b>` : l).join("<br>")}</h1>
+      <p class="sub">${s.sub}</p>
+      <div class="fecha">${s.fecha}</div>
+    </div>
+    <figure class="portada-visual">
+      <img src="${s.visual}" alt="${s.alt || ""}">
+    </figure>
   </div>`,
 
   dato: (s) => `<div class="cuerpo p-dato">
@@ -1002,12 +1076,17 @@ const PLANTILLAS = {
   </div>`,
 
   perfil: (s) => `<div class="cuerpo p-perfil">
-    <div class="perfil-cab">
-      <div class="perfil-letra">${s.letra}</div>
-      <div class="perfil-nombre">${s.nombre}</div>
+    <div class="perfil-copy">
+      <div class="perfil-cab">
+        <div class="perfil-letra">${s.letra}</div>
+        <div class="perfil-nombre">${s.nombre}</div>
+      </div>
+      <p class="perfil-sintoma">${s.sintoma}</p>
+      <div class="perfil-mec">${s.mecanismo}</div>
     </div>
-    <p class="perfil-sintoma">${s.sintoma}</p>
-    <div class="perfil-mec">${s.mecanismo}</div>
+    <figure class="perfil-visual">
+      <img src="${s.visual}" alt="${s.alt || ""}" style="object-position:${s.pos || "center"}">
+    </figure>
   </div>`,
 
   producto: (s) => `<div class="cuerpo p-prod">
