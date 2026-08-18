@@ -505,10 +505,13 @@ De los 13 productos con cero uso en 13 semanas, este plan activa 10:
 | Fosfoserina Complex | S18 |
 | L-Arginina | S19 |
 
-**Quedan sin colocar:** Crisalida G, L-Prolina y Balsamo 3 Damianas. Los tres sostienen un
-tema propio —**piel/colageno** (que formalizaria el "Kit Belleza" ya bosquejado y sembraria
-Belleza Regenerativa) y **dolor de contractura** (el Balsamo es el unico producto topico,
-demostrable en video)—. Son los mejores candidatos para diciembre-enero.
+**Ya colocados fuera de este rango:** Crisalida G y L-Prolina se estrenan en la **semana 12**
+(10-16 agosto), que se reconvirtio a **piel y colageno** al cancelarse el curso de Monterrey.
+
+**Queda sin colocar:** Balsamo 3 Damianas — el unico producto topico del catalogo y el mas
+demostrable en video (se aplica frente a camara). Sostiene un tema propio de **cuello,
+espalda y contractura**, distinto del dolor articular de la semana 6. Es el mejor candidato
+para diciembre-enero.
 
 ## Programas que este plan siembra
 
@@ -530,7 +533,6 @@ Temas investigados que no entraron a estas 14 semanas:
 | Tema | Gancho / dato | Estado |
 |---|---|---|
 | **Tiroides e hipotiroidismo subclinico** | La tiroides produce T4 (poco activa); la conversion a T3 ocurre **fuera** de la tiroides, por selenoenzimas. Encaja con Minesor con Selenio | mecanismo solido, cifras por verificar |
-| **Piel y colageno** | Ciertos peptidos (Pro-Hyp) **sobreviven la digestion** y actuan como *señal* para el fibroblasto, no como ladrillo. Activaria Crisalida G, L-Prolina, Glicam | el mas seguro comercialmente |
 | **Ovario poliquistico (SOP)** | El canal no tiene nada para la mujer de 20-40. **70% de las mujeres con SOP y sobrepeso tienen resistencia a la insulina** (consenso mexicano, SciELO 2024) | parcialmente verificado |
 | **Ferritina baja sin anemia** | Fatiga y caida de cabello con hemoglobina normal. La **hepcidina** sube con la inflamacion y cierra la absorcion de hierro | mecanismo solido |
 | **Sueño profundo / sistema glinfatico** | El cerebro solo se "lava" en sueño profundo. Distinto de insomnio: es "duermo y amanezco sin descansar" | cifras por verificar |

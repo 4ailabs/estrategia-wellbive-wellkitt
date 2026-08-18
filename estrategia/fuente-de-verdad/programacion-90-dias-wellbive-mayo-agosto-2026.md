@@ -230,18 +230,22 @@ Tema madre: defensas, respiratorio y tercer modulo RB.
 
 ### Semana 12 publica: 10-16 agosto
 
-Tema madre: Actos que Mueven Monterrey + emociones.
+Tema madre: piel, colageno y envejecimiento.
+
+**Cambio respecto al plan original.** Esta semana era "Actos que Mueven Monterrey"
+(15-16 agosto). El curso ya no se hara y la semana entera dependia de el, asi que se
+sustituye por tema propio. Ver `../../semanas/semana-12-2026-08-10-piel-colageno/`.
 
 | Pieza | Contenido |
 |---|---|
-| Video lunes | Cuando el cuerpo necesita un acto y no otra explicacion |
-| Short | El primer paso no se piensa: se hace |
-| Video miercoles | Actos rituales, sistema nervioso y cierre emocional |
-| Jueves Wellkitt | Actos que Mueven: experiencia, preguntas y preparacion |
-| Producto/kit | Guia impresa, materiales de apoyo, productos de estres/sueno si aplica |
-| Curso puente | Actos que Mueven Monterrey: 15-16 agosto |
-| Palabra clave | MONTERREY / ACTOS |
-| Meta | Llevar asistentes o lista remota de interesados |
+| Video lunes | El colageno que tomas, llega a tu piel? |
+| Short | El azucar tambien endurece tu piel |
+| Video miercoles | Piel firme desde adentro: que si tiene mecanismo y que es marketing |
+| Jueves Wellkitt | Tu piel por dentro: colageno, azucar y sol |
+| Producto/kit | Crisalida G, L-Prolina, Glicam, Mincartil, Cola de Caballo |
+| Curso puente | Belleza Regenerativa |
+| Palabra clave | PIEL |
+| Meta | Activar los 3 productos huerfanos restantes y sembrar Belleza Regenerativa |
 
 ### Semana 13 publica: 17-23 agosto
 
