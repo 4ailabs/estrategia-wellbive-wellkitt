@@ -8,7 +8,10 @@ Que sostiene realmente la piel: colageno, glicacion y lo que si llega desde aden
 
 ## Videos
 
-- El colageno que tomas, llega a tu piel?
+- **El colageno que tomas, llega a tu piel?**
+  Guion: [teleprompter/video-principal-colageno-12min.md](teleprompter/video-principal-colageno-12min.md)
+  33 beats, 11-12 minutos. El bloque de biotina (beats 16-23) esta verificado;
+  los beats marcados [VERIFICAR] esperan la investigacion.
 - Piel firme desde adentro: que si tiene mecanismo y que es marketing.
 
 ## Jueves Wellkitt
