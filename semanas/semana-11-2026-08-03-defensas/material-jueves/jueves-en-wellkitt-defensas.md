@@ -1,4 +1,10 @@
-# Jueves en Wellkitt — Tu perfil respiratorio
+# Jueves en Wellkitt — La aduana inmunológica
+
+> **Guion vigente de 60 minutos:** [`teleprompter-jueves-aduana-inmunologica-60min.md`](teleprompter-jueves-aduana-inmunologica-60min.md)
+>
+> **Presentación HTML:** [`slides-aduana-inmunologica.html`](slides-aduana-inmunologica.html)
+>
+> Este documento queda como antecedente de la primera propuesta. La sesión vigente desarrolla MALT, anillo de Waldeyer, punto de ajuste, cuatro perfiles funcionales, biofilm y la conexión completa con el Kit K07.
 
 Duración: 45-50 minutos  
 Palabra clave: DEFENSAS  

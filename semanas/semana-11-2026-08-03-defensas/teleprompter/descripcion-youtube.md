@@ -1,14 +1,20 @@
 # Descripción de YouTube
 
-¿Te enfermas seguido o tardas mucho en recuperarte? “Defensas bajas” puede significar cosas distintas: exposición frecuente, sueño insuficiente, alergias, asma, medicamentos o una condición que merece revisión.
+¿Te enfermas seguido o tardas mucho en recuperarte? El Dr. Miguel Ojeda explica por qué “defensas bajas” puede significar cosas distintas y cómo leer mejor lo que está ocurriendo.
 
-En este video ordenamos tres perfiles:
+Lo primero es entender el patrón: qué síntomas aparecen, cuánto duran y cómo te
+recuperas.
 
-- Recuperación lenta o infecciones frecuentes.
-- Síntomas respiratorios o alérgicos.
-- La urgencia de tomar “algo fuerte” cuando ya hay síntomas.
+En este video usamos cuatro pistas:
 
-También hablamos de prevención, de los límites de la equinácea y de por qué un suplemento no reemplaza vacunas, antibióticos indicados ni valoración profesional.
+- Qué síntoma domina.
+- Cómo cambia con el tiempo.
+- Qué estaba ocurriendo alrededor.
+- Cómo se recupera la persona.
+
+También hablamos de prevención, sueño, vacunas, señales de alarma, criterios para pedir una valoración y de los límites de la equinácea y otros suplementos. El objetivo es convertir una etiqueta general en mejores preguntas; un suplemento no reemplaza vacunas, antibióticos indicados ni valoración profesional.
+
+Al final ubicamos el Kit Inmunidad Reforzada K07 —Immune Herb, Equinácea, Anti-B, Fostprint Classic y Resverasor— dentro de sus límites y del contexto de cada persona.
 
 Para recibir información del Jueves Wellkitt, escribe **DEFENSAS** por WhatsApp.
 
