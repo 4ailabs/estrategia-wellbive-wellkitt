@@ -187,7 +187,7 @@ Entonces, con honestidad.
 
 El colágeno que tomas sí se absorbe. Lo que no está claro es que eso cambie tu piel.
 
-No es una estafa. Tampoco es lo que promete la publicidad. Está en medio, y ahí conviene poner las expectativas.
+Está en un punto medio, entre lo que promete la publicidad y nada. Y ahí conviene poner las expectativas.
 
 [pausa]
 

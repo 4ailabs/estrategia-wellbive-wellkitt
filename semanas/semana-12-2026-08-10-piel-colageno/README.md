@@ -10,13 +10,28 @@ Que sostiene realmente la piel: colageno, glicacion y lo que si llega desde aden
 
 - **El colageno que tomas, llega a tu piel?**
   Guion: [teleprompter/video-principal-colageno-12min.md](teleprompter/video-principal-colageno-12min.md)
-  33 beats, 11-12 minutos. El bloque de biotina (beats 16-23) esta verificado;
-  los beats marcados [VERIFICAR] esperan la investigacion.
+  42 beats, 13-14 minutos. **Guion verificado** contra fuente primaria — ver
+  [investigacion-piel-colageno.md](investigacion-piel-colageno.md).
 - Piel firme desde adentro: que si tiene mecanismo y que es marketing.
 
 ## Jueves Wellkitt
 
-Tu piel por dentro: colageno, azucar y sol.
+**Jueves 20 de agosto 2026, 5:30 pm.** Tu Perfil de Piel — hibrido, sala y Zoom.
+
+Material completo en [material-jueves/](material-jueves/):
+
+- [jueves-en-wellkitt-piel.md](material-jueves/jueves-en-wellkitt-piel.md) — doc
+  maestro del facilitador (marco, dinamica, guion por bloque, fuentes)
+- [teleprompter-zoom-piel.md](material-jueves/teleprompter-zoom-piel.md) — guion
+  puro para leer en vivo
+- [hoja-tu-perfil-piel.html](material-jueves/hoja-tu-perfil-piel.html) /
+  `hoja-tu-perfil-piel.pdf` — autotest de 3 perfiles + hoja de acuerdos, lista
+  para imprimir
+
+Tres perfiles: firmeza y estructura, marcas y cicatrices, cabello/unas/tejido
+conectivo. El momento central de la sesion no vende nada: un filtro de
+seguridad sobre biotina en dosis altas y su interferencia con la prueba de
+troponina (Wellkitt no tiene ningun producto de biotina en catalogo).
 
 ## Productos
 
@@ -56,10 +71,12 @@ actuarian como **señal para el fibroblasto** — no como ladrillo, sino como me
 Es visualmente atractivo para motion graphics y conecta con el hilo metabolico del
 canal (peso, higado, insulina).
 
-**Gancho de honestidad a verificar.** La FDA emitio una alerta porque la biotina en
-dosis altas interfiere con inmunoensayos, incluida la troponina. Si se confirma:
-"el suplemento de moda para el cabello puede alterar el estudio que dice si estas
-infartandote". Pendiente de verificacion.
+**Gancho de honestidad, verificado.** La FDA emitio una alerta formal en 2017,
+actualizada en 2019, porque la biotina en dosis altas interfiere con
+inmunoensayos, incluida la troponina, y reporto el caso de un paciente que
+murio tras una troponina falsamente baja. "El suplemento de moda para el
+cabello puede alterar el estudio que dice si estas infartandote" — y es el
+eje de la sesion del Jueves de hoy.
 
 **No repetir angulos ya usados.** La semana 6 (dolor articular) ya explico la
 vitamina C y la prolil-hidroxilasa. La semana 8 (menopausia) ya uso la perdida de
