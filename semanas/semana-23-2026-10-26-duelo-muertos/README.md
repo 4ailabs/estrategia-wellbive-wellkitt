@@ -27,6 +27,21 @@ Bioenergetica Transgeneracional (nunca promovida) y Actos que Mueven.
 
 HEREDA
 
+## Parte 2 — Somatizacion (fusionada desde la Semana 24, descartada por cadencia quincenal)
+
+Tema: lo que no se dice, el cuerpo lo sostiene. El 2 de noviembre cierra Dia de Muertos:
+puente natural del duelo a la somatizacion, aprovechando la misma ola emocional en vez de
+abrir una semana aparte.
+
+- Video: cuando el cuerpo dice lo que no se pudo hablar.
+- Video: del sintoma al patron, como se lee un cuerpo.
+- Jueves Wellkitt (segunda sesion o cierre de la misma): mapa del sintoma que se repite.
+- Producto: apoyo nervioso segun perfil (Kit K03), sin protagonismo.
+- Curso puente: Decodificacion Total y Terapia Creativa (nunca promovidos).
+- Palabra clave: CUERPO.
+
+Contenido original completo en `../descartadas-2026/semana-24-2026-11-02-somatizacion/README.md`.
+
 ## Notas de produccion
 
 El mejor encaje del año entre calendario cultural y lo que el Instituto ya tiene.
@@ -46,3 +61,5 @@ Cuidado: el duelo no es enfermedad. El trastorno de duelo prolongado afecta a ~1
 ## Referencia
 
 Programacion completa: `../../estrategia/fuente-de-verdad/programacion-semanas-14-27-agosto-noviembre-2026.md`
+
+Cadencia quincenal desde 2026-09-17: ver `../descartadas-2026/README.md`.

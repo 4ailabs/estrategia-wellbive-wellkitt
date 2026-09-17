@@ -41,3 +41,5 @@ Regla con el Buen Fin: la pieza del 14 de noviembre va SIN oferta comercial.
 ## Referencia
 
 Programacion completa: `../../estrategia/fuente-de-verdad/programacion-semanas-14-27-agosto-noviembre-2026.md`
+
+Cadencia quincenal desde 2026-09-17: ver `../descartadas-2026/README.md`.

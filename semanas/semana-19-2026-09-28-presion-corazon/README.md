@@ -22,6 +22,11 @@ Toma de presion en sitio y tu perfil cardiovascular.
 - Analis L-Arginina
 - Oligonato 1
 
+### Mencion secundaria (reasignados al pasar a cadencia quincenal)
+
+- **Escudo Anti-Estres** (curso puente, antes en semanas 15 y 20, ambas descartadas) — encaja por el eje presion-nervios-estres de esta semana.
+- **Deprelat** (producto huerfano, antes en semanas 15 y 20, ambas descartadas) — mismo eje nervioso.
+
 ## Curso puente
 
 Casa y Cuerpo Sano.
@@ -43,3 +48,5 @@ Cuidado alto: jamas decir que un suplemento baja o trata la hipertension. Hay ri
 ## Referencia
 
 Programacion completa: `../../estrategia/fuente-de-verdad/programacion-semanas-14-27-agosto-noviembre-2026.md`
+
+Cadencia quincenal desde 2026-09-17: ver `../descartadas-2026/README.md`.

@@ -7,6 +7,40 @@ mayo al 23 de agosto). Catorce semanas que cierran el año de contenido y desemb
 Usa la **misma estructura semanal fija** de la programacion madre: video lunes, short, video
 miercoles, Jueves Wellkitt, producto/kit, curso puente, palabra clave y meta.
 
+## Actualizacion 2026-09-17 — cadencia quincenal
+
+La produccion real ya estaba corriendo cada 15 dias, no cada semana: el ultimo contenido
+completo fue la Semana 12 (terminado 2026-09-03) y las Semanas 13 a 16 nunca se produjeron
+(sus fechas gancho vencieron sin contenido). En esta fecha se formaliza el cambio de cadencia
+**semanal a quincenal** para lo que resta del trimestre.
+
+De las 11 semanas que quedaban (17 a 27), la mayoria depende de una fecha real que no se
+puede mover, y esas fechas no caen espaciadas cada 15 dias. La regla de decision fue:
+conservar las semanas con **fecha dura o prioridad comercial explicita** y descartar o
+fusionar las que dependian de una ventana de calendario mas laxa.
+
+**Quedan 6 espacios de produccion, uno cada ~15 dias, hasta el seminario:**
+
+| Espacio | Publica | Semana | Por que se queda |
+|---|---|---|---|
+| 1 | ~17-21 sept | **S18 — Memoria** | Dia Mundial del Alzheimer, 21 sept |
+| 2 | ~28 sept-1 oct | **S19 — Presion/Corazon** | Dia Mundial del Corazon, 29 sept |
+| 3 | ~12-15 oct | **S21 — Hueso/Menopausia** | Menopausia (18 oct) y Osteoporosis (20 oct) + lanzamiento del Reset Hormonal, audiencia esperando desde julio |
+| 4 | ~26-29 oct | **S23 — Duelo (Dia de Muertos)** + S24 fusionada como Parte 2 | Mejor encaje cultural del año; S24 ya era, en el plan original, puente natural del duelo |
+| 5 | ~9-12 nov | **S25 — Azucar/Diabetes** | Dia Mundial de la Diabetes (14 nov) + arranque del Buen Fin (13 nov) |
+| 6 | ~23-26 nov | **S27 — Cierre + Seminario** | Fecha dura: el seminario es 3-6 diciembre, no se mueve |
+
+**Se descartan por completo:** Semanas 13, 14, 15, 16 (fecha ya vencida sin producir), 17
+(gancho de Fiestas Patrias ya vencido), 20 (pieza de pura autoridad sin fecha dura, la mas
+sacrificable frente al Reset Hormonal de S21), 22 (sin fecha unica dura) y 26 (sin fecha unica
+dura, en un noviembre ya saturado por S25 y S27). Detalle completo, rescate de productos
+huerfanos y contenido original preservado en `../../semanas/descartadas-2026/README.md`.
+
+**Consecuencia sobre programas y productos huerfanos** (ver tablas mas abajo, actualizadas):
+Escudo Anti-Estres y Deprelat se reasignan como mencion secundaria en la Semana 19. Totalvid 4,
+Niños en Equilibrio, Melis y Cronovida quedan sin semana propia este ciclo y pasan al banco de
+temas en reserva para 2027.
+
 ## Como se armo
 
 Tres criterios se cruzaron para elegir cada tema:
@@ -494,13 +528,13 @@ De los 13 productos con cero uso en 13 semanas, este plan activa 10:
 
 | Producto | Semana que lo estrena |
 |---|---|
-| Totalvid 4 | S14 |
-| Analis Neurotransmisores | S15 y S18 |
-| Deprelat | S15 y S20 |
-| Melis | S17 |
+| Totalvid 4 | ~~S14~~ — S14 descartada (17-sep-2026), pasa al banco de temas en reserva |
+| Analis Neurotransmisores | ~~S15~~ y S18 — se estrena en S18, unica semana viva |
+| Deprelat | ~~S15~~ y ~~S20~~ — ambas descartadas, reasignado como mencion secundaria en S19 |
+| Melis | ~~S17~~ — S17 descartada, pasa al banco de temas en reserva |
 | Pro-vit | S19 |
-| Oligonato 1 | S19 y S26 |
-| Cronovida | S20 |
+| Oligonato 1 | S19 y ~~S26~~ — se estrena en S19, S26 descartada |
+| Cronovida | ~~S20~~ — S20 descartada, pasa al banco de temas en reserva |
 | Lisam | S21 |
 | Fosfoserina Complex | S18 |
 | L-Arginina | S19 |
@@ -517,16 +551,21 @@ para diciembre-enero.
 
 | Programa | Semana | Estado previo |
 |---|---|---|
-| Niños en Equilibrio / Neuroaprendizaje | S14, S18 | nunca promovido |
-| Escudo Anti-Estres | S15 | solo nombre |
+| Niños en Equilibrio / Neuroaprendizaje | ~~S14~~, S18 | nunca promovido — se siembra una sola vez, en S18 |
+| Escudo Anti-Estres | ~~S15~~ → S19 (mencion secundaria) | solo nombre |
 | Reset Hormonal | S21 | **audiencia capturada, sin fecha** |
 | Bioenergetica Transgeneracional | S23 | nunca promovida |
-| Decodificacion Total / Terapia Creativa | S24 | nunca promovidos |
+| Decodificacion Total / Terapia Creativa | ~~S24~~ → S23 Parte 2 (fusionada) | nunca promovidos |
 | Seminario anual + libro | S27 | por lanzar |
 
 ---
 
 ## Banco de temas en reserva
+
+**Productos huerfanos que perdieron su semana al pasar a cadencia quincenal (2026-09-17):**
+Totalvid 4 (semana escolar, S14, descartada), Melis (higado, S17, descartada) y Cronovida
+(ritmo circadiano, S20, descartada). Ningun tema de 2027 tiene aun asignado un producto: son
+los primeros candidatos a activar cuando se arme el proximo ciclo.
 
 Temas investigados que no entraron a estas 14 semanas:
 

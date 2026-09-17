@@ -40,3 +40,5 @@ Pendiente: el tema del seminario sigue sin definirse. La estructura ya esta deci
 ## Referencia
 
 Programacion completa: `../../estrategia/fuente-de-verdad/programacion-semanas-14-27-agosto-noviembre-2026.md`
+
+Cadencia quincenal desde 2026-09-17: ultimo espacio de produccion antes del seminario. Ver `../descartadas-2026/README.md`.

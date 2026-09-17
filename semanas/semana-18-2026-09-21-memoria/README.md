@@ -42,3 +42,5 @@ Cuidado: no insinuar prevencion ni tratamiento de Alzheimer con producto.
 ## Referencia
 
 Programacion completa: `../../estrategia/fuente-de-verdad/programacion-semanas-14-27-agosto-noviembre-2026.md`
+
+Cadencia quincenal desde 2026-09-17: primer espacio de produccion tras el cambio. Ver `../descartadas-2026/README.md`.

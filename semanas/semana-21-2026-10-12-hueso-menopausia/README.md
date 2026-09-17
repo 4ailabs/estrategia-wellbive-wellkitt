@@ -43,3 +43,5 @@ ESTA ES LA SEMANA donde el Reset Hormonal tiene que salir con fecha. Hay gente e
 ## Referencia
 
 Programacion completa: `../../estrategia/fuente-de-verdad/programacion-semanas-14-27-agosto-noviembre-2026.md`
+
+Cadencia quincenal desde 2026-09-17: ver `../descartadas-2026/README.md`.
