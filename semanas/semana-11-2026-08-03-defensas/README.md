@@ -8,7 +8,7 @@ Defensas bajas, alergias, respiratorio e inmunidad.
 
 ## Videos
 
-- **Video principal:** Defensas bajas: qué revisar antes de comprar cualquier cosa.
+- **Video principal:** Defensas bajas: cómo leer lo que tu cuerpo está tratando de decir.
 - **Video de producto:** Alergia, respiratorio e inmunidad: una ruta de apoyo, no una promesa.
 
 Guion del video principal en

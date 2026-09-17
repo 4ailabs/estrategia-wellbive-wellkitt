@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La aduana inmunológica — Jueves en Wellkitt</title>
+<style>
+:root{
+  --night:#06171e;--deep:#0a2830;--panel:rgba(15,54,63,.72);
+  --aqua:#58ddd4;--blue:#89a9ff;--coral:#ff7b68;--amber:#f2be68;
+  --cream:#f7f4ea;--muted:#afc7c9;--line:rgba(158,225,223,.2);
+  --taupe:#a89075;--sans:"Avenir Next",Avenir,"Helvetica Neue",Arial,sans-serif;
+  --mono:"SFMono-Regular",Consolas,monospace;
+}
+*{box-sizing:border-box} html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#020b0f;font-family:var(--sans)}
+body{color:var(--cream)}
+#stage{position:fixed;inset:0;overflow:hidden;background:radial-gradient(circle at 50% 35%,#17343b 0,#061219 66%,#02080c)}
+#deck{width:1280px;height:720px;position:absolute;left:50%;top:50%;overflow:hidden;transform-origin:center;background:var(--night);box-shadow:0 35px 120px #000a}
+.slide{position:absolute;inset:0;display:none;overflow:hidden;background:var(--night);isolation:isolate}
+.slide.active{display:block}
+.slide::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 82% 15%,rgba(88,221,212,.12),transparent 37%),linear-gradient(90deg,rgba(6,23,30,.36),transparent 52%)}
+.scene{position:absolute;inset:0;padding:54px 68px 52px;display:flex;flex-direction:column}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3}
+.veil{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(6,23,30,.96) 0,rgba(6,23,30,.79) 45%,rgba(6,23,30,.2) 78%,rgba(6,23,30,.08))}
+.veil.bottom{background:linear-gradient(0deg,rgba(6,23,30,.94) 0,rgba(6,23,30,.22) 60%,rgba(6,23,30,.15))}
+.grain{position:absolute;inset:0;opacity:.12;z-index:-1;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.3'/%3E%3C/svg%3E")}
+.brand{position:absolute;right:58px;top:42px;width:152px;height:auto;opacity:.92}
+.eyebrow{font-family:var(--mono);font-weight:800;font-size:16px;letter-spacing:.22em;text-transform:uppercase;color:var(--aqua);display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.eyebrow::before{content:"";width:42px;height:3px;background:currentColor;border-radius:2px}
+h1,h2,p{margin:0}.hero{font-size:78px;line-height:.96;letter-spacing:-.047em;font-weight:760;max-width:850px;text-wrap:balance}.title{font-size:54px;line-height:1.02;letter-spacing:-.035em;font-weight:740;max-width:1050px;text-wrap:balance}.title.big{font-size:66px}.lead{font-size:29px;line-height:1.32;color:var(--muted);max-width:800px;margin-top:28px;text-wrap:pretty}.quote{font-size:50px;line-height:1.08;letter-spacing:-.03em;max-width:1020px;font-weight:610;text-wrap:balance}.accent{color:var(--aqua)}.coral{color:var(--coral)}.amber{color:var(--amber)}.blue{color:var(--blue)}
+.center{display:grid;place-items:center;text-align:center}.middle{justify-content:center}.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;flex:1}.split>*{min-width:0}.split>svg{display:block;width:100%;max-width:100%;height:auto}.split.wide{grid-template-columns:.86fr 1.14fr}.right-copy{margin-left:auto;max-width:600px}.bottom-copy{margin-top:auto;max-width:1000px}
+.huge-word{font-size:118px;line-height:.86;letter-spacing:-.065em;font-weight:790}.huge-num{font-family:var(--mono);font-size:130px;line-height:.8;font-weight:850;color:var(--aqua)}
+.rule{width:100%;height:1px;background:linear-gradient(90deg,var(--aqua),transparent);margin:30px 0}
+.statement{font-size:38px;line-height:1.18;max-width:900px;text-wrap:balance}
+.caption{font-family:var(--mono);font-size:16px;line-height:1.45;color:var(--muted);letter-spacing:.04em}
+.sequence{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:65px}.node{font-size:24px;font-weight:720;color:var(--cream);text-align:center;min-width:150px}.node .dot{width:72px;height:72px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:rgba(88,221,212,.12);border:2px solid var(--aqua);font-family:var(--mono);font-size:25px;color:var(--aqua);box-shadow:0 0 40px rgba(88,221,212,.12)}.arrow{height:2px;flex:1;background:linear-gradient(90deg,var(--aqua),rgba(88,221,212,.1));position:relative}.arrow::after{content:"";position:absolute;right:-1px;top:-5px;border-left:10px solid var(--aqua);border-top:6px solid transparent;border-bottom:6px solid transparent}
+.layers{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.layer{padding:30px 22px 28px;border-right:1px solid var(--line);min-height:255px}.layer:last-child{border:0}.layer b{font-size:25px;display:block;margin:20px 0 12px}.layer p{font-size:20px;line-height:1.35;color:var(--muted)}.layer svg{width:66px;height:66px;stroke:var(--aqua);fill:none;stroke-width:2}
+.dial-wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:center;flex:1}.dial{width:430px;height:230px;position:relative;margin:auto;overflow:hidden}.dial-ring{position:absolute;width:400px;height:400px;border-radius:50%;left:15px;top:22px;border:26px solid rgba(175,199,201,.14);border-top-color:var(--coral);border-right-color:var(--amber);transform:rotate(-45deg)}.needle{position:absolute;width:175px;height:5px;background:var(--cream);left:215px;top:218px;transform-origin:0 50%;transform:rotate(-60deg);border-radius:5px;box-shadow:0 0 20px rgba(247,244,234,.4)}.needle::before{content:"";position:absolute;width:28px;height:28px;border-radius:50%;background:var(--cream);left:-14px;top:-12px}.dial-label{position:absolute;font-family:var(--mono);font-size:16px;color:var(--muted);bottom:0}.dial-label.a{left:0}.dial-label.b{right:0}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:55px}.metric{border-top:4px solid var(--aqua);padding-top:24px}.metric:nth-child(2){border-color:var(--amber)}.metric:nth-child(3){border-color:var(--coral)}.metric b{font-size:36px;display:block;margin-bottom:14px}.metric p{font-size:23px;line-height:1.35;color:var(--muted)}
+.profile-stage{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;flex:1}.profile-letter{font-family:var(--mono);font-size:160px;font-weight:900;line-height:.8;color:transparent;-webkit-text-stroke:2px var(--aqua);opacity:.9}.profile-name{font-size:52px;line-height:1;font-weight:760;letter-spacing:-.04em;margin:10px 0 24px}.profile-copy{font-size:27px;line-height:1.32;color:var(--muted);max-width:550px}.profile-question{font-size:33px;line-height:1.16;margin-top:30px;color:var(--cream);max-width:600px}.profile-visual{height:480px;position:relative;display:grid;place-items:center}.profile-visual svg{width:100%;height:100%;overflow:visible}
+.case{font-size:43px;line-height:1.17;max-width:1040px;text-wrap:balance}.choice-row{display:flex;gap:34px;margin-top:48px}.choice{font-family:var(--mono);font-size:22px;letter-spacing:.06em;color:var(--muted);padding-bottom:10px;border-bottom:2px solid rgba(175,199,201,.25)}
+.anatomy-label{position:absolute;width:190px;font-size:18px;line-height:1.15;font-weight:720;padding:9px 12px;background:rgba(6,23,30,.86);border-left:3px solid var(--coral);backdrop-filter:blur(7px)}.anatomy-label::after{content:"";position:absolute;height:1px;background:var(--coral);top:50%;width:72px}.anatomy-label.left::after{right:-72px}.anatomy-label.right::after{right:-72px}.waldeyer-1{left:72px;top:305px}.waldeyer-2{left:92px;top:415px}.waldeyer-3{left:745px;top:275px}.waldeyer-4{left:760px;top:455px}
+.anatomy-title{max-width:670px;font-size:46px}
+.bio-composition{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center;flex:1}.matrix-list{display:flex;flex-direction:column;gap:28px}.matrix-item{display:grid;grid-template-columns:28px 1fr;gap:18px;align-items:start;font-size:27px}.matrix-item i{width:18px;height:18px;border-radius:50%;background:var(--aqua);margin-top:7px;box-shadow:0 0 20px var(--aqua)}.matrix-item:nth-child(2) i{background:var(--amber)}.matrix-item:nth-child(3) i{background:var(--coral)}.matrix-item:nth-child(4) i{background:var(--blue)}.matrix-item small{display:block;color:var(--muted);font-size:19px;margin-top:6px;line-height:1.3}
+.cycle{position:relative;width:590px;height:500px;margin:auto}.cycle svg{position:absolute;inset:0;width:100%;height:100%}.cycle-node{position:absolute;width:150px;text-align:center;font-size:21px;font-weight:750}.cycle-node span{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;margin:0 auto 13px;background:var(--deep);border:2px solid var(--aqua);font-family:var(--mono);color:var(--aqua);font-size:23px}.cn1{left:220px;top:0}.cn2{right:0;top:155px}.cn3{right:55px;bottom:0}.cn4{left:45px;bottom:0}.cn5{left:0;top:155px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);margin-top:44px}.compare>div{background:rgba(6,23,30,.9);padding:42px}.compare h3{font-size:39px;margin:0 0 20px}.compare p{font-size:26px;line-height:1.38;color:var(--muted)}
+.targets{position:relative;height:470px;margin-top:25px}.target-line{position:absolute;left:110px;right:110px;top:220px;height:3px;background:linear-gradient(90deg,var(--aqua),var(--blue),var(--amber),var(--coral))}.target{position:absolute;top:175px;transform:translateX(-50%);text-align:center;width:190px}.target .orb{width:92px;height:92px;margin:auto;border-radius:50%;display:grid;place-items:center;background:var(--deep);border:2px solid currentColor;box-shadow:0 0 50px color-mix(in srgb,currentColor 25%,transparent);font-size:30px;font-family:var(--mono)}.target b{display:block;font-size:24px;margin-top:22px}.target small{font-size:18px;color:var(--muted);line-height:1.3;display:block;margin-top:7px}.t1{left:11%;color:var(--aqua)}.t2{left:30%;color:var(--blue)}.t3{left:50%;color:var(--amber)}.t4{left:70%;color:var(--coral)}.t5{left:89%;color:var(--aqua)}
+.evidence{display:grid;grid-template-columns:320px 1fr;gap:65px;align-items:center;flex:1}.ladder{display:flex;flex-direction:column-reverse;gap:10px;align-items:center}.rung{height:64px;display:grid;place-items:center;font-family:var(--mono);font-size:16px;font-weight:800;background:rgba(88,221,212,.11);border:1px solid var(--line)}.r1{width:300px}.r2{width:250px}.r3{width:200px}.r4{width:150px}.evidence-lines{display:flex;flex-direction:column;gap:26px}.ev{font-size:25px;line-height:1.32;padding-left:24px;border-left:3px solid var(--aqua)}.ev span{display:block;color:var(--muted);font-size:19px;margin-top:5px}
+.kit-path{display:flex;align-items:center;gap:0;margin-top:70px}.kit-stop{width:20%;text-align:center;position:relative}.kit-stop::before{content:"";position:absolute;left:0;right:0;top:34px;height:2px;background:var(--line);z-index:-1}.kit-stop:first-child::before{left:50%}.kit-stop:last-child::before{right:50%}.kit-stop i{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;margin:auto;background:var(--deep);border:2px solid var(--aqua);font-style:normal;font-family:var(--mono);font-size:22px;color:var(--aqua)}.kit-stop b{display:block;font-size:24px;margin-top:22px}.kit-stop small{display:block;font-size:18px;line-height:1.3;color:var(--muted);margin:8px auto 0;max-width:190px}
+.product-focus{display:grid;grid-template-columns:.8fr 1.2fr;gap:74px;align-items:center;flex:1}.formula{font-size:23px;line-height:1.5;color:var(--muted);margin-top:25px}.mechanisms{display:flex;flex-direction:column;gap:22px}.mechanism{font-size:28px;display:flex;align-items:center;gap:18px}.mechanism::before{content:"";width:16px;height:16px;border-radius:50%;background:var(--aqua);box-shadow:0 0 20px var(--aqua)}
+.product-stage{position:absolute;inset:0;display:grid;grid-template-columns:42% 58%;overflow:hidden}.product-copy{position:relative;padding:54px 58px 52px 68px;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 70% 40%,rgba(88,221,212,.1),transparent 45%),var(--night)}.product-copy .title{max-width:500px}.product-copy .formula{max-width:470px}.product-lightbox{position:relative;background:#f6f4ef;overflow:hidden;display:grid;place-items:center}.product-lightbox::before{content:"";position:absolute;width:72%;height:22%;left:14%;bottom:8%;border-radius:50%;background:radial-gradient(ellipse,rgba(46,39,31,.26),transparent 67%);filter:blur(16px)}.product-photo{position:relative;z-index:2;width:82%;height:82%;object-fit:contain;filter:drop-shadow(0 24px 24px rgba(35,28,20,.18));mix-blend-mode:multiply}.product-photo.fostprint{width:94%;height:90%}.product-label{position:absolute;z-index:3;left:38px;bottom:30px;color:#203330;font-family:var(--mono);font-size:15px;font-weight:850;letter-spacing:.14em;text-transform:uppercase}.product-label::before{content:"";display:inline-block;width:30px;height:2px;background:#278f7e;vertical-align:middle;margin-right:11px}.product-mechanisms{margin-top:34px;display:flex;flex-direction:column;gap:18px}.product-mechanism{font-size:23px;line-height:1.28;color:var(--muted);padding-left:24px;position:relative}.product-mechanism::before{content:"";position:absolute;left:0;top:.48em;width:9px;height:9px;border-radius:50%;background:var(--aqua);box-shadow:0 0 15px rgba(88,221,212,.7)}
+.kit-showcase{display:grid;grid-template-columns:38% 62%;height:100%}.kit-copy{padding:54px 30px 52px 68px;display:flex;flex-direction:column;justify-content:center}.kit-gallery{position:relative;background:#f6f4ef;overflow:hidden}.kit-gallery::after{content:"";position:absolute;left:7%;right:7%;bottom:8%;height:16%;background:radial-gradient(ellipse,rgba(42,35,27,.24),transparent 68%);filter:blur(18px)}.kit-product{position:absolute;z-index:2;object-fit:contain;filter:drop-shadow(0 22px 18px rgba(33,26,18,.18));mix-blend-mode:multiply;transform-origin:50% 90%}.kp-immune{width:27%;height:66%;left:4%;bottom:10%}.kp-equinacea{width:26%;height:62%;left:25%;bottom:11%}.kp-antib{width:27%;height:62%;left:47%;bottom:10%}.kp-fost{width:37%;height:58%;right:-2%;bottom:11%}.resverasor-marker{position:absolute;z-index:4;right:4%;top:7%;width:215px;color:#25413e;text-align:right}.resverasor-marker b{display:block;font-size:26px}.resverasor-marker small{display:block;font-size:16px;line-height:1.3;margin-top:6px;color:#55706d}.resverasor-marker::after{content:"RV";display:grid;place-items:center;margin:15px 0 0 auto;width:62px;height:62px;border-radius:50%;border:2px solid #278f7e;color:#278f7e;font:850 18px var(--mono)}
+.dual-products{display:grid;grid-template-columns:1fr 1fr;height:100%}.dual-product{position:relative;overflow:hidden;display:grid;grid-template-rows:44% 56%}.dual-product:first-child{background:#f6f4ef;color:#203330}.dual-product:last-child{background:var(--night);color:var(--cream)}.dual-product-visual{position:relative;display:grid;place-items:center;overflow:hidden}.dual-product-visual::after{content:"";position:absolute;left:18%;right:18%;bottom:4%;height:22%;border-radius:50%;background:radial-gradient(ellipse,rgba(46,39,31,.22),transparent 68%);filter:blur(13px)}.dual-product-visual img{position:relative;z-index:2;width:88%;height:94%;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 18px 16px rgba(35,28,20,.18))}.dual-product-copy{padding:22px 52px 44px}.dual-product-copy .eyebrow{font-size:14px;margin-bottom:17px}.dual-product-copy .title{font-size:43px}.dual-product-copy .lead{font-size:23px;margin-top:18px}.dual-product-copy .statement{font-size:26px;margin-top:22px}.resverasor-symbol{height:100%;display:grid;place-items:center;background:radial-gradient(circle,rgba(137,169,255,.18),transparent 48%)}.resverasor-symbol span{width:152px;height:152px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--blue);color:var(--blue);font:850 42px var(--mono);box-shadow:0 0 70px rgba(137,169,255,.2)}
+.active .kit-product,.active .product-photo,.active .dual-product-visual img{animation:productEnter .9s cubic-bezier(.16,.85,.25,1) both,productHover 5.5s 1s ease-in-out infinite alternate}.active .kp-equinacea{animation-delay:.16s,1.2s}.active .kp-antib{animation-delay:.3s,1.35s}.active .kp-fost{animation-delay:.44s,1.5s}.active .resverasor-marker{animation:reveal .75s .7s both cubic-bezier(.2,.8,.2,1)}
+@keyframes productEnter{from{opacity:0;transform:translateY(70px) scale(.9)}to{opacity:1;transform:none}}@keyframes productHover{to{transform:translateY(-8px) rotate(.5deg)}}
+.plan{display:grid;grid-template-columns:repeat(3,1fr);gap:42px;margin-top:56px}.plan-step{border-top:3px solid var(--aqua);padding-top:24px}.plan-step span{font-family:var(--mono);font-size:18px;color:var(--aqua)}.plan-step h3{font-size:31px;margin:14px 0}.plan-step p{font-size:22px;line-height:1.35;color:var(--muted)}
+.source-note{display:none}.speaker{display:none;position:absolute;left:24px;right:24px;bottom:24px;z-index:30;padding:22px 28px;background:rgba(0,0,0,.92);border:1px solid var(--line);font-size:18px;line-height:1.45;color:#fff}.show-notes .active .speaker{display:block}
+.step{opacity:0;transform:translateY(16px);filter:blur(4px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.8,.2,1),filter .55s ease}.step.shown{opacity:1;transform:none;filter:none}
+.active .auto{animation:reveal .75s both cubic-bezier(.2,.8,.2,1)}.active .d1{animation-delay:.15s}.active .d2{animation-delay:.35s}.active .d3{animation-delay:.55s}.active .d4{animation-delay:.75s}
+@keyframes reveal{from{opacity:0;transform:translateY(18px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+.active .drift{animation:drift 14s ease-in-out infinite alternate}.active .pulse{animation:pulse 3s ease-in-out infinite}
+@keyframes drift{to{transform:scale(1.045) translateX(-7px)}}@keyframes pulse{50%{filter:drop-shadow(0 0 22px rgba(88,221,212,.55))}}
+/* Motion system para diagramas científicos. Movimiento lento, con propósito. */
+svg{shape-rendering:geometricPrecision}svg path,svg line,svg circle,svg ellipse{vector-effect:non-scaling-stroke}
+.diagram{overflow:visible}.diagram [stroke]{stroke-linecap:round;stroke-linejoin:round}
+.active .draw{stroke-dasharray:1;stroke-dashoffset:1;animation:drawLine 1.6s cubic-bezier(.2,.75,.2,1) forwards}
+.active .draw.slow{animation-duration:2.6s}.active .draw.delay{animation-delay:.65s}
+.active .soft-float{transform-box:fill-box;transform-origin:center;animation:softFloat 4.8s ease-in-out infinite alternate}
+.active .soft-float:nth-child(2n){animation-delay:-1.4s}.active .soft-float:nth-child(3n){animation-delay:-2.7s}
+.active .signal-particle{transform-box:fill-box;transform-origin:center;animation:signalTravel 3.8s ease-in-out infinite}
+.active .signal-particle:nth-child(2){animation-delay:1.15s}.active .signal-particle:nth-child(3){animation-delay:2.3s}
+.active .node-breathe{transform-box:fill-box;transform-origin:center;animation:nodeBreathe 3.4s ease-in-out infinite}
+.active .node-breathe:nth-child(2){animation-delay:.55s}.active .node-breathe:nth-child(3){animation-delay:1.1s}
+.active .icon-draw path,.active .icon-draw circle{stroke-dasharray:110;stroke-dashoffset:110;animation:iconDraw 1.25s cubic-bezier(.2,.75,.2,1) forwards}
+.active .layer:nth-child(2) .icon-draw path{animation-delay:.18s}.active .layer:nth-child(3) .icon-draw path,.active .layer:nth-child(3) .icon-draw circle{animation-delay:.36s}.active .layer:nth-child(4) .icon-draw path{animation-delay:.54s}
+.active .cilia{transform-box:fill-box;transform-origin:bottom center;animation:ciliaSweep 1.9s ease-in-out infinite alternate}
+.active .chem-orbit{transform-box:fill-box;transform-origin:center;animation:chemOrbit 12s linear infinite}
+.active .iga-arm{transform-box:fill-box;transform-origin:center bottom;animation:igaBind 3.8s ease-in-out infinite alternate}
+.active .microbe{transform-box:fill-box;transform-origin:center;animation:microbeDrift 5s ease-in-out infinite alternate}
+.active .radar-ring{transform-box:fill-box;transform-origin:center;animation:radarPulse 3.4s ease-out infinite}
+.active .radar-ring.r2{animation-delay:1.1s}.active .radar-needle{transform-box:fill-box;transform-origin:left center;animation:radarSweep 4.5s ease-in-out infinite alternate}
+.active .alert-ring{transform-box:fill-box;transform-origin:center;animation:alertRipple 3.6s ease-out infinite}.active .alert-ring.r2{animation-delay:1.15s}.active .alert-ring.r3{animation-delay:2.3s}
+.active .recovery-route{stroke-dasharray:1;stroke-dashoffset:1;animation:drawLine 2.5s ease forwards}.active .route-glint{stroke-dasharray:10 22;animation:routeFlow 3.2s linear infinite}
+.active .cycle-orbit{stroke-dasharray:12 12;animation:cycleFlow 18s linear infinite}.active .cycle-arrow{animation:arrowGlow 3s ease-in-out infinite alternate}
+.active .cycle-node span{animation:nodeBreathe 3.4s ease-in-out infinite}.active .cn2 span{animation-delay:.55s}.active .cn3 span{animation-delay:1.1s}.active .cn4 span{animation-delay:1.65s}.active .cn5 span{animation-delay:2.2s}
+@keyframes drawLine{to{stroke-dashoffset:0}}@keyframes iconDraw{to{stroke-dashoffset:0}}
+@keyframes softFloat{to{transform:translate3d(5px,-9px,0) rotate(3deg)}}
+@keyframes signalTravel{0%{opacity:0;transform:translate(-45px,-78px) scale(.65)}30%,70%{opacity:1}100%{opacity:0;transform:translate(78px,135px) scale(1.05)}}
+@keyframes nodeBreathe{50%{transform:scale(1.07);filter:drop-shadow(0 0 12px rgba(88,221,212,.6))}}
+@keyframes ciliaSweep{to{transform:skewX(12deg) rotate(5deg)}}@keyframes chemOrbit{to{transform:rotate(360deg)}}
+@keyframes igaBind{to{transform:translateY(-5px) scale(1.025)}}@keyframes microbeDrift{to{transform:translate(6px,-7px) rotate(5deg)}}
+@keyframes radarPulse{0%{opacity:.75;transform:scale(.72)}80%,100%{opacity:0;transform:scale(1.24)}}@keyframes radarSweep{to{transform:rotate(-104deg)}}
+@keyframes alertRipple{0%{opacity:.75;transform:scale(.6)}90%,100%{opacity:0;transform:scale(1.15)}}
+@keyframes routeFlow{to{stroke-dashoffset:-64}}@keyframes cycleFlow{to{stroke-dashoffset:-96}}@keyframes arrowGlow{50%{filter:drop-shadow(0 0 8px var(--aqua));opacity:.55}}
+.product-lightbox,.kit-gallery,.dual-product:first-child{background:#fff}
+.product-photo,.kit-product,.dual-product-visual img{mix-blend-mode:normal}
+.kp-immune{width:23%;height:62%;left:3%;bottom:10%}.kp-equinacea{width:22%;height:59%;left:22%;bottom:11%}.kp-antib{width:25%;height:58%;left:43%;bottom:10%}.kp-fost{width:31%;height:52%;right:0;bottom:12%}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.step{opacity:1;transform:none;filter:none}}
+#controls{position:fixed;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:50;opacity:0;transition:.25s}#controls:hover,#controls:focus-within{opacity:1}#controls button{border:1px solid #ffffff33;background:#071b22;color:#fff;border-radius:999px;padding:8px 14px;font:600 13px var(--sans);cursor:pointer}
+#progress{position:fixed;left:0;bottom:0;height:3px;background:var(--aqua);z-index:60;transition:width .35s}
+@media print{body{overflow:visible;background:#fff}#stage{position:static;display:block}.slide{position:relative;display:block!important;page-break-after:always}.step{opacity:1!important;transform:none!important;filter:none!important}#controls,#progress{display:none}}
+</style>
+</head>
+<body>
+<main id="stage"><div id="deck">
+
+<section class="slide" data-notes="Abra con calma. No mencione productos todavía.">
+  <img class="bg drift" src="assets-slides/clinica-wellness-sin-personas.png" alt="Ambiente clínico wellness sin personas">
+  <div class="veil"></div><div class="grain"></div>
+  <div class="scene middle">
+    <img class="brand" src="../../../marca/wellvibe/oficial/wellvibe-logo-negativo.svg" alt="Wellvibe">
+    <div class="eyebrow auto">Jueves en Wellkitt · Dr. Miguel</div>
+    <h1 class="hero auto d1">La aduana<br><span class="accent">inmunológica</span></h1>
+    <p class="lead auto d2">Cómo reconoce, responde y recupera el equilibrio nuestra defensa mucosa.</p>
+  </div><div class="speaker"></div>
+</section>
+
+<section class="slide">
+  <div class="scene center middle"><div class="eyebrow auto">La pregunta de hoy</div>
+    <p class="quote auto d1">¿Cómo decide el organismo <span class="accent">frente a qué responder</span>, con qué intensidad y durante cuánto tiempo?</p>
+  </div><div class="speaker">Pida dos respuestas espontáneas antes de continuar.</div>
+</section>
+
+<section class="slide">
+  <div class="scene middle"><div class="eyebrow auto">Una idea que cambia la conversación</div>
+    <div class="huge-word auto d1">MÁS FUERTE</div>
+    <div class="rule auto d2"></div>
+    <div class="huge-word accent auto d3">MÁS PRECISO</div>
+    <p class="lead auto d4">La inmunidad saludable no vive con la alarma encendida.</p>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="scene middle"><div class="eyebrow auto">La mucosa es una frontera</div>
+    <h2 class="title big auto d1">Nariz, boca y garganta están “dentro” de nosotros… <span class="accent">pero siguen abiertas al exterior.</span></h2>
+    <div class="sequence">
+      <div class="node step"><div class="dot">01</div>Respiramos</div><div class="arrow step"></div>
+      <div class="node step"><div class="dot">02</div>Ingerimos</div><div class="arrow step"></div>
+      <div class="node step"><div class="dot">03</div>Tomamos muestras</div><div class="arrow step"></div>
+      <div class="node step"><div class="dot">04</div>Decidimos</div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <img class="bg" src="assets-slides/anillo-waldeyer-anatomia.png" alt="Anatomía del anillo de Waldeyer"><div class="veil bottom"></div>
+  <div class="scene"><div class="eyebrow auto">MALT · tejido linfoide asociado a mucosas</div>
+    <h2 class="title anatomy-title auto d1">El anillo de Waldeyer vigila el cruce entre <span class="accent">respirar e ingerir.</span></h2>
+    <div class="anatomy-label left waldeyer-1 step">Amígdala faríngea</div>
+    <div class="anatomy-label left waldeyer-2 step">Amígdalas palatinas</div>
+    <div class="anatomy-label right waldeyer-3 step">Región tubárica</div>
+    <div class="anatomy-label right waldeyer-4 step">Amígdala lingual</div>
+  </div>
+  <div class="source-note">Anatomy and physiology of the palatine tonsils, adenoids, and lingual tonsils. PMC8356106.</div>
+</section>
+
+<section class="slide">
+  <div class="scene"><div class="eyebrow auto">Las criptas tonsilares</div>
+    <div class="split wide">
+      <div><h2 class="title auto d1">Más superficie para <span class="accent">inspeccionar</span> lo que llega.</h2><p class="lead auto d2">Las criptas acercan antígenos al epitelio y a las células que procesan información.</p></div>
+      <svg viewBox="0 0 620 500" class="diagram auto d2" aria-label="Diagrama animado de muestreo de antígenos">
+        <defs><linearGradient id="tissue" x1="0" x2="1"><stop stop-color="#70414f"/><stop offset=".55" stop-color="#b45b65"/><stop offset="1" stop-color="#ff7b68"/></linearGradient><linearGradient id="epithelial" x1="0" x2="1"><stop stop-color="#f7f4ea" stop-opacity=".95"/><stop offset="1" stop-color="#58ddd4" stop-opacity=".75"/></linearGradient><radialGradient id="cellCore"><stop stop-color="#58ddd4" stop-opacity=".32"/><stop offset="1" stop-color="#0a2830" stop-opacity=".9"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+        <path d="M20 70 C160 55 150 210 280 205 C400 200 410 65 600 90 L600 460 L20 460Z" fill="url(#tissue)" opacity=".7"/>
+        <path class="draw slow" pathLength="1" d="M20 70 C160 55 150 210 280 205 C400 200 410 65 600 90" fill="none" stroke="url(#epithelial)" stroke-width="12" opacity=".9"/>
+        <path d="M38 94 C152 84 156 232 282 228 C410 223 430 93 590 113" fill="none" stroke="#f7f4ea" stroke-opacity=".2" stroke-width="2"/>
+        <g fill="#f2be68" filter="url(#glow)"><circle class="soft-float" cx="85" cy="48" r="10"/><circle class="soft-float" cx="132" cy="65" r="7"/><circle class="soft-float" cx="180" cy="95" r="9"/><circle class="soft-float" cx="260" cy="174" r="7"/></g>
+        <g><circle class="signal-particle" cx="275" cy="185" r="9" fill="#f2be68"/><circle class="signal-particle" cx="275" cy="185" r="7" fill="#58ddd4"/><circle class="signal-particle" cx="275" cy="185" r="6" fill="#89a9ff"/></g>
+        <path class="draw delay" pathLength="1" d="M265 170 C290 245 335 265 365 320" fill="none" stroke="#58ddd4" stroke-width="4" stroke-dasharray="8 10"/>
+        <g><g class="node-breathe"><circle cx="375" cy="335" r="48" fill="url(#cellCore)" stroke="#58ddd4" stroke-width="3"/><circle cx="375" cy="335" r="13" fill="#58ddd4" opacity=".65"/></g><g class="node-breathe"><circle cx="470" cy="360" r="42" fill="url(#cellCore)" stroke="#89a9ff" stroke-width="3"/><circle cx="470" cy="360" r="11" fill="#89a9ff" opacity=".65"/></g><g class="node-breathe"><circle cx="545" cy="300" r="38" fill="url(#cellCore)" stroke="#f2be68" stroke-width="3"/><circle cx="545" cy="300" r="10" fill="#f2be68" opacity=".65"/></g></g>
+        <text x="315" y="438" fill="#afc7c9" font-size="17" font-family="Avenir Next" letter-spacing=".5">PRESENTAR · COMPARAR · RECORDAR</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="scene"><div class="eyebrow auto">La frontera trabaja en capas</div><h2 class="title auto d1">Antes de atacar, la mucosa intenta <span class="accent">contener y retirar.</span></h2>
+    <div class="layers">
+      <div class="layer step"><svg class="icon-draw" viewBox="0 0 64 64"><path d="M5 46h54M8 46V27h12v19M24 46V18h15v28M43 46V30h13v16"/><path d="M8 26h12M24 17h15M43 29h13" opacity=".45"/></svg><b>Barrera física</b><p>Epitelio que separa, detecta y comunica.</p></div>
+      <div class="layer step"><svg class="icon-draw" viewBox="0 0 64 64"><path d="M5 31c12-14 22 14 34 0s18 0 20 0"/><g class="cilia"><path d="M10 50l4-14m8 16 3-15m10 13 3-15m10 16 2-14"/></g><path d="M8 24h34" stroke-dasharray="3 7" opacity=".45"/></svg><b>Limpieza mecánica</b><p>Moco y cilios desplazan partículas atrapadas.</p></div>
+      <div class="layer step"><svg class="icon-draw" viewBox="0 0 64 64"><g class="chem-orbit"><path d="M32 7v50M11 20l42 24M53 20 11 44"/></g><circle cx="32" cy="32" r="22"/><circle cx="32" cy="32" r="6" opacity=".45"/></svg><b>Química defensiva</b><p>Lisozima, lactoferrina, defensinas y más.</p></div>
+      <div class="layer step"><svg class="icon-draw" viewBox="0 0 64 64"><g class="iga-arm"><path d="M32 56V31M32 31 15 10M32 31l17-21M15 10v16m34-16v16"/></g><circle cx="32" cy="33" r="5" opacity=".45"/></svg><b>Respuesta específica</b><p>IgA y memoria reconocen sin incendiar la frontera.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="scene"><div class="split">
+    <div><div class="eyebrow auto">IgA secretora</div><h2 class="title auto d1">Excluir puede ser más inteligente que <span class="coral">inflamar.</span></h2><p class="lead auto d2">La IgA neutraliza, aglutina y dificulta la adhesión a la superficie.</p></div>
+    <svg viewBox="0 0 560 520" class="diagram auto d2" aria-label="IgA aglutinando microorganismos">
+      <defs><linearGradient id="mucosalLine"><stop stop-color="#58ddd4" stop-opacity=".12"/><stop offset=".5" stop-color="#afc7c9" stop-opacity=".3"/><stop offset="1" stop-color="#58ddd4" stop-opacity=".12"/></linearGradient><filter id="g2"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+      <path class="draw slow" pathLength="1" d="M72 403 Q280 304 488 403" fill="none" stroke="url(#mucosalLine)" stroke-width="26"/>
+      <g fill="#ff7b68" stroke="#f2be68" stroke-width="2"><ellipse class="microbe" cx="170" cy="210" rx="30" ry="17" transform="rotate(25 170 210)"/><ellipse class="microbe" cx="285" cy="175" rx="30" ry="17" transform="rotate(-18 285 175)"/><ellipse class="microbe" cx="390" cy="235" rx="30" ry="17" transform="rotate(14 390 235)"/></g>
+      <g stroke="#58ddd4" stroke-width="8" fill="none" filter="url(#g2)"><path class="iga-arm" d="M230 310v-85m0 0-42-55m42 55 43-55"/><path class="iga-arm" d="M340 325v-85m0 0-42-55m42 55 43-55"/><path class="iga-arm" d="M285 390v-85m0 0-42-55m42 55 43-55"/></g>
+      <g fill="#58ddd4" opacity=".7"><circle class="soft-float" cx="210" cy="150" r="5"/><circle class="soft-float" cx="325" cy="142" r="4"/><circle class="soft-float" cx="420" cy="205" r="5"/></g>
+    </svg>
+  </div></div>
+</section>
+
+<section class="slide"><div class="scene center middle"><div class="eyebrow auto">La cadena defensiva</div>
+  <p class="quote auto d1"><span class="accent">Capturar</span> · desplazar · neutralizar · identificar · responder · <span class="coral">recordar</span></p>
+  <p class="lead auto d2">“Defensas” no es una sola función.</p></div>
+</section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">El punto de ajuste</div><div class="dial-wrap">
+  <div class="dial auto d1"><div class="dial-ring"></div><div class="needle pulse"></div><span class="dial-label a">RESPUESTA BAJA</span><span class="dial-label b">RESPUESTA EXAGERADA</span></div>
+  <div><h2 class="title auto d1">La pregunta no es cuánto responde.<br><span class="accent">Es cómo se regula.</span></h2><p class="lead auto d2">Usamos “set point” como modelo educativo, no como una medición clínica del MALT.</p></div>
+</div></div></section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">Tres variables distintas</div><h2 class="title auto d1">Una respuesta puede fallar en momentos diferentes.</h2>
+  <div class="trio"><div class="metric step"><b>Umbral</b><p>Cuánta señal hace falta para iniciar.</p></div><div class="metric step"><b>Intensidad</b><p>Qué tan grande se vuelve la respuesta.</p></div><div class="metric step"><b>Resolución</b><p>Qué tan bien limpia, repara y se detiene.</p></div></div>
+</div></section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">El circuito completo</div><h2 class="title auto d1">Responder bien también significa <span class="accent">saber terminar.</span></h2>
+  <div class="sequence"><div class="node step"><div class="dot">01</div>Entrada</div><div class="arrow step"></div><div class="node step"><div class="dot">02</div>Detección</div><div class="arrow step"></div><div class="node step"><div class="dot">03</div>Decisión</div><div class="arrow step"></div><div class="node step"><div class="dot">04</div>Ejecución</div><div class="arrow step"></div><div class="node step"><div class="dot">05</div>Resolución</div></div>
+</div></section>
+
+<section class="slide"><div class="scene center middle"><div class="eyebrow auto">Tu perfil funcional</div><h2 class="title big auto d1">¿Dónde se atasca <span class="accent">tu aduana?</span></h2><p class="lead auto d2">Puntúa cada frase del 0 al 3 pensando en el último mes.</p></div><div class="speaker">Entregue la hoja. Dé tres minutos reales para responder.</div></section>
+
+<section class="slide"><div class="scene"><div class="profile-stage"><div><div class="profile-letter auto">A</div><div class="profile-name auto d1">Frontera sobrecargada</div><p class="profile-copy auto d2">Aire seco, polvo, humo, irritantes o exposición continua aumentan el trabajo antes de la respuesta inmunitaria.</p><p class="profile-question step">¿Qué está alterando la entrada?</p></div>
+  <div class="profile-visual"><svg class="diagram" viewBox="0 0 550 480"><defs><linearGradient id="muc" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#58ddd4" stop-opacity=".62"/><stop offset="1" stop-color="#0a2830"/></linearGradient><filter id="mucGlow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><path d="M20 290 C110 240 180 315 265 265 S430 220 530 275 L530 450H20Z" fill="url(#muc)" opacity=".9"/><g fill="#f2be68" filter="url(#mucGlow)"><circle class="soft-float" cx="100" cy="100" r="8"/><circle class="soft-float" cx="175" cy="125" r="11"/><circle class="soft-float" cx="250" cy="85" r="7"/><circle class="soft-float" cx="350" cy="140" r="10"/><circle class="soft-float" cx="445" cy="95" r="7"/></g><g class="cilia" stroke="#afc7c9" stroke-width="4" opacity=".7"><path d="M95 95 120 240M170 120l25 135M250 80l20 165M345 135l20 110M445 90l5 150"/></g><path class="draw slow" pathLength="1" d="M20 290 C110 240 180 315 265 265 S430 220 530 275" fill="none" stroke="#58ddd4" stroke-width="8"/></svg></div>
+</div></div></section>
+
+<section class="slide"><div class="scene"><div class="profile-stage"><div class="profile-visual"><svg class="diagram" viewBox="0 0 550 480"><defs><radialGradient id="radarBg"><stop stop-color="#89a9ff" stop-opacity=".16"/><stop offset="1" stop-color="#06171e" stop-opacity="0"/></radialGradient></defs><circle cx="275" cy="240" r="190" fill="url(#radarBg)"/><circle class="radar-ring" cx="275" cy="240" r="145" fill="none" stroke="#89a9ff" stroke-width="3"/><circle class="radar-ring r2" cx="275" cy="240" r="95" fill="none" stroke="#89a9ff" stroke-width="4"/><path class="radar-needle" d="M275 240 405 125" stroke="#f7f4ea" stroke-width="7"/><circle class="node-breathe" cx="275" cy="240" r="15" fill="#f7f4ea"/><g fill="#ff7b68"><circle class="soft-float" cx="115" cy="110" r="12"/><circle class="soft-float" cx="410" cy="105" r="10"/><circle class="soft-float" cx="455" cy="330" r="12"/></g><path class="draw delay" pathLength="1" d="M115 110C180 130 210 170 230 200M410 105c-30 45-45 75-60 105M455 330c-60-15-90-25-120-35" fill="none" stroke="#ff7b68" stroke-width="3" stroke-dasharray="8 8"/></svg></div><div><div class="profile-letter auto" style="-webkit-text-stroke-color:var(--blue)">B</div><div class="profile-name auto d1">Vigilancia tardía</div><p class="profile-copy auto d2">La primera señal se reconoce tarde o aparece en semanas con sueño corto, estrés y mayor exposición.</p><p class="profile-question step">¿Qué ocurría antes de sentirme mal?</p></div></div></div></section>
+
+<section class="slide"><div class="scene"><div class="profile-stage"><div><div class="profile-letter auto" style="-webkit-text-stroke-color:var(--coral)">C</div><div class="profile-name auto d1">Señal persistente</div><p class="profile-copy auto d2">La alarma se mantiene, la molestia regresa o la respuesta no parece completar su resolución.</p><p class="profile-question step">¿Qué mantiene encendida la señal?</p></div><div class="profile-visual"><svg class="diagram" viewBox="0 0 550 480"><defs><filter id="g3"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><radialGradient id="alertCore"><stop stop-color="#ff7b68" stop-opacity=".6"/><stop offset="1" stop-color="#06171e" stop-opacity="0"/></radialGradient></defs><circle cx="275" cy="240" r="80" fill="url(#alertCore)"/><g fill="none" stroke="#ff7b68" filter="url(#g3)"><circle class="alert-ring" cx="275" cy="240" r="55" stroke-width="8"/><circle class="alert-ring r2" cx="275" cy="240" r="110" stroke-width="5"/><circle class="alert-ring r3" cx="275" cy="240" r="170" stroke-width="3"/></g><path class="node-breathe" d="M275 55 300 105 250 105Z" fill="#f2be68"/><path class="node-breathe" d="M275 425 300 375 250 375Z" fill="#f2be68"/></svg></div></div></div></section>
+
+<section class="slide"><div class="scene"><div class="profile-stage"><div class="profile-visual"><svg class="diagram" viewBox="0 0 550 480"><defs><linearGradient id="recovery" x1="0" x2="1"><stop stop-color="#ff7b68"/><stop offset=".5" stop-color="#f2be68"/><stop offset="1" stop-color="#58ddd4"/></linearGradient></defs><path class="recovery-route" pathLength="1" d="M80 340C145 210 195 355 275 210S400 245 470 110" fill="none" stroke="url(#recovery)" stroke-width="9"/><path class="route-glint" d="M80 340C145 210 195 355 275 210S400 245 470 110" fill="none" stroke="#f7f4ea" stroke-width="2"/><circle class="node-breathe" cx="80" cy="340" r="15" fill="#ff7b68"/><circle class="node-breathe" cx="470" cy="110" r="20" fill="#58ddd4"/><path class="draw" pathLength="1" d="M75 400h400" stroke="#afc7c9" opacity=".3"/></svg></div><div><div class="profile-letter auto" style="-webkit-text-stroke-color:var(--amber)">D</div><div class="profile-name auto d1">Recuperación incompleta</div><p class="profile-copy auto d2">La fase intensa termina, pero energía, sueño y alimentación todavía no regresan a su línea de base.</p><p class="profile-question step">¿Qué recurso necesito proteger?</p></div></div></div></section>
+
+<section class="slide"><div class="scene middle"><div class="eyebrow auto">Caso para el grupo</div><p class="case auto d1">“La irritación disminuye, regresa unos días después y no puedo explicar qué la empeora.”</p><div class="choice-row"><span class="choice step">A · Frontera</span><span class="choice step">B · Vigilancia</span><span class="choice step">C · Persistencia</span><span class="choice step">D · Recuperación</span></div><p class="lead step"><span class="coral">C organiza la pregunta.</span> No confirma una infección ni un biofilm.</p></div></section>
+
+<section class="slide"><img class="bg drift" src="assets-slides/biofilm-mucosa.png" alt="Biofilm sobre una mucosa"><div class="veil"></div><div class="scene middle"><div class="eyebrow auto">Cuando los microorganismos se organizan</div><h2 class="hero auto d1">El biofilm es una <span class="accent">arquitectura.</span></h2><p class="lead auto d2">Una comunidad adherida, coordinada y rodeada por su propia matriz.</p></div></section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">La matriz extracelular</div><div class="bio-composition"><div><h2 class="title auto d1">No es solo “pegamento”.<br><span class="accent">Crea microambientes.</span></h2></div><div class="matrix-list"><div class="matrix-item step"><i></i><div>Polisacáridos<small>Dan estructura y retienen agua.</small></div></div><div class="matrix-item step"><i></i><div>Proteínas<small>Contribuyen a adhesión y arquitectura.</small></div></div><div class="matrix-item step"><i></i><div>ADN extracelular<small>Ayuda a estabilizar la red.</small></div></div><div class="matrix-item step"><i></i><div>Lípidos y gradientes<small>Crean zonas con oxígeno y metabolismo distintos.</small></div></div></div></div></div></section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">El ciclo del biofilm</div><div class="split"><div><h2 class="title auto d1">La fortificación se <span class="accent">construye por etapas.</span></h2><p class="lead auto d2">Cada etapa abre un blanco diferente para investigación antibiofilm.</p></div><div class="cycle"><svg class="diagram" viewBox="0 0 590 500"><defs><radialGradient id="cycleCore"><stop stop-color="#58ddd4" stop-opacity=".12"/><stop offset="1" stop-color="#06171e" stop-opacity="0"/></radialGradient></defs><circle cx="295" cy="255" r="168" fill="url(#cycleCore)"/><path class="cycle-orbit" d="M295 76 C480 70 540 210 475 350 C405 490 185 485 105 350 C25 215 100 80 295 76Z" fill="none" stroke="#58ddd4" stroke-opacity=".55" stroke-width="4"/><g class="cycle-arrow"><path d="M438 100l25 3-12 22M518 300l-4 25-23-11M330 465l-24 8-2-26M85 330l-16-20 24-8M105 160l5-25 23 12" fill="none" stroke="#58ddd4" stroke-width="5"/></g><circle class="soft-float" cx="295" cy="255" r="14" fill="#f2be68" opacity=".7"/></svg><div class="cycle-node cn1 step"><span>01</span>Adhesión</div><div class="cycle-node cn2 step"><span>02</span>Comunicación</div><div class="cycle-node cn3 step"><span>03</span>Matriz</div><div class="cycle-node cn4 step"><span>04</span>Maduración</div><div class="cycle-node cn5 step"><span>05</span>Dispersión</div></div></div></div></section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">Una distinción importante</div><h2 class="title auto d1">Sobrevivir no siempre significa lo mismo.</h2><div class="compare"><div class="step"><h3 class="accent">Resistencia</h3><p>El microorganismo puede crecer a pesar de una sustancia, con frecuencia mediante mecanismos heredables.</p></div><div class="step"><h3 class="amber">Tolerancia</h3><p>Sobrevive temporalmente por protección de matriz, metabolismo lento o células persistentes.</p></div></div><p class="lead step">Una prueba contra bacterias libres no demuestra el mismo efecto contra un biofilm maduro.</p></div></section>
+
+<section class="slide"><img class="bg" src="assets-slides/botanicos-kit.png" alt="Botánicos del kit"><div class="veil"></div><div class="scene"><div class="eyebrow auto">Potencial antibiofilm de las plantas</div><h2 class="title auto d1">Interferir con la organización,<br><span class="accent">no prometer erradicación.</span></h2><div class="targets"><div class="target-line auto d2"></div><div class="target t1 step"><div class="orb">01</div><b>Adhesión</b><small>dificultar el primer anclaje</small></div><div class="target t2 step"><div class="orb">02</div><b>Comunicación</b><small>quorum sensing</small></div><div class="target t3 step"><div class="orb">03</div><b>Matriz</b><small>reducir arquitectura</small></div><div class="target t4 step"><div class="orb">04</div><b>Virulencia</b><small>modificar conducta</small></div><div class="target t5 step"><div class="orb">05</div><b>Persistencia</b><small>explorar vulnerabilidad</small></div></div></div></section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">Cómo se traslada la evidencia</div><div class="evidence"><div class="ladder auto d1"><div class="rung r1">ENSAYO HUMANO</div><div class="rung r2">MODELO ANIMAL</div><div class="rung r3">IN VITRO</div><div class="rung r4">MECANISMO</div></div><div><h2 class="title auto d1">“Funciona en laboratorio” <span class="coral">no termina la investigación.</span></h2><div class="evidence-lines"><div class="ev step">¿Qué se estudió?<span>Planta, extracto, aceite esencial o molécula aislada.</span></div><div class="ev step">¿A qué concentración?<span>¿Puede alcanzarse con la presentación real?</span></div><div class="ev step">¿Por qué vía?<span>Contacto local no equivale a absorción oral.</span></div></div></div></div></div></section>
+
+<section class="slide"><div class="kit-showcase"><div class="kit-copy"><div class="eyebrow auto">Ahora sí: el Kit K07</div><h2 class="title big auto d1">Cinco productos.<br><span class="accent">Cinco momentos del proceso.</span></h2><p class="lead auto d2">Vigilancia · primera señal · organización microbiana · recursos · resolución</p></div><div class="kit-gallery"><img class="kit-product kp-immune" src="assets-slides/producto-immune-herb-v2.png" alt="Immune Herb"><img class="kit-product kp-equinacea" src="assets-slides/producto-equinacea-v2.png" alt="Equinácea Biofito"><img class="kit-product kp-antib" src="assets-slides/producto-anti-b-v2.png" alt="Anti-B"><img class="kit-product kp-fost" src="assets-slides/producto-fostprint-classic-v2.png" alt="Fostprint Classic"><div class="resverasor-marker"><b>Resverasor</b><small>Resolución y equilibrio</small></div></div></div></section>
+
+<section class="slide"><div class="product-stage"><div class="product-copy"><div class="eyebrow auto">Vigilancia y primera señal</div><h2 class="title auto d1"><span class="accent">Immune Herb</span><br>+ Equinácea</h2><p class="formula auto d2">Astrágalo · equinácea · cúrcuma · shiitake · maca · <em>Uncaria tomentosa</em> · mapurite</p><div class="product-mechanisms"><div class="product-mechanism step">Terreno y comunicación inmunitaria</div><div class="product-mechanism step">Primera señal y respuesta mucosa</div></div></div><div class="product-lightbox"><img class="product-photo" style="position:absolute;width:35%;height:70%;left:18%;bottom:14%" src="assets-slides/producto-immune-herb-v2.png" alt="Immune Herb"><img class="product-photo" style="position:absolute;width:34%;height:66%;right:16%;bottom:15%" src="assets-slides/producto-equinacea-v2.png" alt="Equinácea Biofito"><div class="product-label">Dos funciones complementarias</div></div></div></section>
+
+<section class="slide"><div class="product-stage"><div class="product-copy"><div class="eyebrow auto" style="color:var(--coral)">El protagonista antibiofilm</div><h2 class="title big auto d1"><span class="coral">Anti-B</span></h2><p class="formula auto d2">Equinácea · caléndula · tomillo · cúrcuma · jengibre · <em>Uncaria tomentosa</em></p><div class="product-mechanisms"><div class="product-mechanism step">Tomillo: membrana y formación de matriz</div><div class="product-mechanism step">Curcumina: comunicación y virulencia</div><div class="product-mechanism step">Jengibre: organización microbiana</div></div></div><div class="product-lightbox"><img class="product-photo" style="width:54%;height:74%" src="assets-slides/producto-anti-b-v2.png" alt="Anti-B"><div class="product-label">Organización microbiana</div></div></div></section>
+
+<section class="slide"><div class="dual-products"><div class="dual-product"><div class="dual-product-visual"><img style="width:104%;clip-path:inset(0 9% 0 0)" src="assets-slides/producto-fostprint-classic-v2.png" alt="Fostprint Classic"></div><div class="dual-product-copy"><div class="eyebrow auto" style="color:#278f7e">Recursos</div><h2 class="title auto d1"><span style="color:#557b1f">Fostprint Classic</span></h2><p class="lead auto d2" style="color:#566965">Jalea real, propóleo, vitaminas y minerales.</p><p class="statement step" style="color:#203330">Sostén durante la recuperación.</p></div></div><div class="dual-product"><div class="dual-product-visual"><div class="resverasor-symbol"><span>RV</span></div></div><div class="dual-product-copy"><div class="eyebrow auto" style="color:var(--blue)">Resolución</div><h2 class="title auto d1"><span class="blue">Resverasor</span></h2><p class="lead auto d2">Resveratrol de uva negra.</p><p class="statement step">Adhesión, comunicación y virulencia: evidencia principalmente experimental.</p></div></div></div></section>
+
+<section class="slide"><div class="scene center middle"><div class="eyebrow auto">El mapa completo</div><p class="quote auto d1">El kit acompaña condiciones alrededor del proceso.<br><span class="accent">No mueve una sola perilla del MALT.</span></p><p class="lead auto d2">Barrera · vigilancia · organización microbiana · recursos · resolución</p></div></section>
+
+<section class="slide"><div class="scene"><div class="eyebrow auto">Tu plan de regulación</div><h2 class="title auto d1">Convierte el perfil en una observación útil.</h2><div class="plan"><div class="plan-step step"><span>01</span><h3>Identifica</h3><p>¿Frontera, vigilancia, persistencia o recuperación?</p></div><div class="plan-step step"><span>02</span><h3>Observa</h3><p>¿Qué señal, exposición o cambio aparece primero?</p></div><div class="plan-step step"><span>03</span><h3>Actúa</h3><p>Elige una acción visible para los próximos siete días.</p></div></div></div></section>
+
+<section class="slide"><img class="bg" src="assets-slides/clinica-wellness-sin-personas.png" alt="Ambiente clínico wellness sin personas"><div class="veil"></div><div class="scene middle"><img class="brand" src="../../../marca/wellvibe/oficial/wellvibe-logo-negativo.svg" alt="Wellvibe"><div class="eyebrow auto">Reflexión final</div><p class="quote auto d1">La salud no consiste en vivir con la alarma encendida.</p><p class="quote accent auto d2">Consiste en responder con precisión y recuperar la calma cuando el trabajo terminó.</p><p class="lead auto d3">Nos vemos la próxima semana.</p></div></section>
+
+</div></main>
+<nav id="controls"><button id="prev">←</button><button id="next">→</button><button id="notes">Notas</button><button id="full">Pantalla completa</button></nav><div id="progress"></div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let index=0;
+function fit(){const deck=document.getElementById('deck');const s=Math.min(innerWidth/1280,innerHeight/720);deck.style.transform=`translate(-50%,-50%) scale(${s})`}
+function steps(s){return [...s.querySelectorAll('.step')]}
+function show(i){index=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,n)=>{s.classList.toggle('active',n===index);if(n!==index)steps(s).forEach(x=>x.classList.remove('shown'))});document.getElementById('progress').style.width=`${(index+1)/slides.length*100}%`;location.hash=`s${index+1}`}
+function forward(){const hidden=steps(slides[index]).find(x=>!x.classList.contains('shown'));if(hidden){hidden.classList.add('shown');return}show(index+1)}
+function back(){const shown=steps(slides[index]).filter(x=>x.classList.contains('shown'));if(shown.length){shown.at(-1).classList.remove('shown');return}show(index-1)}
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();forward()}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();back()}if(e.key.toLowerCase()==='n')document.body.classList.toggle('show-notes');if(e.key.toLowerCase()==='f')document.documentElement.requestFullscreen?.()});
+document.getElementById('next').onclick=forward;document.getElementById('prev').onclick=back;document.getElementById('notes').onclick=()=>document.body.classList.toggle('show-notes');document.getElementById('full').onclick=()=>document.documentElement.requestFullscreen?.();
+addEventListener('resize',fit);fit();const m=location.hash.match(/s(\d+)/);show(m?+m[1]-1:0);
+window.__deck={slides:slides.length,get index(){return index},show,forward,back,overflow:()=>slides.map((s,i)=>({slide:i+1,overflowX:s.scrollWidth>1280,overflowY:s.scrollHeight>720}))};
+</script>
+</body></html>
