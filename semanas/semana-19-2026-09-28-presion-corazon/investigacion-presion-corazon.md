@@ -211,6 +211,46 @@ dosis de suplementación, no a las microdosis de oligoterapia de Oligonato 1.
 
 ***
 
+## 5B. El endotelio — cómo entrenarlo, alimentarlo y desinflamarlo
+
+* **Qué es:** capa de una célula de grosor que recubre los vasos; siente el
+  flujo y fabrica óxido nítrico mediante la óxido nítrico sintasa endotelial
+  (eNOS). Cuando se inflama (estrés sostenido, azúcar alto, tabaco,
+  sedentarismo) fabrica menos óxido nítrico y el vaso se vuelve más rígido
+  (disfunción endotelial).
+* **Entrenarlo:** el ejercicio aeróbico regular mejora la dilatación mediada
+  por flujo; la fricción de la sangre (esfuerzo cortante) activa la eNOS.
+  Metaanálisis de ensayos aleatorizados (PMC9950521).
+* **Alimentarlo:** nitrato del betabel y hojas verdes: Siervo et al., *J Nutr*
+  2013, 12 estudios, -4.5 mmHg sistólica. La conversión empieza con bacterias
+  de la boca: el enjuague antiséptico la abole (Kapil et al., PMID 19439233,
+  +3/+2 mmHg). Cacao: flavanoles y dilatación dependiente del endotelio
+  (declaración EFSA 2012; Food & Function 2019).
+* **Desinflamarlo:** sueño, sin tabaco, menos azúcar y sal, manejo del estrés
+  (el cortisol suprime la síntesis de óxido nítrico).
+
+## 5C. Espino blanco (*Crataegus monogyna*)
+
+* Mecanismo: las procianidinas activan la eNOS y producen relajación
+  dependiente del endotelio (PMID 10901280; WS 1442, vía Src/Akt).
+* Humanos: Pittler et al., Cochrane 2008, 14 ensayos, 855 pacientes con
+  insuficiencia cardiaca, mayor tolerancia al esfuerzo y menos falta de aire
+  junto al tratamiento habitual (PMID 18254076). Walker et al., *Br J Gen Pract*
+  2006: disminución de la presión diastólica en personas con diabetes con sus
+  medicamentos.
+* Precaución: puede interactuar con medicamentos para el corazón y la presión;
+  se coordina con el médico.
+
+## 5D. Coenzima Q10 y cúrcuma (*Curcuma longa*)
+
+* Coenzima Q10: metaanálisis de 12 estudios, 489 sujetos, mejora de la
+  dilatación mediada por flujo (+1.45%), dependiente de la dosis.
+* Cúrcuma: metaanálisis de 10 estudios, mejora de la dilatación mediada por
+  flujo (+1.49%); aumento de la biodisponibilidad de óxido nítrico y menor
+  estrés oxidativo.
+* Precaución: la cúrcuma tiene efecto antiagregante; se coordina con el médico
+  a quien toma anticoagulantes.
+
 ## 6. Qué NO se afirma esta semana
 
 * **Ningún producto de esta semana "baja", "trata" o "cura" la hipertensión.**
@@ -220,7 +260,7 @@ dosis de suplementación, no a las microdosis de oligoterapia de Oligonato 1.
 * **El manejo del estrés apoya el eje nervioso de la presión; no sustituye el
   diagnóstico, la medición ni el tratamiento médico.**
 * **La combinación de dos o más productos con mecanismo de óxido nítrico**
-  (L-Arginina, Deprelat, Zapote Blanco, Pro-vit) **con medicamento
+  (L-Arginina, Deprelat, Zapote Blanco, Pro-vit) **y los que tienen efecto antiagregante (cúrcuma, espino blanco) con medicamento
   antihipertensivo, nitratos o inhibidores de PDE5 debe consultarse con un
   médico antes de empezar.**
 * El CTA correcto de la semana es **valoración y medición**, no venta. Es

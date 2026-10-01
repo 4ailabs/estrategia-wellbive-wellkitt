@@ -13,13 +13,15 @@ Hipertension no diagnosticada y el eje presion-nervios.
 
 ## Jueves Wellkitt
 
-Toma de presion en sitio y tu perfil cardiovascular.
+Actividad de perfil cardiovascular y plan (endotelio y eje nervioso), con invitacion a la clinica para la medicion y la valoracion completa. No se toma la presion en la sala.
 
 ## Productos
 
+- Analis L-Arginina
+- Coenzima Q10
+- Curcuma
 - Pro-vit
 - Zapote Blanco
-- Analis L-Arginina
 - Oligonato 1
 
 ### Mencion secundaria (reasignados al pasar a cadencia quincenal)
@@ -48,17 +50,28 @@ Cuidado alto: jamas decir que un suplemento baja o trata la hipertension. Hay ri
 ## Material producido
 
 - Investigacion verificada: [`investigacion-presion-corazon.md`](investigacion-presion-corazon.md)
-- Guion video principal: [`teleprompter/video-principal-presion-12min.md`](teleprompter/video-principal-presion-12min.md)
+- Guion video principal (texto final grabado): [`teleprompter/video-principal-presion-12min.md`](teleprompter/video-principal-presion-12min.md)
+- Descripcion de YouTube: [`descripcion-youtube.md`](descripcion-youtube.md)
 - Jueves en Wellkitt (facilitador): [`material-jueves/jueves-en-wellkitt-presion.md`](material-jueves/jueves-en-wellkitt-presion.md)
 - Jueves en Wellkitt (teleprompter Zoom): [`material-jueves/teleprompter-zoom-presion.md`](material-jueves/teleprompter-zoom-presion.md)
 - Hoja "Tu Perfil Cardiovascular": [`material-jueves/hoja-tu-perfil-presion.html`](material-jueves/hoja-tu-perfil-presion.html) / [`.pdf`](material-jueves/hoja-tu-perfil-presion.pdf)
 
-La sesion del jueves 1 de octubre es la primera del trimestre con un
-componente clinico real: toma de presion en sitio con tensiometro, ademas
-del autotest de perfil (A: eje nervioso, B: habitos y antecedentes, C: ya
-diagnosticado). El filtro de seguridad universal de la semana es la
-interaccion por via de oxido nitrico entre L-Arginina/Deprelat/Zapote
-Blanco/Pro-vit y medicamento antihipertensivo o para disfuncion erectil.
+La sesion del jueves 1 de octubre es una actividad de perfil y plan, no de
+toma de presion: autotest de perfil (A: eje nervioso, B: habitos y
+antecedentes, C: ya diagnosticado) con la ultima presion conocida anotada por
+cada persona, el endotelio (entrenarlo, alimentarlo, desinflamarlo), los
+productos en dos frentes y una invitacion a la clinica (Acapulco 36, piso 8,
+Roma) para medir la presion y revisar el caso completo. El filtro de seguridad
+universal es la interaccion por via de oxido nitrico entre L-Arginina,
+Deprelat, Zapote Blanco o Pro-vit y el medicamento antihipertensivo, los
+anticoagulantes o el medicamento para disfuncion erectil.
+
+Productos del video y de la sesion: Analis L-Arginina, Coenzima Q10, Curcuma
+(frente endotelio); Pro-vit, Zapote Blanco, Oligonato 1 (frente eje nervioso).
+Resverasor no se usa: ya no esta disponible.
+
+Video de YouTube producido en Remotion (repo `centrobioenergetica-videos`,
+composicion `PresionVideo`, 15:16).
 
 ## Referencia
 

@@ -1,428 +1,205 @@
 # Teleprompter video principal
 
-Título: Casi la mitad de México tiene la presión alta. ¿Tú lo sabes?
-Duración estimada: 12-13 minutos
-Velocidad sugerida: 125-135 palabras por minuto
+Título: Casi la mitad de México tiene la presión alta. ¿Tú sabes la tuya?
+Duración real: 15:16 (29 secciones de voz, producidas en Remotion)
 Palabra clave: PRESION
-CTA: WhatsApp + Jueves Wellkitt (toma de presión en sitio)
+CTA: WhatsApp (+52 55 7907 6626) + invitación a la clínica (Acapulco 36, piso 8, colonia Roma)
 
-## Instrucciones de lectura
+Este archivo es el texto final que se grabó con la voz del Dr. (ElevenLabs). La
+fuente de verdad técnica es `scripts/voiceover/presion.json` del repo
+`centrobioenergetica-videos`. Los números están escritos con letra y los
+nombres como se pronuncian ("ele arginina", "Coenzima cu diez", "Provit").
 
-- Leer como narración directa, con tono firme y cálido.
-- Hacer una pausa breve donde aparezca `[pausa]`.
-- No leer los encabezados ni las instrucciones.
-- Los números van escritos con letra: se leen tal cual.
-- No presentar el contenido como diagnóstico ni reemplazo de valoración médica.
-- **Nunca decir que un producto "baja", "trata" o "cura" la hipertensión.** Es
-  la línea roja de esta semana.
+## Hilo del video
 
-### Tono: se habla desde la consulta
+1. El dato: Ensanut 2022 (47.8% / 65.5% / 33.7%).
+2. El eje nervios-presión: adrenalina, cortisol y óxido nítrico.
+3. El endotelio: entrenarlo, alimentarlo y desinflamarlo.
+4. El apoyo: L-arginina, zapote blanco, espino blanco, minerales; coordinado con
+   el médico.
+5. El plan en tres niveles: medir, tratamiento como base, apoyo.
+6. Productos Wellkitt en dos frentes e invitación a la clínica.
 
-- **Autoridad, no alarma.** El dato se afirma sin dramatizarlo ni sin usar
-  miedo como herramienta de conversión.
-- **No es un video de denuncia.** Es un video de "esto es lo que dice la
-  evidencia, y esto es lo que de verdad importa que sepas".
-- El límite de cada cosa se dice con el mismo peso que su posible beneficio.
-- La meta comercial de esta semana no es vender: es que la gente se mida. Eso
-  se dice así, directo, en el video.
+## Reglas
 
-### Estado de verificación
-
-**Guion verificado.** Todas las cifras se comprobaron contra fuente primaria
-en `../investigacion-presion-corazon.md`. El dato ENSANUT, el metaanálisis de
-L-arginina y las cifras de magnesio/potasio están citados con su fuente
-exacta ahí.
-
----
+- Ningún producto trata, previene ni cura la hipertensión: es apoyo.
+- Nadie suspende ni cambia su medicamento por su cuenta; se coordina con el médico.
+- Cada planta se dice con su nombre científico, en español.
+- No se menciona la toma de presión en sitio: la medición se invita a la clínica.
+- "Dr. Miguel Ojeda Rios" se escribe sin acento en pantalla.
 
 ## Script
 
-> Cada bloque numerado es un **beat**: un archivo de audio de referencia y un
-> clip de Remotion. Se graba beat por beat y se repite solo el que salga mal.
-
 ### 01
 
-Una pregunta directa, antes de empezar.
-
-¿Sabes cuál es tu presión arterial en este momento? No la que te tomaron hace
-dos años en una revisión. Ahora.
+Una pregunta directa, antes de empezar. ¿Sabes cuál es tu presión arterial en este momento? No la que te tomaron hace dos años, en una revisión. Ahora. Si no lo sabes, no eres el único. El veintinueve de septiembre fue el Día Mundial del Corazón. Y el dato que tenemos en México no es cómodo. Hoy te lo voy a dar completo, sin suavizarlo.
 
 [pausa]
 
 ### 02
 
-Si no lo sabes, no eres el único. Apenas el martes pasado fue el Día Mundial
-del Corazón, y el dato que tenemos en México no es cómodo.
-
-Hoy te lo voy a dar completo, sin suavizarlo.
+Soy el doctor Miguel Ojeda, del Instituto Centrobioenergética. Y esto es Wellvibe.
 
 [pausa]
 
 ### 03
 
-Soy el doctor Miguel Ojeda, del Instituto Centrobioenergética. Esto es
-Wellvibe.
+Tres cosas vas a sacar de este video. Primero, el dato real de hipertensión en México, y por qué es probable que te incluya, aunque te sientas perfectamente bien. Segundo, por qué la frase «se me sube la presión cuando me estreso» describe, con bastante precisión, lo que pasa en tu cuerpo. Y tercero, qué puedes hacer para apoyar la vía que el estrés apaga. De forma segura, y coordinada con tu médico.
 
 [pausa]
 
 ### 04
 
-Tres cosas vas a sacar de este video.
-
-Vas a saber el dato real de hipertensión en adultos mexicanos, y por qué es
-probable que te incluya a ti aunque te sientas perfectamente bien.
-
-Vas a entender por qué "se me sube la presión cuando me estreso" no es una
-exageración, sino una descripción bastante precisa de lo que pasa en tu
-cuerpo.
-
-Y vas a saber exactamente qué cuidado hay que tener si ya tomas medicamento
-para la presión y te interesa algo de apoyo adicional.
+Empecemos por el dato. La encuesta nacional de salud más reciente, la Ensanut dos mil veintidós, midió la presión arterial de miles de adultos mexicanos. No les preguntó si la tenían alta. Se la midió. Con el brazalete, ahí mismo.
 
 [pausa]
 
 ### 05
 
-Empecemos por el dato.
-
-La encuesta nacional de salud más reciente, la ENSANUT 2022, midió la presión
-arterial de miles de adultos mexicanos. No preguntó "¿tienes la presión
-alta?" — la midió, con el brazalete, ahí mismo.
+El resultado: cuarenta y siete punto ocho por ciento de los adultos mexicanos tiene hipertensión. Dicho de otra forma: de cada diez adultos que conoces, entre cuatro y cinco la tienen alta.
 
 [pausa]
 
 ### 06
 
-El resultado: **cuarenta y siete punto ocho por ciento** de los adultos
-mexicanos tiene hipertensión.
-
-Déjame decirlo de otra forma: de cada diez adultos que conoces, entre cuatro
-y cinco la tienen alta.
+Ahora, la parte que de verdad importa. De ese grupo, el sesenta y cinco punto cinco por ciento no lo sabía. Nunca se lo habían dicho, o no lo recordaban. Dos de cada tres personas con la presión alta, en este país, caminan sin saberlo.
 
 [pausa]
 
 ### 07
 
-Ahora la parte que de verdad importa.
-
-De ese cuarenta y siete punto ocho por ciento, **sesenta y cinco punto cinco
-por ciento no lo sabía.** Nunca se lo habían dicho, o no lo recordaban.
-
-Dos de cada tres personas con la presión alta en este país caminan sin
-saberlo.
+Y hay un tercer número, el que casi nadie cuenta. Entre las personas que sí tienen diagnóstico, y sí están en tratamiento, solo el treinta y tres punto siete por ciento tenía la presión controlada el día de la medición. Es decir: tener el diagnóstico y el medicamento no garantiza que esté funcionando. Por eso hay que seguir midiendo.
 
 [pausa]
 
 ### 08
 
-Y hay un tercer número, el que casi nadie cuenta.
-
-Entre las personas que **sí** tienen diagnóstico y **sí** están en
-tratamiento, solo **treinta y tres punto siete por ciento** tenía la presión
-controlada el día de la medición.
-
-O sea: tener el diagnóstico y el medicamento no es garantía de que esté
-funcionando. Hay que seguir midiendo.
+¿Por qué es tan grave que no se sepa? Porque la hipertensión casi nunca duele. No manda una señal clara, como un dolor de pecho. Por eso se le llama, con razón, el asesino silencioso. Durante años, daña las arterias, el corazón, el riñón y el cerebro. Sin que la persona sienta nada distinto. Hasta que aparece un evento serio.
 
 [pausa]
 
 ### 09
 
-¿Por qué es tan grave que no se sepa?
-
-Porque la hipertensión casi nunca duele. No manda una señal de alarma clara
-como un dolor de pecho. Por eso se le llama, con razón, "el asesino
-silencioso": daña arterias, corazón, riñón y cerebro durante años, sin que
-la persona sienta nada distinto, hasta que aparece un evento serio.
+Vamos con la segunda parte: el eje entre los nervios y la presión. Seguro lo has sentido, o lo has oído decir: «se me sube la presión cuando me estreso». Vamos a ver si es real, y hasta dónde. Cuando vives con estrés sostenido, tu sistema nervioso simpático se queda activado. Libera adrenalina y noradrenalina, y esas sustancias contraen tus vasos sanguíneos. Un vaso más contraído opone más resistencia al paso de la sangre. Y esa resistencia es, literalmente, uno de los dos factores que determinan tu presión arterial.
 
 [pausa]
 
 ### 10
 
-Ahora, la segunda parte del video. El eje nervios-presión.
-
-Seguro has sentido, o has oído decir, "se me sube la presión cuando me
-estreso". Vamos a ver si eso es real, y hasta dónde.
+Pero hay más. El cortisol, la hormona del estrés sostenido, no actúa solo. Amplifica el efecto de la adrenalina sobre tus vasos. Hace que tu riñón retenga más sodio, y más agua. Y además, bloquea la producción de una molécula clave para relajar tus vasos: el óxido nítrico. Vamos a volver a ella en un momento, porque es el centro de este video.
 
 [pausa]
 
 ### 11
 
-Cuando vives estrés sostenido, tu sistema nervioso simpático se mantiene
-activado. Eso libera adrenalina y noradrenalina, que hacen que tus vasos
-sanguíneos se contraigan.
-
-Un vaso más contraído opone más resistencia al paso de la sangre. Y esa
-resistencia es, literalmente, uno de los dos factores que determinan tu
-presión arterial.
+Con el tiempo, este estado sostenido activa un tercer sistema: el de tu riñón. Ese sistema genera una sustancia que contrae tus vasos todavía más, y que retiene más líquido. Es una cadena completa, no una sola pieza. Y es real: está descrita en la fisiología cardiovascular.
 
 [pausa]
 
 ### 12
 
-Pero hay más. El cortisol, la hormona del estrés sostenido, no actúa solo.
-
-Amplifica el efecto de la adrenalina sobre tus vasos. Hace que tu riñón
-retenga más sodio y agua. Y además bloquea la producción de una molécula
-clave que relaja tus vasos, que se llama óxido nítrico. Vamos a volver a
-ella en un momento, porque es el centro de esta semana.
+Ahora, pongamos esto en su lugar. La presión alta tiene varias vías: la genética, el riñón, el peso, la sal, el sedentarismo y el alcohol. El estrés es una de ellas. Y tiene una ventaja: es de las vías que sí puedes trabajar, todos los días. Junto con tu tratamiento, si ya lo tienes, cuidar el eje nervioso suma.
 
 [pausa]
 
 ### 13
 
-Con el tiempo, este estado sostenido activa un tercer sistema, el de tu
-riñón, que termina generando una sustancia que contrae tus vasos todavía
-más y retiene más líquido.
+Ahora sí, la tercera parte: qué puedes hacer. Hay una molécula que conecta todo lo que acabamos de ver: el óxido nítrico. Es la sustancia que relaja tus vasos sanguíneos desde dentro. Y es, justamente, la que el cortisol bloquea. ¿Y quién la fabrica? Una capa de tu cuerpo de la que casi nadie habla: el endotelio.
 
-Es una cadena completa, no una sola pieza. Y es real: está descrita en la
-fisiología cardiovascular, no es una simplificación de pasillo.
+[pausa]
+
+### 13a
+
+El endotelio es una capa de una sola célula de grosor. Recubre por dentro todos tus vasos sanguíneos, desde la aorta hasta el capilar más pequeño. Y no es un simple forro: es un órgano activo. Siente cómo pasa la sangre, y responde fabricando óxido nítrico, para que el vaso se relaje. Cuando el endotelio está sano, tus arterias son flexibles. Cuando se inflama, fabrica menos óxido nítrico, y el vaso se vuelve más rígido. ¿Qué lo inflama? El estrés sostenido, el azúcar alto, el tabaco y el sedentarismo. A eso se le llama disfunción endotelial. Y es uno de los primeros pasos, tanto de la presión alta como del daño en las arterias.
+
+[pausa]
+
+### 13b
+
+La buena noticia es que el endotelio responde. Se puede entrenar, y se puede desinflamar. Lo primero es el movimiento. Cuando caminas a paso rápido, cuando nadas, o cuando andas en bicicleta, la sangre roza con más fuerza la pared del vaso. Y esa fricción es la señal para que el endotelio fabrique más óxido nítrico. Los ensayos clínicos lo confirman: el ejercicio aeróbico regular mejora, de forma medible, la capacidad de tus arterias para dilatarse.
+
+[pausa]
+
+### 13c
+
+Lo segundo está en tu plato. El betabel, cuyo nombre científico es Beta vulgaris, y las verduras de hoja verde, son ricos en nitratos naturales. Tu cuerpo los convierte en óxido nítrico. Un metaanálisis de doce estudios encontró que bajan la presión sistólica alrededor de cuatro puntos y medio. Y aquí, un dato curioso: esa conversión empieza en tu boca, gracias a bacterias buenas. En un estudio, usar enjuague bucal antiséptico dos veces al día, durante una semana, subió la presión unos puntos, porque eliminó esas bacterias. No se trata de dejar de lavarte los dientes. Se trata de no abusar del enjuague antiséptico. Y luego está el cacao, Theobroma cacao, otra planta nuestra. La autoridad europea de seguridad alimentaria reconoce que sus flavanoles ayudan a mantener la dilatación normal de los vasos, la que depende del endotelio.
+
+[pausa]
+
+### 13d
+
+Y lo tercero: quitarle lo que lo inflama. Dormir lo suficiente. Dejar el tabaco. Reducir el azúcar y la sal. Y cuidar el estrés, que ya vimos que bloquea el óxido nítrico, a través del cortisol. Cada una de estas acciones le quita carga inflamatoria a tu endotelio. Y sobre esa base, el apoyo que vamos a ver ahora trabaja en la misma dirección: darle a tu endotelio la materia prima y el equilibrio que necesita.
 
 [pausa]
 
 ### 14
 
-Ahora, el límite honesto, porque es fácil pasarse de la raya aquí.
-
-Esto **no** significa que la hipertensión sea "solo nervios". Hay un
-componente genético, uno renal, el peso, la sal, el sedentarismo, el
-alcohol. El eje nervioso es una vía real entre varias, no la única causa.
-
-Y tampoco significa que relajarte sustituya tu tratamiento si ya tienes
-diagnóstico. Apoya. No reemplaza.
+Empecemos por la ele arginina. Es la materia prima que tu endotelio usa para fabricar óxido nítrico. Y no es solo una idea de laboratorio. Un análisis publicado en una de las principales revistas de cardiología de Estados Unidos reunió once ensayos clínicos, controlados con placebo. En promedio, la presión sistólica bajó cinco puntos, y la diastólica, casi tres. En salud cardiovascular, unos cuantos puntos, sostenidos en el tiempo, sí cuentan. Es un apoyo con respaldo clínico, que actúa sobre la vía que el estrés apaga.
 
 [pausa]
 
 ### 15
 
-Ahora sí, la tercera parte. La que requiere más cuidado de todo el video.
-
-Hay una molécula que conecta casi todo lo que acabamos de hablar: el óxido
-nítrico. Es la sustancia que relaja tus vasos sanguíneos desde dentro. Y
-hay una forma de apoyar su producción que tiene nombre: la L-arginina.
+Y precisamente porque actúa sobre una vía real, hay que usarlo bien. Si ya tomas medicamento para la presión, el efecto se puede sumar. Por eso no se combina a ciegas. Se coordina con tu médico, que puede ajustar lo que haga falta. Lo mismo aplica si tomas medicamento para la disfunción eréctil, porque trabaja sobre esta misma vía. La regla es simple. No suspendas ni cambies tu medicamento por tu cuenta. Y cuéntale a tu médico qué apoyo quieres sumar. Así, el apoyo trabaja a tu favor.
 
 [pausa]
 
 ### 16
 
-La L-arginina es el ingrediente que tu cuerpo usa como materia prima para
-fabricar óxido nítrico. Un análisis que juntó once estudios clínicos, con
-casi cuatrocientas personas, encontró que tomarla bajó la presión sistólica
-en promedio cinco puntos, y la diastólica casi tres.
+Hay otra planta que trabaja sobre esta misma vía, y es nuestra: el zapote blanco, Casimiroa edulis. Su uso para la presión está documentado en México desde hace más de cien años. Y es uno de sus efectos mejor estudiados. Los estudios farmacológicos identificaron el mecanismo: los extractos de su semilla relajan los vasos sanguíneos, por la vía del óxido nítrico. La misma vía que el estrés bloquea. Además, se ha usado tradicionalmente para calmar los nervios y mejorar el sueño. Es decir, trabaja en los dos lados del eje que vimos hoy. Y como actúa sobre esa vía, también se coordina con tu médico, si ya tomas medicamento.
+
+[pausa]
+
+### 16b
+
+Y junto al zapote blanco, hay otra planta con mucha investigación detrás: el espino blanco, Crataegus monogyna. En la medicina europea se usa para el corazón desde hace más de cien años. Y hoy sabemos por qué. Sus procianidinas activan la enzima del endotelio que fabrica óxido nítrico. Es decir, trabaja exactamente en la vía de la que venimos hablando. En personas, una revisión sistemática de catorce ensayos clínicos encontró que su extracto, junto con el tratamiento habitual, mejoró la tolerancia al esfuerzo, y redujo la falta de aire, en insuficiencia cardiaca leve. Y en un ensayo con personas con diabetes, que ya tomaban sus medicamentos, bajó la presión diastólica. Por eso es uno de los ingredientes de Provit. Y, como siempre, si ya tomas medicamento para el corazón o para la presión, se coordina con tu médico.
 
 [pausa]
 
 ### 17
 
-Son números reales, publicados. Pero quiero ser justo con el tamaño de la
-evidencia: once estudios con menos de cuatrocientas personas es una base
-pequeña, comparada con la que respalda cualquier medicamento
-antihipertensivo. La propia revisión metodológica de ese análisis dice que
-las conclusiones deben tomarse como **tentativas**, no como un hecho
-clínico establecido.
+Y una tercera pieza: los minerales. El magnesio y el potasio participan en cómo se relajan tus vasos, y en cómo tu cuerpo maneja el sodio. Los metaanálisis muestran que su suplementación se asocia con una presión sistólica más baja. Y el efecto es mayor en quienes ya están en tratamiento. Por eso son un buen complemento: suman al plan que ya tienes.
 
 [pausa]
 
 ### 18
 
-Y aquí viene el cuidado real, el que más me importa que te lleves hoy.
-
-Si tú ya tomas medicamento para la presión, y además tomas algo que apoya la
-misma vía del óxido nítrico, el efecto se puede sumar **más de lo
-esperado**. Eso puede causar mareo, una baja de presión brusca, incluso un
-desmayo.
+Entonces, armemos el plan completo. Primero: medir. Saber tu número. Segundo: si tu médico te indicó tratamiento, ese tratamiento es la base. Y tercero: sobre esa base, apoyar el eje entre los nervios y la presión. Es decir, la vía del óxido nítrico, y el sistema nervioso, con plantas, aminoácidos y minerales que tienen un mecanismo claro.
 
 [pausa]
 
 ### 19
 
-Y si tomas medicamento para la disfunción eréctil —que trabaja exactamente
-sobre esta misma vía— la precaución es la misma. No son medicamentos que se
-combinen a la ligera con nada que también actúe sobre el óxido nítrico.
+Y ahora, cómo lo trabajamos en Wellkitt. Para el endotelio, armamos una ruta en dos frentes. El primer frente es darle materia prima, y protegerlo. Analis ele arginina aporta la ele arginina, la materia prima del óxido nítrico. Coenzima cu diez es un antioxidante que tus células usan para producir energía. Y en ensayos clínicos, también mejora la función del endotelio. Y la cúrcuma, Curcuma longa, es una de las plantas antiinflamatorias más estudiadas. Sus ensayos muestran mejor dilatación de los vasos, y menos estrés oxidativo.
+
+[pausa]
+
+### 19b
+
+El segundo frente es el eje nervioso. Provit es una fórmula que combina varias plantas. Entre ellas: zapote blanco, Casimiroa edulis. Espino blanco, Crataegus monogyna. Olivo, Olea europaea. Y melisa, Melissa officinalis. Juntas, trabajan el lado nervioso y el lado vascular. Si prefieres concentrarte en una sola planta, está el Zapote Blanco solo. Y Oligonato uno es un complejo de oligoelementos, con magnesio y potasio, para el equilibrio del sistema nervioso. Una última cosa, importante. Si tomas medicamento para la presión, anticoagulantes, o medicamento para la disfunción eréctil, cuéntanoslo. Igual si estás embarazada, en lactancia, o tienes una condición crónica. Con esa información, armamos tu ruta junto con tu médico.
 
 [pausa]
 
 ### 20
 
-Dicho con toda claridad: **nadie debe ajustar ni suspender su medicamento
-por este video.** Si ya tienes un tratamiento y te interesa algo de apoyo
-adicional, la conversación es con tu médico, antes de combinarlo. No
-después.
+Y todo empieza por el mismo paso: medirte. En una farmacia, en un centro de salud, o con tu médico. Así sabes dónde estás. Y puedes ver cómo responde tu cuerpo, cuando empiezas a cuidarlo. Recuerda: dos de cada tres personas con la presión alta, en este país, no lo saben.
 
 [pausa]
 
 ### 21
 
-Hay otra planta que trabaja sobre esta misma vía, y que tiene una historia
-distinta: el zapote blanco.
-
-Su uso como hipotensor está documentado en México desde hace más de cien
-años. Y hay estudios que muestran el mecanismo: extractos de su semilla
-relajan los vasos sanguíneos, por una vía que termina en el mismo lugar que
-la L-arginina — óxido nítrico.
+Si te reconoces en algo de esto, escríbenos. Si nunca te han medido la presión. Si ya tienes diagnóstico, pero no sabes si está controlada. O si te interesa el tema del estrés y la presión. Escribe la palabra PRESIÓN por WhatsApp. Cuéntanos si ya tienes diagnóstico, si tomas medicamento, y desde cuándo no te mides. Con eso, te orientamos sobre el siguiente paso.
 
 [pausa]
 
 ### 22
 
-Pero, otra vez, honestidad con el tamaño de la evidencia. Lo más sólido de
-esa historia viene de estudios en animales y en tejido aislado, no de
-ensayos clínicos grandes en personas con hipertensión diagnosticada. Es una
-planta con tradición extensa y un mecanismo que tiene sentido biológico —
-no es lo mismo que un fármaco probado en miles de pacientes.
-
-Y por el mismo mecanismo, aplica la misma precaución: si ya tomas
-medicamento para la presión, se consulta antes de combinar.
+Y si quieres revisarlo a fondo, te invitamos a la clínica del Instituto Centrobioenergética. Ahí revisamos tu caso completo: tu presión, el estrés, el sueño, tus antecedentes familiares y tus hábitos. Y si ya tomas medicamento, lo integramos con tu ruta de apoyo. Estamos en Acapulco treinta y seis, piso ocho, en la colonia Roma. Escríbenos, y agendamos tu cita.
 
 [pausa]
 
 ### 23
 
-Última pieza, más modesta pero real: el magnesio y el potasio.
-
-Hay metaanálisis que muestran reducciones de presión sistólica de entre dos
-y cuatro puntos con suplementación de estos minerales. Son números pequeños
-comparados con un medicamento, pero reales — y el efecto es mayor
-precisamente en personas que ya están en tratamiento, lo que vuelve a
-confirmar: esto se hace acompañado, no en lugar del tratamiento.
+Tu corazón no manda muchas señales de alarma, antes de que algo pase en serio. La presión arterial es una de las pocas cosas que sí puedes revisar hoy mismo. En cinco minutos. Sin esperar a sentir algo. Si conoces a alguien que no se ha medido la presión en años, un papá, una tía, alguien que se siente bien, comparte este video con esa persona. Yo soy el doctor Miguel Ojeda, del Instituto Centrobioenergética. Gracias por quedarte hasta aquí.
 
 [pausa]
-
-### 24
-
-Entonces, para cerrar esta parte, con toda la honestidad que esta semana
-exige.
-
-Ningún producto de los que vamos a mencionar baja, trata o cura la
-hipertensión. Eso lo hace, cuando hace falta, un medicamento recetado y
-supervisado por tu médico. Lo que existe es apoyo al eje nervioso y
-vascular, con mecanismos reales y evidencia todavía modesta — y un cuidado
-de interacción que hay que tomarse en serio si ya estás en tratamiento.
-
-[pausa]
-
-### 25
-
-Ahora, lo práctico. Si quieres apoyo en esta línea, hay opciones pensadas
-para el eje nervios-presión: un extracto que combina zapote blanco con
-plantas calmantes como el espino blanco y la melisa, L-arginina como la que
-ya vimos, y un complejo de minerales en microdosis pensado para el
-equilibrio del sistema nervioso.
-
-Si tomas medicamento para la presión o para disfunción eréctil, revisa con
-tu médico antes de combinar cualquiera de estos. Si estás embarazada, en
-lactancia, o tienes una condición crónica, también se revisa antes.
-
-[pausa]
-
-### 26
-
-Pero lo más importante de todo el video no es ningún producto. Es esto:
-
-Si no sabes tu presión arterial en este momento, mídela. En una farmacia, en
-un centro de salud, o este jueves en Jueves en Wellkitt, donde vamos a tomar
-la presión en sitio a quien venga, sin costo.
-
-No es una promoción. Es la acción que de verdad cambia algo, porque dos de
-cada tres personas con la presión alta en este país no lo saben.
-
-[pausa]
-
-### 27
-
-Si te reconoces en algo de esto — si nunca te han medido la presión, si ya
-tienes diagnóstico pero no sabes si está controlada, o si te interesa el
-tema del estrés y la presión — escribe PRESION por WhatsApp. Cuéntanos si ya
-tienes diagnóstico, si tomas medicamento, y desde cuándo no te mides.
-
-Con eso te podemos orientar sobre el siguiente paso.
-
-[pausa]
-
-### 28
-
-Este jueves, en Jueves en Wellkitt, vamos a tomar la presión en sitio a
-quien venga, y vamos a construir tu perfil cardiovascular completo: estrés,
-sueño, antecedentes familiares, hábitos. Puedes venir a Acapulco treinta y
-seis, piso ocho, colonia Roma, o conectarte por Zoom. Escríbenos y te
-pasamos el acceso.
-
-[pausa]
-
-### 29
-
-Tu corazón no manda muchas señales de alarma antes de que algo pase en
-serio. La presión arterial es una de las pocas cosas que sí puedes revisar
-hoy mismo, en cinco minutos, sin esperar a sentir algo.
-
-[pausa]
-
-### 30
-
-Si conoces a alguien que no se ha medido la presión en años —un papá, una
-tía, alguien que "se siente bien"— comparte este video con esa persona. Es,
-literalmente, el video que puede hacer que se mida antes de que algo le
-duela.
-
-[pausa]
-
-### 31
-
-Yo soy el doctor Miguel Ojeda, del Instituto Centrobioenergética. Gracias
-por quedarte hasta aquí. Nos vemos el jueves.
-
----
-
-## Notas de producción
-
-### Escenas Remotion sugeridas
-
-| Beats | Escena |
-|---|---|
-| 06-08 | ⭐ Los tres números en cascada: 47.8% → 65.5% de ese grupo no lo sabe → 33.7% de los diagnosticados, controlados. Visual de "10 personas", iluminando 4-5, luego 2-3 de esas, luego marcando solo 1 de 3 diagnosticadas como controlada. |
-| 11-13 | La cadena del eje nervios-presión: estrés → adrenalina/cortisol → vasos contraídos → más resistencia → más presión. Diagrama simple de flujo. |
-| 15-16 | El óxido nítrico relajando el vaso desde dentro. Animación simple de vasodilatación. |
-| 18-19 | ⭐ El ícono de "medicamento + L-arginina = efecto sumado" con advertencia visual clara, sin alarmismo. |
-| 21 | Zapote blanco, imagen del fruto/semilla, con nota "100+ años de uso documentado en México". |
-| 26 | El brazalete de presión tomándose en vivo — este es el momento ancla del Jueves. |
-
-### Precisiones obligatorias
-
-- **Beat 06-08:** no redondear ni exagerar las cifras. Son 47.8%, 65.5% y
-  33.7% exactos, con fuente ENSANUT 2022 (Campos-Nonato et al., *Salud
-  Pública de México* 2023).
-- **Beat 16-17:** siempre mencionar el tamaño del estudio (11 ensayos, 387
-  personas) y la palabra "tentativas" para las conclusiones. No presentar el
-  metaanálisis de L-arginina con el mismo peso que la evidencia de un
-  fármaco.
-- **Beat 18-20:** este es el bloque de mayor riesgo regulatorio y médico de
-  todo el guion. No recortar. No suavizar la instrucción de "consulta antes
-  de combinar".
-- **Beat 22:** ser explícito en que la evidencia de zapote blanco es
-  mayormente preclínica (animal/tejido), no de ensayos clínicos grandes en
-  humanos.
-- **No decir en ningún punto que un producto "baja", "trata" o "cura" la
-  hipertensión.** Es la única línea roja absoluta de esta semana.
-- **El CTA central no es venta — es medición.** El beat 26 debe sentirse
-  como la pieza más importante del video, no como un trámite antes del CTA
-  comercial.
-
-### Si hace falta bajarlo a diez minutos
-
-El bloque de magnesio/potasio (beat 23) es el más prescindible — su
-contenido ya está resumido en el beat 24. El eje nervios-presión (beats
-10-14) y el bloque de L-arginina con su cuidado de interacción (beats
-15-20) son el diferencial de la semana y no deben recortarse.
-
-### Nota estratégica
-
-Esta semana no vende: mide. La meta declarada en la programación es "medir
-consulta, no venta", y eso debe sentirse en cada beat. La autoridad de este
-video no viene de un producto — viene de ser el primer contenido
-cardiovascular del canal en trece semanas, y de decir con toda claridad
-cuándo algo no debe combinarse sin supervisión médica.
-
-### Fuente
-
-Todas las cifras están verificadas en
-[../investigacion-presion-corazon.md](../investigacion-presion-corazon.md).
